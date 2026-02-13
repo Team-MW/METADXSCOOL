@@ -118,37 +118,39 @@ function Home() {
                     </div>
                 </div>
 
-                {/* PARTNERS SECTION */}
-                <div className="partners-section">
-                    <div className="partners-header">
-                        <div className="partners-title">
-                            <Star className="partners-star" fill="#f59e0b" />
-                            <span>ILS NOUS FONT CONFIANCE</span>
-                        </div>
-                        <p className="partners-subtitle">Plus de 100 entreprises sont nos partenaires, découvrez-en une partie !</p>
+            </section>
+
+            {/* PARTNERS SECTION */}
+            <div className="partners-section">
+                <div className="partners-header">
+                    <div className="partners-title">
+                        <Star className="partners-star" fill="#f59e0b" />
+                        <span>ILS NOUS FONT CONFIANCE</span>
                     </div>
-
-                    <div className="partners-grid">
-                        {/* Placeholder Logos */}
-                        <div className="partner-logo-item" style={{ color: '#E40046' }}>TOLOSA SERVICES</div>
-                        <div className="partner-logo-item" style={{ color: '#4A7729', fontFamily: 'serif', fontSize: '1.5rem', fontStyle: 'italic' }}>Vival</div>
-                        <div className="partner-logo-item" style={{ color: '#6A1B9A' }}>Acope</div>
-                        <div className="partner-logo-item" style={{ color: '#D32F2F', fontWeight: '900' }}>Boum<br />BURGER</div>
-
-                        <div className="partner-logo-item" style={{ color: '#D81B60' }}>Choix<br />de vie</div>
-                        <div className="partner-logo-item" style={{ color: '#00BCD4' }}>MICRO<br />DIDACT</div>
-                        <div className="partner-logo-item" style={{ backgroundColor: 'black', color: 'white' }}>DIDAXELL</div>
-                        <div className="partner-logo-item" style={{ color: '#43A047', fontSize: '1.5rem', fontWeight: '900' }}>SUBWAY</div>
-                        <div className="partner-logo-item" style={{ backgroundColor: '#D32F2F', color: 'white', fontWeight: '900' }}>BIG<br />SMASH</div>
-
-                        <div className="partner-logo-item" style={{ color: '#E91E63' }}>NOCIBÉ</div>
-                        <div className="partner-logo-item" style={{ color: '#2E7D32' }}>MARCHÉ DE<br />mo'</div>
-                        <div className="partner-logo-item" style={{ color: '#1B5E20' }}>DX ENERGY<br />TOULOUSE</div>
-                        <div className="partner-logo-item" style={{ color: '#555' }}>Leelou<br />& Bidule</div>
-                    </div>
+                    <p className="partners-subtitle">Plus de 100 entreprises sont nos partenaires, découvrez-en une partie !</p>
                 </div>
 
-            </section>
+                <div className="partners-grid">
+                    {/* Placeholder Logos */}
+                    <div className="partner-logo-item" style={{ color: '#E40046' }}>TOLOSA SERVICES</div>
+                    <div className="partner-logo-item" style={{ color: '#4A7729', fontFamily: 'serif', fontSize: '1.5rem', fontStyle: 'italic' }}>Vival</div>
+                    <div className="partner-logo-item" style={{ color: '#6A1B9A' }}>Acope</div>
+                    <div className="partner-logo-item" style={{ color: '#D32F2F', fontWeight: '900' }}>Boum<br />BURGER</div>
+
+                    <div className="partner-logo-item" style={{ color: '#D81B60' }}>Choix<br />de vie</div>
+                    <div className="partner-logo-item" style={{ color: '#00BCD4' }}>MICRO<br />DIDACT</div>
+                    <div className="partner-logo-item" style={{ backgroundColor: 'black', color: 'white' }}>DIDAXELL</div>
+                    <div className="partner-logo-item" style={{ color: '#43A047', fontSize: '1.5rem', fontWeight: '900' }}>SUBWAY</div>
+                    <div className="partner-logo-item" style={{ backgroundColor: '#D32F2F', color: 'white', fontWeight: '900' }}>BIG<br />SMASH</div>
+
+                    <div className="partner-logo-item" style={{ color: '#E91E63' }}>NOCIBÉ</div>
+                    <div className="partner-logo-item" style={{ color: '#2E7D32' }}>MARCHÉ DE<br />mo'</div>
+                    <div className="partner-logo-item" style={{ color: '#1B5E20' }}>DX ENERGY<br />TOULOUSE</div>
+                    <div className="partner-logo-item" style={{ color: '#555' }}>Leelou<br />& Bidule</div>
+                </div>
+            </div>
+
+
         </div>
     );
 }
