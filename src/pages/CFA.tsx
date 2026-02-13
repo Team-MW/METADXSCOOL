@@ -1,0 +1,1 @@
+export default function CFA() { return <div style={{ padding: '4rem', textAlign: 'center', minHeight: '60vh' }}><h1 style={{ fontSize: '2.5rem', color: '#4a1c5d' }}>CFA</h1><p>Contenu en construction...</p></div>; }

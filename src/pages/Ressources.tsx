@@ -1,0 +1,1 @@
+export default function Ressources() { return <div style={{ padding: '4rem', textAlign: 'center', minHeight: '60vh' }}><h1 style={{ fontSize: '2.5rem', color: '#4a1c5d' }}>Ressources</h1><p>Contenu en construction...</p></div>; }
