@@ -25,13 +25,6 @@
     gap: 1.5rem;
     align-items: center;
     margin-right: auto;
-    /* Push menu to right if needed, but flex-start with gap works too. 
-                           Based on image, menu seems to be next to logos. 
-                           If 'tout à gauche' implies standard left-align, let's stick to flex-start + gap. 
-                           Wait, user said 'tout as gauche les logo'. 
-                           Usually means: Logo [Gap] Menu? Or Logo [Big Gap] Menu?
-                           The image shows the menu immediately after logos. 
-                           I will remove auto margin and rely on gap. */
 }
 
 .logo-group {
@@ -46,15 +39,14 @@
 
 /* Adjusting heights to balance visual weight */
 .logo-image-school {
-    height: 65px;
-    /* Slightly taller as it might be wider/lighter */
+    height: 50px;
+    /* Reduced from 65px */
     width: auto;
     object-fit: contain;
 }
 
 .logo-image-conseil {
     height: 55px;
-    /* Slightly shorter as it's blockier */
     width: auto;
     object-fit: contain;
 }
@@ -69,10 +61,22 @@
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
+    /* Reduced gap to fit single-line text */
     list-style: none;
 }
 
+/* Increased height to cover gap and ensure hover persistence */
+.nav-item-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+    /* Add padding to container to bridge gap */
+}
+
+/* Ensure link itself triggers hover but doesn't have huge hit area */
 .nav-item {
     position: relative;
     font-size: 0.85rem;
@@ -83,21 +87,113 @@
     gap: 0.25rem;
     color: #1f2937;
     transition: color 0.2s;
+    z-index: 2;
+    /* Content above pseudo-elements */
+    white-space: nowrap;
+    /* Prevent text wrapping */
 }
 
+/* Color for ACCUEIL specifically or any active link */
 .nav-item.active {
-    color: #ef4444;
-    /* Red for ACCUEIL */
+    color: #f59e0b;
+    /* Orange/Gold Color */
 }
 
-.nav-item:hover {
-    color: #7e22ce;
+/* Hover color for all items */
+.nav-item:hover,
+.nav-item-container:hover .nav-item {
+    color: #f59e0b;
+    /* Orange/Gold on hover */
 }
 
-.nav-icon {
-    width: 16px;
-    height: 16px;
-    color: #6b7280;
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    /* Position right below the nav item container */
+    left: 0;
+    background-color: white;
+    min-width: 320px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    list-style: none;
+    display: none;
+    z-index: 1000;
+    border: 1px solid #e5e7eb;
+    margin-top: -10px;
+    /* Pull up slightly to overlap with padding */
+    padding-top: 10px;
+    /* Inner padding to push content down */
+}
+
+/* Fix for Right-Side Overflow */
+/* Select the last 3 items and align their dropdowns to the right */
+.nav-menu>li:nth-last-child(-n+3) .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+/* Adjust Triangle for Right-Aligned Dropdowns */
+.nav-menu>li:nth-last-child(-n+3) .dropdown-menu::before {
+    left: auto;
+    right: 20px;
+}
+
+/* Standard Triangle */
+.dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    /* Adjust for margin-top pull */
+    left: 20px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    transform: rotate(45deg);
+    border-left: 1px solid #e5e7eb;
+    border-top: 1px solid #e5e7eb;
+    z-index: 1001;
+}
+
+.nav-item-container:hover .dropdown-menu {
+    display: block;
+    animation: fadeIn 0.15s ease-out;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #1f2937;
+    /* Gray-800 */
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 800;
+    /* Bold text as in image */
+    transition: all 0.2s;
+    text-transform: uppercase;
+    border-left: 3px solid transparent;
+}
+
+.dropdown-item:hover {
+    background-color: #f3f4f6;
+    /* Gray-50 */
+    color: #7c3aed;
+    /* Brand Purple */
+    border-left: 3px solid #7c3aed;
+    padding-left: 1.75rem;
+    /* Slight shift */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 1024px) {
@@ -111,5 +207,19 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+    }
+
+    /* Mobile dropdown adjustments could go here if needed */
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        padding-left: 1rem;
+        display: none;
+        /* Still hidden until clicked/hovered - implies hover won't work well on mobile */
+    }
+
+    .nav-item-container:hover .dropdown-menu {
+        display: block;
     }
 }

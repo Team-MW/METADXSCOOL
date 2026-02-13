@@ -2,6 +2,7 @@ import logoSchool from '../../assets/metadxschool.png';
 import logoConseil from '../../assets/methadxconseil.png';
 import { Instagram, Facebook, Linkedin } from 'lucide-react';
 import '../../styles/Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const handleNavigation = (url: string) => {
@@ -14,22 +15,27 @@ const Footer = () => {
             <div className="footer-container">
 
                 {/* COLUMN 1 - INFORMATIONS */}
-                <div className="footer-column">
+                <div className="footer-column footer-col-info">
                     <h3>INFORMATIONS</h3>
                     <div className="footer-info">
-                        <p><strong>Meta Dx School</strong></p>
+                        <p className="company-name">Meta Dx School</p>
                         <p>244 Route de Seysses</p>
                         <p>31100 Toulouse</p>
-                        <p><strong>Horaires</strong></p>
+                        <p className="hours-label">Horaires</p>
                         <p>08H00 – 18H00</p>
+                    </div>
+
+                    <div className="footer-copyright-internal">
+                        <p>© 2023 ÉDITÉ PAR METADXS</p>
+                        <p>MÀJ LE 23/09/2025</p>
                     </div>
                 </div>
 
                 {/* COLUMN 2 - CERTIFICATION */}
-                <div className="footer-column">
+                <div className="footer-column footer-col-cert">
                     <h3>CERTIFICATION</h3>
                     <ul className="footer-links">
-                        <li><a href="#" onClick={() => handleNavigation('/mentions-legales')}>Mentions légales</a></li>
+                        <li><Link to="/mentions-legales">Mentions légales</Link></li>
                         <li>
                             <a href="#" className="certification-orange" onClick={() => handleNavigation('/certifications')}>
                                 Cliquez ci dessous pour <br />consulter nos différentes <br />certifications
@@ -44,55 +50,47 @@ const Footer = () => {
                 <div className="footer-column contact-cards">
                     {/* PINK CARD - META DX SCHOOL */}
                     <div className="contact-card card-pink">
-                        <div className="contact-card-content">
-                            <div className="footer-logo-group">
-                                <img src={logoSchool} alt="META DX SCHOOL" className="footer-logo-image" />
-                            </div>
-                            <div className="contact-details">
-                                <h4 style={{ display: 'none' }}>META DX <span style={{ color: '#be185d' }}>SCHOOL</span></h4> {/* Hidden as image has text */}
-                                <h4>CONTACT</h4>
-                                <p>contact@metadxs.com</p>
-                                <p>06 82 64 10 26</p>
-                                <a className="contact-cta">Cliquez ci dessous pour <br />retrouver toutes les <br />informations de contact</a>
-                                <p><strong>Contact</strong></p>
-                            </div>
+                        <div className="card-left-logo">
+                            <img src={logoSchool} alt="META DX SCHOOL" className="footer-logo-image" />
                         </div>
-                        <div className="social-icons">
-                            <Instagram className="social-icon" />
-                            <Facebook className="social-icon" />
-                            <Linkedin className="social-icon" />
+
+                        <div className="card-center-info">
+                            <h4>CONTACT</h4>
+                            <a href="mailto:contact@metadxs.com" className="email-link">contact@metadxs.com</a>
+                            <p className="phone">06 82 64 10 26</p>
+                            <span className="info-text">Cliquez ci dessous pour <br />retrouver toutes les <br />informations de contact</span>
+                            <a href="#" className="contact-bold-link">Contact</a>
+                        </div>
+
+                        <div className="card-right-socials">
+                            <a href="#"><Instagram className="social-icon" /></a>
+                            <a href="#"><Facebook className="social-icon" /></a>
+                            <a href="#"><Linkedin className="social-icon" /></a>
                         </div>
                     </div>
 
                     {/* BLUE CARD - META DX CONSEILS & FORMATIONS */}
                     <div className="contact-card card-blue">
-                        <div className="contact-card-content">
-                            <div className="footer-logo-group">
-                                <img src={logoConseil} alt="METADXS CONSEILS & FORMATIONS" className="footer-logo-image" />
-                            </div>
-                            <div className="contact-details">
-                                <h4 style={{ display: 'none' }}>METADXS</h4>
-                                <h4 style={{ display: 'none' }}>CONSEILS & FORMATIONS</h4>
-                                <h4 style={{ color: '#1e3a8a', marginTop: '0.5rem' }}>CONTACT</h4>
-                                <p>julie.mouillat@metadxs.com</p>
-                                <p>07 59 60 60 40</p>
-                                <a className="contact-cta">Cliquez ci dessous pour <br />retrouver toutes les <br />informations de contact</a>
-                                <p><strong>Contact</strong></p>
-                            </div>
+                        <div className="card-left-logo">
+                            <img src={logoConseil} alt="METADXS CONSEILS & FORMATIONS" className="footer-logo-image" />
                         </div>
-                        <div className="social-icons">
-                            <Instagram className="social-icon" style={{ color: '#1e3a8a' }} />
-                            <Facebook className="social-icon" style={{ color: '#1e3a8a' }} />
-                            <Linkedin className="social-icon" style={{ color: '#1e3a8a' }} />
+
+                        <div className="card-center-info">
+                            <h4 className="title-white">CONTACT</h4>
+                            <a href="mailto:julie.mouillat@metadxs.com" className="email-link">julie.mouillat@metadxs.com</a>
+                            <p className="phone">07 59 60 60 40</p>
+                            <span className="info-text">Cliquez ci dessous pour <br />retrouver toutes les <br />informations de contact</span>
+                            <a href="#" className="contact-bold-link">Contact</a>
+                        </div>
+
+                        <div className="card-right-socials">
+                            <a href="#"><Instagram className="social-icon" /></a>
+                            <a href="#"><Facebook className="social-icon" /></a>
+                            <a href="#"><Linkedin className="social-icon" /></a>
                         </div>
                     </div>
                 </div>
 
-            </div>
-
-            {/* COPYRIGHT */}
-            <div className="footer-copyright" style={{ maxWidth: '1300px', margin: '0 auto', borderTop: '1px solid #ddd', paddingTop: '1rem' }}>
-                <p>© 2023 ÉDITÉ PAR METADXS <br />MÀJ LE 23/09/2025</p>
             </div>
         </section>
     );

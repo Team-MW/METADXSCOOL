@@ -3,6 +3,24 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 
+// Import Partner Logos
+import boumBurger from '../assets/BOUM-BURGER-SINCE-980x551-1.png';
+import bigSmash from '../assets/BigSmash.jpg';
+import dxEnergy from '../assets/DX.ENERGY.LOGO_Toulouse-980x980.jpg';
+import nocibe from '../assets/Logo-Nocibe.png';
+import carrefour from '../assets/Logo_carrefour.png';
+import choixDeVie from '../assets/Logo_choixdevie.png';
+import microDidact from '../assets/Microdidact_Logo_alt-980x538.png';
+import sixt from '../assets/Sixt-Logo-980x551.png';
+import subway from '../assets/Subway.png';
+import didaxel from '../assets/didaxel.png';
+import leelou from '../assets/logoLeelou.png';
+import vival from '../assets/logo_vival.jpg';
+import maisonDuMonde from '../assets/maison-du-monde.png';
+import marcheDeMo from '../assets/march_de_mo_logo.jpg';
+import pointFort from '../assets/pointfort.png'; // Assuming this is a partner
+import logoInline from '../assets/logo-inline.png'; // Assuming this is a partner (Tolosa?)
+
 // Define the content for each tab
 const TAB_CONTENT = {
     alternance: {
@@ -131,22 +149,25 @@ function Home() {
                 </div>
 
                 <div className="partners-grid">
-                    {/* Placeholder Logos */}
-                    <div className="partner-logo-item" style={{ color: '#E40046' }}>TOLOSA SERVICES</div>
-                    <div className="partner-logo-item" style={{ color: '#4A7729', fontFamily: 'serif', fontSize: '1.5rem', fontStyle: 'italic' }}>Vival</div>
-                    <div className="partner-logo-item" style={{ color: '#6A1B9A' }}>Acope</div>
-                    <div className="partner-logo-item" style={{ color: '#D32F2F', fontWeight: '900' }}>Boum<br />BURGER</div>
+                    <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
+                    <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
+                    <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
+                    <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
 
-                    <div className="partner-logo-item" style={{ color: '#D81B60' }}>Choix<br />de vie</div>
-                    <div className="partner-logo-item" style={{ color: '#00BCD4' }}>MICRO<br />DIDACT</div>
-                    <div className="partner-logo-item" style={{ backgroundColor: 'black', color: 'white' }}>DIDAXELL</div>
-                    <div className="partner-logo-item" style={{ color: '#43A047', fontSize: '1.5rem', fontWeight: '900' }}>SUBWAY</div>
-                    <div className="partner-logo-item" style={{ backgroundColor: '#D32F2F', color: 'white', fontWeight: '900' }}>BIG<br />SMASH</div>
+                    <div className="partner-logo-item"><img src={choixDeVie} alt="Choix de Vie" /></div>
+                    <div className="partner-logo-item"><img src={microDidact} alt="Micro Didact" /></div>
+                    <div className="partner-logo-item"><img src={didaxel} alt="Didaxell" /></div>
+                    <div className="partner-logo-item"><img src={subway} alt="Subway" /></div>
 
-                    <div className="partner-logo-item" style={{ color: '#E91E63' }}>NOCIBÉ</div>
-                    <div className="partner-logo-item" style={{ color: '#2E7D32' }}>MARCHÉ DE<br />mo'</div>
-                    <div className="partner-logo-item" style={{ color: '#1B5E20' }}>DX ENERGY<br />TOULOUSE</div>
-                    <div className="partner-logo-item" style={{ color: '#555' }}>Leelou<br />& Bidule</div>
+                    <div className="partner-logo-item"><img src={bigSmash} alt="Big Smash" /></div>
+                    <div className="partner-logo-item"><img src={nocibe} alt="Nocibé" /></div>
+                    <div className="partner-logo-item"><img src={marcheDeMo} alt="Marché de Mo" /></div>
+                    <div className="partner-logo-item"><img src={dxEnergy} alt="DX Energy" /></div>
+
+                    <div className="partner-logo-item"><img src={leelou} alt="Leelou & Bidule" /></div>
+                    <div className="partner-logo-item"><img src={carrefour} alt="Carrefour" /></div>
+                    <div className="partner-logo-item"><img src={sixt} alt="Sixt" /></div>
+                    <div className="partner-logo-item"><img src={maisonDuMonde} alt="Maison du Monde" /></div>
                 </div>
             </div>
 

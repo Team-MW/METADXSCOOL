@@ -9,12 +9,60 @@ const Navbar = () => {
 
     const navItems = [
         { label: 'ACCUEIL', path: '/', isRed: true },
-        { label: 'CFA', path: '/cfa', hasDropdown: true },
-        { label: 'CONSEILS & FORMATIONS', path: '/conseils-formations', hasDropdown: true },
+        {
+            label: 'CFA',
+            path: '/cfa',
+            hasDropdown: true,
+            dropdownItems: [
+                { label: 'FORMATIONS', path: '/cfa/formations' },
+                { label: 'INDICATEURS DE RÉSULTATS', path: '/cfa/indicateurs' },
+            ]
+        },
+        {
+            label: 'CONSEILS & FORMATIONS',
+            path: '/conseils-formations',
+            hasDropdown: true,
+            dropdownItems: [
+                { label: 'FORMATIONS', path: '/conseils-formations/formations' },
+                { label: 'CONSEILS RH & STRAT', path: '/conseils-formations/rh-strat' },
+            ]
+        },
         { label: '4.A FORMA SECU', path: '/forma-secu', hasDropdown: true },
-        { label: 'RESSOURCES', path: '/ressources', hasDropdown: true },
-        { label: 'FINANCEMENTS', path: '/financements', hasDropdown: true },
-        { label: 'CONTACT', path: '/contact', hasDropdown: true },
+        {
+            label: 'RESSOURCES',
+            path: '/ressources',
+            hasDropdown: true,
+            dropdownItems: [
+                { label: 'ÉVÈNEMENTS', path: '/ressources/evenements' },
+                { label: 'NEWSLETTERS', path: '/ressources/newsletters' },
+                { label: 'LA MOBILITÉ', path: '/ressources/mobilite' },
+                { label: 'L’HANDICAP', path: '/ressources/handicap' },
+                { label: 'L’ÉGALITÉ ET L’INCLUSION', path: '/ressources/egalite-inclusion' },
+            ]
+        },
+        {
+            label: 'FINANCEMENTS',
+            path: '/financements',
+            hasDropdown: true,
+            dropdownItems: [
+                { label: 'ALTERNANT / FUTUR ALTERNANT', path: '/financements/alternant' },
+                { label: 'SALARIÉ', path: '/financements/salarie' },
+                { label: 'DEMANDEUR D’EMPLOI', path: '/financements/demandeur-emploi' },
+                { label: 'INDÉPENDANT / DIRIGEANT / TRAVAILLEUR NON SALARIÉ', path: '/financements/independant' },
+                { label: 'TRAVAILLEUR DE LA FONCTION PUBLIQUE', path: '/financements/fonction-publique' },
+                { label: 'TRAVAILLEUR EN SITUATION DE HANDICAP', path: '/financements/handicap' },
+                { label: 'AIDE AU LOGEMENT', path: '/financements/aide-logement' },
+            ]
+        },
+        {
+            label: 'CONTACT',
+            path: '/contact',
+            hasDropdown: true,
+            dropdownItems: [
+                { label: 'CANDIDAT : PROCESS DE CANDIDATURE', path: '/contact/candidat' },
+                { label: 'ENTREPRISES : RECRUTEZ AVEC META', path: '/contact/entreprises' },
+            ]
+        },
     ];
 
     return (
@@ -39,17 +87,34 @@ const Navbar = () => {
                 <nav>
                     <ul className="nav-menu">
                         {navItems.map((item) => {
-                            const isActive = location.pathname === item.path;
+                            // Check if the current path matches the item path or any of its dropdown items
+                            const isActive = location.pathname === item.path ||
+                                (item.dropdownItems && item.dropdownItems.some(subItem => location.pathname === subItem.path));
+
                             return (
-                                <li key={item.label}>
+                                <li key={item.label} className="nav-item-container">
                                     <Link
                                         to={item.path}
                                         className={`nav-item ${isActive ? 'active' : ''}`}
-                                        style={item.isRed ? { color: '#ef4444' } : {}}
+                                        // Removed manual style override for isRed to let CSS handle active state priority
+                                        style={item.isRed && !isActive ? { color: '#ef4444' } : {}}
                                     >
                                         {item.label}
                                         {item.hasDropdown && <ChevronDown className="nav-icon" />}
                                     </Link>
+
+                                    {/* DROPDOWN MENU */}
+                                    {item.dropdownItems && (
+                                        <ul className="dropdown-menu">
+                                            {item.dropdownItems.map((subItem) => (
+                                                <li key={subItem.label}>
+                                                    <Link to={subItem.path} className="dropdown-item">
+                                                        {subItem.label}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
                                 </li>
                             );
                         })}

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/utils/ScrollToTop';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './pages/Home';
@@ -8,12 +9,14 @@ import FormaSecu from './pages/FormaSecu';
 import Ressources from './pages/Ressources';
 import Financements from './pages/Financements';
 import Contact from './pages/Contact';
+import MentionsLegales from './pages/MentionsLegales';
 
 import './index.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <main>
@@ -25,6 +28,7 @@ function App() {
             <Route path="/ressources" element={<Ressources />} />
             <Route path="/financements" element={<Financements />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
           </Routes>
         </main>
         <Footer />
