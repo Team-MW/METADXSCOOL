@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
@@ -46,21 +46,29 @@ function Home() {
 
     return (
         <div>
-            {/* HERO SECTION */}
-            <section className="hero-section">
-                <button className="carousel-arrow carousel-prev">
-                    <ChevronLeft size={64} />
-                </button>
+            {/* CLASH HERO SECTION */}
+            <section className="hero-split-wrapper">
+                {/* LEFT - SCHOOL */}
+                <Link to="/cfa" className="split-panel panel-school">
+                    <div className="panel-content">
+                        <h1 className="panel-title">META DX<br />SCHOOL</h1>
+                        <p className="panel-subtitle">L'ÉCOLE DES FUTURS TALENTS</p>
+                        <span className="panel-cta">DÉCOUVRIR LE CFA</span>
+                    </div>
+                    <div className="panel-overlay"></div>
+                </Link>
 
-                <div className="hero-content">
-                    <h1 className="hero-title">ASSISTANT(E) DE VIE AUX FAMILLES</h1>
-                    <p className="hero-subtitle">découvrez les débouchés et poursuites d'études</p>
-                    <button className="cta-button">EN SAVOIR +</button>
-                </div>
 
-                <button className="carousel-arrow carousel-next">
-                    <ChevronRight size={64} />
-                </button>
+
+                {/* RIGHT - CONSEIL */}
+                <Link to="/conseils-formations" className="split-panel panel-conseil">
+                    <div className="panel-content">
+                        <h1 className="panel-title">METADXS<br />CONSEILS</h1>
+                        <p className="panel-subtitle">L'EXPERTISE RH & FORMATION</p>
+                        <span className="panel-cta">DÉCOUVRIR L'ORGANISME</span>
+                    </div>
+                    <div className="panel-overlay"></div>
+                </Link>
             </section>
 
             {/* WELCOME SECTION */}
@@ -119,20 +127,54 @@ function Home() {
 
                     <div className="poles-grid">
                         {/* POLE 1: META DX SCHOOL */}
-                        <Link to="/cfa" className="pole-card bg-school" style={{ textDecoration: 'none' }}>
+                        <div className="pole-card bg-school">
                             <div className="pole-card-content">
                                 <h3>META DX SCHOOL</h3>
-                                <p>Le Centre de Formation d'Apprentis dédié aux jeunes talents et aux futurs professionnels.</p>
+                                <p className="pole-description">Le Centre de Formation d’Apprentis dédié aux jeunes talents et aux futurs professionnels.</p>
+
+                                <ul className="pole-list">
+                                    <li>📌 Formations en alternance reconnues</li>
+                                    <li>📌 Accompagnement pédagogique et humain</li>
+                                    <li>📌 Insertion professionnelle renforcée</li>
+                                </ul>
+
+                                <p className="pole-question">Vous êtes étudiant·e, en reconversion ou à la recherche d’une alternance ?</p>
+
+                                <div className="pole-actions">
+                                    <Link to="/cfa" className="pole-btn pole-btn-primary">
+                                        Nos formations longues
+                                    </Link>
+                                    <a href="https://tally.so/r/w7Xk1J" target="_blank" rel="noopener noreferrer" className="pole-btn pole-btn-secondary">
+                                        remplissez le questionnaire de premier contact ici
+                                    </a>
+                                </div>
                             </div>
-                        </Link>
+                        </div>
 
                         {/* POLE 2: METADXS CONSEILS & FORMATIONS */}
-                        <Link to="/conseils-formations" className="pole-card bg-conseil" style={{ textDecoration: 'none' }}>
+                        <div className="pole-card bg-conseil">
                             <div className="pole-card-content">
                                 <h3>METADXS CONSEILS & FORMATIONS</h3>
-                                <p>Notre organisme de formation accompagne les entreprises, les professionnels et les structures publiques dans leurs projets RH et de développement des compétences.</p>
+                                <p className="pole-description">Notre organisme de formation accompagne les entreprises, les professionnels et les structures publiques dans leurs projets RH et de développement des compétences.</p>
+
+                                <ul className="pole-list">
+                                    <li>📌 Formations courtes & sur-mesure</li>
+                                    <li>📌 Conseil RH, bilan de compétences, VAE</li>
+                                    <li>📌 Diagnostics, audit & ingénierie pédagogique</li>
+                                </ul>
+
+                                <p className="pole-question">Vous êtes une entreprise, un organisme ou un professionnel souhaitant faire évoluer vos compétences ou vos équipes ?</p>
+
+                                <div className="pole-actions">
+                                    <Link to="/conseils-formations" className="pole-btn pole-btn-primary">
+                                        Nos formations courtes
+                                    </Link>
+                                    <Link to="/contact" className="pole-btn pole-btn-secondary">
+                                        contactez-nous par mail
+                                    </Link>
+                                </div>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                 </div>
 
