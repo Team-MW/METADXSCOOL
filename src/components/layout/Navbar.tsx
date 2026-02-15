@@ -1,11 +1,16 @@
+import { useState } from 'react';
 import logoSchool from '../../assets/metadxschool.png';
 import logoConseil from '../../assets/methadxconseil.png';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, User, Send, Menu, X } from 'lucide-react';
 import '../../styles/Navbar.css';
 
 const Navbar = () => {
     const location = useLocation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+    const closeMenu = () => setIsMenuOpen(false);
 
     const navItems = [
         { label: 'ACCUEIL', path: '/', isRed: true },
@@ -67,24 +72,44 @@ const Navbar = () => {
 
     return (
         <header className="header">
+            {/* TOP BAR */}
+            <div className="top-bar">
+                <div className="top-bar-content">
+                    <a href="https://metadxs.ymag.cloud/" target="_blank" rel="noopener noreferrer">
+                        <User size={16} />
+                        MON ESPACE
+                    </a>
+                    <span className="top-bar-separator"></span>
+                    <a href="https://tally.so/r/waaXj2" target="_blank" rel="noopener noreferrer" className="highlight-link">
+                        <Send size={16} />
+                        CANDIDATER
+                    </a>
+                </div>
+            </div>
+
             <div className="header-container">
                 {/* LOGO SECTION */}
                 <div className="logo-section">
                     {/* First Logo */}
-                    <Link to="/" className="logo-group">
+                    <Link to="/" className="logo-group" onClick={closeMenu}>
                         <img src={logoSchool} alt="META DX SCHOOL" className="logo-image-school" />
                     </Link>
 
                     <div className="logo-separator"></div>
 
                     {/* Second Logo */}
-                    <Link to="/conseils-formations" className="logo-group">
+                    <Link to="/conseils-formations" className="logo-group" onClick={closeMenu}>
                         <img src={logoConseil} alt="METADXS CONSEILS & FORMATIONS" className="logo-image-conseil" />
                     </Link>
                 </div>
 
+                {/* MOBILE MENU TOGGLE */}
+                <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+                    {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                </button>
+
                 {/* NAVIGATION */}
-                <nav>
+                <nav className={`nav-wrapper ${isMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-menu">
                         {navItems.map((item) => {
                             // Check if the current path matches the item path or any of its dropdown items

@@ -221,3 +221,355 @@
         display: block;
     }
 }
+
+/* CTA Buttons Section */
+.cta-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    /* Push to the right */
+}
+
+.btn-mon-espace,
+.btn-candidater {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* "Mon Espace" Style - Secondary/Outline */
+.btn-mon-espace {
+    color: #4b5563;
+    /* Gray-600 */
+    background: transparent;
+    border: 2px solid #e5e7eb;
+    /* Gray-200 */
+}
+
+.btn-mon-espace:hover {
+    color: #7c3aed;
+    /* Purple-600 */
+    border-color: #7c3aed;
+    background: rgba(124, 58, 237, 0.05);
+    transform: translateY(-2px);
+}
+
+/* "Candidater" Style - Primary/Gradient */
+.btn-candidater {
+    color: white;
+    background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%);
+    /* Purple to Pink */
+    box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.3), 0 2px 4px -1px rgba(124, 58, 237, 0.15);
+    border: 2px solid transparent;
+    /* To match size if needed, or remove */
+}
+
+.btn-candidater:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(219, 39, 119, 0.4), 0 4px 6px -2px rgba(219, 39, 119, 0.2);
+    filter: brightness(1.1);
+}
+
+/* Mobile Adjustments for Buttons */
+@media (max-width: 1024px) {
+    .cta-buttons {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .header-container {
+        height: auto;
+        /* Allow height to grow */
+        flex-direction: column;
+    }
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #3b0764;
+    /* Brand Dark Purple */
+    width: 100%;
+
+}
+
+.top-bar-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    /* Right aligned */
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.top-bar-content a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.top-bar-content a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.top-bar-separator {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Adjust header container since top bar is separate */
+.header-container {
+    padding-top: 0.5rem;
+    /* Add a little breathing room if needed */
+}
+
+/* Refined Header and Top Bar Interaction */
+
+/* 1. Header is sticky wrapper */
+.header {
+    position: sticky;
+    /* Sticky by default for ALL screens */
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    /* Needed for sticky to not show content behind */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    /* Shadow on the whole header */
+}
+
+/* 2. Top Bar Design Enhancements */
+.top-bar {
+    /* Use a rich gradient for a more premium look */
+    background: linear-gradient(90deg, #1e1b4b 0%, #312e81 100%);
+    /* Indigo-950 to Indigo-900 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-content {
+    /* Full Width */
+    width: 100%;
+    /* Improve spacing and layout */
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.6rem 2rem;
+    gap: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.top-bar-content a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.2s ease;
+    padding: 0.2rem 0;
+}
+
+.top-bar-content a:hover {
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+/* Highlight "Candidater" specifically */
+.highlight-link {
+    color: #f472b6 !important;
+    /* Pink-400 */
+}
+
+.highlight-link:hover {
+    color: #fbcfe8 !important;
+    /* Pink-200 */
+}
+
+.top-bar-separator {
+    width: 1px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 3. Main Nav Container - Full Width inside sticky header */
+.header-container {
+    width: 100%;
+    max-width: none;
+    /* Remove max-width restriction */
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Spread logos and nav */
+    align-items: center;
+    padding: 0 2rem;
+    /* Consistent padding */
+    height: 100px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Re-apply hover effect to container */
+.header-container:hover {
+    background: rgba(255, 255, 255, 0.98);
+}
+
+
+/* MOBILE BURGER MENU & STICKY BEHAVIOR */
+
+/* Hide mobile toggle by default */
+.mobile-menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #3b0764;
+    cursor: pointer;
+    z-index: 1001;
+    /* Above everything */
+}
+
+/* Mobile specific styles */
+@media (max-width: 1024px) {
+
+    /* 1. STICKY TOP BAR ON MOBILE */
+    .header {
+        position: sticky;
+        /* Make the whole header sticky on mobile */
+        top: 0;
+        z-index: 1000;
+        background: white;
+        /* Ensure it has a background so content doesn't show through */
+    }
+
+    /* 2. SHOW BURGER TOGGLE */
+    .mobile-menu-toggle {
+        display: block;
+        margin-left: auto;
+        /* Push to right */
+    }
+
+    /* 3. HIDE NAV MENU BY DEFAULT & STYLE OPEN STATE */
+    .nav-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 0;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+        height: calc(100vh - 140px);
+        /* Fill remaining screen height approx */
+        overflow-y: auto;
+    }
+
+    .nav-wrapper.open {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        /* Center items */
+        gap: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-item-container {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    /* Mobile Dropdown Handling */
+    .dropdown-menu {
+        position: static;
+        /* Stack naturally */
+        display: none;
+        /* Hidden by default */
+        box-shadow: none;
+        border: none;
+        background: #f9fafb;
+        /* Light gray for contrast */
+        margin-top: 0.5rem;
+        width: 90%;
+        /* Slight inset */
+        transform: none;
+        animation: none;
+        opacity: 1;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+
+    /* Show dropdown on hover (or click if we added click handling, but hover works ok on some touch) 
+       For better UX, usually click is preferred, but simple hover/focus often suffices for simple "open" state 
+       Here we make it visible if the parent is "active" or simply always visible if we want? 
+       Let's stick to hover/focus or make them always visible in mobile menu for simplicity or use a "details" like approach.
+       For now, let's make them visible when hovering the container which acts like a tap on mobile.
+    */
+    .nav-item-container:hover .dropdown-menu,
+    .nav-item-container:focus-within .dropdown-menu {
+        display: block;
+    }
+
+    .logo-image-school,
+    .logo-image-conseil {
+        height: 60px;
+        /* Smaller logos on mobile */
+    }
+
+    .header-container {
+        height: auto;
+        padding: 0.8rem 1rem;
+        flex-direction: row;
+        /* Keep logos left, burger right */
+        justify-content: flex-start;
+    }
+
+    /* Hide the extra CTA buttons container if it still existed (we removed it, but good to ensure) */
+    .cta-buttons {
+        display: none;
+    }
+
+    /* Ensure Top Bar is visible */
+    .top-bar {
+        display: block;
+    }
+
+    .top-bar-content {
+        justify-content: center;
+        /* Center top bar text on mobile */
+        font-size: 0.75rem;
+        padding: 0.4rem 1rem;
+    }
+}
