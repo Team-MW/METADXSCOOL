@@ -1,7 +1,7 @@
 # META DX SCHOOL - React Structure
 
 Ce projet est une structure React initialisée avec Vite et TypeScript, suivant le design demandé.
-
+ frfrf
 ## 📁 Structure du Projet
 
 - **src/components/layout/** : Composants globaux (Navbar, Footer, Layout)
