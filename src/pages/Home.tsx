@@ -55,6 +55,22 @@ function Home() {
                 <title>Meta DX School & Conseils - Expert Formation & Audit à Toulouse</title>
                 <meta name="description" content="Découvrez Meta DX School : votre partenaire expert en formations IT, cybersécurité et conseil Qualiopi à Toulouse. Formez-vous aux métiers de demain dans un campus moderne et connecté." />
                 <meta name="keywords" content="formation IT, école informatique Toulouse, conseil qualite, Qualiopi, cybersécurité, développement web, audit, formation continue" />
+
+                {/* Facebook / Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.metadxs.com/" />
+                <meta property="og:title" content="Meta DX School & Conseils - Expert Formation & Audit à Toulouse" />
+                <meta property="og:description" content="Découvrez Meta DX School : votre partenaire expert en formations IT, cybersécurité et conseil Qualiopi à Toulouse." />
+                <meta property="og:image" content="https://www.metadxs.com/og-image.jpg" />
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://www.metadxs.com/" />
+                <meta property="twitter:title" content="Meta DX School & Conseils - Expert Formation & Audit à Toulouse" />
+                <meta property="twitter:description" content="Découvrez Meta DX School : votre partenaire expert en formations IT, cybersécurité et conseil Qualiopi à Toulouse." />
+                <meta property="twitter:image" content="https://www.metadxs.com/og-image.jpg" />
+
+                <link rel="canonical" href="https://www.metadxs.com/" />
             </Helmet>
             {/* CLASH HERO SECTION */}
             <section className="hero-split-wrapper">

@@ -8,6 +8,22 @@ const MentionsLegales = () => {
                 <title>Mentions Légales & CGU - Meta DX School & Conseils Toulouse</title>
                 <meta name="description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation du site Meta DX School. Informations légales sur notre organisme de formation SASU." />
                 <meta name="robots" content="noindex, nofollow" />
+
+                {/* Facebook / Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.metadxs.com/mentions-legales" />
+                <meta property="og:title" content="Mentions Légales & CGU - Meta DX School & Conseils Toulouse" />
+                <meta property="og:description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation." />
+                <meta property="og:image" content="https://www.metadxs.com/og-image.jpg" />
+
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content="https://www.metadxs.com/mentions-legales" />
+                <meta property="twitter:title" content="Mentions Légales & CGU - Meta DX School & Conseils Toulouse" />
+                <meta property="twitter:description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation." />
+                <meta property="twitter:image" content="https://www.metadxs.com/og-image.jpg" />
+
+                <link rel="canonical" href="https://www.metadxs.com/mentions-legales" />
             </Helmet>
             <h1 style={{ fontSize: '2.5rem', fontWeight: '800', color: '#4a1c5d', marginBottom: '2rem', textAlign: 'center', textTransform: 'uppercase' }}>
                 Mentions Légales
