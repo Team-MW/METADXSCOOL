@@ -1,11 +1,17 @@
 /* FOOTER STYLES */
 .footer {
-    background-color: white;
-    padding: 4rem 0;
-    /* Reduced vertical padding slightly */
+    background: white;
+    padding: 8rem 0 4rem;
+    /* Increased top padding for overlap */
     color: #1f2937;
     position: relative;
-    z-index: 10;
+    z-index: 20;
+    /* Sit on top of everything */
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    margin-top: -60px;
+    /* Overlap pull-up */
+    box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.1);
 }
 
 .footer-container {
@@ -22,16 +28,14 @@
 /* HEADINGS */
 .footer-column h3 {
     font-size: 1.8rem;
-    /* Larger, bolder */
     font-weight: 800;
-    /* Extra bold */
     color: #1e1b4b;
-    /* Very dark blue/purple */
+    /* Dark Purple */
     text-transform: uppercase;
     margin-bottom: 2rem;
-    letter-spacing: -0.5px;
+    letter-spacing: 0.5px;
     font-family: 'Inter', sans-serif;
-    /* Ensure bold font works */
+    text-shadow: none;
 }
 
 /* COLUMN 1 - INFORMATIONS */
@@ -40,14 +44,14 @@
     font-size: 1rem;
     line-height: 1.6;
     color: #3f3f46;
-    /* Dark grey */
+    /* Dark Grey */
     font-weight: 500;
 }
 
 .company-name {
     font-weight: 700;
-    color: #4c1d95;
-    /* Deep purple */
+    color: #4c1d95 !important;
+    /* Medium Purple */
     margin-bottom: 0.5rem !important;
     font-size: 1.1rem !important;
 }
@@ -92,6 +96,7 @@
 .footer-links a:hover {
     color: #7c3aed;
     transform: translateX(5px);
+    text-shadow: none;
 }
 
 .certification-orange {
@@ -103,6 +108,7 @@
     padding: 0.5rem 1rem;
     background: rgba(249, 115, 22, 0.1);
     border-radius: 12px;
+    border: none;
 }
 
 /* RIGHT COLUMN - CONTACT CARDS */

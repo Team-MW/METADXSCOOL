@@ -18,18 +18,21 @@
     display: flex;
     justify-content: flex-start;
     /* Logos to the left */
-    gap: 3rem;
+    gap: 2rem;
     /* Space between logos and menu */
     align-items: center;
-    padding: 0.8rem 1rem;
+    padding: 0 1rem;
+    /* Minimal padding to keep bar tight */
     max-width: 1400px;
     /* Slightly wider */
+    height: 100px;
+    /* Fixed height to control flow */
     margin: 0 auto;
 }
 
 .logo-section {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     align-items: center;
     margin-right: auto;
 }
@@ -47,21 +50,22 @@
 
 /* Adjusting heights to balance visual weight */
 .logo-image-school {
-    height: 50px;
-    /* Reduced from 65px */
+    height: 85px;
+    /* Significantly larger */
     width: auto;
     object-fit: contain;
 }
 
 .logo-image-conseil {
-    height: 55px;
+    height: 90px;
+    /* Significantly larger */
     width: auto;
     object-fit: contain;
 }
 
 .logo-separator {
     width: 2px;
-    height: 40px;
+    height: 60px;
     background-color: #e5e7eb;
     margin: 0 0.5rem;
     border-radius: 99px;
@@ -88,7 +92,8 @@
 /* Ensure link itself triggers hover but doesn't have huge hit area */
 .nav-item {
     position: relative;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    /* Slightly smaller text */
     font-weight: 700;
     cursor: pointer;
     display: flex;
@@ -100,7 +105,8 @@
     /* Content above pseudo-elements */
     white-space: nowrap;
     /* Prevent text wrapping */
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 0.8rem;
+    /* Tighter padding */
     border-radius: 100px;
     /* Pill shape */
 }

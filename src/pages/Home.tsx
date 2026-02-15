@@ -213,8 +213,62 @@ function Home() {
                 </div>
             </div>
 
+            {/* CAMPUS SECTION */}
+            <section className="campus-section">
+                <div className="campus-container">
+                    <div className="campus-header">
+                        <Star className="campus-star-icon" size={40} fill="#fbbf24" color="#fbbf24" />
+                        <h2>LE CAMPUS</h2>
+                    </div>
 
-        </div>
+                    <div className="campus-grid">
+                        <div className="campus-info">
+                            <div className="campus-block">
+                                <h3>Nos coordonnées</h3>
+                                <p>– 244 Route de Seysses, 31100 Toulouse</p>
+                                <p>– Téléphone : 06 82 64 10 25 / 06 82 64 10 26</p>
+                                <p>Mail : contact@metadxs.com</p>
+                            </div>
+
+                            <div className="campus-block">
+                                <h3>Comment s'y rendre ?</h3>
+                                <p><span className="highlight">En métro</span> : 10 minutes à pieds de l'arrêt Reynerie (Ligne A)</p>
+                                <p><span className="highlight">En bus</span> : Ligne 7 depuis Mermoz, Arrêt Bordelongue</p>
+                            </div>
+                        </div>
+
+                        <div className="campus-map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.576272260273!2d1.406716076696451!3d43.57366697110603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6f3e09062b%3A0x6b1df368297f0c1!2s244%20Rte%20de%20Seysses%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1707500000000!5m2!1sfr!2sfr"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+
+                        <div className="campus-details full-width">
+                            <div className="campus-details-col">
+                                <h3>Nos équipements :</h3>
+                                <p>
+                                    Au sein de l'école vous trouverez 3 salles de classes et de TP, ainsi qu'une salle de réunion et une salle informatique. Nos apprenants ont également accès au WIFI gratuit, ainsi qu'à des distributeurs de boissons chaudes et de friandises. Pour se restaurer, une cafétéria propose un assortiment de sandwichs et salades fraîches, tandis que des food trucks sont présents chaque midi devant l'entrée de l'école.
+                                </p>
+                            </div>
+                            <div className="campus-details-col">
+                                <h3>Accessibilité handicap :</h3>
+                                <p>
+                                    Nos formations sont naturellement ouvertes aux personnes à mobilité réduite. Les parties communes et salles de cours-TP sont notamment accessibles par ascenseur. N'hésitez pas à nous contacter afin d'envisager des protocoles d'accueil spécifiques adaptés à votre situation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div >
     );
 }
 

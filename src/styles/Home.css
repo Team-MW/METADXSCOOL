@@ -576,7 +576,8 @@
 /* PARTNERS SECTION */
 .partners-section {
     background-color: white;
-    padding: 6rem 1rem;
+    padding: 6rem 1rem 10rem;
+    /* Increased bottom padding for overlap */
     text-align: center;
     color: #1f2937;
     border-top-left-radius: 60px;
@@ -678,8 +679,150 @@
         min-height: 300px;
     }
 
-    .partners-section {
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
+
+}
+
+/* CAMPUS SECTION STYLE */
+.campus-section {
+    position: relative;
+    padding: 8rem 1rem 6rem;
+    background: linear-gradient(180deg, #2e1065 0%, #4c1d95 60%, #7c3aed 100%);
+    /* Vibrant Violet Gradient to match above */
+    color: white;
+    border-top-left-radius: 60px;
+    /* Rounded top overlap */
+    border-top-right-radius: 60px;
+    margin-top: -80px;
+    /* Strong overlap pull-up */
+    z-index: 10;
+    box-shadow: 0 -20px 50px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.campus-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.campus-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.campus-header h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    background: linear-gradient(90deg, #fff, #bfdbfe);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.campus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* CARDS STYLING (Glassmorphism) */
+.campus-info,
+.campus-map,
+.campus-details-col {
+    background: rgba(255, 255, 255, 0.05);
+    /* Ultra subtle glass */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-info:hover,
+.campus-map:hover,
+.campus-details-col:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.campus-block {
+    margin-bottom: 2.5rem;
+}
+
+.campus-block:last-child {
+    margin-bottom: 0;
+}
+
+.campus-block h3,
+.campus-details-col h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #fbbf24;
+    /* Amber accent */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.campus-block p,
+.campus-details-col p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.highlight {
+    font-weight: 700;
+    color: #60a5fa;
+    /* Blue accent */
+}
+
+/* MAP STYLING */
+.campus-map {
+    height: 100%;
+    min-height: 400px;
+    padding: 1rem;
+    /* Smaller padding for map container to maximize map size */
+    overflow: hidden;
+}
+
+.campus-map iframe {
+    border-radius: 20px;
+    filter: grayscale(20%) contrast(1.1);
+    /* Slight filter to match dark theme better */
+    transition: filter 0.3s;
+}
+
+.campus-map:hover iframe {
+    filter: grayscale(0%) contrast(1);
+}
+
+/* DETAILS ROW */
+.campus-details.full-width {
+    grid-column: 1 / -1;
+    /* Span full width */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+
+    .campus-grid,
+    .campus-details.full-width {
+        grid-template-columns: 1fr;
     }
 }
