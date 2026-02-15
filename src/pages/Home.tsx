@@ -1,4 +1,5 @@
 import { Star } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
@@ -18,14 +19,18 @@ import leelou from '../assets/logoLeelou.png';
 import vival from '../assets/logo_vival.jpg';
 import maisonDuMonde from '../assets/maison-du-monde.png';
 import marcheDeMo from '../assets/march_de_mo_logo.jpg';
-import pointFort from '../assets/pointfort.png'; // Assuming this is a partner
-import logoInline from '../assets/logo-inline.png'; // Assuming this is a partner (Tolosa?)
+import pointFort from '../assets/pointfort.png'; // Corrected path
+import logoInline from '../assets/logo-inline.png';
+
+// Import Background Images
+import schoolBg from '../assets/school-card-bg.png';
+import conseilBg from '../assets/conseil-card-bg.png';
 
 // Define the content for each tab
 const TAB_CONTENT = {
     alternance: {
         title: "FORMATIONS EN ALTERNANCE",
-        text: "Nos formations en alternance, du niveau bac à bac+5, sont conçues pour offrir une expérience d'apprentissage équilibrée entre la théorie et la pratique. Elles permettent aux apprenants de se former tout en étant immergés dans le monde professionnel. Grâce à des partenariats solides avec des entreprises locales et nationales, nous garantissons des opportunités d'insertion professionnelle rapides et efficaces."
+        text: "Nos formations en alternance, du niveau bac à bac+5, sont conçues pour offrir une expérience d'apprentissage équilibrée entre la théorie et la pratique. Elles permettent aux apprenants de se former tout en étant immersés dans le monde professionnel. Grâce à des partenariats solides avec des entreprises locales et nationales, nous garantissons des opportunités d'insertion professionnelle rapides et efficaces."
     },
     organisme: {
         title: "ORGANISME DE FORMATION",
@@ -46,6 +51,11 @@ function Home() {
 
     return (
         <div>
+            <Helmet>
+                <title>Meta DX School & Conseils - Expert Formation & Audit à Toulouse</title>
+                <meta name="description" content="Découvrez Meta DX School : votre partenaire expert en formations IT, cybersécurité et conseil Qualiopi à Toulouse. Formez-vous aux métiers de demain dans un campus moderne et connecté." />
+                <meta name="keywords" content="formation IT, école informatique Toulouse, conseil qualite, Qualiopi, cybersécurité, développement web, audit, formation continue" />
+            </Helmet>
             {/* CLASH HERO SECTION */}
             <section className="hero-split-wrapper">
                 {/* LEFT - SCHOOL */}
@@ -127,7 +137,7 @@ function Home() {
 
                     <div className="poles-grid">
                         {/* POLE 1: META DX SCHOOL */}
-                        <div className="pole-card bg-school">
+                        <div className="pole-card bg-school" style={{ backgroundImage: `linear-gradient(rgba(76, 29, 149, 0.85), rgba(236, 72, 153, 0.8)), url(${schoolBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <div className="pole-card-content">
                                 <h3>META DX SCHOOL</h3>
                                 <p className="pole-description">Le Centre de Formation d’Apprentis dédié aux jeunes talents et aux futurs professionnels.</p>
@@ -152,7 +162,7 @@ function Home() {
                         </div>
 
                         {/* POLE 2: METADXS CONSEILS & FORMATIONS */}
-                        <div className="pole-card bg-conseil">
+                        <div className="pole-card bg-conseil" style={{ backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.8)), url(${conseilBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                             <div className="pole-card-content">
                                 <h3>METADXS CONSEILS & FORMATIONS</h3>
                                 <p className="pole-description">Notre organisme de formation accompagne les entreprises, les professionnels et les structures publiques dans leurs projets RH et de développement des compétences.</p>
@@ -190,26 +200,75 @@ function Home() {
                     <p className="partners-subtitle">Plus de 100 entreprises sont nos partenaires, découvrez-en une partie !</p>
                 </div>
 
-                <div className="partners-grid">
-                    <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
-                    <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
-                    <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
-                    <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
+                <div className="partners-marquee">
+                    {/* ROW 1 - LEFT */}
+                    <div className="partners-track track-left">
+                        {/* SET 1 */}
+                        <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
+                        <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
+                        <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
+                        <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
+                        <div className="partner-logo-item"><img src={choixDeVie} alt="Choix de Vie" /></div>
+                        <div className="partner-logo-item"><img src={microDidact} alt="Micro Didact" /></div>
+                        {/* DUPLICATE */}
+                        <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
+                        <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
+                        <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
+                        <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
+                        <div className="partner-logo-item"><img src={choixDeVie} alt="Choix de Vie" /></div>
+                        <div className="partner-logo-item"><img src={microDidact} alt="Micro Didact" /></div>
+                        {/* TRIPLICATE for safety on wide screens */}
+                        <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
+                        <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
+                        <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
+                        <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
+                    </div>
 
-                    <div className="partner-logo-item"><img src={choixDeVie} alt="Choix de Vie" /></div>
-                    <div className="partner-logo-item"><img src={microDidact} alt="Micro Didact" /></div>
-                    <div className="partner-logo-item"><img src={didaxel} alt="Didaxell" /></div>
-                    <div className="partner-logo-item"><img src={subway} alt="Subway" /></div>
+                    {/* ROW 2 - RIGHT */}
+                    <div className="partners-track track-right">
+                        {/* SET 2 */}
+                        <div className="partner-logo-item"><img src={didaxel} alt="Didaxell" /></div>
+                        <div className="partner-logo-item"><img src={subway} alt="Subway" /></div>
+                        <div className="partner-logo-item"><img src={bigSmash} alt="Big Smash" /></div>
+                        <div className="partner-logo-item"><img src={nocibe} alt="Nocibé" /></div>
+                        <div className="partner-logo-item"><img src={marcheDeMo} alt="Marché de Mo" /></div>
+                        <div className="partner-logo-item"><img src={dxEnergy} alt="DX Energy" /></div>
+                        {/* DUPLICATE */}
+                        <div className="partner-logo-item"><img src={didaxel} alt="Didaxell" /></div>
+                        <div className="partner-logo-item"><img src={subway} alt="Subway" /></div>
+                        <div className="partner-logo-item"><img src={bigSmash} alt="Big Smash" /></div>
+                        <div className="partner-logo-item"><img src={nocibe} alt="Nocibé" /></div>
+                        <div className="partner-logo-item"><img src={marcheDeMo} alt="Marché de Mo" /></div>
+                        <div className="partner-logo-item"><img src={dxEnergy} alt="DX Energy" /></div>
+                        {/* TRIPLICATE */}
+                        <div className="partner-logo-item"><img src={didaxel} alt="Didaxell" /></div>
+                        <div className="partner-logo-item"><img src={subway} alt="Subway" /></div>
+                        <div className="partner-logo-item"><img src={bigSmash} alt="Big Smash" /></div>
+                        <div className="partner-logo-item"><img src={nocibe} alt="Nocibé" /></div>
+                    </div>
 
-                    <div className="partner-logo-item"><img src={bigSmash} alt="Big Smash" /></div>
-                    <div className="partner-logo-item"><img src={nocibe} alt="Nocibé" /></div>
-                    <div className="partner-logo-item"><img src={marcheDeMo} alt="Marché de Mo" /></div>
-                    <div className="partner-logo-item"><img src={dxEnergy} alt="DX Energy" /></div>
-
-                    <div className="partner-logo-item"><img src={leelou} alt="Leelou & Bidule" /></div>
-                    <div className="partner-logo-item"><img src={carrefour} alt="Carrefour" /></div>
-                    <div className="partner-logo-item"><img src={sixt} alt="Sixt" /></div>
-                    <div className="partner-logo-item"><img src={maisonDuMonde} alt="Maison du Monde" /></div>
+                    {/* ROW 3 - LEFT */}
+                    <div className="partners-track track-left">
+                        {/* SET 3 */}
+                        <div className="partner-logo-item"><img src={leelou} alt="Leelou & Bidule" /></div>
+                        <div className="partner-logo-item"><img src={carrefour} alt="Carrefour" /></div>
+                        <div className="partner-logo-item"><img src={sixt} alt="Sixt" /></div>
+                        <div className="partner-logo-item"><img src={maisonDuMonde} alt="Maison du Monde" /></div>
+                        <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div> {/* Recycle */}
+                        <div className="partner-logo-item"><img src={vival} alt="Vival" /></div> {/* Recycle */}
+                        {/* DUPLICATE */}
+                        <div className="partner-logo-item"><img src={leelou} alt="Leelou & Bidule" /></div>
+                        <div className="partner-logo-item"><img src={carrefour} alt="Carrefour" /></div>
+                        <div className="partner-logo-item"><img src={sixt} alt="Sixt" /></div>
+                        <div className="partner-logo-item"><img src={maisonDuMonde} alt="Maison du Monde" /></div>
+                        <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
+                        <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
+                        {/* TRIPLICATE */}
+                        <div className="partner-logo-item"><img src={leelou} alt="Leelou & Bidule" /></div>
+                        <div className="partner-logo-item"><img src={carrefour} alt="Carrefour" /></div>
+                        <div className="partner-logo-item"><img src={sixt} alt="Sixt" /></div>
+                        <div className="partner-logo-item"><img src={maisonDuMonde} alt="Maison du Monde" /></div>
+                    </div>
                 </div>
             </div>
 

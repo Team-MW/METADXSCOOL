@@ -231,7 +231,8 @@
 
 /* WELCOME SECTION */
 .welcome-section {
-    background: linear-gradient(180deg, #020617 0%, #2e1065 20%, #6d28d9 60%, #7c3aed 100%);
+    background: linear-gradient(180deg, #5b21b6 0%, #7c3aed 50%, #8b5cf6 100%);
+    /* Much Lighter Violet Gradient */
     color: white;
     padding: 6rem 1rem;
     text-align: center;
@@ -414,8 +415,8 @@
 }
 
 .pole-card {
-    min-height: 600px;
-    /* Increased height to fit content */
+    min-height: 450px;
+    /* Reduced height */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -442,7 +443,8 @@
 }
 
 /* Overlay for left card */
-.pole-card.bg-school::before {
+/* Overlay removed as we now use inline background image with gradient */
+/* .pole-card.bg-school::before {
     content: '';
     position: absolute;
     top: 0;
@@ -452,10 +454,10 @@
     background: linear-gradient(135deg, rgba(88, 28, 135, 0.95), rgba(219, 39, 119, 0.9));
     z-index: 1;
     transition: opacity 0.3s;
-}
+} */
 
-/* Overlay for right card */
-.pole-card.bg-conseil::before {
+/* Overlay removed */
+/* .pole-card.bg-conseil::before {
     content: '';
     position: absolute;
     top: 0;
@@ -465,7 +467,7 @@
     background: linear-gradient(135deg, rgba(30, 58, 138, 0.95), rgba(59, 130, 246, 0.9));
     z-index: 1;
     transition: opacity 0.3s;
-}
+} */
 
 .pole-card-content {
     position: relative;
@@ -620,31 +622,74 @@
     font-weight: 500;
 }
 
-.partners-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 3rem;
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
-    justify-items: center;
+/* PARTNERS MARQUEE */
+.partners-marquee {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 2rem 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.partners-track {
+    display: flex;
+    width: max-content;
+    margin-bottom: 2rem;
+}
+
+.partners-track:hover {
+    animation-play-state: paused;
+}
+
+.track-left {
+    animation: scroll-left 40s linear infinite;
+}
+
+.track-right {
+    animation: scroll-right 40s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .partner-logo-item {
-    width: 100%;
+    width: 180px;
+    /* Fixed width for consistency */
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.6;
+    opacity: 1;
+    /* Full visibility */
     transition: all 0.3s;
-    filter: grayscale(100%);
+    filter: none;
+    /* Full Color */
+    margin: 0 2rem;
+    /* Spacing between logos */
+    flex-shrink: 0;
 }
 
 .partner-logo-item:hover {
-    opacity: 1;
-    filter: grayscale(0%);
     transform: scale(1.1);
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
 }
 
 .partner-logo-item img {
@@ -686,8 +731,8 @@
 .campus-section {
     position: relative;
     padding: 8rem 1rem 6rem;
-    background: linear-gradient(180deg, #2e1065 0%, #4c1d95 60%, #7c3aed 100%);
-    /* Vibrant Violet Gradient to match above */
+    background: linear-gradient(180deg, #5b21b6 0%, #7c3aed 50%, #8b5cf6 100%);
+    /* Much Lighter Violet Gradient */
     color: white;
     border-top-left-radius: 60px;
     /* Rounded top overlap */

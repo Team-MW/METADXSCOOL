@@ -1,8 +1,14 @@
 import '../styles/Home.css'; // Reusing global styles
+import { Helmet } from 'react-helmet-async';
 
 const MentionsLegales = () => {
     return (
         <div style={{ padding: '4rem 1rem', maxWidth: '1000px', margin: '0 auto', fontFamily: 'var(--font-base)', lineHeight: '1.6', color: '#374151' }}>
+            <Helmet>
+                <title>Mentions Légales & CGU - Meta DX School & Conseils Toulouse</title>
+                <meta name="description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation du site Meta DX School. Informations légales sur notre organisme de formation SASU." />
+                <meta name="robots" content="noindex, nofollow" />
+            </Helmet>
             <h1 style={{ fontSize: '2.5rem', fontWeight: '800', color: '#4a1c5d', marginBottom: '2rem', textAlign: 'center', textTransform: 'uppercase' }}>
                 Mentions Légales
             </h1>

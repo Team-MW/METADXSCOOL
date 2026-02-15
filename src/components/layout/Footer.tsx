@@ -26,8 +26,8 @@ const Footer = () => {
                     </div>
 
                     <div className="footer-copyright-internal">
-                        <p>© 2023 ÉDITÉ PAR METADXS</p>
-                        <p>MÀJ LE 23/09/2025</p>
+                        <p>© 2026 ÉDITÉ PAR METADXS</p>
+                        <p>MÀJ LE 15/02/2026</p>
                     </div>
                 </div>
 
