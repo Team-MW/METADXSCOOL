@@ -2,7 +2,7 @@ import { useState } from 'react';
 import logoSchool from '../../assets/metadxschool.png';
 import logoConseil from '../../assets/methadxconseil.png';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDown, User, Send, Menu, X } from 'lucide-react';
+import { ChevronDown, User, Send, Menu, X, ChevronRight } from 'lucide-react';
 import '../../styles/Navbar.css';
 
 const Navbar = () => {
@@ -12,6 +12,7 @@ const Navbar = () => {
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const closeMenu = () => setIsMenuOpen(false);
 
+    // Define types for better organization (implicit here)
     const navItems = [
         { label: 'ACCUEIL', path: '/', isRed: true },
         {
@@ -28,7 +29,28 @@ const Navbar = () => {
             path: '/conseils-formations',
             hasDropdown: true,
             dropdownItems: [
-                { label: 'FORMATIONS', path: '/conseils-formations/formations' },
+                {
+                    label: 'FORMATIONS',
+                    path: '/conseils-formations/formations',
+                    hasSubmenu: true,
+                    subItems: [
+                        {
+                            label: 'CATALOGUE',
+                            path: '#', // No direct link usually for parent category
+                            hasSubmenu: true,
+                            subItems: [
+                                { label: 'NUMÉRIQUE / INFORMATIQUE / BUREAUTIQUE', path: '/conseils-formations/catalogue/numerique' },
+                                { label: 'COMMUNICATION / MARKETING', path: '/conseils-formations/catalogue/communication' },
+                                { label: 'COMMERCE / VENTE / RELATION CLIENT', path: '/conseils-formations/catalogue/commerce' },
+                                { label: 'MANAGEMENT-LEADERSHIP', path: '/conseils-formations/catalogue/management' },
+                                { label: 'SANTÉ ET SÉCURITÉ AU TRAVAIL', path: '/conseils-formations/catalogue/sante-securite' },
+                            ]
+                        },
+                        { label: 'POEI', path: '/conseils-formations/poei' },
+                        { label: 'VAE', path: '/conseils-formations/vae' },
+                        { label: 'BILAN DE COMPÉTENCES', path: '/conseils-formations/bilan-competences' },
+                    ]
+                },
                 { label: 'CONSEILS RH & STRAT', path: '/conseils-formations/rh-strat' },
             ]
         },
@@ -69,6 +91,24 @@ const Navbar = () => {
             ]
         },
     ];
+
+
+
+    const renderSubItems = (items: any[]) => {
+        return (
+            <ul className="dropdown-submenu">
+                {items.map((subItem) => (
+                    <li key={subItem.label} className={subItem.hasSubmenu ? "dropdown-submenu-container" : ""}>
+                        <Link to={subItem.path || '#'} className="dropdown-item">
+                            {subItem.label}
+                            {subItem.hasSubmenu && <ChevronRight size={16} />}
+                        </Link>
+                        {subItem.hasSubmenu && subItem.subItems && renderSubItems(subItem.subItems)}
+                    </li>
+                ))}
+            </ul>
+        );
+    };
 
     return (
         <header className="header">
@@ -112,16 +152,14 @@ const Navbar = () => {
                 <nav className={`nav-wrapper ${isMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-menu">
                         {navItems.map((item) => {
-                            // Check if the current path matches the item path or any of its dropdown items
-                            const isActive = location.pathname === item.path ||
-                                (item.dropdownItems && item.dropdownItems.some(subItem => location.pathname === subItem.path));
+                            // Check isActive logic simplified for top level
+                            const isActive = location.pathname === item.path;
 
                             return (
                                 <li key={item.label} className="nav-item-container">
                                     <Link
                                         to={item.path}
                                         className={`nav-item ${isActive ? 'active' : ''}`}
-                                        // Removed manual style override for isRed to let CSS handle active state priority
                                         style={item.isRed && !isActive ? { color: '#ef4444' } : {}}
                                     >
                                         {item.label}
@@ -132,10 +170,13 @@ const Navbar = () => {
                                     {item.dropdownItems && (
                                         <ul className="dropdown-menu">
                                             {item.dropdownItems.map((subItem) => (
-                                                <li key={subItem.label}>
+                                                <li key={subItem.label} className={subItem.hasSubmenu ? "dropdown-submenu-container" : ""}>
                                                     <Link to={subItem.path} className="dropdown-item">
                                                         {subItem.label}
+                                                        {subItem.hasSubmenu && <ChevronRight size={16} />}
                                                     </Link>
+                                                    {/* Recursive Call for Level 2 & 3 */}
+                                                    {subItem.hasSubmenu && subItem.subItems && renderSubItems(subItem.subItems)}
                                                 </li>
                                             ))}
                                         </ul>
