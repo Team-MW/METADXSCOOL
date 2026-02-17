@@ -22,6 +22,28 @@
     padding: 2rem;
 }
 
+.ressources-hero::before {
+    content: '🚀';
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.1;
+    bottom: -5%;
+    left: 10%;
+    transform: rotate(15deg);
+    animation: rocketRiseRessources 6s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes rocketRiseRessources {
+    0% {
+        transform: translateY(0) rotate(15deg);
+    }
+
+    100% {
+        transform: translateY(-30px) rotate(25deg);
+    }
+}
+
 .ressources-hero-content {
     position: relative;
     z-index: 2;

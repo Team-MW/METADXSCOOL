@@ -1,110 +1,119 @@
-import '../styles/Home.css'; // Reusing global styles
 import { Helmet } from 'react-helmet-async';
+import { Users, FileText, Database, ShieldCheck, Mail } from 'lucide-react';
+import '../styles/MentionsLegales.css'; // You'll create this minimal CSS
 
-const MentionsLegales = () => {
+export default function MentionsLegales() {
     return (
-        <div style={{ padding: '4rem 1rem', maxWidth: '1000px', margin: '0 auto', fontFamily: 'var(--font-base)', lineHeight: '1.6', color: '#374151' }}>
+        <div className="mentions-container">
             <Helmet>
-                <title>Mentions Légales & CGU - Meta DX School & Conseils Toulouse</title>
-                <meta name="description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation du site Meta DX School. Informations légales sur notre organisme de formation SASU." />
-                <meta name="robots" content="noindex, nofollow" />
-
-                {/* Facebook / Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://www.metadxs.com/mentions-legales" />
-                <meta property="og:title" content="Mentions Légales & CGU - Meta DX School & Conseils Toulouse" />
-                <meta property="og:description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation." />
-                <meta property="og:image" content="https://www.metadxs.com/og-image.jpg" />
-
-                {/* Twitter */}
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content="https://www.metadxs.com/mentions-legales" />
-                <meta property="twitter:title" content="Mentions Légales & CGU - Meta DX School & Conseils Toulouse" />
-                <meta property="twitter:description" content="Consultez les mentions légales, la politique de confidentialité et les conditions générales d'utilisation." />
-                <meta property="twitter:image" content="https://www.metadxs.com/og-image.jpg" />
-
+                <title>Mentions Légales - Meta DX School</title>
+                <meta name="description" content="Mentions légales, politique de confidentialité et conditions d'utilisation du site Meta DX School." />
                 <link rel="canonical" href="https://www.metadxs.com/mentions-legales" />
             </Helmet>
-            <h1 style={{ fontSize: '2.5rem', fontWeight: '800', color: '#4a1c5d', marginBottom: '2rem', textAlign: 'center', textTransform: 'uppercase' }}>
-                Mentions Légales
-            </h1>
 
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Éditeur du site</h2>
-                <p>
-                    Le présent site est édité par <strong>METADXS</strong>, société SASU (Société par Actions Simplifiée Unipersonnelle) au capital de 5 000,00 euros.<br />
-                    Immatriculée au Registre du Commerce et des Sociétés de Toulouse sous le numéro <strong>920 944 774 R.C.S. Toulouse</strong>.<br />
-                    <strong>Siège social :</strong> 244 route de Seysses, 31100 Toulouse.
-                </p>
-                <p style={{ marginTop: '1rem' }}>
-                    <strong>Directeur de la publication :</strong> Farès Hamzaoui<br />
-                    <strong>Téléphone :</strong> 05 37 04 02 64<br />
-                    <strong>E-mail :</strong> <a href="mailto:contact@metadxs.com" style={{ color: '#be185d', textDecoration: 'none' }}>contact@metadxs.com</a>
-                </p>
+            <header className="mentions-hero">
+                <h1 className="mentions-title">MENTIONS LÉGALES</h1>
+                <p className="mentions-subtitle">Transparence & Conformité</p>
+            </header>
+
+            {/* EDITEUR DU SITE */}
+            <section className="mentions-section">
+                <div className="section-header">
+                    <Users size={32} className="section-icon" />
+                    <h2 className="section-heading">ÉDITEUR DU SITE</h2>
+                </div>
+
+                <div className="content-row">
+                    <span className="label">Raison sociale :</span>
+                    <span className="value">META DX SCHOOL (SARL unipersonnelle)</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Siège social :</span>
+                    <span className="value">244 Route de Seysses, 31100 Toulouse</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">SIRET :</span>
+                    <span className="value">982 770 048 00010</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">TVA Intracommunautaire :</span>
+                    <span className="value">FR46982770048</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Capital social :</span>
+                    <span className="value">1000,00 €</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Code NAF/APE :</span>
+                    <span className="value">Enseignement supérieur (8542Z)</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Directeur de la publication :</span>
+                    <span className="value">Monsieur Farid EL AMINE</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Contact :</span>
+                    <a href="mailto:contact@metadxs.com" className="link">contact@metadxs.com</a>
+                </div>
             </section>
 
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Hébergement</h2>
-                <p>
-                    <strong>Hébergeur du site :</strong> WordPress
-                </p>
+            {/* HEBERGEMENT */}
+            <section className="mentions-section">
+                <div className="section-header">
+                    <Database size={32} className="section-icon" />
+                    <h2 className="section-heading">HÉBERGEMENT DU SITE</h2>
+                </div>
+                <div className="content-row">
+                    <span className="label">Hébergeur :</span>
+                    <span className="value">Vercel Inc.</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Adresse :</span>
+                    <span className="value">340 S Lemon Ave #4133 Walnut, CA 91789, USA</span>
+                </div>
+                <div className="content-row">
+                    <span className="label">Site web :</span>
+                    <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" className="link">https://vercel.com</a>
+                </div>
             </section>
 
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Conditions d'utilisation</h2>
-                <p>
-                    Le site est soumis à la loi française. Toute utilisation du site est régie par les présentes mentions légales. En accédant à ce site, vous acceptez, sans limitation ni réserves, les présentes conditions d’utilisation.
-                </p>
+            {/* PROPRIETE INTELLECTUELLE */}
+            <section className="mentions-section">
+                <div className="section-header">
+                    <FileText size={32} className="section-icon" />
+                    <h2 className="section-heading">PROPRIÉTÉ INTELLECTUELLE</h2>
+                </div>
+                <div className="text-block">
+                    <p>
+                        L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle.
+                        Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.
+                    </p>
+                    <p>
+                        La reproduction de tout ou partie de ce site sur un support électronique quel qu'il soit est formellement interdite sauf autorisation expresse du directeur de la publication.
+                    </p>
+                </div>
             </section>
 
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Droits d’auteur et propriété intellectuelle</h2>
-                <p>
-                    Tous les éléments constituant ce site (textes, images, vidéos, graphismes, logos, icônes, etc.) sont la propriété exclusive de METADXS ou de tiers ayant autorisé METADXS à les utiliser.
-                </p>
-                <p style={{ marginTop: '1rem' }}>
-                    Toute reproduction, représentation, modification, publication, transmission, dénaturation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit, et sur quelque support que ce soit, est interdite, sauf autorisation expresse et préalable de METADXS.
-                </p>
-                <p style={{ marginTop: '1rem' }}>
-                    Toute exploitation non autorisée du site ou de son contenu engage la responsabilité de l’utilisateur et constitue une contrefaçon sanctionnée par les articles L. 335-2 et suivants du Code de la propriété intellectuelle.
-                </p>
+            {/* PROTECTION DONNEES */}
+            <section className="mentions-section">
+                <div className="section-header">
+                    <ShieldCheck size={32} className="section-icon" />
+                    <h2 className="section-heading">PROTECTION DES DONNÉES PERSONNELLES (RGPD)</h2>
+                </div>
+                <div className="text-block">
+                    <p>
+                        Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d’un droit d’accès, de rectification, de portabilité et d’effacement de vos données personnelles.
+                    </p>
+                    <p>
+                        Pour exercer ces droits ou pour toute question sur le traitement de vos données dans ce dispositif, vous pouvez contacter notre délégué à la protection des données (DPO) :
+                    </p>
+                    <div className="content-row" style={{ marginTop: '1rem' }}>
+                        <Mail size={18} style={{ marginRight: '10px' }} />
+                        <a href="mailto:dpo@metadxs.com" className="link">contact@metadxs.com</a>
+                    </div>
+                </div>
             </section>
 
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Protection des données personnelles</h2>
-                <p>
-                    Les informations recueillies sur ce site font l’objet d’un traitement informatique destiné à la prise de contact. Les destinataires des données est l’équipe d’admission et d’administration.
-                </p>
-                <p style={{ marginTop: '1rem' }}>
-                    Conformément à la loi « Informatique et Libertés » du 6 janvier 1978 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression des données qui vous concernent. Vous pouvez exercer ces droits en vous adressant à : <a href="mailto:contact@metadxs.com" style={{ color: '#be185d', textDecoration: 'none' }}>contact@metadxs.com</a>.
-                </p>
-            </section>
-
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Liens hypertextes</h2>
-                <p>
-                    Les liens hypertextes mis en place dans le cadre du présent site internet en direction d’autres ressources présentes sur le réseau Internet, et notamment vers nos partenaires, ont fait l’objet d’une autorisation préalable, expresse et écrite.
-                </p>
-            </section>
-
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Limitation de responsabilité</h2>
-                <p>
-                    METADXS s’efforce d’assurer au mieux de ses possibilités, l’exactitude et la mise à jour des informations diffusées sur ce site, dont elle se réserve le droit de corriger, à tout moment et sans préavis, le contenu.
-                </p>
-                <p style={{ marginTop: '1rem' }}>
-                    METADXS décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site, ainsi que pour tous dommages résultant d’une intrusion frauduleuse d’un tiers ayant entraîné une modification des informations mises à la disposition sur le site.
-                </p>
-            </section>
-
-            <section style={{ marginBottom: '2rem' }}>
-                <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#3b0764', marginBottom: '1rem' }}>Loi applicable et compétence juridictionnelle</h2>
-                <p>
-                    Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.
-                </p>
-            </section>
         </div>
     );
-};
-
-export default MentionsLegales;
+}

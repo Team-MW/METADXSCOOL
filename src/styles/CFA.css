@@ -1,0 +1,332 @@
+/* HERO SECTION */
+.cfa-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    min-height: 400px;
+    width: 100%;
+    margin-top: -80px;
+    /* Slide under translucent navbar */
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #701a75, #db2777);
+    /* Fuchsia to Pink */
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: 10;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.cfa-hero::before {
+    content: '🚀';
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.15;
+    top: 20%;
+    left: 5%;
+    transform: rotate(-15deg);
+    animation: rocketHoverCFA 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes rocketHoverCFA {
+    0% {
+        transform: translateY(0) rotate(-15deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(-10deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(-15deg);
+    }
+}
+
+.cfa-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.cfa-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.9;
+    color: #fce7f3;
+}
+
+/* SECTION: FOUNDERS */
+.section-founders {
+    padding: 10rem 2rem 6rem;
+    margin-top: -80px;
+    background: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.founders-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.founders-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #374151;
+    text-align: justify;
+}
+
+.founders-names {
+    font-weight: 800;
+    color: #be185d;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.founders-img-wrapper {
+    position: relative;
+}
+
+.founders-img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: rotate(2deg);
+    transition: transform 0.3s;
+}
+
+.founders-img:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* SECTION: QUOTES */
+.section-quotes {
+    padding: 6rem 2rem;
+    background: #fdf2f8;
+    /* Very light pink */
+}
+
+.quotes-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.quote-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #db2777;
+    position: relative;
+}
+
+.quote-card h3 {
+    color: #9d174d;
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.quote-card p {
+    color: #4b5563;
+    font-style: italic;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* SECTION: RECOGNITIONS */
+.section-recognitions {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.recog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recog-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s;
+}
+
+.recog-item:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    border-color: #db2777;
+}
+
+.recog-icon {
+    color: #db2777;
+    margin-bottom: 1rem;
+}
+
+.recog-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.recog-text {
+    font-size: 0.95rem;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+/* SECTION: TEAM */
+.section-team {
+    padding: 6rem 2rem;
+    background: #111827;
+    /* Dark */
+    color: white;
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-role {
+    color: #f472b6;
+    /* Pink-400 */
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.team-name {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.team-desc {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    line-height: 1.5;
+}
+
+/* SECTION: VISUAL BREAK */
+.section-visual {
+    padding: 4rem 2rem;
+    background: white;
+}
+
+.visual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.visual-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* SECTION: CAMPUS */
+.section-campus-info {
+    padding: 6rem 2rem;
+    background: #f0f9ff;
+}
+
+.campus-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campus-block h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0369a1;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.campus-list {
+    list-style: none;
+    padding: 0;
+}
+
+.campus-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #334155;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .founders-container,
+    .quotes-grid,
+    .campus-details,
+    .visual-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cfa-title {
+        font-size: 2.5rem;
+    }
+
+    .founders-img {
+        margin-top: 2rem;
+        transform: rotate(0);
+    }
+}

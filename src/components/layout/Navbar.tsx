@@ -20,7 +20,41 @@ const Navbar = () => {
             path: '/cfa',
             hasDropdown: true,
             dropdownItems: [
-                { label: 'FORMATIONS', path: '/cfa/formations' },
+                {
+                    label: 'FORMATIONS',
+                    path: '#',
+                    hasSubmenu: true,
+                    subItems: [
+                        {
+                            label: 'BAC',
+                            path: '#',
+                            hasSubmenu: true,
+                            subItems: [
+                                { label: 'TP-CRCD', path: '/cfa/formation/tp-crcd' },
+                                {
+                                    label: 'TP-AMUM',
+                                    path: '/cfa/formation/tp-amum',
+                                    hasSubmenu: true,
+                                    subItems: [
+                                        { label: 'TP-AMUM OPT RR', path: '/cfa/formation/tp-amum-opt-rr' }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            label: 'BAC +2',
+                            path: '#',
+                            hasSubmenu: true,
+                            subItems: [
+                                { label: 'TP-RPMS', path: '/cfa/formation/tp-rpms' },
+                                { label: 'TP-NTC', path: '/cfa/formation/tp-ntc' },
+                                { label: 'TP-MUM', path: '/cfa/formation/tp-mum' }
+                            ]
+                        },
+                        { label: 'BAC +3', path: '#' },
+                        { label: 'BAC +5', path: '#' }
+                    ]
+                },
                 { label: 'INDICATEURS DE RÉSULTATS', path: '/cfa/indicateurs' },
             ]
         },
@@ -54,7 +88,22 @@ const Navbar = () => {
                 { label: 'CONSEILS RH & STRAT', path: '/conseils-formations/rh-strat' },
             ]
         },
-        { label: '4.A FORMA SECU', path: '/forma-secu', hasDropdown: true },
+        {
+            label: '4.A FORMA SECU',
+            path: '/forma-secu',
+            hasDropdown: true,
+            dropdownItems: [
+                {
+                    label: 'CATALOGUE DE FORMATION',
+                    path: '#',
+                    hasSubmenu: true,
+                    subItems: [
+                        { label: 'ALIMENTAIRE / RESTAURATION', path: '/forma-secu/alimentaire' },
+                        { label: 'SÉCURITÉ DES BIENS ET DES PERSONNES', path: '/forma-secu/securite' }
+                    ]
+                }
+            ]
+        },
         {
             label: 'RESSOURCES',
             path: '/ressources',

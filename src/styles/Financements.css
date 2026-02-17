@@ -16,6 +16,28 @@
     /* Adjust based on navbar */
 }
 
+.fin-hero::before {
+    content: '🚀';
+    position: absolute;
+    font-size: 10rem;
+    opacity: 0.1;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%) rotate(-45deg);
+    animation: rocketHoverFin 5s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes rocketHoverFin {
+    from {
+        transform: translateY(-50%) rotate(-45deg) scale(1);
+    }
+
+    to {
+        transform: translateY(-55%) rotate(-40deg) scale(1.05);
+    }
+}
+
 .fin-hero-title {
     font-size: 3.5rem;
     font-weight: 900;

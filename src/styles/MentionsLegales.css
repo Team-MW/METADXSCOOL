@@ -1,0 +1,135 @@
+/* MENTIONS LEGALES */
+.mentions-container {
+    max-width: 1000px;
+    margin: 4rem auto 8rem;
+    padding: 0 2rem;
+    color: #374151;
+}
+
+.mentions-hero {
+    text-align: center;
+    margin-bottom: 6rem;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.mentions-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #ec4899);
+    border-radius: 2px;
+}
+
+.mentions-title {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mentions-subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.mentions-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mentions-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px -10px rgba(0, 0, 0, 0.12);
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 1rem;
+}
+
+.section-icon {
+    color: #3b82f6;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    letter-spacing: -0.5px;
+}
+
+.content-row {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.label {
+    font-weight: 700;
+    color: #64748b;
+    min-width: 150px;
+}
+
+.value {
+    color: #334155;
+    font-weight: 500;
+}
+
+.link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.text-block {
+    line-height: 1.8;
+    color: #475569;
+    font-size: 1.05rem;
+}
+
+.text-block p {
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .mentions-title {
+        font-size: 2.2rem;
+    }
+
+    .mentions-section {
+        padding: 2rem;
+    }
+
+    .content-row {
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}

@@ -10,6 +10,11 @@ import FormaSecu from './pages/FormaSecu';
 import Ressources from './pages/Ressources';
 import Financements from './pages/Financements';
 import Contact from './pages/Contact';
+import Candidat from './pages/Candidat';
+import Entreprises from './pages/Entreprises';
+import Alternant from './pages/Alternant'; // Import new page
+import FormationDetail from './pages/FormationDetail'; // Generic formation page
+import Indicateurs from './pages/Indicateurs'; // Stats page
 import MentionsLegales from './pages/MentionsLegales';
 
 import './index.css';
@@ -30,6 +35,11 @@ function App() {
               <Route path="/ressources" element={<Ressources />} />
               <Route path="/financements" element={<Financements />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/contact/candidat" element={<Candidat />} />
+              <Route path="/contact/entreprises" element={<Entreprises />} />
+              <Route path="/financements/alternant" element={<Alternant />} />
+              <Route path="/cfa/formation/:id" element={<FormationDetail />} />
+              <Route path="/cfa/indicateurs" element={<Indicateurs />} />
               <Route path="/mentions-legales" element={<MentionsLegales />} />
             </Routes>
           </main>
