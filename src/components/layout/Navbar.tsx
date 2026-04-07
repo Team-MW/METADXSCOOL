@@ -169,7 +169,7 @@ const Navbar = () => {
                         MON ESPACE
                     </a>
                     <span className="top-bar-separator"></span>
-                    <a href="https://tally.so/r/waaXj2" target="_blank" rel="noopener noreferrer" className="highlight-link">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaARamzsrRX_7WS5Ix8xMe3HhqCthGECrrR_4BgB3lQObcDw/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="highlight-link">
                         <Send size={16} />
                         CANDIDATER
                     </a>
