@@ -25,7 +25,6 @@ import Evenements from './pages/Evenements'; // IMPORT EVENEMENTS
 import Newsletters from './pages/Newsletters'; // IMPORT NEWSLETTERS
 import NewsletterArticle from './pages/NewsletterArticle'; // IMPORT ARTICLE DETAILLE
 import Logement from './pages/Logement'; // IMPORT LOGEMENT
-import Egalite from './pages/Egalite'; // IMPORT EGALITE ET INCLUSION
 import SecuriteBiensPersonnes from './pages/SecuriteBiensPersonnes'; // IMPORT SECURITE
 import AlimentaireRestauration from './pages/AlimentaireRestauration'; // IMPORT ALIMENTAIRE
 import HygeneHACCP from './pages/formation/HygeneHACCP'; // IMPORT FORMATION HACCP
@@ -33,6 +32,10 @@ import HygeneRestaurationCommerciale from './pages/formation/HygeneRestaurationC
 import TP_CRCD from './pages/formation/TP_CRCD'; // IMPORT FORMATION TP-CRCD
 import SecouristeSST from './pages/formation/SecouristeSST'; // IMPORT FORMATION SST INITIAL
 import SecouristeSSTMAC from './pages/formation/SecouristeSSTMAC'; // IMPORT FORMATION SST MAC
+import TP_MDEC from './pages/formation/TP_MDEC'; // IMPORT FORMATION TP-MDEC
+import RHStrategie from './pages/RHStrategie'; // IMPORT RH STRATEGIE
+import LHandicap from './pages/LHandicap'; // IMPORT ENGAGEMENT HANDICAP
+import Egalite from './pages/Egalite'; // IMPORT EGALITE ET INCLUSION
 
 import './index.css';
 
@@ -56,6 +59,8 @@ function App() {
               <Route path="/cfa/formation/tp-crcd" element={<TP_CRCD />} />
               <Route path="/forma-secu/securite/sst-initial" element={<SecouristeSST />} />
               <Route path="/forma-secu/securite/sst-mac" element={<SecouristeSSTMAC />} />
+              <Route path="/cfa/formation/tp-mdec" element={<TP_MDEC />} />
+              <Route path="/conseils-formations/rh-strategie" element={<RHStrategie />} />
               <Route path="/ressources" element={<Ressources />} />
               <Route path="/financements" element={<Financements />} />
               <Route path="/contact" element={<Contact />} />
@@ -74,7 +79,8 @@ function App() {
               <Route path="/ressources/newsletters" element={<Newsletters />} />
               <Route path="/ressources/newsletters/:slug" element={<NewsletterArticle />} />
               <Route path="/ressources/logement" element={<Logement />} />
-              <Route path="/ressources/egalite" element={<Egalite />} />
+              <Route path="/ressources/handicap-engagement" element={<LHandicap />} />
+              <Route path="/ressources/egalite-inclusion" element={<Egalite />} />
             </Routes>
           </main>
           <Footer />

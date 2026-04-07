@@ -6,12 +6,9 @@ import {
     CheckCircle2, 
     Award, 
     Calendar, 
-    Accessibility, 
     Utensils, 
     ChefHat,
     ArrowRight,
-    Search,
-    AlertTriangle,
     Scale
 } from 'lucide-react';
 

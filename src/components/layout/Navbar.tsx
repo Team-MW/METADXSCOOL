@@ -85,7 +85,7 @@ const Navbar = () => {
                         { label: 'BILAN DE COMPÉTENCES', path: '/conseils-formations/bilan-competences' },
                     ]
                 },
-                { label: 'CONSEILS RH & STRAT', path: '/conseils-formations/rh-strat' },
+                { label: 'CONSEILS RH & STRAT', path: '/conseils-formations/rh-strategie' },
             ]
         },
         {
@@ -112,7 +112,7 @@ const Navbar = () => {
                 { label: 'ÉVÈNEMENTS', path: '/ressources/evenements' },
                 { label: 'NEWSLETTERS', path: '/ressources/newsletters' },
                 { label: 'LA MOBILITÉ', path: '/ressources/mobilite' },
-                { label: 'L’HANDICAP', path: '/ressources/handicap' },
+                { label: 'L’HANDICAP', path: '/ressources/handicap-engagement' },
                 { label: 'L’ÉGALITÉ ET L’INCLUSION', path: '/ressources/egalite-inclusion' },
             ]
         },

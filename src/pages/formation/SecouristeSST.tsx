@@ -7,10 +7,8 @@ import {
     Award, 
     Calendar, 
     Accessibility, 
-    ShieldPlus,
     ArrowRight,
     Search,
-    AlertTriangle,
     Utensils,
     FileText
 } from 'lucide-react';

@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { HeartHandshake, Users, ShieldAlert, Phone, Globe, ShieldCheck, Siren, Heart, AlertTriangle } from 'lucide-react';
+import { HeartHandshake, Globe, Siren, Heart, AlertTriangle } from 'lucide-react';
 
 export default function Egalite() {
     return (

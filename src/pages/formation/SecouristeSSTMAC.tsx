@@ -2,7 +2,6 @@ import { Helmet } from 'react-helmet-async';
 import { 
     Clock, 
     Users, 
-    BookOpen, 
     CheckCircle2, 
     Award, 
     Calendar, 

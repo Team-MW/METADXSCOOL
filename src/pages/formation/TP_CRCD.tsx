@@ -5,15 +5,11 @@ import {
     BookOpen, 
     CheckCircle2, 
     Award, 
-    Calendar, 
     Accessibility, 
     Download,
-    ArrowRight,
-    Briefcase,
     GraduationCap,
     TrendingUp,
     ShieldCheck,
-    Euro,
     FileText,
     Monitor
 } from 'lucide-react';

@@ -3,15 +3,12 @@ import {
     Clock, 
     Users, 
     BookOpen, 
-    CheckCircle2, 
     Award, 
     Accessibility, 
-    Download,
     ArrowRight,
+    Download,
     TrendingUp,
     ShieldCheck,
-    FileText,
-    Monitor,
     Zap,
     Target,
     BarChart3,
@@ -371,6 +368,14 @@ export default function TP_MDEC() {
                                 <li>✅ Accès réseau entreprises partenaire</li>
                             </ul>
                         </div>
+
+                        <a href="/brochure_mdec.pdf" download className="info-card" style={{display:'flex', alignItems:'center', gap:'1rem', textDecoration:'none', transition:'all 0.2s', border:'2px solid #7c3aed', padding:'1.5rem'}}>
+                            <Download color="#7c3aed" />
+                            <div>
+                                <h4 style={{fontWeight:800, fontSize:'0.9rem', color:'#1c1e4c'}}>TÉLÉCHARGER LA BROCHURE</h4>
+                                <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche formation MDEC (PDF)</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>

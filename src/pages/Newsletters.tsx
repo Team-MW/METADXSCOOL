@@ -166,7 +166,7 @@ export default function Newsletters() {
                 </header>
 
                 <div className="news-grid">
-                    {newsArticles.map((item, index) => (
+                    {newsArticles.map((item) => (
                         <article key={item.id} className="news-card">
                             <div className="news-card-cover">
                                 <Newspaper className="cover-icon" />

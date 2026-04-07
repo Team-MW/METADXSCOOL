@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Clock, MapPin, Calendar, CheckCircle2, ChevronRight, Mail } from 'lucide-react';
+import { Clock, MapPin, Calendar, CheckCircle2, Mail } from 'lucide-react';
 
 export default function Evenements() {
     return (
