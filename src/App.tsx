@@ -45,6 +45,10 @@ import FormationRGPD from './pages/formation/FormationRGPD'; // IMPORT FORMATION
 import TP_NTC from './pages/formation/TP_NTC'; // IMPORT FORMATION NTC
 import LHandicap from './pages/LHandicap'; // IMPORT ENGAGEMENT HANDICAP
 import Egalite from './pages/Egalite'; // IMPORT EGALITE ET INCLUSION
+import BacCatalogue from './pages/BacCatalogue';
+import Bac2Catalogue from './pages/Bac2Catalogue';
+import Bac3Catalogue from './pages/Bac3Catalogue';
+import Bac5Catalogue from './pages/Bac5Catalogue';
 
 import './index.css';
 
@@ -99,6 +103,10 @@ function App() {
               <Route path="/ressources/logement" element={<Logement />} />
               <Route path="/ressources/handicap-engagement" element={<LHandicap />} />
               <Route path="/ressources/egalite-inclusion" element={<Egalite />} />
+              <Route path="/cfa/formations/bac" element={<BacCatalogue />} />
+              <Route path="/cfa/formations/bac-2" element={<Bac2Catalogue />} />
+              <Route path="/cfa/formations/bac-3" element={<Bac3Catalogue />} />
+              <Route path="/cfa/formations/bac-5" element={<Bac5Catalogue />} />
             </Routes>
           </main>
           <Footer />

@@ -27,7 +27,7 @@ const Navbar = () => {
                     subItems: [
                         {
                             label: 'BAC',
-                            path: '#',
+                            path: '/cfa/formations/bac',
                             hasSubmenu: true,
                             subItems: [
                                 { label: 'TP-CRCD', path: '/cfa/formation/tp-crcd' },
@@ -43,7 +43,7 @@ const Navbar = () => {
                         },
                         {
                             label: 'BAC +2',
-                            path: '#',
+                            path: '/cfa/formations/bac-2',
                             hasSubmenu: true,
                             subItems: [
                                 { label: 'TP-RPMS', path: '/cfa/formation/tp-rpms' },
@@ -51,8 +51,8 @@ const Navbar = () => {
                                 { label: 'TP-MUM', path: '/cfa/formation/tp-mum' }
                             ]
                         },
-                        { label: 'BAC +3', path: '#' },
-                        { label: 'BAC +5', path: '#' }
+                        { label: 'BAC +3', path: '/cfa/formations/bac-3' },
+                        { label: 'BAC +5', path: '/cfa/formations/bac-5' }
                     ]
                 },
                 { label: 'INDICATEURS DE RÉSULTATS', path: '/cfa/indicateurs' },
