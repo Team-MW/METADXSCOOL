@@ -127,7 +127,7 @@ const Navbar = () => {
                 { label: 'INDÉPENDANT / DIRIGEANT / TRAVAILLEUR NON SALARIÉ', path: '/financements/independant' },
                 { label: 'TRAVAILLEUR DE LA FONCTION PUBLIQUE', path: '/financements/fonction-publique' },
                 { label: 'TRAVAILLEUR EN SITUATION DE HANDICAP', path: '/financements/handicap' },
-                { label: 'AIDE AU LOGEMENT', path: '/financements/aide-logement' },
+                { label: 'AIDE AU LOGEMENT', path: '/ressources/logement' },
             ]
         },
         {
@@ -169,7 +169,7 @@ const Navbar = () => {
                         MON ESPACE
                     </a>
                     <span className="top-bar-separator"></span>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaARamzsrRX_7WS5Ix8xMe3HhqCthGECrrR_4BgB3lQObcDw/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="highlight-link">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="highlight-link">
                         <Send size={16} />
                         CANDIDATER
                     </a>

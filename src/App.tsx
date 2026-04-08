@@ -34,6 +34,15 @@ import SecouristeSST from './pages/formation/SecouristeSST'; // IMPORT FORMATION
 import SecouristeSSTMAC from './pages/formation/SecouristeSSTMAC'; // IMPORT FORMATION SST MAC
 import TP_MDEC from './pages/formation/TP_MDEC'; // IMPORT FORMATION TP-MDEC
 import RHStrategie from './pages/RHStrategie'; // IMPORT RH STRATEGIE
+import POEI from './pages/POEI'; // IMPORT POEI
+import VAE from './pages/VAE'; // IMPORT VAE
+import BilanCompetences from './pages/BilanCompetences'; // IMPORT BILAN COMPETENCES
+import NumeriqueCatalogue from './pages/NumeriqueCatalogue'; // IMPORT CATALOGUE NUMERIQUE
+import FormationIAVeille from './pages/formation/FormationIAVeille'; // IMPORT FORMATION IA
+import FormationWordIA from './pages/formation/FormationWordIA'; // IMPORT FORMATION WORD IA
+import FormationPowerPointIA from './pages/formation/FormationPowerPointIA'; // IMPORT FORMATION POWERPOINT IA
+import FormationRGPD from './pages/formation/FormationRGPD'; // IMPORT FORMATION RGPD
+import TP_NTC from './pages/formation/TP_NTC'; // IMPORT FORMATION NTC
 import LHandicap from './pages/LHandicap'; // IMPORT ENGAGEMENT HANDICAP
 import Egalite from './pages/Egalite'; // IMPORT EGALITE ET INCLUSION
 
@@ -60,7 +69,16 @@ function App() {
               <Route path="/forma-secu/securite/sst-initial" element={<SecouristeSST />} />
               <Route path="/forma-secu/securite/sst-mac" element={<SecouristeSSTMAC />} />
               <Route path="/cfa/formation/tp-mdec" element={<TP_MDEC />} />
+              <Route path="/cfa/formation/tp-ntc" element={<TP_NTC />} />
               <Route path="/conseils-formations/rh-strategie" element={<RHStrategie />} />
+              <Route path="/conseils-formations/poei" element={<POEI />} />
+              <Route path="/conseils-formations/vae" element={<VAE />} />
+              <Route path="/conseils-formations/bilan-competences" element={<BilanCompetences />} />
+              <Route path="/conseils-formations/catalogue/numerique" element={<NumeriqueCatalogue />} />
+              <Route path="/conseils-formations/catalogue/numerique/ia-veille" element={<FormationIAVeille />} />
+              <Route path="/conseils-formations/catalogue/numerique/word-ia" element={<FormationWordIA />} />
+              <Route path="/conseils-formations/catalogue/numerique/powerpoint-ia" element={<FormationPowerPointIA />} />
+              <Route path="/conseils-formations/catalogue/numerique/rgpd-cyber" element={<FormationRGPD />} />
               <Route path="/ressources" element={<Ressources />} />
               <Route path="/financements" element={<Financements />} />
               <Route path="/contact" element={<Contact />} />

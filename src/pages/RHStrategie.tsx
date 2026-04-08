@@ -291,7 +291,7 @@ export default function RHStrategie() {
                     <div className="final-cta">
                         <h2>Besoin d'un accompagnement sur-mesure ?</h2>
                         <p style={{opacity:0.8, marginTop:'1rem'}}>Nos experts sont à votre disposition pour un premier diagnostic offert.</p>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaARamzsrRX_7WS5Ix8xMe3HhqCthGECrrR_4BgB3lQObcDw/viewform" target="_blank" rel="noopener noreferrer" className="btn-contact">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-contact">
                             CONTACTER UN CONSULTANT RH
                         </a>
                     </div>

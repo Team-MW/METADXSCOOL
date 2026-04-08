@@ -431,7 +431,7 @@ export default function HygeneHACCP() {
                                 <div className="date-item"><span>📅 Octobre 2026</span> <span>26 & 27</span></div>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaARamzsrRX_7WS5Ix8xMe3HhqCthGECrrR_4BgB3lQObcDw/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply">
                                 VOUS INSCRIRE (INTER)
                             </a>
                         </div>
@@ -457,7 +457,7 @@ export default function HygeneHACCP() {
                                 </p>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaARamzsrRX_7WS5Ix8xMe3HhqCthGECrrR_4BgB3lQObcDw/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply" style={{background:'#1c1e4c'}}>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply" style={{background:'#1c1e4c'}}>
                                 NOUS CONTACTER
                             </a>
                             <p style={{fontSize:'0.8rem', marginTop:'1rem', fontWeight:600}}>Réponse sous 48 heures.</p>
@@ -474,7 +474,7 @@ export default function HygeneHACCP() {
                                 <li style={{marginBottom:'0.5rem'}}>✅ Calendrier flexible</li>
                                 <li>✅ Réponse sous 48h</li>
                             </ul>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfaARamzsrRX_7WS5Ix8xMe3HhqCthGECrrR_4BgB3lQObcDw/viewform" target="_blank" rel="noopener noreferrer" style={{display:'block', background:'white', color:'#e25865', textAlign:'center', padding:'0.8rem', borderRadius:'8px', fontWeight:800, textDecoration:'none', fontSize:'0.9rem'}}>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" style={{display:'block', background:'white', color:'#e25865', textAlign:'center', padding:'0.8rem', borderRadius:'8px', fontWeight:800, textDecoration:'none', fontSize:'0.9rem'}}>
                                 DEMANDER UN DEVIS
                             </a>
                         </div>
