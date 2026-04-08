@@ -52,9 +52,9 @@ function Home() {
     return (
         <div>
             <Helmet>
-                <title>Meta DX School & Conseils - Expert Formation & Audit à Toulouse</title>
-                <meta name="description" content="Découvrez Meta DX School : votre partenaire expert en formations IT, cybersécurité et conseil Qualiopi à Toulouse. Formez-vous aux métiers de demain dans un campus moderne et connecté." />
-                <meta name="keywords" content="formation IT, école informatique Toulouse, conseil qualite, Qualiopi, cybersécurité, développement web, audit, formation continue" />
+                <title>Meta DX School & Conseils | CFA & Organisme de Formation à Toulouse</title>
+                <meta name="description" content="Meta DX School : Votre CFA et organisme de formation à Toulouse. Alternance du BAC au BAC+5, formations IA, numérique, communication et management. Accompagnement VAE et Bilan de compétences." />
+                <meta name="keywords" content="CFA Toulouse, formation alternance Toulouse, formation IA, communication digitale, management, VAE, bilan de compétences, Meta DX School" />
 
                 {/* Facebook / Open Graph */}
                 <meta property="og:type" content="website" />
