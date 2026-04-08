@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.metadxs.com/sitemap.xml
+
+# Disallow sensitive or utility paths
+Disallow: /admin
+Disallow: /login
+Disallow: /tmp
+Disallow: /scripts

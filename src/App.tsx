@@ -49,6 +49,7 @@ import BacCatalogue from './pages/BacCatalogue';
 import Bac2Catalogue from './pages/Bac2Catalogue';
 import Bac3Catalogue from './pages/Bac3Catalogue';
 import Bac5Catalogue from './pages/Bac5Catalogue';
+import FormationsOffre from './pages/FormationsOffre';
 
 import './index.css';
 
@@ -83,6 +84,7 @@ function App() {
               <Route path="/conseils-formations/catalogue/numerique/word-ia" element={<FormationWordIA />} />
               <Route path="/conseils-formations/catalogue/numerique/powerpoint-ia" element={<FormationPowerPointIA />} />
               <Route path="/conseils-formations/catalogue/numerique/rgpd-cyber" element={<FormationRGPD />} />
+              <Route path="/conseils-formations/formations" element={<FormationsOffre />} />
               <Route path="/ressources" element={<Ressources />} />
               <Route path="/financements" element={<Financements />} />
               <Route path="/contact" element={<Contact />} />
