@@ -50,6 +50,12 @@ import Bac2Catalogue from './pages/Bac2Catalogue';
 import Bac3Catalogue from './pages/Bac3Catalogue';
 import Bac5Catalogue from './pages/Bac5Catalogue';
 import FormationsOffre from './pages/FormationsOffre';
+import Mobilite from './pages/Mobilite';
+import CommunicationCatalogue from './pages/CommunicationCatalogue';
+import FormationCommMultiActeurs from './pages/formation/FormationCommMultiActeurs';
+import FormationLinkedin from './pages/formation/FormationLinkedin';
+import FormationCommDigitale from './pages/formation/FormationCommDigitale';
+import FormationCommImpact from './pages/formation/FormationCommImpact';
 
 import './index.css';
 
@@ -85,6 +91,11 @@ function App() {
               <Route path="/conseils-formations/catalogue/numerique/powerpoint-ia" element={<FormationPowerPointIA />} />
               <Route path="/conseils-formations/catalogue/numerique/rgpd-cyber" element={<FormationRGPD />} />
               <Route path="/conseils-formations/formations" element={<FormationsOffre />} />
+              <Route path="/conseils-formations/catalogue/communication" element={<CommunicationCatalogue />} />
+              <Route path="/conseils-formations/catalogue/communication/multi-acteurs" element={<FormationCommMultiActeurs />} />
+              <Route path="/conseils-formations/catalogue/communication/linkedin" element={<FormationLinkedin />} />
+              <Route path="/conseils-formations/catalogue/communication/digitale" element={<FormationCommDigitale />} />
+              <Route path="/conseils-formations/catalogue/communication/impact" element={<FormationCommImpact />} />
               <Route path="/ressources" element={<Ressources />} />
               <Route path="/financements" element={<Financements />} />
               <Route path="/contact" element={<Contact />} />
@@ -102,6 +113,7 @@ function App() {
               <Route path="/ressources/evenements" element={<Evenements />} />
               <Route path="/ressources/newsletters" element={<Newsletters />} />
               <Route path="/ressources/newsletters/:slug" element={<NewsletterArticle />} />
+              <Route path="/ressources/mobilite" element={<Mobilite />} />
               <Route path="/ressources/logement" element={<Logement />} />
               <Route path="/ressources/handicap-engagement" element={<LHandicap />} />
               <Route path="/ressources/egalite-inclusion" element={<Egalite />} />
