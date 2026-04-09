@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { PhoneCall, Users, FileText, GraduationCap, Briefcase, CheckCircle, ArrowRight } from 'lucide-react';
+import { PhoneCall, Users, FileText, GraduationCap, Briefcase, CheckCircle, ArrowRight, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import '../styles/Contact.css';
 
 export default function Contact() {
@@ -111,21 +111,65 @@ export default function Contact() {
                     </div>
                 </section>
 
-                {/* MAP SECTION */}
-                <div className="map-full-wrap">
-                    <div className="section-title-wrap" style={{ marginBottom: '2rem' }}>
-                        <h2 style={{ fontSize: '1.8rem' }}>NOTRE CAMPUS À TOULOUSE</h2>
+                {/* CAMPUS SECTION */}
+                <section className="campus-full-section">
+                    <div className="campus-card-container">
+                        <div className="campus-info-side">
+                            <div className="campus-tag">NOTRE CAMPUS</div>
+                            <h2>VENIR NOUS VOIR À TOULOUSE</h2>
+                            <p className="campus-intro">
+                                Nos locaux sont situés au cœur de Toulouse, accessibles facilement en transports en commun.
+                            </p>
+
+                            <div className="campus-details-list">
+                                <div className="c-detail-item">
+                                    <div className="c-icon-circle"><MapPin size={20} /></div>
+                                    <div>
+                                        <strong>ADRESSE</strong>
+                                        <p>244 Route de Seysses,<br />31100 Toulouse</p>
+                                    </div>
+                                </div>
+
+                                <div className="c-detail-item">
+                                    <div className="c-icon-circle"><Phone size={20} /></div>
+                                    <div>
+                                        <strong>TÉLÉPHONE</strong>
+                                        <p>06 82 64 10 25  /  06 82 64 10 26</p>
+                                    </div>
+                                </div>
+
+                                <div className="c-detail-item">
+                                    <div className="c-icon-circle"><Mail size={20} /></div>
+                                    <div>
+                                        <strong>EMAIL</strong>
+                                        <p>contact@metadxs.com</p>
+                                    </div>
+                                </div>
+
+                                <div className="c-detail-item">
+                                    <div className="c-icon-circle"><Clock size={20} /></div>
+                                    <div>
+                                        <strong>HORAIRES</strong>
+                                        <p>Lundi au Vendredi : 08h00 – 18h00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="campus-map-side">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.395055030588!2d1.411649615494443!3d43.577457779124484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb1ee32ebbd1%3A0x6bba7ec62f1cbfd!2s244%20Rte%20de%20Seysses%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1680000000000!5m2!1sfr!2sfr"
+                                width="100%"
+                                height="100%"
+                                style={{ border: 0 }}
+                                allowFullScreen={false}
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Carte du campus Meta DX School"
+                            ></iframe>
+                        </div>
                     </div>
-                    <div className="map-card-inner">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.395055030588!2d1.411649615494443!3d43.577457779124484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb1ee32ebbd1%3A0x6bba7ec62f1cbfd!2s244%20Rte%20de%20Seysses%2C%2031100%20Toulouse!5e0!3m2!1sfr!2sfr!4v1680000000000!5m2!1sfr!2sfr"
-                            allowFullScreen={false}
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title="Carte du campus Meta DX School"
-                        ></iframe>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     );

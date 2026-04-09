@@ -237,23 +237,108 @@
     line-height: 1.5;
 }
 
-/* MAP SECTION */
-.map-full-wrap {
+/* CAMPUS SECTION REDESIGN */
+.campus-full-section {
+    margin-top: 4rem;
+}
+
+.campus-card-container {
     background: white;
-    padding: 3rem;
-    border-radius: 30px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    overflow: hidden;
     border: 1px solid #f1f5f9;
 }
 
-.map-card-inner {
-    height: 500px;
+.campus-info-side {
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.campus-tag {
+    display: inline-block;
+    color: #db2777;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.campus-info-side h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #1e1b4b;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.campus-intro {
+    color: #64748b;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.campus-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.c-detail-item {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.c-icon-circle {
+    width: 48px;
+    height: 48px;
+    background: #fdf2f8;
+    color: #db2777;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.c-detail-item strong {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-bottom: 0.25rem;
+}
+
+.c-detail-item p {
+    color: #1e293b;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.campus-map-side {
+    min-height: 500px;
     width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
+}
+
+.campus-map-side iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1024px) {
+    .campus-card-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .campus-map-side {
+        height: 400px;
+        min-height: 400px;
+    }
 
     .contact-cards-grid,
     .process-steps {
