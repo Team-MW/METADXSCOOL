@@ -63,9 +63,9 @@ const Footer = () => {
                         </div>
 
                         <div className="card-right-socials">
-                            <a href="#"><Instagram className="social-icon" /></a>
-                            <a href="#"><Facebook className="social-icon" /></a>
-                            <a href="#"><Linkedin className="social-icon" /></a>
+                            <a href="#" className="social-bubble"><Instagram className="social-icon" /></a>
+                            <a href="#" className="social-bubble"><Facebook className="social-icon" /></a>
+                            <a href="#" className="social-bubble"><Linkedin className="social-icon" /></a>
                         </div>
                     </div>
 
@@ -84,9 +84,9 @@ const Footer = () => {
                         </div>
 
                         <div className="card-right-socials">
-                            <a href="#"><Instagram className="social-icon" /></a>
-                            <a href="#"><Facebook className="social-icon" /></a>
-                            <a href="#"><Linkedin className="social-icon" /></a>
+                            <a href="#" className="social-bubble"><Instagram className="social-icon" /></a>
+                            <a href="#" className="social-bubble"><Facebook className="social-icon" /></a>
+                            <a href="#" className="social-bubble"><Linkedin className="social-icon" /></a>
                         </div>
                     </div>
                 </div>

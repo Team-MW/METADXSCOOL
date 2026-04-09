@@ -172,14 +172,13 @@
 }
 
 .card-center-info h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     color: #4c1d95;
-    /* Purple title for pink card default */
     text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 1px;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
 }
 
 .title-white {
@@ -252,32 +251,37 @@
 /* Card - Right Socials */
 .card-right-socials {
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    flex-direction: row; /* Horizontal alignment for social "bubbles" */
+    gap: 1rem;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
+}
+
+.social-bubble {
+    width: 42px;
+    height: 42px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.social-bubble:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .social-icon {
-    width: 28px;
-    /* Larger icons */
-    height: 28px;
-    transition: transform 0.2s;
+    width: 22px;
+    height: 22px;
 }
 
-.social-icon:hover {
-    transform: scale(1.2);
-}
-
-.card-pink .social-icon {
-    color: #db2777;
-    /* Pink/Red icons */
-}
-
-.card-blue .social-icon {
-    color: #0369a1;
-    /* Dark/Black icons */
-}
+.card-pink .social-icon { color: #db2777; }
+.card-blue .social-icon { color: #0284c7; }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
