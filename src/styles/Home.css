@@ -45,7 +45,7 @@
 
 /* LEFT PANEL - SCHOOL */
 .panel-school {
-    background: linear-gradient(135deg, rgba(88, 28, 135, 0.8), rgba(236, 72, 153, 0.6)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2670&auto=format&fit=crop');
+    background: linear-gradient(135deg, rgba(88, 28, 135, 0.35), rgba(236, 72, 153, 0.25)), url('../assets/school-card-bg.png');
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     margin-right: -10%;
     /* Overlap for the diagonal cut */
@@ -55,7 +55,7 @@
 
 /* RIGHT PANEL - CONSEIL */
 .panel-conseil {
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.8), rgba(59, 130, 246, 0.6)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2672&auto=format&fit=crop');
+    background: linear-gradient(135deg, rgba(30, 58, 138, 0.35), rgba(59, 130, 246, 0.25)), url('../assets/conseil-card-bg.png');
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
     margin-left: -5%;
     /* Pull back to meet the left panel */
