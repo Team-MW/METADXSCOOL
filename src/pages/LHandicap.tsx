@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { 
-    Accessibility, 
-    Target, 
-    Users, 
-    FileText, 
-    BarChart3, 
+import {
+    Accessibility,
+    Target,
+    Users,
+    FileText,
+    BarChart3,
     Video,
     Award,
     Mail,
@@ -229,12 +229,12 @@ export default function LHandicap() {
                     {/* Engagement */}
                     <div className="card">
                         <h2 className="section-title"><Target color="#ef9a37" /> Notre Mission</h2>
-                        <p style={{fontSize:'1.1rem', lineHeight:1.8, color:'#475569'}}>
+                        <p style={{ fontSize: '1.1rem', lineHeight: 1.8, color: '#475569' }}>
                             Nous nous engageons dans une démarche continue d’accessibilité, soutenue par des partenaires comme l’<strong>Agefiph</strong>, la <strong>RHF</strong> et le réseau <strong>Activateur de Progrès</strong>.
-                            <br/><br/>
+                            <br /><br />
                             🎯 <strong>Objectif :</strong> Que chaque personne, quelles que soient ses difficultés ou son handicap, puisse suivre une formation dans de bonnes conditions.
                         </p>
-                        <a href="#" className="link-btn" style={{marginTop:'2rem'}}>
+                        <a href="https://www.agefiph.fr/professionnels-de-la-formation/signer-la-charte-dengagement" target="_blank" rel="noopener noreferrer" className="link-btn" style={{ marginTop: '2rem' }}>
                             <FileText size={18} /> Consulter notre Charte d’engagement
                         </a>
                     </div>
@@ -248,7 +248,7 @@ export default function LHandicap() {
                                 <span className="label">Craignent d'en parler en entreprise</span>
                             </div>
                             <div className="stat-box">
-                                <span className="nb" style={{fontSize:'1.8rem'}}>1.2 M</span>
+                                <span className="nb" style={{ fontSize: '1.8rem' }}>1.2 M</span>
                                 <span className="label">Travailleurs handicapés en emploi</span>
                             </div>
                             <div className="stat-box">
@@ -256,27 +256,27 @@ export default function LHandicap() {
                                 <span className="label">Parcours freiné par le handicap</span>
                             </div>
                             <div className="stat-box">
-                                <span className="nb" style={{fontSize:'1.8rem'}}>3.1 M</span>
+                                <span className="nb" style={{ fontSize: '1.8rem' }}>3.1 M</span>
                                 <span className="label">Bénéficiaires RQTH en France</span>
                             </div>
                         </div>
-                        <p style={{fontSize:'0.85rem', color:'#94a3b8', textAlign:'center'}}>Source : Agefiph 2024</p>
+                        <p style={{ fontSize: '0.85rem', color: '#94a3b8', textAlign: 'center' }}>Source : Agefiph 2024</p>
                     </div>
 
                     {/* Referent */}
-                    <div className="card" style={{borderLeft:'8px solid #7c3aed'}}>
+                    <div className="card" style={{ borderLeft: '8px solid #7c3aed' }}>
                         <h2 className="section-title"><Users color="#7c3aed" /> Qui contacter ?</h2>
                         <div className="team-card">
                             <div className="avatar-box">
                                 <Accessibility size={100} strokeWidth={1} />
                             </div>
                             <div>
-                                <h3 style={{fontSize:'1.6rem', fontWeight:800, marginBottom:'0.5rem'}}>Sarah LACHEROY</h3>
-                                <p style={{color:'#7c3aed', fontWeight:700, marginBottom:'1.5rem'}}>Référente Handicap Meta DX School</p>
-                                <p style={{lineHeight:1.7, color:'#475569', marginBottom:'1.5rem'}}>
+                                <h3 style={{ fontSize: '1.6rem', fontWeight: 800, marginBottom: '0.5rem' }}>Sarah LACHEROY</h3>
+                                <p style={{ color: '#7c3aed', fontWeight: 700, marginBottom: '1.5rem' }}>Référente Handicap Meta DX School</p>
+                                <p style={{ lineHeight: 1.7, color: '#475569', marginBottom: '1.5rem' }}>
                                     Sarah vous accompagne à chaque étape de votre parcours : identification des besoins (matériel, accompagnement), mise en œuvre des aménagements pédagogiques et suivi des démarches administratives.
                                 </p>
-                                <a href="mailto:sarah.lacheroy@metadxs.com" className="link-btn" style={{fontSize:'1.1rem', color:'#1c1e4c'}}>
+                                <a href="mailto:sarah.lacheroy@metadxs.com" className="link-btn" style={{ fontSize: '1.1rem', color: '#1c1e4c' }}>
                                     <Mail size={20} /> sarah.lacheroy@metadxs.com
                                 </a>
                             </div>
@@ -289,25 +289,25 @@ export default function LHandicap() {
                         <div className="aids-grid">
                             <div className="aid-item">
                                 <div className="aid-header"><Monitor size={24} /> VISUEL</div>
-                                <p style={{fontSize:'0.9rem', color:'#475569', lineHeight:1.6}}>
+                                <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.6 }}>
                                     <strong>ZoomText :</strong> Logiciel de grossissement d’écran et lecture vocale pour malvoyants.
                                 </p>
                                 <a href="https://vimeo.com/showcase/7713437" target="_blank" rel="noopener noreferrer" className="link-btn">Découvrir l'outil →</a>
                             </div>
                             <div className="aid-item">
                                 <div className="aid-header"><Accessibility size={24} /> BRAILLE</div>
-                                <p style={{fontSize:'0.9rem', color:'#475569', lineHeight:1.6}}>
+                                <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.6 }}>
                                     <strong>Afficheur Braille :</strong> Cellules braille actualisées en temps réel pour lire l'écran.
                                 </p>
                                 <a href="https://vimeo.com/showcase/7713437" target="_blank" rel="noopener noreferrer" className="link-btn">Découvrir l'outil →</a>
                             </div>
                             <div className="aid-item">
                                 <div className="aid-header"><Ear size={24} /> AUDITIF</div>
-                                <p style={{fontSize:'0.9rem', color:'#475569', lineHeight:1.6}}>Aménagements spécifiques (boucles magnétiques, transcriptions) selon les besoins.</p>
+                                <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.6 }}>Aménagements spécifiques (boucles magnétiques, transcriptions) selon les besoins.</p>
                             </div>
                             <div className="aid-item">
                                 <div className="aid-header"><Brain size={24} /> APPRENTISSAGE</div>
-                                <p style={{fontSize:'0.9rem', color:'#475569', lineHeight:1.6}}>Adaptation des supports pédagogiques pour les troubles DYS.</p>
+                                <p style={{ fontSize: '0.9rem', color: '#475569', lineHeight: 1.6 }}>Adaptation des supports pédagogiques pour les troubles DYS.</p>
                             </div>
                         </div>
                     </div>
@@ -315,16 +315,16 @@ export default function LHandicap() {
                     {/* Ressources */}
                     <div className="card">
                         <h2 className="section-title"><Video color="#3b82f6" /> Sensibilisation</h2>
-                        <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
+                        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
                             <div>
-                                <h4 style={{fontWeight:800, marginBottom:'1rem'}}>Videos & Affiches</h4>
-                                <p style={{fontSize:'0.95rem', color:'#475569', marginBottom:'1rem'}}>Retrouvez une sélection de supports pédagogiques pour sensibiliser vos équipes.</p>
+                                <h4 style={{ fontWeight: 800, marginBottom: '1rem' }}>Videos & Affiches</h4>
+                                <p style={{ fontSize: '0.95rem', color: '#475569', marginBottom: '1rem' }}>Retrouvez une sélection de supports pédagogiques pour sensibiliser vos équipes.</p>
                                 <a href="https://www.activateurdeprogres.fr/ressources" target="_blank" rel="noopener noreferrer" className="link-btn">Ressources Activateur de Progrès</a>
                             </div>
                             <div>
-                                <h4 style={{fontWeight:800, marginBottom:'1rem'}}>Le Calendrier Thématique</h4>
-                                <p style={{fontSize:'0.95rem', color:'#475569', marginBottom:'1rem'}}>Suivez les mois de sensibilisation (santé mentale, autisme, etc.).</p>
-                                <div style={{display:'flex', flexDirection:'column', gap:'0.5rem'}}>
+                                <h4 style={{ fontWeight: 800, marginBottom: '1rem' }}>Le Calendrier Thématique</h4>
+                                <p style={{ fontSize: '0.95rem', color: '#475569', marginBottom: '1rem' }}>Suivez les mois de sensibilisation (santé mentale, autisme, etc.).</p>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                     <a href="https://www.activateurdeprogres.fr" target="_blank" rel="noopener noreferrer" className="link-btn">Calendrier 2025 #1</a>
                                     <a href="https://www.agefiph.fr" target="_blank" rel="noopener noreferrer" className="link-btn">Calendrier 2025 #2</a>
                                 </div>
@@ -334,9 +334,9 @@ export default function LHandicap() {
 
                     {/* Final CTA */}
                     <div className="cta-box">
-                        <Award size={48} color="#ef9a37" style={{marginBottom:'1rem'}} />
+                        <Award size={48} color="#ef9a37" style={{ marginBottom: '1rem' }} />
                         <h2>Besoin de financer votre formation ?</h2>
-                        <p style={{opacity:0.8, marginTop:'1rem'}}>Découvrez les solutions de financement spécifiques au handicap (AGEFIPH, FIPHFP...).</p>
+                        <p style={{ opacity: 0.8, marginTop: '1rem' }}>Découvrez les solutions de financement spécifiques au handicap (AGEFIPH, FIPHFP...).</p>
                         <Link to="/financements/handicap" className="btn-primary">
                             VOIR LES SOLUTIONS DE FINANCEMENT
                         </Link>

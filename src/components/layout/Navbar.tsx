@@ -5,6 +5,15 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, User, Send, Menu, X, ChevronRight } from 'lucide-react';
 import '../../styles/Navbar.css';
 
+interface NavItem {
+    label: string;
+    path?: string;
+    hasDropdown?: boolean;
+    dropdownItems?: NavItem[];
+    hasSubmenu?: boolean;
+    subItems?: NavItem[];
+}
+
 const Navbar = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -143,7 +152,7 @@ const Navbar = () => {
 
 
 
-    const renderSubItems = (items: any[]) => {
+    const renderSubItems = (items: NavItem[]) => {
         return (
             <ul className="dropdown-submenu">
                 {items.map((subItem) => (

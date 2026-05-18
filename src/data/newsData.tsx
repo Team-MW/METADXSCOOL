@@ -187,7 +187,7 @@ export const newsArticles: NewsArticleType[] = [
                 </ul>
 
                 <p style={{ marginTop: '2rem' }}>
-                    Préparez-vous dès aujourd’hui à relever les défis du management et du pilotage d’entreprise. Inscrivez-vous et bâtissez votre avenir professionnel !
+                    Préparez-vous dès aujourd’hui à relever les défis du management et du pilotage d’entreprise. Inscrivez-vous et bâtissez votre avenir professionnel !
                 </p>
 
                 <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>

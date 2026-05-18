@@ -3,8 +3,16 @@ import { useParams } from 'react-router-dom';
 import { BookOpen, CheckCircle, TrendingUp, Users } from 'lucide-react';
 import '../styles/CFA.css'; // Re-use CFA styles for consistency
 
+interface FormationData {
+    title: string;
+    level: string;
+    description: string;
+    objectives: string[];
+    opportunities: string[];
+}
+
 // Data for formations (this could be moved to a separate data file later)
-const formationsData: any = {
+const formationsData: Record<string, FormationData> = {
     'tp-rpms': {
         title: "TP - Responsable de Petite et Moyenne Structure",
         level: "BAC +2",
@@ -76,6 +84,18 @@ const formationsData: any = {
             "Négocier avec les fournisseurs"
         ],
         opportunities: ["Responsable de rayon", "Gestionnaire de stock", "Manager de proximité"]
+    },
+    'bachelor-ra': {
+        title: "Bachelor - Responsable des Affaires",
+        level: "BAC +3",
+        description: "Développez une double compétence managériale et commerciale de haut niveau. Apprenez à concevoir, piloter et optimiser la stratégie de développement d'affaires et la gestion d'un centre de profit.",
+        objectives: [
+            "Élaborer et piloter la stratégie commerciale de l'entreprise",
+            "Manager, animer et fédérer des équipes multidisciplinaires",
+            "Assurer le pilotage budgétaire, financier et la rentabilité des affaires",
+            "Conduire des négociations complexes et piloter la relation client grands comptes"
+        ],
+        opportunities: ["Responsable de centre de profit", "Responsable du développement commercial", "Chargé d'affaires senior", "Manager de business unit"]
     }
 };
 

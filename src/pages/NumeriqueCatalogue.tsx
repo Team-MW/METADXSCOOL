@@ -329,6 +329,7 @@ export default function NumeriqueCatalogue() {
                                     <a href={
                                         f.title.includes("WORD") ? "/conseils-formations/catalogue/numerique/word-ia" : 
                                         f.title.includes("POWERPOINT") ? "/conseils-formations/catalogue/numerique/powerpoint-ia" : 
+                                        f.title.includes("EXCEL") ? "/conseils-formations/catalogue/numerique/excel-ia" : 
                                         f.title.includes("RGPD") ? "/conseils-formations/catalogue/numerique/rgpd-cyber" :
                                         "/conseils-formations/catalogue/numerique/ia-veille"
                                     } className="btn-view">

@@ -30,6 +30,7 @@ import AlimentaireRestauration from './pages/AlimentaireRestauration'; // IMPORT
 import HygeneHACCP from './pages/formation/HygeneHACCP'; // IMPORT FORMATION HACCP
 import HygeneRestaurationCommerciale from './pages/formation/HygeneRestaurationCommerciale'; // IMPORT FORMATION RESTAURATION
 import TP_CRCD from './pages/formation/TP_CRCD'; // IMPORT FORMATION TP-CRCD
+import TP_RPMS from './pages/formation/TP_RPMS'; // IMPORT FORMATION TP-RPMS
 import SecouristeSST from './pages/formation/SecouristeSST'; // IMPORT FORMATION SST INITIAL
 import SecouristeSSTMAC from './pages/formation/SecouristeSSTMAC'; // IMPORT FORMATION SST MAC
 import TP_MDEC from './pages/formation/TP_MDEC'; // IMPORT FORMATION TP-MDEC
@@ -41,6 +42,7 @@ import NumeriqueCatalogue from './pages/NumeriqueCatalogue'; // IMPORT CATALOGUE
 import FormationIAVeille from './pages/formation/FormationIAVeille'; // IMPORT FORMATION IA
 import FormationWordIA from './pages/formation/FormationWordIA'; // IMPORT FORMATION WORD IA
 import FormationPowerPointIA from './pages/formation/FormationPowerPointIA'; // IMPORT FORMATION POWERPOINT IA
+import FormationExcelIA from './pages/formation/FormationExcelIA'; // IMPORT FORMATION EXCEL IA
 import FormationRGPD from './pages/formation/FormationRGPD'; // IMPORT FORMATION RGPD
 import TP_NTC from './pages/formation/TP_NTC'; // IMPORT FORMATION NTC
 import LHandicap from './pages/LHandicap'; // IMPORT ENGAGEMENT HANDICAP
@@ -56,6 +58,10 @@ import FormationCommMultiActeurs from './pages/formation/FormationCommMultiActeu
 import FormationLinkedin from './pages/formation/FormationLinkedin';
 import FormationCommDigitale from './pages/formation/FormationCommDigitale';
 import FormationCommImpact from './pages/formation/FormationCommImpact';
+import FormationCommInterne from './pages/formation/FormationCommInterne';
+import CommerceCatalogue from './pages/CommerceCatalogue';
+import ManagementCatalogue from './pages/ManagementCatalogue';
+import SanteSecuriteCatalogue from './pages/SanteSecuriteCatalogue';
 
 import './index.css';
 
@@ -77,6 +83,7 @@ function App() {
               <Route path="/forma-secu/alimentaire/haccp" element={<HygeneHACCP />} />
               <Route path="/forma-secu/alimentaire/restauration-commerciale" element={<HygeneRestaurationCommerciale />} />
               <Route path="/cfa/formation/tp-crcd" element={<TP_CRCD />} />
+              <Route path="/cfa/formation/tp-rpms" element={<TP_RPMS />} />
               <Route path="/forma-secu/securite/sst-initial" element={<SecouristeSST />} />
               <Route path="/forma-secu/securite/sst-mac" element={<SecouristeSSTMAC />} />
               <Route path="/cfa/formation/tp-mdec" element={<TP_MDEC />} />
@@ -89,13 +96,18 @@ function App() {
               <Route path="/conseils-formations/catalogue/numerique/ia-veille" element={<FormationIAVeille />} />
               <Route path="/conseils-formations/catalogue/numerique/word-ia" element={<FormationWordIA />} />
               <Route path="/conseils-formations/catalogue/numerique/powerpoint-ia" element={<FormationPowerPointIA />} />
+              <Route path="/conseils-formations/catalogue/numerique/excel-ia" element={<FormationExcelIA />} />
               <Route path="/conseils-formations/catalogue/numerique/rgpd-cyber" element={<FormationRGPD />} />
               <Route path="/conseils-formations/formations" element={<FormationsOffre />} />
               <Route path="/conseils-formations/catalogue/communication" element={<CommunicationCatalogue />} />
+              <Route path="/conseils-formations/catalogue/commerce" element={<CommerceCatalogue />} />
+              <Route path="/conseils-formations/catalogue/management" element={<ManagementCatalogue />} />
+              <Route path="/conseils-formations/catalogue/sante-securite" element={<SanteSecuriteCatalogue />} />
               <Route path="/conseils-formations/catalogue/communication/multi-acteurs" element={<FormationCommMultiActeurs />} />
               <Route path="/conseils-formations/catalogue/communication/linkedin" element={<FormationLinkedin />} />
               <Route path="/conseils-formations/catalogue/communication/digitale" element={<FormationCommDigitale />} />
               <Route path="/conseils-formations/catalogue/communication/impact" element={<FormationCommImpact />} />
+              <Route path="/conseils-formations/catalogue/communication/interne" element={<FormationCommInterne />} />
               <Route path="/ressources" element={<Ressources />} />
               <Route path="/financements" element={<Financements />} />
               <Route path="/contact" element={<Contact />} />

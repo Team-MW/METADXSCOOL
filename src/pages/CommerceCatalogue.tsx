@@ -1,70 +1,47 @@
 import { Helmet } from 'react-helmet-async';
 import { 
-    MessageSquare, 
-    Linkedin, 
-    Smartphone, 
-    Mic2, 
+    TrendingUp, 
     Users, 
-    Eye,
-    Clock,
-    Monitor,
+    Target, 
+    Clock, 
+    Monitor, 
+    Eye, 
     Sparkles
 } from 'lucide-react';
 
-export default function CommunicationCatalogue() {
+export default function CommerceCatalogue() {
     const formations = [
         {
-            title: "COMMUNICATION ADAPTÉE AUX INTERACTIONS MULTI-ACTEURS",
-            desc: "Tous les secteurs requièrent des compétences en communication adaptées aux interactions multi-acteurs.",
-            duration: "3 JOURS (21 HEURES)",
+            title: "NÉGOCIATION COMMERCIALE ET TECHNIQUES DE VENTE",
+            desc: "Maîtrisez toutes les étapes clés de la vente, de la préparation de l'entretien à la conclusion (closing), pour maximiser votre taux de transformation.",
+            duration: "2 JOURS (14 HEURES)",
             modalities: "INTRA / INTER / SUR MESURE",
-            isNew: true,
+            icon: <TrendingUp className="cat-icon" />,
+            badge: "VENTE PERFORMANCE"
+        },
+        {
+            title: "GESTION DE LA RELATION CLIENT & FIDÉLISATION",
+            desc: "Optimisez l'expérience client à chaque point de contact et apprenez à concevoir des stratégies de fidélisation durables et hautement rentables.",
+            duration: "2 JOURS (14 HEURES)",
+            modalities: "INTRA / INTER / SUR MESURE",
             icon: <Users className="cat-icon" />,
-            badge: "COMMUNICATION"
+            badge: "EXPÉRIENCE CLIENT"
         },
         {
-            title: "OPTIMISER SA PRÉSENCE ET SA VISIBILITÉ SUR LINKEDIN",
-            desc: "Cette formation permet aux salariés formés d’utiliser le réseau social LinkedIn avec adresse dans le cadre de leurs activités.",
-            duration: "1 JOUR (7 HEURES)",
-            modalities: "INTRA / INTER / SUR MESURE",
-            isNew: true,
-            icon: <Linkedin className="cat-icon" />,
-            badge: "RÉSEAUX SOCIAUX"
-        },
-        {
-            title: "LA COMMUNICATION DIGITALE AU SERVICE DE L’ENTREPRISE",
-            desc: "Cette formation permet aux salariés formés de communiquer avec aisance via les canaux digitaux.",
+            title: "PROSPECTION COMMERCIALE OMNICANALE",
+            desc: "Apprenez à cibler vos prospects, rédiger des accroches percutantes et utiliser efficacement le téléphone, les emails et les réseaux sociaux.",
             duration: "2 JOURS (14 HEURES)",
             modalities: "INTRA / INTER / SUR MESURE",
-            isNew: true,
-            icon: <Smartphone className="cat-icon" />,
-            badge: "DIGITAL"
-        },
-        {
-            title: "COMMUNICATION PROFESSIONNELLE : AMÉLIORER SON IMPACT À L’ORAL ET À L’ÉCRIT",
-            desc: "Cette formation permet de communiquer au sein d’une équipe en mode gestion de projet.",
-            duration: "2 JOURS (14 HEURES)",
-            modalities: "INTRA / INTER / SUR MESURE",
-            isNew: true,
-            icon: <Mic2 className="cat-icon" />,
-            badge: "SOFT SKILLS"
-        },
-        {
-            title: "COMMUNIQUER EN INTERNE",
-            desc: "Une formation modulable pour répondre à la réalité de votre quotidien professionnel.",
-            duration: "2 JOURS (14 HEURES)",
-            modalities: "INTRA / INTER / SUR MESURE",
-            isNew: true,
-            icon: <MessageSquare className="cat-icon" />,
-            badge: "INTERNE"
+            icon: <Target className="cat-icon" />,
+            badge: "PROSPECTION"
         }
     ];
 
     return (
         <>
             <Helmet>
-                <title>Catalogue Communication & Marketing | Meta DXS</title>
-                <meta name="description" content="Découvrez nos formations en communication et marketing. LinkedIn, communication digitale, impact oral et écrit." />
+                <title>Catalogue Commerce, Vente & Relation Client | Meta DXS</title>
+                <meta name="description" content="Découvrez nos formations d'excellence en commerce, négociation et relation client pour propulser vos ventes et fidéliser vos clients." />
             </Helmet>
 
             <style>{`
@@ -77,7 +54,7 @@ export default function CommunicationCatalogue() {
                 }
 
                 .cat-hero {
-                    background: linear-gradient(135deg, #1c1e4c 0%, #ef4444 100%);
+                    background: linear-gradient(135deg, #1c1e4c 0%, #10b981 100%);
                     color: white;
                     padding: 8rem 2rem 6rem;
                     text-align: center;
@@ -157,25 +134,12 @@ export default function CommunicationCatalogue() {
                 .formation-card:hover {
                     transform: translateY(-10px);
                     box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-                    border-color: #ef4444;
-                }
-
-                .card-new-badge {
-                    position: absolute;
-                    top: 1.5rem;
-                    right: -2rem;
-                    background: #ef4444;
-                    color: white;
-                    padding: 0.5rem 3rem;
-                    font-size: 0.75rem;
-                    font-weight: 900;
-                    transform: rotate(45deg);
-                    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3);
+                    border-color: #10b981;
                 }
 
                 .card-cat-badge {
-                    background: #fef2f2;
-                    color: #ef4444;
+                    background: #ecfdf5;
+                    color: #10b981;
                     padding: 0.4rem 1rem;
                     border-radius: 50px;
                     font-size: 0.75rem;
@@ -198,7 +162,7 @@ export default function CommunicationCatalogue() {
                 }
 
                 .formation-card:hover .card-icon-wrapper {
-                    background: #ef4444;
+                    background: #10b981;
                     color: white;
                 }
 
@@ -275,22 +239,21 @@ export default function CommunicationCatalogue() {
                 <header className="cat-hero">
                     <div className="hero-container">
                         <span className="badge-title">CATALOGUE DE FORMATIONS</span>
-                        <h1>COMMUNICATION & MARKETING</h1>
-                        <p>Optimisez votre impact et votre visibilité pour transformer votre présence professionnelle.</p>
+                        <h1>COMMERCE, VENTE & RELATION CLIENT</h1>
+                        <p>Optimisez vos performances commerciales et installez une relation de confiance durable avec vos clients.</p>
                     </div>
                 </header>
 
                 <main className="main-content">
                     <div style={{display: 'flex', justifyContent: 'center', marginBottom: '3rem'}}>
                         <div style={{background: '#1c1e4c', color: 'white', padding: '0.8rem 2rem', borderRadius: '50px', fontWeight: 800}}>
-                            NOS FORMATIONS DISPONIBLES
+                            NOS MODULES DISPONIBLES
                         </div>
                     </div>
 
                     <div className="cat-grid">
                         {formations.map((f, idx) => (
                             <div className="formation-card" key={idx}>
-                                {f.isNew && <div className="card-new-badge">NOUVEAU</div>}
                                 <span className="card-cat-badge">{f.badge}</span>
                                 <div className="card-icon-wrapper">
                                     {f.icon}
@@ -299,22 +262,15 @@ export default function CommunicationCatalogue() {
                                 <p>{f.desc}</p>
                                 <div className="card-footer">
                                     <div className="footer-info">
-                                        <Clock size={14} color="#ef4444" />
+                                        <Clock size={14} color="#10b981" />
                                         {f.duration}
                                     </div>
                                     <div className="footer-info">
-                                        <Monitor size={14} color="#ef4444" />
+                                        <Monitor size={14} color="#10b981" />
                                         {f.modalities.split(' / ')[0]}...
                                     </div>
-                                    <a href={
-                                        f.title.includes("MULTI-ACTEURS") ? "/conseils-formations/catalogue/communication/multi-acteurs" : 
-                                        f.title.includes("LINKEDIN") ? "/conseils-formations/catalogue/communication/linkedin" : 
-                                        f.title.includes("DIGITALE") ? "/conseils-formations/catalogue/communication/digitale" :
-                                        f.title.includes("IMPACT") ? "/conseils-formations/catalogue/communication/impact" :
-                                        f.title.includes("INTERNE") ? "/conseils-formations/catalogue/communication/interne" :
-                                        "/contact"
-                                    } className="btn-view">
-                                        <Eye size={18} /> VOIR LA FORMATION
+                                    <a href="/contact" className="btn-view">
+                                        <Eye size={18} /> DEMANDER LE PROGRAMME
                                     </a>
                                 </div>
                             </div>
@@ -323,12 +279,12 @@ export default function CommunicationCatalogue() {
 
                     <div style={{marginTop: '5rem', textAlign: 'center'}} className="info-card">
                         <Sparkles color="#ef9a37" size={48} style={{marginBottom:'1.5rem'}} />
-                        <h2 style={{fontSize: '2rem', fontWeight: 900, color: '#1c1e4c'}}>VOTRE COMMUNICATION SUR MESURE</h2>
+                        <h2 style={{fontSize: '2rem', fontWeight: 900, color: '#1c1e4c'}}>CONCEVOIR UN MODULE SUR-MESURE ?</h2>
                         <p style={{maxWidth:'700px', margin: '1rem auto 2rem', color:'#64748b'}}>
-                            Besoin d'un accompagnement spécifique pour vos équipes ? Nos formateurs adaptent nos modules à votre réalité sectorielle.
+                            Nous adaptons nos formations commerciales en fonction de votre secteur d'activité, de vos produits et des objectifs spécifiques de vos forces de vente.
                         </p>
                         <a href="/contact" style={{display:'inline-block', background:'#ef9a37', color:'white', padding:'1.2rem 3rem', borderRadius:'12px', fontWeight:800, textDecoration:'none', boxShadow:'0 10px 20px rgba(239, 154, 55, 0.2)'}}>
-                            NOUS CONTACTER
+                            PRENDRE CONTACT AVEC UN CONSEILLER
                         </a>
                     </div>
                 </main>

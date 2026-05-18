@@ -49,7 +49,7 @@ const Footer = () => {
                 {/* COLUMN 3 - CONTACT CARDS */}
                 <div className="footer-column contact-cards">
                     {/* PINK CARD - META DX SCHOOL */}
-                    <div className="contact-card card-pink">
+                    <div className="footer-contact-card card-pink">
                         <div className="card-left-logo">
                             <img src={logoSchool} alt="META DX SCHOOL" className="footer-logo-image" />
                         </div>
@@ -70,7 +70,7 @@ const Footer = () => {
                     </div>
 
                     {/* BLUE CARD - META DX CONSEILS & FORMATIONS */}
-                    <div className="contact-card card-blue">
+                    <div className="footer-contact-card card-blue">
                         <div className="card-left-logo">
                             <img src={logoConseil} alt="METADXS CONSEILS & FORMATIONS" className="footer-logo-image" />
                         </div>
