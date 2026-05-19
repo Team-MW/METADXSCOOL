@@ -199,35 +199,262 @@
 }
 
 /* MOBILE RESPONSIVE */
+
+/* MOBILE RESPONSIVE OVERHAUL */
 @media (max-width: 768px) {
     .hero-split-wrapper {
         flex-direction: column;
         height: auto;
-        min-height: 100vh;
+        min-height: calc(100vh - 80px);
         margin-top: 0;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
-    .panel-school,
-    .panel-conseil {
-        clip-path: none;
+    .panel-school {
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
         margin: 0;
         flex: none;
-        height: 50vh;
+        height: 48vh;
         width: 100%;
+        z-index: 2;
     }
 
-    .clash-divider {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(0deg);
-        width: 80px;
-        height: 80px;
+    .panel-conseil {
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+        margin-top: -5vh;
+        flex: none;
+        height: 48vh;
+        width: 100%;
+        z-index: 1;
     }
 
     .panel-title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .panel-subtitle {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-bottom: 1.25rem;
+    }
+
+    .panel-cta {
+        padding: 0.8rem 1.6rem;
+        font-size: 0.9rem;
+    }
+
+    .welcome-section {
+        padding: 6.5rem 1.25rem 5rem;
+        margin-top: -40px;
+    }
+
+    .welcome-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .welcome-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+    }
+
+    /* Tabs Horizontal Scroll on Mobile to Prevent Giant Vertical Stacks */
+    .tabs-container {
+        padding-bottom: 1rem;
+    }
+
+    .tabs-header {
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+        padding-bottom: 1.25rem;
+        margin: 0 -0.5rem; /* Allow bleed to screen edge */
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    .tabs-header::-webkit-scrollbar {
+        display: none; /* Hide Chrome/Safari scrollbar */
+    }
+
+    .tab-button {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        font-size: 0.85rem;
+        padding: 0.8rem 1.25rem;
+        border-radius: 30px;
+        scroll-snap-align: start;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .tab-content {
+        padding: 2rem 1.25rem;
+        border-radius: 20px;
+    }
+
+    .tab-description {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Poles Section Mobile Layout */
+    .poles-section {
+        margin: 3.5rem auto;
+    }
+
+    .poles-title {
+        font-size: 1.4rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.4;
+    }
+
+    .poles-grid {
+        gap: 2rem;
+    }
+
+    .pole-card {
+        padding: 2.5rem 1.25rem;
+        min-height: auto;
+        border-radius: 24px;
+    }
+
+    .pole-card h3 {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .pole-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+        min-height: auto;
+    }
+
+    .pole-list {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1.75rem;
+        border-radius: 16px;
+    }
+
+    .pole-list li {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+        gap: 0.4rem;
+    }
+
+    .pole-question {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .pole-actions {
+        gap: 0.75rem;
+    }
+
+    .pole-btn {
+        padding: 0.9rem 1.25rem;
+        font-size: 0.85rem;
+    }
+
+    /* Partners Section Mobile Layout */
+    .partners-section {
+        padding: 4rem 1rem 6rem;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        margin-top: -20px;
+    }
+
+    .partners-title {
+        font-size: 1.5rem;
+        gap: 0.5rem;
+    }
+
+    .partners-star {
+        width: 24px;
+        height: 24px;
+    }
+
+    .partners-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .partners-marquee {
+        padding: 1rem 0;
+    }
+
+    .partner-logo-item {
+        width: 120px;
+        height: 70px;
+        margin: 0 1rem;
+    }
+
+    /* Campus Section Mobile Layout */
+    .campus-section {
+        padding: 5.5rem 1.25rem 3.5rem;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        margin-top: -40px;
+    }
+
+    .campus-header {
+        margin-bottom: 2.5rem;
+        gap: 0.5rem;
+    }
+
+    .campus-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .campus-star-icon {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    .campus-info,
+    .campus-details-col {
+        padding: 1.75rem 1.25rem;
+        border-radius: 20px;
+    }
+
+    .campus-map {
+        padding: 0.5rem;
+        border-radius: 20px;
+        min-height: 280px;
+    }
+
+    .campus-block {
+        margin-bottom: 1.75rem;
+    }
+
+    .campus-block h3,
+    .campus-details-col h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .campus-block p,
+    .campus-details-col p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .campus-details.full-width {
+        gap: 1.5rem;
+        margin-top: 0;
     }
 }
+
 
 /* WELCOME SECTION */
 .welcome-section {
