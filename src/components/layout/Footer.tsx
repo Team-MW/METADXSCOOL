@@ -41,8 +41,8 @@ const Footer = () => {
                                 Cliquez ci dessous pour <br />consulter nos différentes <br />certifications
                             </a>
                         </li>
-                        <li><a href="#" onClick={() => handleNavigation('/qualiopi')}>Certificat QUALIOPI</a></li>
-                        <li><a href="#" onClick={() => handleNavigation('/region-occitanie')}>Certificat Région Occitanie</a></li>
+                        <li><Link to="/qualiopi">Certificat QUALIOPI</Link></li>
+                        <li><a href="/attestation-depot_dossier-27705880.pdf" target="_blank" rel="noopener noreferrer">Certificat Région Occitanie</a></li>
                     </ul>
                 </div>
 

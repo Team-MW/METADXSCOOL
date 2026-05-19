@@ -64,6 +64,7 @@ import FormationCommInterne from './pages/formation/FormationCommInterne';
 import CommerceCatalogue from './pages/CommerceCatalogue';
 import ManagementCatalogue from './pages/ManagementCatalogue';
 import SanteSecuriteCatalogue from './pages/SanteSecuriteCatalogue';
+import Qualiopi from './pages/Qualiopi';
 
 import './index.css';
 
@@ -126,6 +127,7 @@ function App() {
               <Route path="/cfa/formation/:id" element={<FormationDetail />} />
               <Route path="/cfa/indicateurs" element={<Indicateurs />} />
               <Route path="/mentions-legales" element={<MentionsLegales />} />
+              <Route path="/qualiopi" element={<Qualiopi />} />
               <Route path="/ressources/evenements" element={<Evenements />} />
               <Route path="/ressources/newsletters" element={<Newsletters />} />
               <Route path="/ressources/newsletters/:slug" element={<NewsletterArticle />} />
