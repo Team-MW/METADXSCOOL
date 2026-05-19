@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Rocket, Target, Award, Heart, CheckCircle, MapPin, Phone, Mail, Accessibility, Bus, ShieldCheck, BookOpen, Users } from 'lucide-react';
+import { Rocket, Target, Award, Heart, CheckCircle, MapPin, Phone, Mail, Accessibility, ShieldCheck, BookOpen, Users } from 'lucide-react';
 import '../styles/CFA.css';
 
 // Importing assets
@@ -191,10 +191,36 @@ export default function CFA() {
                             <li><Phone color="#0369a1" /> 05 37 04 02 64</li>
                             <li><Mail color="#0369a1" /> contact@metadxs.com</li>
                         </ul>
-                        <div style={{ marginTop: '2rem' }}>
-                            <h4 style={{ fontWeight: '800', color: '#0369a1', marginBottom: '0.5rem' }}>Accès :</h4>
-                            <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Metro-M.svg/512px-Metro-M.svg.png" width="20" alt="Métro" /> <strong>Métro A :</strong> 10 min à pied de l'arrêt Reynerie</p>
-                            <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}><Bus size={20} color="#0369a1" /> <strong>Bus L7 :</strong> Arrêt Bordelongue (depuis Mermoz)</p>
+                        <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#ffffff', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.04)' }}>
+                            <h4 style={{ fontWeight: '900', color: '#0369a1', marginBottom: '1.25rem', fontSize: '1.1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Moyens d'accès :</h4>
+                            
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                                {/* Métro A */}
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem', background: '#fef2f2', borderRadius: '12px', border: '1px solid #fee2e2' }}>
+                                    <div style={{ background: '#e11d48', color: 'white', fontWeight: '900', width: '40px', height: '40px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', boxShadow: '0 4px 10px rgba(225, 29, 72, 0.2)' }}>
+                                        A
+                                    </div>
+                                    <div>
+                                        <span style={{ display: 'block', fontSize: '0.75rem', color: '#be123c', fontWeight: '800', textTransform: 'uppercase' }}>Métro A</span>
+                                        <span style={{ fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>
+                                            10 min à pied de l'arrêt <strong style={{ color: '#e11d48' }}>Reynerie</strong>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                {/* Bus L7 */}
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '1rem', background: '#fffbeb', borderRadius: '12px', border: '1px solid #fef3c7' }}>
+                                    <div style={{ background: '#d97706', color: 'white', fontWeight: '900', width: '40px', height: '40px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', boxShadow: '0 4px 10px rgba(217, 119, 6, 0.2)' }}>
+                                        L7
+                                    </div>
+                                    <div>
+                                        <span style={{ display: 'block', fontSize: '0.75rem', color: '#b45309', fontWeight: '800', textTransform: 'uppercase' }}>Bus Linéo L7</span>
+                                        <span style={{ fontSize: '0.95rem', fontWeight: '700', color: '#1e293b' }}>
+                                            Arrêt <strong style={{ color: '#d97706' }}>Bordelongue</strong> (depuis Mermoz)
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
