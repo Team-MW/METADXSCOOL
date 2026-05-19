@@ -33,14 +33,16 @@
     cursor: pointer;
 }
 
-/* Hover Effect: Expand active panel */
-.split-panel:hover {
-    flex: 2;
-}
+/* Hover Effect: Expand active panel (Desktops only) */
+@media (hover: hover) {
+    .split-panel:hover {
+        flex: 2;
+    }
 
-/* Dim the non-hovered panel (via sibling selector if possible, or just overlay opacity) */
-.hero-split-wrapper:hover .split-panel:not(:hover) {
-    filter: grayscale(80%) brightness(0.6);
+    /* Dim the non-hovered panel */
+    .hero-split-wrapper:hover .split-panel:not(:hover) {
+        filter: grayscale(80%) brightness(0.6);
+    }
 }
 
 /* LEFT PANEL - SCHOOL */
@@ -71,8 +73,10 @@
     padding: 2rem;
 }
 
-.split-panel:hover .panel-content {
-    transform: scale(1.05);
+@media (hover: hover) {
+    .split-panel:hover .panel-content {
+        transform: scale(1.05);
+    }
 }
 
 .panel-title {
