@@ -6,13 +6,23 @@ export default function Bac3Catalogue() {
     const formations = [
         {
             title: "BACHELOR RESPONSABLE DES AFFAIRES",
-            subtitle: "Responsable des Affaires",
+            subtitle: "Responsable des Affaires (B-RDA)",
             description: "Pilotez le développement commercial et stratégique d'un centre de profit. Maîtrisez la gestion financière, le marketing d'affaires et le management d'équipes.",
             level: "Bac+3 • Niveau 6",
             duration: "12 Mois",
             rhythm: "Alternance ou Initial",
-            path: "/cfa/formation/bachelor-ra",
+            path: "/cfa/formation/b-rda",
             image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+            title: "TP RESPONSABLE D'ÉTABLISSEMENT MARCHAND",
+            subtitle: "Responsable d'Établissement Marchand (TP-REM)",
+            description: "Pilotez la stratégie commerciale, optimisez la performance financière et animez les équipes d'un point de vente ou d'une unité marchande d'envergure.",
+            level: "Bac+3 • Niveau 6",
+            duration: "12 Mois",
+            rhythm: "Alternance ou Initial",
+            path: "/cfa/formation/tp-rem",
+            image: "https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop"
         }
     ];
 

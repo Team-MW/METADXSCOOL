@@ -60,8 +60,23 @@ const Navbar = () => {
                                 { label: 'TP-MUM', path: '/cfa/formation/tp-mum' }
                             ]
                         },
-                        { label: 'BAC +3', path: '/cfa/formations/bac-3' },
-                        { label: 'BAC +5', path: '/cfa/formations/bac-5' }
+                        {
+                            label: 'BAC +3',
+                            path: '/cfa/formations/bac-3',
+                            hasSubmenu: true,
+                            subItems: [
+                                { label: 'TP-REM', path: '/cfa/formation/tp-rem' },
+                                { label: 'B-RDA', path: '/cfa/formation/b-rda' }
+                            ]
+                        },
+                        {
+                            label: 'BAC +5',
+                            path: '/cfa/formations/bac-5',
+                            hasSubmenu: true,
+                            subItems: [
+                                { label: 'TP-MDEC', path: '/cfa/formation/tp-mdec' }
+                            ]
+                        }
                     ]
                 },
                 { label: 'INDICATEURS DE RÉSULTATS', path: '/cfa/indicateurs' },
@@ -79,7 +94,7 @@ const Navbar = () => {
                     subItems: [
                         {
                             label: 'CATALOGUE',
-                            path: '#', // No direct link usually for parent category
+                            path: '#', // No dcdcdirect link usually for parent category
                             hasSubmenu: true,
                             subItems: [
                                 { label: 'NUMÉRIQUE / INFORMATIQUE / BUREAUTIQUE', path: '/conseils-formations/catalogue/numerique' },

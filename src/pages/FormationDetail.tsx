@@ -96,6 +96,18 @@ const formationsData: Record<string, FormationData> = {
             "Conduire des négociations complexes et piloter la relation client grands comptes"
         ],
         opportunities: ["Responsable de centre de profit", "Responsable du développement commercial", "Chargé d'affaires senior", "Manager de business unit"]
+    },
+    'tp-rem': {
+        title: "TP - Responsable d'Établissement Marchand",
+        level: "BAC +3",
+        description: "Devenez un gestionnaire et manager de haut niveau pour piloter le développement commercial, optimiser la gestion financière et manager l'équipe d'un point de vente ou d'une unité marchande d'envergure.",
+        objectives: [
+            "Développer la stratégie commerciale de l'établissement marchand et optimiser l'offre",
+            "Piloter la performance économique, financière et la rentabilité financière",
+            "Recruter, manager, animer et accompagner les équipes au quotidien",
+            "Gérer la chaîne d'approvisionnement, le flux marchandises et optimiser l'expérience client"
+        ],
+        opportunities: ["Responsable d'établissement marchand", "Directeur de magasin / supermarché", "Chef de département commercial", "Manager de centre de profit"]
     }
 };
 

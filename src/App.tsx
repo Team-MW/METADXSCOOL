@@ -34,6 +34,8 @@ import TP_RPMS from './pages/formation/TP_RPMS'; // IMPORT FORMATION TP-RPMS
 import SecouristeSST from './pages/formation/SecouristeSST'; // IMPORT FORMATION SST INITIAL
 import SecouristeSSTMAC from './pages/formation/SecouristeSSTMAC'; // IMPORT FORMATION SST MAC
 import TP_MDEC from './pages/formation/TP_MDEC'; // IMPORT FORMATION TP-MDEC
+import TP_REM from './pages/formation/TP_REM'; // IMPORT FORMATION TP-REM
+import B_RDA from './pages/formation/B_RDA'; // IMPORT FORMATION B-RDA
 import RHStrategie from './pages/RHStrategie'; // IMPORT RH STRATEGIE
 import POEI from './pages/POEI'; // IMPORT POEI
 import VAE from './pages/VAE'; // IMPORT VAE
@@ -84,6 +86,8 @@ function App() {
               <Route path="/forma-secu/alimentaire/restauration-commerciale" element={<HygeneRestaurationCommerciale />} />
               <Route path="/cfa/formation/tp-crcd" element={<TP_CRCD />} />
               <Route path="/cfa/formation/tp-rpms" element={<TP_RPMS />} />
+              <Route path="/cfa/formation/tp-rem" element={<TP_REM />} />
+              <Route path="/cfa/formation/b-rda" element={<B_RDA />} />
               <Route path="/forma-secu/securite/sst-initial" element={<SecouristeSST />} />
               <Route path="/forma-secu/securite/sst-mac" element={<SecouristeSSTMAC />} />
               <Route path="/cfa/formation/tp-mdec" element={<TP_MDEC />} />
