@@ -170,7 +170,7 @@ function Home() {
                                     <Link to="/cfa" className="pole-btn pole-btn-primary">
                                         Nos formations longues
                                     </Link>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="pole-btn pole-btn-secondary">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="pole-btn pole-btn-secondary">
                                         remplissez le questionnaire de premier contact ici
                                     </a>
                                 </div>

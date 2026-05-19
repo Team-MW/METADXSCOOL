@@ -401,7 +401,7 @@ export default function TP_RPMS() {
                             </div>
 
                             <a href="/contact" className="btn-primary">S'INSCRIRE À CETTE SESSION</a>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="btn-outline">
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-outline">
                                 <FileText size={18} /> DOSSIER DE CANDIDATURE
                             </a>
                         </div>

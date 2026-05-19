@@ -43,7 +43,7 @@ export default function Contact() {
                         <a href="/cfa" className="contact-btn btn-primary-purple">
                             Nos formations longues <ArrowRight size={18} />
                         </a>
-                        <a href="https://tally.so/r/w7Xk1J" target="_blank" rel="noopener noreferrer" className="contact-btn btn-secondary" style={{ color: '#db2777' }}>
+                        <a href="https://forms.gle/tdgAujbd9LaSD99GA" target="_blank" rel="noopener noreferrer" className="contact-btn btn-secondary" style={{ color: '#db2777' }}>
                             Questionnaire de contact
                         </a>
                     </div>
