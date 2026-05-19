@@ -1012,14 +1012,12 @@
 .campus-info,
 .campus-map,
 .campus-details-col {
-    background: rgba(15, 23, 42, 0.35);
-    /* High contrast dark glass */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: #0f172a;
+    /* Solid premium dark slate for absolute readability */
+    border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 30px;
     padding: 2.5rem;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1042,10 +1040,10 @@
 .campus-block h3,
 .campus-details-col h3 {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 1rem;
-    color: #fbbf24;
-    /* Amber accent */
+    color: #ffffff;
+    /* Clean solid white for perfect readability */
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -1110,7 +1108,8 @@
     gap: 1rem;
     margin-bottom: 1.2rem;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.95);
+    color: #ffffff; /* Absolute bright white */
+    font-weight: 600; /* Bold and highly visible */
 }
 
 .contact-icon {
@@ -1122,7 +1121,7 @@
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    background: rgba(15, 23, 42, 0.45); /* Rich Dark Slate overlay */
+    background: rgba(255, 255, 255, 0.05); /* Premium light glass badge on dark solid slate card */
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     padding: 1rem 1.5rem;
@@ -1131,9 +1130,9 @@
 }
 
 .transport-badge:hover {
-    background: rgba(15, 23, 42, 0.6);
+    background: rgba(255, 255, 255, 0.1);
     transform: translateX(4px);
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .transport-icon-wrapper {
@@ -1151,11 +1150,13 @@
 .transport-details {
     font-size: 1.1rem;
     line-height: 1.5;
-    color: white;
+    color: #ffffff; /* Absolute bright white */
+    font-weight: 500;
 }
 
 .transport-details strong {
     color: #60a5fa; /* Vibrant blue prefix for high readability */
+    font-weight: 700;
 }
 
 @media (max-width: 768px) {
