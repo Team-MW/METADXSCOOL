@@ -23,8 +23,8 @@ import pointFort from '../assets/pointfort.png'; // Corrected path
 import logoInline from '../assets/logo-inline.png';
 
 // Import Background Images
-import schoolBg from '../assets/school-card-bg.png';
-import conseilBg from '../assets/conseil-card-bg.png';
+import schoolBg from '../assets/school-card-bg.jpg';
+import conseilBg from '../assets/conseil-card-bg.jpg';
 
 // Define the content for each tab
 const TAB_CONTENT = {
@@ -170,7 +170,7 @@ function Home() {
                                     <Link to="/cfa" className="pole-btn pole-btn-primary">
                                         Nos formations longues
                                     </Link>
-                                    <a href="https://tally.so/r/w7Xk1J" target="_blank" rel="noopener noreferrer" className="pole-btn pole-btn-secondary">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="pole-btn pole-btn-secondary">
                                         remplissez le questionnaire de premier contact ici
                                     </a>
                                 </div>
