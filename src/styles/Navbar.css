@@ -665,3 +665,40 @@
         padding: 0.4rem 1rem;
     }
 }
+
+/* SMARTPHONE MOBILE NAV OVERRIDES (UNDER 768PX) */
+@media (max-width: 768px) {
+    .header-container {
+        height: 70px !important;
+        padding: 0 0.75rem !important;
+        justify-content: space-between !important;
+    }
+
+    .logo-section {
+        gap: 0.4rem !important;
+        margin-right: 0 !important;
+    }
+
+    .logo-image-school {
+        height: 38px !important;
+        width: auto !important;
+    }
+
+    .logo-image-conseil {
+        height: 40px !important;
+        width: auto !important;
+    }
+
+    .logo-separator {
+        height: 24px !important;
+        margin: 0 0.15rem !important;
+    }
+
+    .mobile-menu-toggle {
+        margin-left: 0 !important;
+    }
+
+    .nav-wrapper {
+        height: calc(100vh - 106px) !important;
+    }
+}

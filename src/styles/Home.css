@@ -222,7 +222,7 @@
 
     .panel-conseil {
         clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
-        margin-top: -5vh;
+        margin: -5vh 0 0 0;
         flex: none;
         height: 48vh;
         width: 100%;
