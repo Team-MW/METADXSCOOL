@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react';
+import { Star, MapPin, Phone, Mail, Train, Bus } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -300,15 +300,38 @@ function Home() {
                         <div className="campus-info">
                             <div className="campus-block">
                                 <h3>Nos coordonnées</h3>
-                                <p>– 244 Route de Seysses, 31100 Toulouse</p>
-                                <p>– Téléphone : 06 82 64 10 25 / 06 82 64 10 26</p>
-                                <p>Mail : contact@metadxs.com</p>
+                                <div className="contact-item-row">
+                                    <MapPin className="contact-icon" size={20} />
+                                    <span>244 Route de Seysses, 31100 Toulouse</span>
+                                </div>
+                                <div className="contact-item-row">
+                                    <Phone className="contact-icon" size={20} />
+                                    <span>06 82 64 10 25 / 06 82 64 10 26</span>
+                                </div>
+                                <div className="contact-item-row">
+                                    <Mail className="contact-icon" size={20} />
+                                    <span>contact@metadxs.com</span>
+                                </div>
                             </div>
 
                             <div className="campus-block">
                                 <h3>Comment s'y rendre ?</h3>
-                                <p><span className="highlight">En métro</span> : 10 minutes à pieds de l'arrêt Reynerie (Ligne A)</p>
-                                <p><span className="highlight">En bus</span> : Ligne 7 depuis Mermoz, Arrêt Bordelongue</p>
+                                <div className="transport-badge">
+                                    <div className="transport-icon-wrapper">
+                                        <Train size={18} />
+                                    </div>
+                                    <div className="transport-details">
+                                        <strong>En métro :</strong> 10 minutes à pied de l'arrêt Reynerie (Ligne A)
+                                    </div>
+                                </div>
+                                <div className="transport-badge">
+                                    <div className="transport-icon-wrapper">
+                                        <Bus size={18} />
+                                    </div>
+                                    <div className="transport-details">
+                                        <strong>En bus :</strong> Ligne 7 depuis Mermoz, Arrêt Bordelongue
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
