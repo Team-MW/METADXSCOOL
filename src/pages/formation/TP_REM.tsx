@@ -241,7 +241,7 @@ export default function TP_REM() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">RNCP N°39063 (V1 du 20/10/2025)</span>
+                        <span className="version-tag">RNCP N°38666</span>
                         <h1>Titre Professionnel Responsable d’Établissement Marchand (REM)</h1>
                         <div className="hero-subtitle">NIVEAU 6 – BAC +3 (ÉQUIVALENT LICENCE)</div>
                         <p className="hero-desc">
@@ -459,11 +459,11 @@ export default function TP_REM() {
                             </Link>
                         </div>
 
-                        <a href="https://www.francecompetences.fr/recherche/rncp/39063/" target="_blank" rel="noopener noreferrer" className="info-card" style={{display:'flex', alignItems:'center', gap:'1rem', textDecoration:'none', transition:'all 0.2s', border:'2px solid #7c3aed'}}>
+                        <a href="https://www.francecompetences.fr/recherche/rncp/38666/" target="_blank" rel="noopener noreferrer" className="info-card" style={{display:'flex', alignItems:'center', gap:'1rem', textDecoration:'none', transition:'all 0.2s', border:'2px solid #7c3aed'}}>
                             <Download color="#7c3aed" />
                             <div>
                                 <h4 style={{fontWeight:800, fontSize:'0.9rem', color:'#1c1e4c'}}>FICHE COMPLÈTE RNCP</h4>
-                                <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche Officielle N°39063</span>
+                                <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche Officielle N°38666</span>
                             </div>
                         </a>
                     </div>
