@@ -176,6 +176,9 @@ export default function Egalite() {
                     margin-bottom: 2rem;
                     color: #ef9a37;
                 }
+                .engagement-block .feature-list li {
+                    color: white;
+                }
                 .engagement-block li::before {
                     content: '→';
                     color: #5bb4f8;
