@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import ScrollToTop from './components/utils/ScrollToTop';
 import Navbar from './components/layout/Navbar';
@@ -139,6 +139,69 @@ function App() {
               <Route path="/cfa/formations/bac-2" element={<Bac2Catalogue />} />
               <Route path="/cfa/formations/bac-3" element={<Bac3Catalogue />} />
               <Route path="/cfa/formations/bac-5" element={<Bac5Catalogue />} />
+
+              {/* === MIGRATION SEO : REDIRECTIONS DES ANCIENNES PAGES === */}
+              {/* Actualités / Newsletters */}
+              <Route path="/%f0%9f%8c%9e-newsletter-ete-2025-meta-dx-school" element={<Navigate to="/ressources/newsletters/newsletter-ete-2025" replace />} />
+              <Route path="/🌞-newsletter-ete-2025-meta-dx-school" element={<Navigate to="/ressources/newsletters/newsletter-ete-2025" replace />} />
+              <Route path="/ressources/evenements/rdv" element={<Navigate to="/ressources/evenements" replace />} />
+              <Route path="/evenements" element={<Navigate to="/ressources/evenements" replace />} />
+              
+              {/* Forma'Sécu */}
+              <Route path="/4-a-forma-secu" element={<Navigate to="/forma-secu" replace />} />
+              <Route path="/4-a-forma-secu/catalogue-de-formation" element={<Navigate to="/forma-secu" replace />} />
+              <Route path="/4-a-forma-secu/catalogue-de-formation/alimentaire-restauration" element={<Navigate to="/forma-secu/alimentaire" replace />} />
+              <Route path="/4-a-forma-secu/catalogue-de-formation/securite-des-biens-et-des-personnes" element={<Navigate to="/forma-secu/securite" replace />} />
+              
+              {/* OF & Conseils Formations */}
+              <Route path="/catalogue-of" element={<Navigate to="/conseils-formations/formations" replace />} />
+              <Route path="/cf" element={<Navigate to="/conseils-formations" replace />} />
+              <Route path="/cf/formations-of-2" element={<Navigate to="/conseils-formations/formations" replace />} />
+              <Route path="/cf/formations-of-2/bdc" element={<Navigate to="/conseils-formations/bilan-competences" replace />} />
+              <Route path="/cf/formations-of-2/catalogue-of" element={<Navigate to="/conseils-formations/formations" replace />} />
+              <Route path="/cf/formations-of-2/catalogue-of/commerce-vente-relation-client" element={<Navigate to="/conseils-formations/catalogue/commerce" replace />} />
+              <Route path="/cf/formations-of-2/catalogue-of/communication-marketing" element={<Navigate to="/conseils-formations/catalogue/communication" replace />} />
+              <Route path="/cf/formations-of-2/catalogue-of/management" element={<Navigate to="/conseils-formations/catalogue/management" replace />} />
+              <Route path="/cf/formations-of-2/catalogue-of/numerique-informatique-bureautique" element={<Navigate to="/conseils-formations/catalogue/numerique" replace />} />
+              <Route path="/cf/formations-of-2/catalogue-of/sante-et-securite-au-travail" element={<Navigate to="/conseils-formations/catalogue/sante-securite" replace />} />
+              <Route path="/cf/formations-of-2/poei" element={<Navigate to="/conseils-formations/poei" replace />} />
+              <Route path="/cf/formations-of-2/vae" element={<Navigate to="/conseils-formations/vae" replace />} />
+              <Route path="/cf/rh-strat" element={<Navigate to="/conseils-formations/rh-strategie" replace />} />
+              
+              {/* CFA & Formations CFA */}
+              <Route path="/formations-cfa" element={<Navigate to="/cfa" replace />} />
+              <Route path="/cfa/formations-cfa" element={<Navigate to="/cfa" replace />} />
+              <Route path="/cfa/formations-cfa/bac" element={<Navigate to="/cfa/formations/bac" replace />} />
+              <Route path="/cfa/formations-cfa/bac2" element={<Navigate to="/cfa/formations/bac-2" replace />} />
+              <Route path="/cfa/formations-cfa/bac2/tp-rpms" element={<Navigate to="/cfa/formation/tp-rpms" replace />} />
+              <Route path="/cfa/formations-cfa/bac3" element={<Navigate to="/cfa/formations/bac-3" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/b-rda" element={<Navigate to="/cfa/formation/b-rda" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-amum-opt-rr" element={<Navigate to="/cfa/formation/tp-amum-opt-rr" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-amum" element={<Navigate to="/cfa/formation/tp-amum" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-crcd" element={<Navigate to="/cfa/formation/tp-crcd" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-mdec" element={<Navigate to="/cfa/formation/tp-mdec" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-mum-opt-rr" element={<Navigate to="/cfa/formation/tp-mum-opt-rr" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-mum" element={<Navigate to="/cfa/formation/tp-mum" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-ntc" element={<Navigate to="/cfa/formation/tp-ntc" replace />} />
+              <Route path="/cfa/formations-cfa/bac3/tp-rem" element={<Navigate to="/cfa/formation/tp-rem" replace />} />
+              <Route path="/cfa/formations-cfa/bac5" element={<Navigate to="/cfa/formations/bac-5" replace />} />
+              <Route path="/cfa/taux" element={<Navigate to="/cfa/indicateurs" replace />} />
+              
+              {/* Contacts Processus */}
+              <Route path="/contact/process" element={<Navigate to="/contact/candidat" replace />} />
+              <Route path="/contact/processus-entreprises" element={<Navigate to="/contact/entreprises" replace />} />
+              
+              {/* Financements */}
+              <Route path="/financements/aide-au-logement" element={<Navigate to="/ressources/logement" replace />} />
+              <Route path="/financements/alternant-futur-alternant" element={<Navigate to="/financements/alternant" replace />} />
+              <Route path="/financements/demandeur-demploi" element={<Navigate to="/financements/demandeur-emploi" replace />} />
+              <Route path="/financements/independant-dirigeant-travailleur-non-salarie" element={<Navigate to="/financements/independant" replace />} />
+              <Route path="/financements/travailleur-de-la-fonction-publique" element={<Navigate to="/financements/fonction-publique" replace />} />
+              <Route path="/financements/travailleur-en-situation-de-handicap" element={<Navigate to="/financements/handicap" replace />} />
+              
+              {/* Ressources & Mentions */}
+              <Route path="/mentions" element={<Navigate to="/mentions-legales" replace />} />
+              <Route path="/ressources/handicap" element={<Navigate to="/ressources/handicap-engagement" replace />} />
             </Routes>
           </main>
           <Footer />

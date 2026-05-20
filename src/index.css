@@ -47,3 +47,505 @@ img {
   margin: 0 auto;
   padding: 0 1rem;
 }
+
+/* ==========================================
+   TRANSPARENT BACKGROUND EMOJIS FOR HEROS
+   ========================================== */
+
+/* 1. Base styles to ensure all page heros support absolute pseudoelements */
+.fs-hero,
+.cfa-hero,
+.conseils-hero,
+.ressources-hero,
+.fin-hero,
+.contact-hero,
+.candidat-hero,
+.alternant-hero,
+.salarie-hero,
+.demandeur-hero,
+.indep-hero,
+.fp-hero,
+.handicap-hero,
+.hero-section,
+.cat-hero,
+.offre-hero,
+.mentions-hero,
+.events-hero,
+.news-hero,
+.article-hero,
+.logement-hero,
+.egalite-hero,
+.secu-hero,
+.alim-hero,
+.formation-hero,
+.hero-excel,
+.hero-ppt,
+.hero-word,
+.hero-interne,
+.hero-cyber,
+.hero-ia,
+.hero-comm,
+.hero-dig,
+.hero-in,
+.hero-impact,
+.poei-hero,
+.qualiopi-hero,
+.bilan-hero {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Ensure text and main content stays in front of both background overlays */
+.fs-hero *,
+.cfa-hero *,
+.conseils-hero *,
+.ressources-hero *,
+.fin-hero *,
+.contact-hero *,
+.candidat-hero *,
+.alternant-hero *,
+.salarie-hero *,
+.demandeur-hero *,
+.indep-hero *,
+.fp-hero *,
+.handicap-hero *,
+.hero-section *,
+.cat-hero *,
+.offre-hero *,
+.mentions-hero *,
+.events-hero *,
+.news-hero *,
+.article-hero *,
+.logement-hero *,
+.egalite-hero *,
+.secu-hero *,
+.alim-hero *,
+.formation-hero *,
+.hero-excel *,
+.hero-ppt *,
+.hero-word *,
+.hero-interne *,
+.hero-cyber *,
+.hero-ia *,
+.hero-comm *,
+.hero-dig *,
+.hero-in *,
+.hero-impact *,
+.poei-hero *,
+.qualiopi-hero *,
+.bilan-hero * {
+  position: relative;
+  z-index: 3;
+}
+
+/* The first overlay (::before) softens/lowers the background color's opacity/intensity */
+.fs-hero::before,
+.cfa-hero::before,
+.conseils-hero::before,
+.ressources-hero::before,
+.fin-hero::before,
+.contact-hero::before,
+.candidat-hero::before,
+.alternant-hero::before,
+.salarie-hero::before,
+.demandeur-hero::before,
+.indep-hero::before,
+.fp-hero::before,
+.handicap-hero::before,
+.hero-section::before,
+.cat-hero::before,
+.offre-hero::before,
+.mentions-hero::before,
+.events-hero::before,
+.news-hero::before,
+.article-hero::before,
+.logement-hero::before,
+.egalite-hero::before,
+.secu-hero::before,
+.alim-hero::before,
+.formation-hero::before,
+.hero-excel::before,
+.hero-ppt::before,
+.hero-word::before,
+.hero-interne::before,
+.hero-cyber::before,
+.hero-ia::before,
+.hero-comm::before,
+.hero-dig::before,
+.hero-in::before,
+.hero-impact::before,
+.poei-hero::before,
+.qualiopi-hero::before,
+.bilan-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.18); /* Fades/softens the dark background color */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* The second overlay (::after) renders the highly visible transparent emojis */
+.fs-hero::after,
+.cfa-hero::after,
+.conseils-hero::after,
+.ressources-hero::after,
+.fin-hero::after,
+.contact-hero::after,
+.candidat-hero::after,
+.alternant-hero::after,
+.salarie-hero::after,
+.demandeur-hero::after,
+.indep-hero::after,
+.fp-hero::after,
+.handicap-hero::after,
+.hero-section::after,
+.cat-hero::after,
+.offre-hero::after,
+.mentions-hero::after,
+.events-hero::after,
+.news-hero::after,
+.article-hero::after,
+.logement-hero::after,
+.egalite-hero::after,
+.secu-hero::after,
+.alim-hero::after,
+.formation-hero::after,
+.hero-excel::after,
+.hero-ppt::after,
+.hero-word::after,
+.hero-interne::after,
+.hero-cyber::after,
+.hero-ia::after,
+.hero-comm::after,
+.hero-dig::after,
+.hero-in::after,
+.hero-impact::after,
+.poei-hero::after,
+.qualiopi-hero::after,
+.bilan-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.28; /* Increased from 0.08 to 0.28 for high visibility */
+  pointer-events: none;
+  z-index: 2;
+  background-position: 8% 20%, 92% 70%;
+  background-size: 110px, 130px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease;
+}
+
+/* Specific background emojis for each page type */
+
+/* CFA / School page: 🎓 & 🏫 */
+.cfa-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🎓%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🏫%3C/text%3E%3C/svg%3E");
+}
+
+/* Conseils & Formations: 💼 & 📈 */
+.conseils-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💼%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📈%3C/text%3E%3C/svg%3E");
+}
+
+/* FormaSecu / About us: 🛡️ & 👥 */
+.fs-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🛡️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E👥%3C/text%3E%3C/svg%3E");
+}
+
+/* Ressources: 📚 & 💡 */
+.ressources-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📚%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💡%3C/text%3E%3C/svg%3E");
+}
+
+/* Financements: 💶 & 💳 */
+.fin-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💶%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💳%3C/text%3E%3C/svg%3E");
+}
+
+/* Contact: ✉️ & 📞 */
+.contact-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E✉️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📞%3C/text%3E%3C/svg%3E");
+}
+
+/* Candidat: 🧑‍🎓 & 📝 */
+.candidat-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🧑‍🎓%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📝%3C/text%3E%3C/svg%3E");
+}
+
+/* Alternant: 🧑‍💻 & 💼 */
+.alternant-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🧑‍💻%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💼%3C/text%3E%3C/svg%3E");
+}
+
+/* Salarie: 👔 & 🛠️ */
+.salarie-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E👔%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🛠️%3C/text%3E%3C/svg%3E");
+}
+
+/* Demandeur d'emploi: 🚀 & 🤝 */
+.demandeur-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🚀%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤝%3C/text%3E%3C/svg%3E");
+}
+
+/* Indépendant: 💻 & 📈 */
+.indep-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💻%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📈%3C/text%3E%3C/svg%3E");
+}
+
+/* Fonction Publique: 🏛️ & 💼 */
+.fp-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🏛️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💼%3C/text%3E%3C/svg%3E");
+}
+
+/* Handicap / LHandicap: 🤝 & ♿ */
+.handicap-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤝%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E♿%3C/text%3E%3C/svg%3E");
+}
+
+/* Bac / Bac+2 / Bac+3 / Bac+5 / Mobilite: 🎓 & ✈️ */
+.hero-section::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🎓%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E✈️%3C/text%3E%3C/svg%3E");
+}
+
+/* Catalogues (Commerce, Communication, Management, SanteSecurite, Numerique): 📊 & 💻 */
+.cat-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📊%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💻%3C/text%3E%3C/svg%3E");
+}
+
+/* Offre de formations: 📋 & 🚀 */
+.offre-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📋%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🚀%3C/text%3E%3C/svg%3E");
+}
+
+/* Mentions Legales: ⚖️ & 📜 */
+.mentions-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E⚖️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📜%3C/text%3E%3C/svg%3E");
+}
+
+/* Événements: 📅 & 🎙️ */
+.events-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📅%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🎙️%3C/text%3E%3C/svg%3E");
+}
+
+/* Newsletters / Articles: ✉️ & 📰 */
+.news-hero::after,
+.article-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E✉️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📰%3C/text%3E%3C/svg%3E");
+}
+
+/* Logement: 🏠 & 🔑 */
+.logement-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🏠%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🔑%3C/text%3E%3C/svg%3E");
+}
+
+/* Égalité & Inclusion: 🤝 & ❤️ */
+.egalite-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤝%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E❤️%3C/text%3E%3C/svg%3E");
+}
+
+/* Sécurité Biens & Personnes: 🛡️ & 🚨 */
+.secu-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🛡️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🚨%3C/text%3E%3C/svg%3E");
+}
+
+/* Alimentaire Restauration: 🍔 & 🍳 */
+.alim-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🍔%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🍳%3C/text%3E%3C/svg%3E");
+}
+
+/* Formations (HACCP, SST, etc.): 🎓 & 💡 */
+.formation-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🎓%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💡%3C/text%3E%3C/svg%3E");
+}
+
+/* Excel + IA: 📊 & 🤖 */
+.hero-excel::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📊%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤖%3C/text%3E%3C/svg%3E");
+}
+
+/* PowerPoint + IA: 🖼️ & 🤖 */
+.hero-ppt::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🖼️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤖%3C/text%3E%3C/svg%3E");
+}
+
+/* Word + IA: 📝 & 🤖 */
+.hero-word::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📝%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤖%3C/text%3E%3C/svg%3E");
+}
+
+/* Communication Interne: 🗣️ & 💬 */
+.hero-interne::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🗣️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💬%3C/text%3E%3C/svg%3E");
+}
+
+/* RGPD & Cyber: 🔒 & 🛡️ */
+.hero-cyber::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🔒%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🛡️%3C/text%3E%3C/svg%3E");
+}
+
+/* IA & Veille: 🤖 & 🧠 */
+.hero-ia::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🤖%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🧠%3C/text%3E%3C/svg%3E");
+}
+
+/* Communication Multi-Acteurs: 🗣️ & 📢 */
+.hero-comm::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🗣️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📢%3C/text%3E%3C/svg%3E");
+}
+
+/* Communication Digitale: 💻 & 📢 */
+.hero-dig::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💻%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📢%3C/text%3E%3C/svg%3E");
+}
+
+/* LinkedIn: 💼 & 📢 */
+.hero-in::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💼%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📢%3C/text%3E%3C/svg%3E");
+}
+
+/* Communication Impact: 🗣️ & ⚡ */
+.hero-impact::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🗣️%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E⚡%3C/text%3E%3C/svg%3E");
+}
+
+/* POEI: 💼 & 🚀 */
+.poei-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E💼%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🚀%3C/text%3E%3C/svg%3E");
+}
+
+/* Qualiopi: 🏆 & 📋 */
+.qualiopi-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🏆%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E📋%3C/text%3E%3C/svg%3E");
+}
+
+/* Bilan de Compétences: 🧠 & 🧭 */
+.bilan-hero::after {
+  background-image: 
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🧠%3C/text%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='80'%3E🧭%3C/text%3E%3C/svg%3E");
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .fs-hero::after,
+  .cfa-hero::after,
+  .conseils-hero::after,
+  .ressources-hero::after,
+  .fin-hero::after,
+  .contact-hero::after,
+  .candidat-hero::after,
+  .alternant-hero::after,
+  .salarie-hero::after,
+  .demandeur-hero::after,
+  .indep-hero::after,
+  .fp-hero::after,
+  .handicap-hero::after,
+  .hero-section::after,
+  .cat-hero::after,
+  .offre-hero::after,
+  .mentions-hero::after,
+  .events-hero::after,
+  .news-hero::after,
+  .article-hero::after,
+  .logement-hero::after,
+  .egalite-hero::after,
+  .secu-hero::after,
+  .alim-hero::after,
+  .formation-hero::after,
+  .hero-excel::after,
+  .hero-ppt::after,
+  .hero-word::after,
+  .hero-interne::after,
+  .hero-cyber::after,
+  .hero-ia::after,
+  .hero-comm::after,
+  .hero-dig::after,
+  .hero-in::after,
+  .hero-impact::after,
+  .poei-hero::after,
+  .qualiopi-hero::after,
+  .bilan-hero::after {
+    opacity: 0.18; /* Adjusted for mobile high visibility */
+    background-size: 70px, 80px;
+    background-position: 3% 20%, 97% 80%;
+  }
+}

@@ -121,7 +121,7 @@
 }
 
 .footer-contact-card {
-    padding: 0.85rem 2rem;
+    padding: 1.25rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -132,9 +132,9 @@
     gap: 1.5rem;
     width: 100%;
     max-width: 640px;
-    height: 125px;
+    min-height: 165px;
+    height: auto;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 .footer-contact-card:hover {
@@ -175,8 +175,7 @@
     align-items: flex-start;
     justify-content: center;
     text-align: left;
-    gap: 0.15rem;
-    height: 100%;
+    gap: 0.45rem;
 }
 
 .card-center-info h4 {
@@ -193,11 +192,11 @@
 }
 
 .email-link {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     color: #1e1b4b;
     text-decoration: none;
     font-weight: 750;
-    line-height: 1.1;
+    line-height: 1.2;
     transition: color 0.2s;
 }
 
@@ -206,16 +205,16 @@
 }
 
 .phone {
-    font-size: 0.85rem;
+    font-size: 0.92rem;
     color: #1e1b4b;
     font-weight: 750;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .info-text {
-    font-size: 0.72rem;
+    font-size: 0.76rem;
     color: #fb923c;
-    line-height: 1.1;
+    line-height: 1.25;
     display: block;
     text-align: left;
     font-weight: 600;

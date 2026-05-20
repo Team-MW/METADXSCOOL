@@ -58,8 +58,8 @@ const Footer = () => {
                             <h4>CONTACT</h4>
                             <a href="mailto:contact@metadxs.com" className="email-link">contact@metadxs.com</a>
                             <p className="phone">06 82 64 10 26</p>
-                            <span className="info-text">Cliquez ci dessous pour <br />retrouver toutes les <br />informations de contact</span>
-                            <a href="#" className="contact-bold-link">Contact</a>
+                            <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
+                            <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>
 
                         <div className="card-right-socials">
@@ -79,8 +79,8 @@ const Footer = () => {
                             <h4 className="title-white">CONTACT</h4>
                             <a href="mailto:julie.mouillat@metadxs.com" className="email-link">julie.mouillat@metadxs.com</a>
                             <p className="phone">07 59 60 60 40</p>
-                            <span className="info-text">Cliquez ci dessous pour <br />retrouver toutes les <br />informations de contact</span>
-                            <a href="#" className="contact-bold-link">Contact</a>
+                            <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
+                            <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>
 
                         <div className="card-right-socials">

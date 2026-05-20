@@ -17,7 +17,6 @@ import leelou from '../assets/logoLeelou.png';
 import vival from '../assets/logo_vival.jpg';
 import maisonDuMonde from '../assets/maison-du-monde.png';
 import marcheDeMo from '../assets/march_de_mo_logo.jpg';
-import pointFort from '../assets/pointfort.png';
 import logoInline from '../assets/logo-inline.png';
 
 
@@ -180,21 +179,18 @@ export default function Entreprises() {
                         {/* SET 1 */}
                         <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
                         <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
-                        <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
                         <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
                         <div className="partner-logo-item"><img src={choixDeVie} alt="Choix de Vie" /></div>
                         <div className="partner-logo-item"><img src={microDidact} alt="Micro Didact" /></div>
                         {/* DUPLICATE */}
                         <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
                         <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
-                        <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
                         <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
                         <div className="partner-logo-item"><img src={choixDeVie} alt="Choix de Vie" /></div>
                         <div className="partner-logo-item"><img src={microDidact} alt="Micro Didact" /></div>
                         {/* TRIPLICATE */}
                         <div className="partner-logo-item"><img src={logoInline} alt="Tolosa Services" /></div>
                         <div className="partner-logo-item"><img src={vival} alt="Vival" /></div>
-                        <div className="partner-logo-item"><img src={pointFort} alt="Point Fort" /></div>
                         <div className="partner-logo-item"><img src={boumBurger} alt="Boum Burger" /></div>
                     </div>
 

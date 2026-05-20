@@ -19,10 +19,13 @@ export default function FormaSecu() {
                     line-height: 1.6;
                 }
                 .fs-hero {
-                    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+                    background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.2) 0%, transparent 50%), linear-gradient(135deg, #7b1fa2 0%, #db2777 100%);
                     color: white;
-                    padding: 5rem 2rem;
+                    padding: 7rem 2rem 6rem;
                     text-align: center;
+                    border-bottom-left-radius: 60px;
+                    border-bottom-right-radius: 60px;
+                    box-shadow: 0 15px 35px rgba(123, 31, 162, 0.2);
                 }
                 .fs-hero h1 {
                     font-size: 3rem;
