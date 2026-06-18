@@ -29,7 +29,7 @@ export default function MentionsLegales() {
                 </div>
                 <div className="content-row">
                     <span className="label">Siège social :</span>
-                    <span className="value">244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span>
+                    <span className="value"><a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</a></span>
                 </div>
                 <div className="content-row">
                     <span className="label">SIRET :</span>

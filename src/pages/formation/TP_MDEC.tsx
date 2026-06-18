@@ -128,8 +128,9 @@ export default function TP_MDEC() {
                     border-left: 4px solid #7c3aed;
                 }
                 .stat-icon { color: #7c3aed; flex-shrink: 0; }
-                .stat-label { font-size: 0.75rem; color: #64748b; font-weight: 700; text-transform: uppercase; }
-                .stat-value { font-size: 0.95rem; font-weight: 800; color: #1e293b; }
+                .stat-text { display: flex; flex-direction: column; gap: 0.2rem; }
+                .stat-label { font-size: 0.75rem; color: #64748b; font-weight: 700; text-transform: uppercase; display: block; }
+                .stat-value { font-size: 0.95rem; font-weight: 800; color: #1e293b; display: block; }
 
                 .list-check { list-style: none; padding: 0; }
                 .list-check li {

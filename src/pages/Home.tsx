@@ -98,105 +98,125 @@ function Home() {
 
             {/* WELCOME SECTION */}
             <section className="welcome-section">
-                <h2 className="welcome-title">BIENVENUE CHEZ METADXS</h2>
+                <div className="welcome-badge">🎓 Certifié Qualiopi · Toulouse</div>
+                <h2 className="welcome-title">BIENVENUE CHEZ <span className="welcome-title-accent">METADXS</span></h2>
                 <p className="welcome-text">
-                    Le groupe METADXS est acteur de la formation engagé en faveur de l'inclusion, de la montée en compétences et de l'innovation pédagogique.
+                    Le groupe METADXS est acteur de la formation engagé en faveur de l'inclusion,
+                    de la montée en compétences et de l'innovation pédagogique.
                     <br /><br />
-                    Nous vous accompagnons à chaque étape de votre parcours, que vous soyez en reconversion, en recherche d'alternance, ou une entreprise souhaitant former ses équipes.
-                    Deux entités, un même objectif : rendre la formation accessible, humaine et impactante.
+                    Nous vous accompagnons à chaque étape de votre parcours, que vous soyez en reconversion,
+                    en recherche d'alternance, ou une entreprise souhaitant former ses équipes.
+                    <strong style={{color:'#fde68a', display:'block', marginTop:'0.75rem'}}>Deux entités, un même objectif : rendre la formation accessible, humaine et impactante.</strong>
                 </p>
 
-                {/* TABS SECTION (replacing old Services Grid) */}
+                {/* TABS SECTION */}
                 <div className="tabs-container">
                     <div className="tabs-header">
                         <button
                             className={`tab-button ${activeTab === 'alternance' ? 'active' : ''}`}
                             onClick={() => setActiveTab('alternance')}
                         >
-                            FORMATIONS EN<br />ALTERNANCE
+                            <span className="tab-icon">🎓</span>
+                            <span>FORMATIONS EN<br />ALTERNANCE</span>
                         </button>
                         <button
                             className={`tab-button ${activeTab === 'organisme' ? 'active' : ''}`}
                             onClick={() => setActiveTab('organisme')}
                         >
-                            ORGANISME<br />DE FORMATION
+                            <span className="tab-icon">🏛️</span>
+                            <span>ORGANISME<br />DE FORMATION</span>
                         </button>
                         <button
                             className={`tab-button ${activeTab === 'vae' ? 'active' : ''}`}
                             onClick={() => setActiveTab('vae')}
                         >
-                            VALIDATION DES ACQUIS<br />DE L'EXPÉRIENCE (VAE)
+                            <span className="tab-icon">📋</span>
+                            <span>VALIDATION DES ACQUIS<br />DE L'EXPÉRIENCE (VAE)</span>
                         </button>
                         <button
                             className={`tab-button ${activeTab === 'bilan' ? 'active' : ''}`}
                             onClick={() => setActiveTab('bilan')}
                         >
-                            BILAN DE<br />COMPÉTENCES
+                            <span className="tab-icon">🔍</span>
+                            <span>BILAN DE<br />COMPÉTENCES</span>
                         </button>
                     </div>
 
                     <div className="tab-content">
-                        <p className="tab-description">
-                            {TAB_CONTENT[activeTab].text}
-                        </p>
+                        <div className="tab-content-inner">
+                            <div className="tab-content-icon">
+                                {activeTab === 'alternance' && '🎓'}
+                                {activeTab === 'organisme' && '🏛️'}
+                                {activeTab === 'vae' && '📋'}
+                                {activeTab === 'bilan' && '🔍'}
+                            </div>
+                            <div>
+                                <h3 className="tab-content-title">{TAB_CONTENT[activeTab].title}</h3>
+                                <p className="tab-description">{TAB_CONTENT[activeTab].text}</p>
+                            </div>
+                        </div>
+                        <a href="/contact" className="tab-cta-link">Nous contacter →</a>
                     </div>
                 </div>
 
-                <p style={{ marginTop: '2rem', fontSize: '1.1rem' }}>
-                    Si vous avez des questions ou des interrogations, n'hésitez pas à nous contacter, nous sommes là pour vous aider et vous accompagner dans votre projet professionnel.
+                <p className="welcome-contact-note">
+                    💬 Des questions ? Nous sommes là pour vous accompagner dans votre projet professionnel.
                 </p>
 
                 {/* POLES SECTION */}
                 <div className="poles-section">
-                    <h2 className="poles-title">DÉCOUVREZ NOS DEUX PÔLES D'EXPERTISE POUR RÉPONDRE À VOS BESOINS :</h2>
+                    <h2 className="poles-title">DÉCOUVREZ NOS DEUX PÔLES D'EXPERTISE</h2>
+                    <p className="poles-subtitle">Deux entités complémentaires pour répondre à tous vos besoins de formation</p>
 
                     <div className="poles-grid">
                         {/* POLE 1: META DX SCHOOL */}
-                        <div className="pole-card bg-school" style={{ backgroundImage: `linear-gradient(rgba(76, 29, 149, 0.85), rgba(236, 72, 153, 0.8)), url(${schoolBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                        <div className="pole-card pole-school">
+                            <div className="pole-card-glow pole-glow-purple"></div>
                             <div className="pole-card-content">
-                                <h3>META DX SCHOOL</h3>
-                                <p className="pole-description">Le Centre de Formation d’Apprentis dédié aux jeunes talents et aux futurs professionnels.</p>
+                                <div className="pole-icon-badge pole-icon-purple">🎓</div>
+                                <h3 className="pole-title">META DX SCHOOL</h3>
+                                <p className="pole-type-label">Centre de Formation d'Apprentis</p>
+                                <p className="pole-description">Dédié aux jeunes talents et aux futurs professionnels qui souhaitent se former tout en travaillant.</p>
+
+                                <div className="pole-divider"></div>
 
                                 <ul className="pole-list">
-                                    <li>📌 Formations en alternance reconnues</li>
-                                    <li>📌 Accompagnement pédagogique et humain</li>
-                                    <li>📌 Insertion professionnelle renforcée</li>
+                                    <li><span className="pole-check">✓</span> Formations en alternance reconnues</li>
+                                    <li><span className="pole-check">✓</span> Accompagnement pédagogique et humain</li>
+                                    <li><span className="pole-check">✓</span> Insertion professionnelle renforcée</li>
                                 </ul>
 
-                                <p className="pole-question">Vous êtes étudiant·e, en reconversion ou à la recherche d’une alternance ?</p>
+                                <p className="pole-question">Vous êtes étudiant·e, en reconversion ou à la recherche d'une alternance ?</p>
 
                                 <div className="pole-actions">
-                                    <Link to="/cfa" className="pole-btn pole-btn-primary">
-                                        Nos formations longues
-                                    </Link>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="pole-btn pole-btn-secondary">
-                                        remplissez le questionnaire de premier contact ici
-                                    </a>
+                                    <Link to="/cfa" className="pole-btn-main">Nos formations longues</Link>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="pole-btn-outline">Questionnaire de premier contact</a>
                                 </div>
                             </div>
                         </div>
 
-                        {/* POLE 2: METADXS CONSEILS & FORMATIONS */}
-                        <div className="pole-card bg-conseil" style={{ backgroundImage: `linear-gradient(rgba(30, 58, 138, 0.85), rgba(59, 130, 246, 0.8)), url(${conseilBg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                        {/* POLE 2: METADXS CONSEILS */}
+                        <div className="pole-card pole-conseil">
+                            <div className="pole-card-glow pole-glow-blue"></div>
                             <div className="pole-card-content">
-                                <h3>METADXS CONSEILS & FORMATIONS</h3>
-                                <p className="pole-description">Notre organisme de formation accompagne les entreprises, les professionnels et les structures publiques dans leurs projets RH et de développement des compétences.</p>
+                                <div className="pole-icon-badge pole-icon-blue">🏛️</div>
+                                <h3 className="pole-title">METADXS CONSEILS</h3>
+                                <p className="pole-type-label">Organisme de Formation &amp; Conseil RH</p>
+                                <p className="pole-description">Accompagne les entreprises, professionnels et structures publiques dans leurs projets RH et de développement des compétences.</p>
+
+                                <div className="pole-divider"></div>
 
                                 <ul className="pole-list">
-                                    <li>📌 Formations courtes & sur-mesure</li>
-                                    <li>📌 Conseil RH, bilan de compétences, VAE</li>
-                                    <li>📌 Diagnostics, audit & ingénierie pédagogique</li>
+                                    <li><span className="pole-check">✓</span> Formations courtes &amp; sur-mesure</li>
+                                    <li><span className="pole-check">✓</span> Conseil RH, bilan de compétences, VAE</li>
+                                    <li><span className="pole-check">✓</span> Diagnostics, audit &amp; ingénierie pédagogique</li>
                                 </ul>
 
-                                <p className="pole-question">Vous êtes une entreprise, un organisme ou un professionnel souhaitant faire évoluer vos compétences ou vos équipes ?</p>
+                                <p className="pole-question">Vous êtes une entreprise souhaitant faire évoluer vos équipes ?</p>
 
                                 <div className="pole-actions">
-                                    <Link to="/conseils-formations" className="pole-btn pole-btn-primary">
-                                        Nos formations courtes
-                                    </Link>
-                                    <Link to="/contact" className="pole-btn pole-btn-secondary">
-                                        contactez-nous par mail
-                                    </Link>
+                                    <Link to="/conseils-formations" className="pole-btn-main pole-btn-blue">Nos formations courtes</Link>
+                                    <Link to="/contact" className="pole-btn-outline pole-btn-outline-blue">Contactez-nous par mail</Link>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +229,7 @@ function Home() {
             <div className="partners-section">
                 <div className="partners-header">
                     <div className="partners-title">
-                        <Star className="partners-star" fill="#f59e0b" />
+                        <span className="partners-star">⭐</span>
                         <span>ILS NOUS FONT CONFIANCE</span>
                     </div>
                     <p className="partners-subtitle">Plus de 100 entreprises sont nos partenaires, découvrez-en une partie !</p>
@@ -284,6 +304,178 @@ function Home() {
                 </div>
             </div>
 
+
+            {/* GOOGLE REVIEWS SECTION */}
+            <section className="reviews-section">
+                <div className="reviews-container">
+                    <div className="reviews-header">
+                        <div className="reviews-google-badge">
+                            <svg viewBox="0 0 24 24" width="28" height="28" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                            <span>Avis Google</span>
+                        </div>
+                        <h2 className="reviews-title">Ce que disent nos apprenants</h2>
+                        <div className="reviews-rating-global">
+                            <div className="reviews-stars-global">
+                                {'★★★★★'.split('').map((s, i) => <span key={i} className="star-gold">{s}</span>)}
+                            </div>
+                            <span className="reviews-score">5,0</span>
+                            <span className="reviews-count">· 10 avis</span>
+                        </div>
+                    </div>
+
+                    <div className="reviews-track-wrapper">
+                        <div className="reviews-track">
+                            {/* REVIEW 1 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #6366f1, #8b5cf6)'}}>F</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Fat Mah</span>
+                                        <span className="reviewer-meta">2 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 6 mois</span>
+                                <p className="review-text">J'ai réalisé une immersion professionnelle de deux semaines au sein de META DX School et j'ai été particulièrement impressionné par la qualité de l'accompagnement. Merci à Sami, Laura, Océan j et Océan A. L'équipe fait preuve d'un réel professionnalisme : accueil chaleureux, disponibilité, écoute et pédagogie. Une école jeune, dynamique et ambitieuse, qui place l'humain au cœur de son fonctionnement. Je recommande vivement META DX School pour leur esprit start-up, leur engagement et leur sérieux.</p>
+                            </div>
+                            {/* REVIEW 2 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #10b981, #059669)'}}>G</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Galley Calista</span>
+                                        <span className="reviewer-meta">2 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 6 mois</span>
+                                <p className="review-text">Agréablement surprise par cette école, que ce soit l'équipe, le programme et le fonctionnement. Même les formateurs et les fondateurs sont au top. Merci !</p>
+                            </div>
+                            {/* REVIEW 3 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #f59e0b, #d97706)'}}>S</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Steeven Tellus</span>
+                                        <span className="reviewer-meta">2 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 3 ans</span>
+                                <p className="review-text">Au top ! J'ai commencé mon bachelor depuis maintenant quelques mois et je trouve les cours sont dynamiques et très complets. Les formateurs sont à l'écoute des élèves. Les équipes administratives sont également très réactives et impliquées dans le cursus de leurs étudiants ce qui nous permet de ne pas nous sentir livrés à nous mêmes. Je valide ✅</p>
+                            </div>
+                            {/* REVIEW 4 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #ec4899, #db2777)'}}>L</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">lina abid</span>
+                                        <span className="reviewer-meta">1 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 8 mois</span>
+                                <p className="review-text">Très bonne école, les formateurs sont compétents et à l'écoute, et les locaux sont très modernes, propices au travail. Je recommande !</p>
+                            </div>
+                            {/* REVIEW 5 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #3b82f6, #2563eb)'}}>H</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Hadjer Abid</span>
+                                        <span className="reviewer-meta">1 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 8 mois</span>
+                                <p className="review-text">Super ! Accompagnement au top ! Je recommande !</p>
+                            </div>
+                            {/* REVIEW 6 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #14b8a6, #0d9488)'}}>M</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">mohamed ammich</span>
+                                        <span className="reviewer-meta">14 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 8 mois</span>
+                                <p className="review-text">Que du positif à dire sur cette structure ! Équipe sérieuse, dynamique et professionnelle, je recommande !<br/><em style={{fontSize:'0.85rem', opacity:0.7}}>Visité en octobre 2025</em></p>
+                            </div>
+                            {/* REVIEW 7 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #6366f1, #4f46e5)'}}>C</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Contact Marche de Mo'</span>
+                                        <span className="reviewer-meta">1 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 8 mois</span>
+                                <p className="review-text">Ecole partenaire, présentant une qualité d'accompagnement excellente. Nous avons grâce à leur outil et service une qualité de suivi exemplaire.<br/><em style={{fontSize:'0.85rem', opacity:0.7}}>Visité en octobre 2025</em></p>
+                            </div>
+                            {/* REVIEW 8 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #f97316, #ea580c)'}}>H</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Hichem Oufrid</span>
+                                        <span className="reviewer-meta">Local Guide · 62 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 8 mois</span>
+                                <p className="review-text">Une école humaine et d'un très bon niveau, proposant un accompagnement attentif et professionnel à chaque étape. Leur équipe se montre toujours disponible et réactive. Une expérience que nous recommandons sans hésitation tant pour la rigueur que pour la qualité humaine de l'accompagnement.</p>
+                            </div>
+                            {/* REVIEW 9 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #84cc16, #65a30d)', fontSize:'0.75rem', fontWeight:'900'}}>EX</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">EnergyXpert</span>
+                                        <span className="reviewer-meta">1 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 8 mois</span>
+                                <p className="review-text">Meta DX School a changé ma vie professionnelle. J'ai pu me reconvertir en toute confiance grâce à l'accompagnement personnalisé dès le dossier d'inscription jusqu'à l'insertion. Le réseau de partenaires est fort, ce qui m'a permis de trouver une alternance très valorisante. Les infrastructures sont modernes, le matériel à la pointe, les locaux agréables. Une très belle école pour les ambitieux du digital.</p>
+                            </div>
+                            {/* REVIEW 10 */}
+                            <div className="review-card">
+                                <div className="review-card-header">
+                                    <div className="reviewer-avatar" style={{background: 'linear-gradient(135deg, #a855f7, #9333ea)'}}>C</div>
+                                    <div className="reviewer-info">
+                                        <span className="reviewer-name">Clara Philippe</span>
+                                        <span className="reviewer-meta">1 avis</span>
+                                    </div>
+                                </div>
+                                <div className="review-stars">{'★★★★★'.split('').map((s,i) => <span key={i} className="star-gold">{s}</span>)}</div>
+                                <span className="review-date">il y a 6 mois</span>
+                                <p className="review-text">Une école en plein développement, esprit start-up. Vraiment pas déçue.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="reviews-cta-wrapper">
+                        <a
+                            href="https://www.google.com/search?q=Meta+DX+School+Toulouse+avis"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="reviews-cta-btn"
+                        >
+                            Voir tous les avis sur Google
+                        </a>
+                    </div>
+                </div>
+            </section>
+
             {/* CAMPUS SECTION */}
             <section className="campus-section">
                 <div className="campus-container">
@@ -298,7 +490,7 @@ function Home() {
                                 <h3>Nos coordonnées</h3>
                                 <div className="contact-item-row">
                                     <MapPin className="contact-icon" size={20} />
-                                    <span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span>
+                                    <a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}><span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span></a>
                                 </div>
                                 <div className="contact-item-row">
                                     <Phone className="contact-icon" size={20} />

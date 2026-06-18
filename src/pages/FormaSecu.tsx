@@ -520,7 +520,7 @@ export default function FormaSecu() {
                             <ul className="fs-campus-list">
                                 <li>
                                     <MapPin className="fs-campus-icon" size={20} />
-                                    <span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span>
+                                    <a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}><span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span></a>
                                 </li>
                                 <li>
                                     <Phone className="fs-campus-icon" size={20} />

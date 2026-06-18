@@ -19,7 +19,7 @@ const Footer = () => {
                     <h3>INFORMATIONS</h3>
                     <div className="footer-info">
                         <p className="company-name">Meta Dx School</p>
-                        <p>244 Route de Seysses<br />Bâtiment 2, 4e étage</p>
+                        <p><a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit', textDecoration:'underline'}}>244 Route de Seysses<br />Bâtiment 2, 4e étage</a></p>
                         <p>31100 Toulouse</p>
                         <p className="hours-label">Horaires</p>
                         <p>08H00 – 18H00</p>

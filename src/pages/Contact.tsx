@@ -126,7 +126,7 @@ export default function Contact() {
                                     <div className="c-icon-circle"><MapPin size={20} /></div>
                                     <div>
                                         <strong>ADRESSE</strong>
-                                        <p>244 Route de Seysses,<br />Bâtiment 2, 4e étage,<br />31100 Toulouse</p>
+                                        <p><a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit', textDecoration:'underline'}}>244 Route de Seysses,<br />Bâtiment 2, 4e étage,<br />31100 Toulouse</a></p>
                                     </div>
                                 </div>
 

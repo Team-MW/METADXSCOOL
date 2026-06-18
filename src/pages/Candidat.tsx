@@ -68,7 +68,7 @@ export default function Candidat() {
                             <div className="campus-info-block">
                                 <h3 className="info-title"><MapPin size={24} /> Nos coordonnées</h3>
                                 <ul className="info-list">
-                                    <li>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</li>
+                                    <li><a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer">244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</a></li>
                                     <li><Phone size={18} className="mt-1" /> 06 82 64 10 25 / 06 82 64 10 26</li>
                                     <li><Mail size={18} className="mt-1" /> contact@metadxs.com</li>
                                 </ul>
