@@ -416,7 +416,7 @@ export default function Logement() {
                                 <h3 style={{ fontSize: '1.2rem', color: '#64748b', marginBottom: '1.5rem', textTransform: 'uppercase' }}>Nos coordonnées</h3>
                                 <div className="contact-item">
                                     <MapPin size={24}/>
-                                    <p><strong>244 Route de Seysses</strong><br/>31100 Toulouse</p>
+                                    <p><strong>244 Route de Seysses</strong><br/>Bâtiment 2, 4e étage<br/>31100 Toulouse</p>
                                 </div>
                                 <div className="contact-item">
                                     <Phone size={24}/>

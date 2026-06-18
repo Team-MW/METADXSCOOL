@@ -193,7 +193,7 @@ export default function FormationExcelIA() {
             <div className="formation-excel-page">
                 <header className="hero-excel">
                     <div className="container">
-                        <span className="badge-v">V4 – MAJ 27/08/2025</span>
+                        <span className="badge-v">V12 – MAJ 18/06/2026</span>
                         <h1>EXCEL : GAGNEZ DU TEMPS AVEC L'IA</h1>
                         <p>
                             Dites adieu aux heures perdues sur des formules complexes ou du nettoyage manuel de données. Domptez Excel grâce aux outils d'IA intégrés.
@@ -270,7 +270,7 @@ export default function FormationExcelIA() {
                     <aside className="sidebar">
                         <div className="pricing-card">
                             <span style={{fontSize: '0.8rem', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase'}}>Tarif</span>
-                            <div className="price">700 € HT <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
+                            <div className="price">700 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Éligible financements OPCO & Budgets de formation d'Entreprises.</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-reg">MODALITÉS & INSCRIPTION</a>
                         </div>

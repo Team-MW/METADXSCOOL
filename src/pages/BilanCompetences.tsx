@@ -210,7 +210,7 @@ export default function BilanCompetences() {
             <div className="bilan-page">
                 <header className="bilan-hero">
                     <div className="hero-container">
-                        <span className="badge-version">V5 – MAJ 26/08/2025</span>
+                        <span className="badge-version">V12 – MAJ 18/06/2026</span>
                         <h1>BILAN DE COMPÉTENCES</h1>
                         <p>
                             Mieux vous connaître pour mieux réussir. Un accompagnement de 24 heures pour révéler votre potentiel et construire votre futur projet professionnel.
@@ -280,7 +280,7 @@ export default function BilanCompetences() {
                         {/* PRICE & MODALITY */}
                         <div className="price-card">
                             <h3 style={{fontSize: '1.2rem', marginBottom: '0.5rem', opacity: 0.9}}>Format Intensif</h3>
-                            <div className="price-tag">2 000 €</div>
+                            <div className="price-tag">2 000 € TTC</div>
                             <div style={{fontSize: '0.9rem', marginBottom:'1.5rem'}}>24 heures d'accompagnement</div>
                             <div className="pill-info">
                                 <div className="info-item" style={{background:'rgba(255,255,255,0.1)', color:'white'}}><Clock size={16}/> 7j de délai d'accès</div>

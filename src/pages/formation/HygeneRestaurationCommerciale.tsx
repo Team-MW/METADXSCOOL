@@ -251,7 +251,7 @@ export default function HygeneRestaurationCommerciale() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">V4 – DATE DE MAJ 27/08/2025</span>
+                        <span className="version-tag">V12 – DATE DE MAJ 18/06/2026</span>
                         <h1>HYGIÈNE ALIMENTAIRE EN RESTAURATION COMMERCIALE</h1>
                         <p className="hero-desc">
                             Une obligation légale depuis 2012 pour tout établissement de restauration commerciale afin de garantir la présence d'une personne formée à l'hygiène alimentaire.
@@ -395,7 +395,7 @@ export default function HygeneRestaurationCommerciale() {
                                 <p style={{fontSize:'0.85rem', margin:0, opacity:0.8}}>Formation dans nos locaux ou à distance</p>
                             </div>
 
-                            <div className="price-tag">450€ HT <span style={{fontSize:'1rem', opacity:0.8}}>/ pers.</span></div>
+                            <div className="price-tag">450€ TTC <span style={{fontSize:'1rem', opacity:0.8}}>/ pers.</span></div>
                             
                             <div className="calendrier-box" style={{marginTop:0}}>
                                 <span className="sidebar-info-label">Délai :</span>

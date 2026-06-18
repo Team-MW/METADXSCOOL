@@ -241,7 +241,7 @@ export default function B_RDA() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">RNCP N°38602 | SUP DE VINCI</span>
+                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/38602/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°38602</a> | SUP DE VINCI</span>
                         <h1>Bachelor Responsable du Développement des Affaires (B-RDA)</h1>
                         <div className="hero-subtitle">NIVEAU 6 – BAC +3 (TITRE RECONNU PAR L'ÉTAT)</div>
                         <p className="hero-desc">
@@ -273,7 +273,7 @@ export default function B_RDA() {
                                 <div className="stat-item">
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Handicap</span>
+                                        <span className="stat-label">Accessibilité</span>
                                         <span className="stat-value">Accompagnement Spécifique</span>
                                     </div>
                                 </div>
@@ -287,7 +287,7 @@ export default function B_RDA() {
                             </div>
 
                             <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
-                                <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. N'hésitez pas à <Link to="/ressources/handicap-engagement" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référente handicap</Link>.
+                                <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/financements/handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
                             
                             <div className="points-bonus">
@@ -422,13 +422,13 @@ export default function B_RDA() {
                             <h3 style={{fontSize:'1.4rem', fontWeight:900, marginBottom:'1rem', color:'#fbbf24'}}>APPRENTISSAGE & ALTERNANCE</h3>
                             <div style={{fontSize:'2.2rem', fontWeight:900, margin:'1rem 0'}}>0€ <span style={{fontSize:'1rem', opacity:0.8}}>POUR L'APPRENANT</span></div>
                             <p style={{fontSize:'0.85rem', opacity:0.9, lineHeight:1.4, marginBottom:'1.5rem'}}>
-                                Le coût de formation (s'élevant en moyenne à **7827 €**) est **100% pris en charge par l'OPCO** dans le cadre de votre contrat d'alternance. Aucun frais pédagogique ne reste à votre charge.
+                                Le coût de la formation est de **7827 € TTC**.
                             </p>
 
                             <div style={{textAlign:'left', borderTop:'1px solid rgba(255,255,255,0.1)', paddingTop:'1.5rem'}}>
                                 <div style={{marginBottom:'1rem'}}>
                                     <span style={{display:'block', fontSize:'0.7rem', color:'#fbcfe8', fontWeight:800}}>COÛT DE LA FORMATION</span>
-                                    <span style={{fontSize:'0.9rem', fontWeight:700}}>7 827 € (Prise en charge OPCO intégrale)</span>
+                                    <span style={{fontSize:'0.9rem', fontWeight:700}}>7 827 € TTC</span>
                                 </div>
                                 <div style={{marginBottom:'1rem'}}>
                                     <span style={{display:'block', fontSize:'0.7rem', color:'#fbcfe8', fontWeight:800}}>DIPLÔME</span>

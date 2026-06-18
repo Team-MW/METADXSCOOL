@@ -354,13 +354,13 @@ export default function Qualiopi() {
                                 Cliquez sur l’image ci-dessous pour télécharger notre certificat Qualiopi officiel.
                             </p>
 
-                            <a href="/attestation-depot_dossier-27705880.pdf" target="_blank" rel="noopener noreferrer" className="image-link" download>
+                            <a href="/Qualiopi-Certificat-de-conformite.pdf" target="_blank" rel="noopener noreferrer" className="image-link" download>
                                 <div className="image-container">
                                     <img src="/Logo-OF-CBC-VAE-CFA-300x169.jpeg" alt="Logo Qualiopi CFA" className="cert-img" />
                                 </div>
                             </a>
 
-                            <a href="/attestation-depot_dossier-27705880.pdf" target="_blank" rel="noopener noreferrer" className="btn-download" download>
+                            <a href="/Qualiopi-Certificat-de-conformite.pdf" target="_blank" rel="noopener noreferrer" className="btn-download" download>
                                 <Download size={20} />
                                 Télécharger le certificat
                             </a>

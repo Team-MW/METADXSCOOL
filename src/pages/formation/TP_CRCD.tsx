@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { 
     Clock, 
     Users, 
@@ -11,7 +12,8 @@ import {
     TrendingUp,
     ShieldCheck,
     FileText,
-    Monitor
+    Monitor,
+    AlertCircle
 } from 'lucide-react';
 
 export default function TP_CRCD() {
@@ -229,7 +231,7 @@ export default function TP_CRCD() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">V11 – DATE DE MAJ 27/08/2025 | RNCP N°35304</span>
+                        <span className="version-tag">V12 – DATE DE MAJ 18/06/2026 | <a href="https://www.francecompetences.fr/recherche/rncp/35304/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°35304</a></span>
                         <h1>TITRE PROFESSIONNEL CONSEILLER(E) RELATION CLIENT À DISTANCE</h1>
                         <div className="hero-subtitle">NIVEAU 4 – BAC TECHNIQUE</div>
                         <p className="hero-desc">
@@ -261,7 +263,7 @@ export default function TP_CRCD() {
                                 <div className="stat-item">
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Handicap</span>
+                                        <span className="stat-label">Accessibilité</span>
                                         <span className="stat-value">Accompagnement Spécifique</span>
                                     </div>
                                 </div>
@@ -274,6 +276,10 @@ export default function TP_CRCD() {
                                 </div>
                             </div>
                             
+                            <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
+                                <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/financements/handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
+                            </div>
+
                             <div className="points-bonus" style={{borderColor:'#3b82f6', background:'#eff6ff'}}>
                                 <h4 style={{fontWeight:900, color:'#1c1e4c', marginBottom:'0.5rem'}}>LE + META DX SCHOOL</h4>
                                 <p style={{fontSize:'0.95rem', margin:0}}>
@@ -313,7 +319,7 @@ export default function TP_CRCD() {
                                 <div className="modalite-box">
                                     <h4 style={{fontWeight:900, marginBottom:'1rem'}}>PRÉSENTIEL (CFA)</h4>
                                     <p style={{fontSize:'0.9rem', lineHeight:1.6}}>
-                                        • <strong>Durée :</strong> 12 mois (450h centre)<br/>
+                                        • <strong>Durée :</strong> 15 mois (470h centre)<br/>
                                         • <strong>Rythme :</strong> 1j/semaine école, 4j entreprise<br/>
                                         • 15 participants maximum<br/>
                                         • Plateau technique dédié
@@ -322,13 +328,23 @@ export default function TP_CRCD() {
                                 <div className="modalite-box" style={{borderColor:'#ef9a37'}}>
                                     <h4 style={{fontWeight:900, marginBottom:'1rem'}}>E-LEARNING</h4>
                                     <p style={{fontSize:'0.9rem', lineHeight:1.6}}>
-                                        • <strong>Durée :</strong> 15 mois (480h e-learning)<br/>
+                                        • <strong>Durée :</strong> 15 mois (470h e-learning)<br/>
                                         • Entrée / Sortie permanente<br/>
                                         • 2 sessions d'examens par an<br/>
                                         • Parcours personnalisé & classe virtuelle
                                     </p>
                                 </div>
                             </div>
+                        </div>
+
+                        {/* Prérequis & Admission */}
+                        <div className="info-card">
+                            <h2 className="section-title"><AlertCircle /> Prérequis & Admission</h2>
+                            <ul className="list-check">
+                                <li><CheckCircle2 size={18}/> Être âgé de 18 ans et plus.</li>
+                                <li><CheckCircle2 size={18}/> <strong>Niveau d'accès :</strong> Être titulaire d'une certification ou d'un diplôme de Niveau 3 (CAP/BEP) ou justifier d'un niveau équivalent.</li>
+                                <li><CheckCircle2 size={18}/> <strong>Processus :</strong> Admission par entretien préalable.</li>
+                            </ul>
                         </div>
 
                         {/* Débouchés */}
@@ -369,8 +385,7 @@ export default function TP_CRCD() {
                             <h3 style={{fontSize:'1.4rem', fontWeight:900, marginBottom:'1rem', color:'#ef9a37'}}>ALTERNANCE</h3>
                             <div style={{fontSize:'2rem', fontWeight:900, margin:'1rem 0'}}>0€ <span style={{fontSize:'1rem', opacity:0.8}}>RESTE À CHARGE</span></div>
                             <p style={{fontSize:'0.85rem', opacity:0.8, lineHeight:1.4, marginBottom:'1.5rem'}}>
-                                Coût moyen de 7650€* entièrement pris en charge par l'OPCO de votre entreprise. 
-                                <br/><span style={{fontSize:'0.75rem'}}>*Minoration 20% pour le e-learning.</span>
+                                Coût de la formation : 7650€ TTC.
                             </p>
 
                             <div style={{textAlign:'left', borderTop:'1px solid rgba(255,255,255,0.1)', paddingTop:'1.5rem'}}>
@@ -380,11 +395,13 @@ export default function TP_CRCD() {
                                 </div>
                                 <div style={{marginBottom:'1rem'}}>
                                     <span style={{display:'block', fontSize:'0.7rem', color:'#5bb4f8', fontWeight:800}}>SALAIRE</span>
-                                    <span style={{fontSize:'0.9rem', fontWeight:700}}>Selon barème apprentissage</span>
+                                    <span style={{fontSize:'0.9rem', fontWeight:700}}>
+                                        <a href="https://www.service-public.fr/particuliers/vosdroits/F2918" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'underline'}}>Selon barème apprentissage</a>
+                                    </span>
                                 </div>
                             </div>
 
-                            <a href="/contact" className="btn-primary">POSTULER À CETTE FORMATION</a>
+                            <a href="/contact" className="btn-primary">NOUS CONTACTER</a>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-outline">
                                 <FileText size={18} /> FORMULAIRE DE CANDIDATURE
                             </a>

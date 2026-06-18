@@ -400,13 +400,7 @@ export default function FormaSecu() {
                                 phone: "06.82.64.10.25", email: "sarah.lacheroy@metadxs.com",
                                 imgUrl: "https://ui-avatars.com/api/?name=Sarah+Lacheroy&background=1c1e4c&color=fff&size=150&font-size=0.33"
                             },
-                            {
-                                title: "RESPONSABLE PÉDAGOGIQUE\nET DÉVELOPPEMENT",
-                                tasks: ["- Pilotage du projet", "- Accompagnement pédagogique"],
-                                firstname: "Julie", lastname: "MOUILLAT",
-                                phone: "07.59.60.60.40", email: "julie.mouillat@metadxs.com",
-                                imgUrl: "https://ui-avatars.com/api/?name=Julie+Mouillat&background=1c1e4c&color=fff&size=150&font-size=0.33"
-                            },
+
                             {
                                 title: "RESPONSABLE DES RESSOURCES HUMAINES ET RÉFÉRENT HANDICAP",
                                 tasks: ["- Recrutement, intégration et suivi des salariés", "- Accueil des stagiaires en situation de handicap"],
@@ -526,7 +520,7 @@ export default function FormaSecu() {
                             <ul className="fs-campus-list">
                                 <li>
                                     <MapPin className="fs-campus-icon" size={20} />
-                                    <span>244 Route de Seysses, 31100 Toulouse</span>
+                                    <span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span>
                                 </li>
                                 <li>
                                     <Phone className="fs-campus-icon" size={20} />

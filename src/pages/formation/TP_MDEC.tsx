@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { 
     Clock, 
     Users, 
@@ -217,7 +218,7 @@ export default function TP_MDEC() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">RNCP N°39063 | V1 | MAJ 30/09/2025</span>
+                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/39063/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°39063</a> | V12 | MAJ 18/06/2026</span>
                         <h1>MANAGER DU DÉVELOPPEMENT D'ENTREPRISE ET COMMERCIAL (MDEC)</h1>
                         <div className="hero-subtitle">NIVEAU 7 – BAC+5 (ÉQUIVALENT MASTÈRE)</div>
                         <p className="hero-desc">
@@ -249,7 +250,7 @@ export default function TP_MDEC() {
                                 <div className="stat-item">
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Handicap</span>
+                                        <span className="stat-label">Accessibilité</span>
                                         <span className="stat-value">Référent dédié</span>
                                     </div>
                                 </div>
@@ -260,6 +261,10 @@ export default function TP_MDEC() {
                                         <span className="stat-value">Hors Parcoursup</span>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
+                                <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/financements/handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
                         </div>
 
@@ -333,9 +338,7 @@ export default function TP_MDEC() {
                             <h3 style={{fontSize:'1.4rem', fontWeight:900, marginBottom:'1rem', color:'#ef9a37'}}>ALTERNANCE BAC+5</h3>
                             <div style={{fontSize:'2.2rem', fontWeight:900, margin:'1rem 0'}}>0€ <span style={{fontSize:'1rem', opacity:0.8}}>RESTANT</span></div>
                             <p style={{fontSize:'0.85rem', opacity:0.8, lineHeight:1.5, marginBottom:'2rem'}}>
-                                Coût moyen : 8302€* <br/>
-                                <strong>100% PRIS EN CHARGE</strong> par l'OPCO de votre entreprise en alternance.
-                                <br/><span style={{fontSize:'0.75rem', marginTop:'0.5rem', display:'block'}}>*Minoration 20% pour e-learning.</span>
+                                Coût de la formation : 8302€ TTC.
                             </p>
 
                             <div style={{textAlign:'left', borderTop:'1px solid rgba(255,255,255,0.1)', paddingTop:'1.5rem', marginBottom:'2rem'}}>

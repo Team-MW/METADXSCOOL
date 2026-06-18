@@ -126,7 +126,7 @@ export default function Contact() {
                                     <div className="c-icon-circle"><MapPin size={20} /></div>
                                     <div>
                                         <strong>ADRESSE</strong>
-                                        <p>244 Route de Seysses,<br />31100 Toulouse</p>
+                                        <p>244 Route de Seysses,<br />Bâtiment 2, 4e étage,<br />31100 Toulouse</p>
                                     </div>
                                 </div>
 

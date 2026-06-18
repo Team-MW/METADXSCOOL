@@ -229,7 +229,7 @@ export default function FormationCommImpact() {
             <div className="formation-impact-page">
                 <header className="hero-impact">
                     <div className="container">
-                        <span className="badge-v">V3 – MAJ 27/08/2025</span>
+                        <span className="badge-v">V12 – MAJ 18/06/2026</span>
                         <h1>COMMUNICATION PROFESSIONNELLE : IMPACT ORAL ET ÉCRIT</h1>
                         <p>
                             Maîtrisez les fondamentaux de la communication et les outils collaboratifs pour un impact maximal en équipe.
@@ -324,7 +324,7 @@ export default function FormationCommImpact() {
                     <aside className="sidebar">
                         <div className="pricing-card">
                             <span style={{fontSize: '0.8rem', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase'}}>Tarif Inter-entreprise</span>
-                            <div className="price">550 € HT <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
+                            <div className="price">550 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Prise en charge OPCO possible. Conseils financement disponibles.</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-reg">JE M'INSCRIS</a>
                             <div style={{marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', display:'flex', alignItems:'center', gap:'1rem', textAlign:'left'}}>
@@ -367,7 +367,7 @@ export default function FormationCommImpact() {
                         <div style={{marginTop: '2rem', padding: '1rem', background: '#eff6ff', borderRadius: '16px', border: '1px solid #dbeafe'}}>
                             <Accessibility size={20} color="#3b82f6" style={{marginBottom:'0.5rem'}} />
                             <p style={{fontSize: '0.75rem', color: '#1e40af', margin: 0}}>
-                                <strong>Handicap :</strong> Formation accessible, contactez notre référent dédié.
+                                <strong>Accessibilité :</strong> Formation accessible, contactez notre référent dédié.
                             </p>
                         </div>
                     </aside>

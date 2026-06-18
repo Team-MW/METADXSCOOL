@@ -201,7 +201,7 @@ export default function SecouristeSSTMAC() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">V1 – DATE DE MAJ 23/09/2025</span>
+                        <span className="version-tag">V12 – DATE DE MAJ 18/06/2026</span>
                         <h1>SST : MAINTIEN ET ACTUALISATION DES COMPÉTENCES (MAC)</h1>
                         <p className="hero-desc">
                             Actualisez vos compétences de secouriste et renouvelez votre certificat SST pour une durée de 24 mois.
@@ -244,7 +244,7 @@ export default function SecouristeSSTMAC() {
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
                                         <span className="stat-label">Accessibilité</span>
-                                        <span className="stat-value">Référent Handicap</span>
+                                        <span className="stat-value">Référent Accessibilité</span>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +299,7 @@ export default function SecouristeSSTMAC() {
                     <div className="sidebar">
                         <div className="cta-card">
                             <span style={{color: '#d1fae5', fontWeight: 800, fontSize:'0.75rem'}}>RECYCLAGE / MAC</span>
-                            <div className="price-tag">200€ HT <span style={{fontSize:'1rem', opacity:0.8}}>/ pers.</span></div>
+                            <div className="price-tag">200€ TTC <span style={{fontSize:'1rem', opacity:0.8}}>/ pers.</span></div>
                             
                             <div style={{textAlign:'left', marginBottom:'1.5rem'}}>
                                 <p style={{fontSize:'0.85rem', marginBottom:'1rem', display:'flex', gap:'0.5rem'}}>

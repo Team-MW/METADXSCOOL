@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { 
     Clock, 
     Users, 
@@ -205,7 +206,7 @@ export default function TP_NTC() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">RNCP N°39063 | V10 – MAJ 27/08/2025</span>
+                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/39063/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°39063</a> | V12 – MAJ 18/06/2026</span>
                         <h1>TITRE PROFESSIONNEL NÉGOCIATEUR TECHNICO-COMMERCIAL</h1>
                         <div className="hero-subtitle">NIVEAU 5 – BAC+2</div>
                         <p className="hero-desc">
@@ -244,11 +245,16 @@ export default function TP_NTC() {
                                 <div className="stat-item">
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Handicap</span>
+                                        <span className="stat-label">Accessibilité</span>
                                         <span className="stat-value">Référent Dédié</span>
                                     </div>
                                 </div>
                             </div>
+
+                            <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
+                                <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/financements/handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
+                            </div>
+
                             <p style={{fontSize: '0.95rem', color: '#64748b', lineHeight: 1.6}}>
                                 Cette formation s’adresse aux professionnels et futurs professionnels dans le domaine du commerce souhaitant acquérir une double compétence technique et commerciale.
                             </p>
@@ -286,7 +292,7 @@ export default function TP_NTC() {
                                 <div className="modalite-box">
                                     <h4 style={{fontWeight: 900, marginBottom: '1rem', color: '#1c1e4c'}}>PRÉSENTIEL</h4>
                                     <ul style={{fontSize: '0.9rem', padding: 0, listStyle: 'none', color: '#475569'}}>
-                                        <li style={{marginBottom: '0.5rem'}}>• 14 mois (470h en centre)</li>
+                                        <li style={{marginBottom: '0.5rem'}}>• 15 mois (470h en centre)</li>
                                         <li style={{marginBottom: '0.5rem'}}>• Rythme 1j centre / 4j entreprise</li>
                                         <li style={{marginBottom: '0.5rem'}}>• Plateau technique dédié</li>
                                         <li>• Max 15 participants</li>
@@ -295,7 +301,7 @@ export default function TP_NTC() {
                                 <div className="modalite-box" style={{borderColor: '#ef9a37'}}>
                                     <h4 style={{fontWeight: 900, marginBottom: '1rem', color: '#ef9a37'}}>E-LEARNING</h4>
                                     <ul style={{fontSize: '0.9rem', padding: 0, listStyle: 'none', color: '#475569'}}>
-                                        <li style={{marginBottom: '0.5rem'}}>• 15 mois (480h module)</li>
+                                        <li style={{marginBottom: '0.5rem'}}>• 15 mois (470h module)</li>
                                         <li style={{marginBottom: '0.5rem'}}>• Entrée / Sortie permanente</li>
                                         <li style={{marginBottom: '0.5rem'}}>• Classes virtuelles en capsules</li>
                                         <li>• 2 sessions d'examens / an</li>
@@ -328,8 +334,7 @@ export default function TP_NTC() {
                             <h3 style={{fontSize: '1.4rem', fontWeight: 900, marginBottom: '1rem', color: '#ef9a37'}}>ALTERNANCE</h3>
                             <div style={{fontSize: '2.5rem', fontWeight: 900, margin: '1rem 0'}}>0€ <span style={{fontSize: '1rem', opacity: 0.8}}>RESTE À CHARGE</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8, lineHeight: 1.5, marginBottom: '1.5rem'}}>
-                                Coût moyen de 8302€ entièrement pris en charge par l'OPCO de votre entreprise. 
-                                <br/><span style={{fontSize: '0.75rem'}}>*Minoration 20% pour le module e-learning.</span>
+                                Coût de la formation : 8302€ TTC.
                             </p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary">POSTULER EN LIGNE</a>
                         </div>

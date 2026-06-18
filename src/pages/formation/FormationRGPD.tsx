@@ -237,7 +237,7 @@ export default function FormationRGPD() {
             <div className="formation-cyber-page">
                 <header className="hero-cyber">
                     <div className="container">
-                        <span className="badge-v">V4 – MAJ 27/08/2025</span>
+                        <span className="badge-v">V12 – MAJ 18/06/2026</span>
                         <h1>SENSIBILISATION RGPD & CYBERSÉCURITÉ</h1>
                         <p>
                             Protégez votre entreprise et vos données. Apprenez à identifier les menaces et à adopter les comportements responsables indispensables en 2025.
@@ -314,7 +314,7 @@ export default function FormationRGPD() {
                     <aside className="sidebar">
                         <div className="pricing-card">
                             <span style={{fontSize: '0.8rem', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase'}}>Tarif Inter</span>
-                            <div className="price">900 € HT <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
+                            <div className="price">900 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Prise en charge OPCO possible.</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-reg">MODALITÉS D'INSCRIPTION</a>
                         </div>

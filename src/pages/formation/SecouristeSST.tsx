@@ -221,7 +221,7 @@ export default function SecouristeSST() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">V1 – DATE DE MAJ 23/09/2025</span>
+                        <span className="version-tag">V12 – DATE DE MAJ 18/06/2026</span>
                         <h1>SAUVETEUR SECOURISTE DU TRAVAIL (SST)</h1>
                         <p className="hero-desc">
                             Contribuez à la prévention des risques professionnels et soyez capable d’intervenir immédiatement et efficacement après tout accident au sein de votre entreprise.
@@ -280,7 +280,7 @@ export default function SecouristeSST() {
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
                                         <span className="stat-label">Accessibilité</span>
-                                        <span className="stat-value">Référent Handicap</span>
+                                        <span className="stat-value">Référent Accessibilité</span>
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +341,7 @@ export default function SecouristeSST() {
                     <div className="sidebar">
                         <div className="cta-card">
                             <span style={{color: '#5bb4f8', fontWeight: 800, fontSize:'0.75rem'}}>FORMATION INITIALE</span>
-                            <div className="price-tag">300€ HT <span style={{fontSize:'0.9rem', opacity:0.8}}>/ pers.</span></div>
+                            <div className="price-tag">300€ TTC <span style={{fontSize:'0.9rem', opacity:0.8}}>/ pers.</span></div>
                             
                             <div style={{textAlign:'left', marginBottom:'1.5rem'}}>
                                 <p style={{fontSize:'0.85rem', marginBottom:'1rem', display:'flex', gap:'0.5rem'}}>

@@ -291,7 +291,7 @@ export default function FormationIAVeille() {
             <div className="formation-ia-page">
                 <header className="hero-ia">
                     <div className="container">
-                        <span className="badge-v">V6 – MAJ 27/08/2025</span>
+                        <span className="badge-v">V12 – MAJ 18/06/2026</span>
                         <h1>INTELLIGENCES ARTIFICIELLES ET VEILLE STRATÉGIQUE</h1>
                         <p>
                             Maîtrisez les outils de demain (ChatGPT, Perplexity) et les techniques de prompting pour transformer votre productivité et votre veille métier.
@@ -376,7 +376,7 @@ export default function FormationIAVeille() {
                         {/* Prix */}
                         <div className="pricing-card">
                             <span style={{fontSize: '0.8rem', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase'}}>Tarif Inter-entreprise</span>
-                            <div className="price">950 € HT <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
+                            <div className="price">950 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Prise en charge OPCO possible. Conseils en financement offerts.</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-reg">S'INSCRIRE À LA FORMATION</a>
                             <div style={{marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', display:'flex', alignItems:'center', gap:'1rem', textAlign:'left'}}>

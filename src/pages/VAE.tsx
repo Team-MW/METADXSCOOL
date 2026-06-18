@@ -269,7 +269,7 @@ export default function VAE() {
             <div className="vae-page">
                 <header className="vae-hero">
                     <div className="hero-container">
-                        <span className="badge-version">V7 – MAJ 26/08/2025</span>
+                        <span className="badge-version">V12 – MAJ 18/06/2026</span>
                         <h1>VALIDATION DES ACQUIS DE L'EXPÉRIENCE (VAE)</h1>
                         <p>
                             Transformez vos années d'expérience en un diplôme certifié et reconnu par l'État. Valorisez vos compétences sans retourner en formation initiale.

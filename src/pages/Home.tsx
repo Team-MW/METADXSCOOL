@@ -298,7 +298,7 @@ function Home() {
                                 <h3>Nos coordonnées</h3>
                                 <div className="contact-item-row">
                                     <MapPin className="contact-icon" size={20} />
-                                    <span>244 Route de Seysses, 31100 Toulouse</span>
+                                    <span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span>
                                 </div>
                                 <div className="contact-item-row">
                                     <Phone className="contact-icon" size={20} />

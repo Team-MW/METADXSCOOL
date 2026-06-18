@@ -68,7 +68,7 @@ export default function Candidat() {
                             <div className="campus-info-block">
                                 <h3 className="info-title"><MapPin size={24} /> Nos coordonnées</h3>
                                 <ul className="info-list">
-                                    <li>244 Route de Seysses, 31100 Toulouse</li>
+                                    <li>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</li>
                                     <li><Phone size={18} className="mt-1" /> 06 82 64 10 25 / 06 82 64 10 26</li>
                                     <li><Mail size={18} className="mt-1" /> contact@metadxs.com</li>
                                 </ul>
@@ -96,7 +96,7 @@ export default function Candidat() {
                             </div>
 
                             <div className="campus-info-block">
-                                <h3 className="info-title"><Accessibility size={24} /> Accessibilité handicap</h3>
+                                <h3 className="info-title"><Accessibility size={24} /> Accessibilité</h3>
                                 <p className="info-text">
                                     Nos formations sont naturellement ouvertes aux personnes à mobilité réduite. Les parties communes et salles de cours-TP sont notamment accessibles par ascenseur.
                                     N’hésitez pas à nous contacter afin d’envisager des protocoles d’accueil spécifiques adaptés à votre situation.

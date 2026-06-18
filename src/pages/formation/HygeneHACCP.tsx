@@ -274,7 +274,7 @@ export default function HygeneHACCP() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag">V3 – DATE DE MAJ 26/08/2025</span>
+                        <span className="version-tag">V12 – DATE DE MAJ 18/06/2026</span>
                         <h1>HYGIÈNE ALIMENTAIRE - HACCP</h1>
                         <p className="hero-desc">
                             Cette formation HACCP accompagne les entreprises engagées dans leur démarche qualité en alliant sécurité alimentaire, pratiques responsables et mise en valeur de produits.
@@ -331,7 +331,7 @@ export default function HygeneHACCP() {
                                     <Accessibility className="stat-icon" />
                                     <div className="stat-text">
                                         <span className="stat-label">Accessibilité</span>
-                                        <span className="stat-value">Référent Handicap dédié</span>
+                                        <span className="stat-value">Référent Accessibilité dédié</span>
                                     </div>
                                 </div>
                             </div>
@@ -414,7 +414,7 @@ export default function HygeneHACCP() {
                                 <p style={{fontSize:'0.85rem', margin:0, opacity:0.8}}>Formation dans nos locaux ou à distance</p>
                             </div>
 
-                            <div className="price-tag">400€ HT <span style={{fontSize:'1rem', opacity:0.8}}>/ pers.</span></div>
+                            <div className="price-tag">400€ TTC <span style={{fontSize:'1rem', opacity:0.8}}>/ pers.</span></div>
                             <p className="price-sub">Financement possible par OPCO. Nos conseillers vous accompagnent.</p>
                             
                             <div className="calendrier-box" style={{marginTop:0}}>
@@ -443,7 +443,7 @@ export default function HygeneHACCP() {
                                 <p style={{fontSize:'0.85rem', margin:0, color:'#64748b'}}>Au sein de vos locaux* ou en distanciel</p>
                             </div>
 
-                            <div className="price-tag" style={{color:'#1c1e4c'}}>1550€ HT <span style={{fontSize:'1rem', opacity:0.6}}>/ groupe</span></div>
+                            <div className="price-tag" style={{color:'#1c1e4c'}}>1550€ TTC <span style={{fontSize:'1rem', opacity:0.6}}>/ groupe</span></div>
                             
                             <div style={{textAlign:'left'}}>
                                 <span className="sidebar-info-label" style={{color:'#1c1e4c'}}>Localisation :</span>

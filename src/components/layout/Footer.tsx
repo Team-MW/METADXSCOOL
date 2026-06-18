@@ -19,7 +19,7 @@ const Footer = () => {
                     <h3>INFORMATIONS</h3>
                     <div className="footer-info">
                         <p className="company-name">Meta Dx School</p>
-                        <p>244 Route de Seysses</p>
+                        <p>244 Route de Seysses<br />Bâtiment 2, 4e étage</p>
                         <p>31100 Toulouse</p>
                         <p className="hours-label">Horaires</p>
                         <p>08H00 – 18H00</p>
@@ -42,7 +42,6 @@ const Footer = () => {
                             </a>
                         </li>
                         <li><Link to="/qualiopi">Certificat QUALIOPI</Link></li>
-                        <li><a href="/attestation-depot_dossier-27705880.pdf" target="_blank" rel="noopener noreferrer">Certificat Région Occitanie</a></li>
                     </ul>
                 </div>
 
@@ -57,7 +56,7 @@ const Footer = () => {
                         <div className="card-center-info">
                             <h4>CONTACT</h4>
                             <a href="mailto:contact@metadxs.com" className="email-link">contact@metadxs.com</a>
-                            <p className="phone">06 82 64 10 26</p>
+                            <p className="phone">06 09 81 86 26</p>
                             <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
                             <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>
@@ -77,8 +76,8 @@ const Footer = () => {
 
                         <div className="card-center-info">
                             <h4 className="title-white">CONTACT</h4>
-                            <a href="mailto:julie.mouillat@metadxs.com" className="email-link">julie.mouillat@metadxs.com</a>
-                            <p className="phone">07 59 60 60 40</p>
+                            <a href="mailto:Sarah.lacheroy@metadxs.com" className="email-link">Sarah.lacheroy@metadxs.com</a>
+                            <p className="phone">06 82 64 10 25</p>
                             <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
                             <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>

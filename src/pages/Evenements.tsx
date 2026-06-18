@@ -400,7 +400,7 @@ export default function Evenements() {
                             <div className="event-footer">
                                 <div className="event-footer-info">
                                     <div className="footer-item"><Clock size={20} /> 1 HEURE (DE 15 À 50 PARTICIPANTS)</div>
-                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, 31100 TOULOUSE</div>
+                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, BÂTIMENT 2, 4E ÉTAGE, 31100 TOULOUSE</div>
                                     <div className="footer-item"><Calendar size={20} /> LE 18 SEPTEMBRE</div>
                                 </div>
                                 <a href="mailto:contact@metadxs.com" className="btn-register">Inscrivez-vous par mail</a>
@@ -424,7 +424,7 @@ export default function Evenements() {
                             <div className="event-footer">
                                 <div className="event-footer-info">
                                     <div className="footer-item"><Clock size={20} /> 1 HEURE (DE 15 À 50 PARTICIPANTS)</div>
-                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, 31100 TOULOUSE</div>
+                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, BÂTIMENT 2, 4E ÉTAGE, 31100 TOULOUSE</div>
                                     <div className="footer-item"><Calendar size={20} /> LE 9 OCTOBRE</div>
                                 </div>
                                 <a href="mailto:contact@metadxs.com" className="btn-register">Inscrivez-vous par mail</a>
@@ -448,7 +448,7 @@ export default function Evenements() {
                             <div className="event-footer">
                                 <div className="event-footer-info">
                                     <div className="footer-item"><Clock size={20} /> 1 HEURE (DE 15 À 50 PARTICIPANTS)</div>
-                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, 31100 TOULOUSE</div>
+                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, BÂTIMENT 2, 4E ÉTAGE, 31100 TOULOUSE</div>
                                     <div className="footer-item"><Calendar size={20} /> LE 6 NOVEMBRE</div>
                                 </div>
                                 <a href="mailto:contact@metadxs.com" className="btn-register">Inscrivez-vous par mail</a>
@@ -472,7 +472,7 @@ export default function Evenements() {
                             <div className="event-footer">
                                 <div className="event-footer-info">
                                     <div className="footer-item"><Clock size={20} /> 1 HEURE (DE 15 À 50 PARTICIPANTS)</div>
-                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, 31100 TOULOUSE</div>
+                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, BÂTIMENT 2, 4E ÉTAGE, 31100 TOULOUSE</div>
                                     <div className="footer-item"><Calendar size={20} /> LE 27 NOVEMBRE</div>
                                 </div>
                                 <a href="mailto:contact@metadxs.com" className="btn-register">Inscrivez-vous par mail</a>
@@ -496,7 +496,7 @@ export default function Evenements() {
                             <div className="event-footer">
                                 <div className="event-footer-info">
                                     <div className="footer-item"><Clock size={20} /> 1 HEURE (DE 15 À 50 PARTICIPANTS)</div>
-                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, 31100 TOULOUSE</div>
+                                    <div className="footer-item"><MapPin size={20} /> 244 ROUTE DE SEYSSES, BÂTIMENT 2, 4E ÉTAGE, 31100 TOULOUSE</div>
                                     <div className="footer-item"><Calendar size={20} /> LE 11 DÉCEMBRE</div>
                                 </div>
                                 <a href="mailto:contact@metadxs.com" className="btn-register">Inscrivez-vous par mail</a>

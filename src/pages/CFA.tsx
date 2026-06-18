@@ -187,7 +187,7 @@ export default function CFA() {
                     <div className="campus-block">
                         <h3>NOUS TROUVER</h3>
                         <ul className="campus-list">
-                            <li><MapPin color="#0369a1" /> 244 Route de Seysses, 31100 Toulouse</li>
+                            <li><MapPin color="#0369a1" /> 244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</li>
                             <li><Phone color="#0369a1" /> 05 37 04 02 64</li>
                             <li><Mail color="#0369a1" /> contact@metadxs.com</li>
                         </ul>
@@ -235,7 +235,7 @@ export default function CFA() {
                         </ul>
                         <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#e0e7ff', borderRadius: '12px', border: '1px solid #c7d2fe' }}>
                             <h4 style={{ fontWeight: '800', color: '#4338ca', display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.5rem' }}>
-                                <Accessibility size={24} /> Accessibilité Handicap
+                                <Accessibility size={24} /> Accessibilité
                             </h4>
                             <p style={{ fontSize: '0.95rem', color: '#3730a3', lineHeight: '1.5' }}>
                                 Formations ouvertes aux PMR. Parties communes et salles accessibles par ascenseur. Contactez-nous pour des protocoles d'accueil spécifiques.
