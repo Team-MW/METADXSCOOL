@@ -21,10 +21,6 @@ import maisonDuMonde from '../assets/maison-du-monde.png';
 import marcheDeMo from '../assets/march_de_mo_logo.jpg';
 import logoInline from '../assets/logo-inline.png';
 
-// Import Background Images
-import schoolBg from '../assets/school-card-bg.jpg';
-import conseilBg from '../assets/conseil-card-bg.jpg';
-
 // Define the content for each tab
 const TAB_CONTENT = {
     alternance: {
