@@ -58,7 +58,7 @@ const Footer = () => {
                         <div className="card-center-info">
                             <h4>CONTACT</h4>
                             <a href="mailto:contact@metadxs.com" className="email-link">contact@metadxs.com</a>
-                            <p className="phone">06 09 81 86 26</p>
+                            <p className="phone"><a href="tel:+33609818626" style={{ color: 'inherit', textDecoration: 'none' }}>06 09 81 86 26</a></p>
                             <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
                             <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>
@@ -79,7 +79,7 @@ const Footer = () => {
                         <div className="card-center-info">
                             <h4 className="title-white">CONTACT</h4>
                             <a href="mailto:Sarah.lacheroy@metadxs.com" className="email-link">Sarah.lacheroy@metadxs.com</a>
-                            <p className="phone">06 82 64 10 25</p>
+                            <p className="phone"><a href="tel:+33682641025" style={{ color: 'inherit', textDecoration: 'none' }}>06 82 64 10 25</a></p>
                             <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
                             <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>

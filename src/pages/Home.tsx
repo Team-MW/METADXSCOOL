@@ -460,15 +460,15 @@ function Home() {
                                 <h3>Nos coordonnées</h3>
                                 <div className="contact-item-row">
                                     <MapPin className="contact-icon" size={20} />
-                                    <a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}><span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span></a>
+                                    <a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit', textDecoration:'underline'}}><span>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</span></a>
                                 </div>
                                 <div className="contact-item-row">
                                     <Phone className="contact-icon" size={20} />
-                                    <span>06 82 64 10 25 / 06 82 64 10 26</span>
+                                    <span><a href="tel:+33682641025" style={{color:'inherit', textDecoration:'underline'}}>06 82 64 10 25</a> / <a href="tel:+33682641026" style={{color:'inherit', textDecoration:'underline'}}>06 82 64 10 26</a></span>
                                 </div>
                                 <div className="contact-item-row">
                                     <Mail className="contact-icon" size={20} />
-                                    <span>contact@metadxs.com</span>
+                                    <a href="mailto:contact@metadxs.com" style={{color:'inherit', textDecoration:'underline'}}><span>contact@metadxs.com</span></a>
                                 </div>
                             </div>
 
