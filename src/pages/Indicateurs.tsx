@@ -21,7 +21,7 @@ export default function Indicateurs() {
             <div style={{ maxWidth: '1000px', margin: '0 auto', padding: '6rem 2rem' }}>
 
                 <h2 style={{ textAlign: 'center', fontSize: '2rem', fontWeight: '900', color: '#065f46', marginBottom: '4rem' }}>
-                    METADXS EN CHIFFRES (2024)
+                    METADXS EN CHIFFRES (2026)
                 </h2>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '3rem' }}>
