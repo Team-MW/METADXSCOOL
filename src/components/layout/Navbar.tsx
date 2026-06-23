@@ -102,6 +102,7 @@ const Navbar = () => {
                                 { label: 'COMMERCE / VENTE / RELATION CLIENT', path: '/conseils-formations/catalogue/commerce' },
                                 { label: 'MANAGEMENT-LEADERSHIP', path: '/conseils-formations/catalogue/management' },
                                 { label: 'SANTÉ ET SÉCURITÉ AU TRAVAIL', path: '/conseils-formations/catalogue/sante-securite' },
+                                { label: 'ALIMENTAIRE / RESTAURATION', path: '/forma-secu/alimentaire' },
                             ]
                         },
                         { label: 'POEI', path: '/conseils-formations/poei' },
@@ -122,7 +123,6 @@ const Navbar = () => {
                     path: '#',
                     hasSubmenu: true,
                     subItems: [
-                        { label: 'ALIMENTAIRE / RESTAURATION', path: '/forma-secu/alimentaire' },
                         { label: 'SÉCURITÉ DES BIENS ET DES PERSONNES', path: '/forma-secu/securite' }
                     ]
                 }

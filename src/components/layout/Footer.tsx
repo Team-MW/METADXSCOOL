@@ -36,6 +36,7 @@ const Footer = () => {
                     <h3>CERTIFICATION</h3>
                     <ul className="footer-links">
                         <li><Link to="/mentions-legales">Mentions légales</Link></li>
+                        <li><a href="/CGV-META-DX-SCHOOL%20V1%20170925.pdf" target="_blank" rel="noopener noreferrer">CGV</a></li>
                         <li>
                             <a href="#" className="certification-orange" onClick={() => handleNavigation('/certifications')}>
                                 Cliquez ci dessous pour <br />consulter nos différentes <br />certifications
