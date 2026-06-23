@@ -63,9 +63,9 @@ const Footer = () => {
                         </div>
 
                         <div className="card-right-socials">
-                            <a href="#" className="social-bubble"><Instagram className="social-icon" /></a>
-                            <a href="#" className="social-bubble"><Facebook className="social-icon" /></a>
-                            <a href="#" className="social-bubble"><Linkedin className="social-icon" /></a>
+                            <a href="https://www.instagram.com/metadxs" target="_blank" rel="noopener noreferrer" className="social-bubble"><Instagram className="social-icon" /></a>
+                            <a href="https://www.facebook.com/people/META-DX-School/100089604833240/" target="_blank" rel="noopener noreferrer" className="social-bubble"><Facebook className="social-icon" /></a>
+                            <a href="https://fr.linkedin.com/school/meta-dx-school/" target="_blank" rel="noopener noreferrer" className="social-bubble"><Linkedin className="social-icon" /></a>
                         </div>
                     </div>
 
@@ -84,9 +84,9 @@ const Footer = () => {
                         </div>
 
                         <div className="card-right-socials">
-                            <a href="#" className="social-bubble"><Instagram className="social-icon" /></a>
-                            <a href="#" className="social-bubble"><Facebook className="social-icon" /></a>
-                            <a href="#" className="social-bubble"><Linkedin className="social-icon" /></a>
+                            <a href="https://www.instagram.com/metadxscf/" target="_blank" rel="noopener noreferrer" className="social-bubble"><Instagram className="social-icon" /></a>
+                            <a href="https://www.facebook.com/people/META-DX-School/100089604833240/" target="_blank" rel="noopener noreferrer" className="social-bubble"><Facebook className="social-icon" /></a>
+                            <a href="https://fr.linkedin.com/company/metadxs-conseils-formations" target="_blank" rel="noopener noreferrer" className="social-bubble"><Linkedin className="social-icon" /></a>
                         </div>
                     </div>
                 </div>
