@@ -159,65 +159,7 @@ function Home() {
                     💬 Des questions ? Nous sommes là pour vous accompagner dans votre projet professionnel.
                 </p>
 
-                {/* POLES SECTION */}
-                <div className="poles-section">
-                    <h2 className="poles-title">DÉCOUVREZ NOS DEUX PÔLES D'EXPERTISE</h2>
-                    <p className="poles-subtitle">Deux entités complémentaires pour répondre à tous vos besoins de formation</p>
 
-                    <div className="poles-grid">
-                        {/* POLE 1: META DX SCHOOL */}
-                        <div className="pole-card pole-school">
-                            <div className="pole-card-glow pole-glow-purple"></div>
-                            <div className="pole-card-content">
-                                <div className="pole-icon-badge pole-icon-purple">🎓</div>
-                                <h3 className="pole-title">META DX SCHOOL</h3>
-                                <p className="pole-type-label">Centre de Formation d'Apprentis</p>
-                                <p className="pole-description">Dédié aux jeunes talents et aux futurs professionnels qui souhaitent se former tout en travaillant.</p>
-
-                                <div className="pole-divider"></div>
-
-                                <ul className="pole-list">
-                                    <li><span className="pole-check">✓</span> Formations en alternance reconnues</li>
-                                    <li><span className="pole-check">✓</span> Accompagnement pédagogique et humain</li>
-                                    <li><span className="pole-check">✓</span> Insertion professionnelle renforcée</li>
-                                </ul>
-
-                                <p className="pole-question">Vous êtes étudiant·e, en reconversion ou à la recherche d'une alternance ?</p>
-
-                                <div className="pole-actions">
-                                    <Link to="/cfa" className="pole-btn-main">Nos formations longues</Link>
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="pole-btn-outline">Questionnaire de premier contact</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* POLE 2: METADXS CONSEILS */}
-                        <div className="pole-card pole-conseil">
-                            <div className="pole-card-glow pole-glow-blue"></div>
-                            <div className="pole-card-content">
-                                <div className="pole-icon-badge pole-icon-blue">🏛️</div>
-                                <h3 className="pole-title">METADXS CONSEILS</h3>
-                                <p className="pole-type-label">Organisme de Formation &amp; Conseil RH</p>
-                                <p className="pole-description">Accompagne les entreprises, professionnels et structures publiques dans leurs projets RH et de développement des compétences.</p>
-
-                                <div className="pole-divider"></div>
-
-                                <ul className="pole-list">
-                                    <li><span className="pole-check">✓</span> Formations courtes &amp; sur-mesure</li>
-                                    <li><span className="pole-check">✓</span> Conseil RH, bilan de compétences, VAE</li>
-                                    <li><span className="pole-check">✓</span> Diagnostics, audit &amp; ingénierie pédagogique</li>
-                                </ul>
-
-                                <p className="pole-question">Vous êtes une entreprise souhaitant faire évoluer vos équipes ?</p>
-
-                                <div className="pole-actions">
-                                    <Link to="/conseils-formations" className="pole-btn-main pole-btn-blue">Nos formations courtes</Link>
-                                    <Link to="/contact" className="pole-btn-outline pole-btn-outline-blue">Contactez-nous par mail</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </section>
 
