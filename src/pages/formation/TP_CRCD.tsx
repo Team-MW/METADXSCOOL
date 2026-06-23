@@ -401,7 +401,7 @@ export default function TP_CRCD() {
                                 </div>
                             </div>
 
-                            <a href="/contact" className="btn-primary">NOUS CONTACTER</a>
+                            <a href="/contact" className="btn-primary">CONTACTEZ-NOUS</a>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-outline">
                                 <FileText size={18} /> FORMULAIRE DE CANDIDATURE
                             </a>

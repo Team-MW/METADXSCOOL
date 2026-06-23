@@ -353,7 +353,7 @@ export default function TP_MDEC() {
                                 </div>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary">POSTULER EN LIGNE</a>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary">CONTACTEZ-NOUS</a>
                         </div>
 
                         <div className="info-card" style={{padding:'1.5rem'}}>
