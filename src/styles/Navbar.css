@@ -537,6 +537,19 @@
     /* Above everything */
 }
 
+/* Base styles for submenus and toggle buttons */
+.submenu-toggle-btn {
+    display: none; /* Hidden on desktop */
+}
+
+.submenu-chevron {
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.desktop-only-chevron {
+    display: inline-block;
+}
+
 /* Mobile specific styles */
 @media (max-width: 1024px) {
 
@@ -557,23 +570,136 @@
         /* Push to right */
     }
 
-    /* 3. HIDE NAV MENU BY DEFAULT & STYLE OPEN STATE */
+    /* 3. MOBILE TOGGLE BUTTONS AND SCROLL LOCK SUPPORT */
+    .submenu-toggle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        color: #4b5563;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+
+    .submenu-toggle-btn:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .desktop-only-chevron {
+        display: none !important;
+    }
+
+    /* Hide default hover triggers on mobile since we use React state click toggles */
+    .nav-item-container:hover .dropdown-menu,
+    .nav-item-container:focus-within .dropdown-menu {
+        display: none;
+    }
+    .dropdown-submenu-container:hover > .dropdown-submenu {
+        display: none;
+    }
+
+    /* Show dropdowns when expanded via mobile-expanded class */
+    .dropdown-menu.mobile-expanded,
+    .dropdown-submenu.mobile-expanded {
+        display: block !important;
+    }
+
+    /* Submenus layout adjustments on mobile */
+    .dropdown-menu,
+    .dropdown-submenu {
+        position: static !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-shadow: none !important;
+        border: none !important;
+        background: rgba(0, 0, 0, 0.02) !important;
+        padding: 0.25rem 0 !important;
+        margin: 0 !important;
+        display: none;
+        border-radius: 0 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+
+    /* Menu item rows layout */
+    .menu-item-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 1.5rem;
+        box-sizing: border-box;
+        border-radius: 6px;
+        transition: background-color 0.2s ease;
+    }
+
+    .menu-item-row:hover {
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    /* Depth Indentations */
+    .depth-0 {
+        padding-left: 1.5rem;
+    }
+    .depth-1 {
+        padding-left: 3rem;
+    }
+    .depth-2 {
+        padding-left: 4.5rem;
+    }
+    .depth-3 {
+        padding-left: 6rem;
+    }
+
+    /* Override padding and style of links on mobile */
+    .nav-item,
+    .dropdown-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        text-align: left;
+        font-size: 0.95rem !important;
+        font-weight: 600 !important;
+        color: #374151 !important;
+        padding: 0.75rem 0.5rem !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        text-transform: uppercase;
+        border-radius: 0 !important;
+        margin: 0 !important;
+    }
+
+    .nav-item.active {
+        color: #f59e0b !important; /* Gold */
+    }
+
+    .nav-item:hover,
+    .dropdown-item:hover {
+        color: #7c3aed !important; /* Purple */
+    }
+
+    /* 4. HIDE NAV MENU BY DEFAULT & STYLE OPEN STATE */
     .nav-wrapper {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         background: white;
-        padding: 1rem 0;
         box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         transform: translateY(-20px);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 999;
-        height: calc(100vh - 140px);
-        /* Fill remaining screen height approx */
+        height: calc(100vh - 106px) !important; /* Adjust default height */
         overflow-y: auto;
+        padding: 1.5rem 0;
     }
 
     .nav-wrapper.open {
@@ -583,55 +709,21 @@
     }
 
     .nav-menu {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        /* Center items */
-        gap: 1.5rem;
-        padding-bottom: 2rem;
+        align-items: stretch;
+        gap: 0.25rem;
+        padding: 0 0 2rem 0;
+        width: 100%;
     }
 
     .nav-item-container {
-        width: 100%;
-        justify-content: center;
+        display: flex;
         flex-direction: column;
+        align-items: stretch;
+        width: 100%;
         height: auto;
-        padding: 0.5rem 0;
-    }
-
-    .nav-item {
-        font-size: 1rem;
-        padding: 0.8rem;
-    }
-
-    /* Mobile Dropdown Handling */
-    .dropdown-menu {
-        position: static;
-        /* Stack naturally */
-        display: none;
-        /* Hidden by default */
-        box-shadow: none;
-        border: none;
-        background: #f9fafb;
-        /* Light gray for contrast */
-        margin-top: 0.5rem;
-        width: 90%;
-        /* Slight inset */
-        transform: none;
-        animation: none;
-        opacity: 1;
-        text-align: center;
-        border-radius: 0.5rem;
-    }
-
-    /* Show dropdown on hover (or click if we added click handling, but hover works ok on some touch) 
-       For better UX, usually click is preferred, but simple hover/focus often suffices for simple "open" state 
-       Here we make it visible if the parent is "active" or simply always visible if we want? 
-       Let's stick to hover/focus or make them always visible in mobile menu for simplicity or use a "details" like approach.
-       For now, let's make them visible when hovering the container which acts like a tap on mobile.
-    */
-    .nav-item-container:hover .dropdown-menu,
-    .nav-item-container:focus-within .dropdown-menu {
-        display: block;
+        padding: 0;
     }
 
     .logo-image-school,

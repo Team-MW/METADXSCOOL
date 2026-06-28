@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import logoSchool from '../../assets/metadxschool.png';
 import logoConseil from '../../assets/methadxconseil.png';
 import { Link, useLocation } from 'react-router-dom';
@@ -17,9 +17,47 @@ interface NavItem {
 const Navbar = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
 
-    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-    const closeMenu = () => setIsMenuOpen(false);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+        if (isMenuOpen) {
+            setExpandedItems({});
+        }
+    };
+    
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+        setExpandedItems({});
+    };
+
+    const toggleExpand = (itemKey: string, e?: React.MouseEvent) => {
+        if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+        setExpandedItems(prev => ({
+            ...prev,
+            [itemKey]: !prev[itemKey]
+        }));
+    };
+
+    // Lock body scroll when mobile menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => {
+            document.body.style.overflow = '';
+        };
+    }, [isMenuOpen]);
+
+    // Close mobile menu if location changes
+    useEffect(() => {
+        closeMenu();
+    }, [location.pathname]);
 
     // Define types for better organization (implicit here)
     const navItems = [
@@ -94,7 +132,7 @@ const Navbar = () => {
                     subItems: [
                         {
                             label: 'CATALOGUE',
-                            path: '#', // No dcdcdirect link usually for parent category
+                            path: '#', // No direct link usually for parent category
                             hasSubmenu: true,
                             subItems: [
                                 { label: 'NUMÉRIQUE / INFORMATIQUE / BUREAUTIQUE', path: '/conseils-formations/catalogue/numerique' },
@@ -165,20 +203,46 @@ const Navbar = () => {
         },
     ];
 
-
-
-    const renderSubItems = (items: NavItem[]) => {
+    const renderSubItems = (items: NavItem[], parentKey: string, depth: number = 1) => {
         return (
-            <ul className="dropdown-submenu">
-                {items.map((subItem) => (
-                    <li key={subItem.label} className={subItem.hasSubmenu ? "dropdown-submenu-container" : ""}>
-                        <Link to={subItem.path || '#'} className="dropdown-item">
-                            {subItem.label}
-                            {subItem.hasSubmenu && <ChevronRight size={16} />}
-                        </Link>
-                        {subItem.hasSubmenu && subItem.subItems && renderSubItems(subItem.subItems)}
-                    </li>
-                ))}
+            <ul className={`dropdown-submenu ${expandedItems[parentKey] ? 'mobile-expanded' : ''}`}>
+                {items.map((subItem) => {
+                    const itemKey = `${parentKey} > ${subItem.label}`;
+                    const hasSub = subItem.hasSubmenu && subItem.subItems && subItem.subItems.length > 0;
+                    const isExpanded = !!expandedItems[itemKey];
+
+                    return (
+                        <li key={subItem.label} className={`${hasSub ? "dropdown-submenu-container" : ""} ${isExpanded ? 'expanded' : ''}`}>
+                            <div className={`menu-item-row depth-${depth}`}>
+                                <Link 
+                                    to={subItem.path || '#'} 
+                                    className="dropdown-item"
+                                    onClick={(e) => {
+                                        if (!subItem.path || subItem.path === '#') {
+                                            toggleExpand(itemKey, e);
+                                        } else {
+                                            closeMenu();
+                                        }
+                                    }}
+                                >
+                                    {subItem.label}
+                                    {hasSub && <ChevronRight size={16} className="desktop-only-chevron" />}
+                                </Link>
+                                {hasSub && (
+                                    <button 
+                                        type="button" 
+                                        className="submenu-toggle-btn"
+                                        onClick={(e) => toggleExpand(itemKey, e)}
+                                        aria-label="Toggle submenu"
+                                    >
+                                        <ChevronRight size={16} className={`submenu-chevron ${isExpanded ? 'rotate-90' : ''}`} />
+                                    </button>
+                                )}
+                            </div>
+                            {hasSub && subItem.subItems && renderSubItems(subItem.subItems, itemKey, depth + 1)}
+                        </li>
+                    );
+                })}
             </ul>
         );
     };
@@ -225,33 +289,83 @@ const Navbar = () => {
                 <nav className={`nav-wrapper ${isMenuOpen ? 'open' : ''}`}>
                     <ul className="nav-menu">
                         {navItems.map((item) => {
-                            // Check isActive logic simplified for top level
                             const isActive = location.pathname === item.path;
+                            const itemKey = item.label;
+                            const hasDrop = item.hasDropdown && item.dropdownItems && item.dropdownItems.length > 0;
+                            const isExpanded = !!expandedItems[itemKey];
 
                             return (
-                                <li key={item.label} className="nav-item-container">
-                                    <Link
-                                        to={item.path}
-                                        className={`nav-item ${isActive ? 'active' : ''}`}
-                                        style={item.isRed && !isActive ? { color: '#ef4444' } : {}}
-                                    >
-                                        {item.label}
-                                        {item.hasDropdown && <ChevronDown className="nav-icon" />}
-                                    </Link>
+                                <li key={item.label} className={`nav-item-container ${isExpanded ? 'expanded' : ''}`}>
+                                    <div className="menu-item-row depth-0">
+                                        <Link
+                                            to={item.path || '#'}
+                                            className={`nav-item ${isActive ? 'active' : ''}`}
+                                            style={item.isRed && !isActive ? { color: '#ef4444' } : {}}
+                                            onClick={(e) => {
+                                                if (!item.path || item.path === '#') {
+                                                    toggleExpand(itemKey, e);
+                                                } else {
+                                                    closeMenu();
+                                                }
+                                            }}
+                                        >
+                                            {item.label}
+                                            {hasDrop && <ChevronDown className="nav-icon desktop-only-chevron" />}
+                                        </Link>
+
+                                        {hasDrop && (
+                                            <button
+                                                type="button"
+                                                className="submenu-toggle-btn"
+                                                onClick={(e) => toggleExpand(itemKey, e)}
+                                                aria-label="Toggle dropdown"
+                                            >
+                                                <ChevronDown size={16} className={`submenu-chevron ${isExpanded ? 'rotate-180' : ''}`} />
+                                            </button>
+                                        )}
+                                    </div>
 
                                     {/* DROPDOWN MENU */}
-                                    {item.dropdownItems && (
-                                        <ul className="dropdown-menu">
-                                            {item.dropdownItems.map((subItem) => (
-                                                <li key={subItem.label} className={subItem.hasSubmenu ? "dropdown-submenu-container" : ""}>
-                                                    <Link to={subItem.path} className="dropdown-item">
-                                                        {subItem.label}
-                                                        {subItem.hasSubmenu && <ChevronRight size={16} />}
-                                                    </Link>
-                                                    {/* Recursive Call for Level 2 & 3 */}
-                                                    {subItem.hasSubmenu && subItem.subItems && renderSubItems(subItem.subItems)}
-                                                </li>
-                                            ))}
+                                    {hasDrop && item.dropdownItems && (
+                                        <ul className={`dropdown-menu ${isExpanded ? 'mobile-expanded' : ''}`}>
+                                            {item.dropdownItems.map((subItem) => {
+                                                const subKey = `${itemKey} > ${subItem.label}`;
+                                                const hasSub = subItem.hasSubmenu && subItem.subItems && subItem.subItems.length > 0;
+                                                const isSubExpanded = !!expandedItems[subKey];
+
+                                                return (
+                                                    <li key={subItem.label} className={`${hasSub ? "dropdown-submenu-container" : ""} ${isSubExpanded ? 'expanded' : ''}`}>
+                                                        <div className="menu-item-row depth-1">
+                                                            <Link 
+                                                                to={subItem.path || '#'} 
+                                                                className="dropdown-item"
+                                                                onClick={(e) => {
+                                                                    if (!subItem.path || subItem.path === '#') {
+                                                                        toggleExpand(subKey, e);
+                                                                    } else {
+                                                                        closeMenu();
+                                                                    }
+                                                                }}
+                                                            >
+                                                                {subItem.label}
+                                                                {hasSub && <ChevronRight size={16} className="desktop-only-chevron" />}
+                                                            </Link>
+                                                            {hasSub && (
+                                                                <button
+                                                                    type="button"
+                                                                    className="submenu-toggle-btn"
+                                                                    onClick={(e) => toggleExpand(subKey, e)}
+                                                                    aria-label="Toggle submenu"
+                                                                >
+                                                                    <ChevronRight size={16} className={`submenu-chevron ${isSubExpanded ? 'rotate-90' : ''}`} />
+                                                                </button>
+                                                            )}
+                                                        </div>
+                                                        {/* Recursive Call for Level 2 & 3 */}
+                                                        {hasSub && subItem.subItems && renderSubItems(subItem.subItems, subKey, 2)}
+                                                    </li>
+                                                );
+                                            })}
                                         </ul>
                                     )}
                                 </li>
