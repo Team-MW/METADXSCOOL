@@ -303,8 +303,13 @@
     }
 
     .tab-content {
-        padding: 2rem 1.25rem;
+        padding: 2rem 1.25rem 2.5rem;
         border-radius: 20px;
+    }
+
+    .tab-content-inner {
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .tab-description {
@@ -405,7 +410,7 @@
 
     /* Campus Section Mobile Layout */
     .campus-section {
-        padding: 5.5rem 1.25rem 3.5rem;
+        padding: 5.5rem 1.25rem 5.5rem;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
         margin-top: -40px;
@@ -640,6 +645,8 @@
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255,255,255,0.1);
     position: relative;
     overflow: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 .tab-content::before {
@@ -1554,7 +1561,7 @@
 
 @media (max-width: 768px) {
     .reviews-section {
-        padding: 3.5rem 1rem 3rem;
+        padding: 3.5rem 1rem 6rem;
     }
     .reviews-title {
         font-size: 1.6rem;
@@ -1562,5 +1569,64 @@
     .review-card {
         width: 285px;
         padding: 1.25rem;
+    }
+}
+
+/* ============================================
+   TIKTOK SECTION
+   ============================================ */
+.tiktok-section {
+    padding: 4rem 2rem;
+    background-color: #f8fafc;
+    text-align: center;
+}
+
+.tiktok-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #1c1e4c;
+    text-transform: uppercase;
+}
+
+.tiktok-subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-top: 1rem;
+}
+
+.tiktok-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.tiktok-iframe {
+    width: 325px;
+    height: 605px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tiktok-section {
+        padding: 3rem 1rem;
+    }
+    .tiktok-title {
+        font-size: 1.8rem;
+    }
+    .tiktok-subtitle {
+        font-size: 1rem;
+    }
+    .tiktok-grid {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .tiktok-iframe {
+        width: 100%;
+        max-width: 325px;
     }
 }

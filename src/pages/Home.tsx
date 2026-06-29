@@ -164,31 +164,31 @@ function Home() {
             </section>
 
             {/* TIKTOK SECTION */}
-            <section className="tiktok-section" style={{ padding: '4rem 2rem', backgroundColor: '#f8fafc', textAlign: 'center' }}>
+            <section className="tiktok-section">
                 <div style={{ marginBottom: '3rem' }}>
-                    <h2 style={{ fontSize: '2.5rem', fontWeight: 900, color: '#1c1e4c', textTransform: 'uppercase' }}>
+                    <h2 className="tiktok-title">
                         Suivez-nous sur <span style={{ color: '#ff0050' }}>TikTok</span>
                     </h2>
-                    <p style={{ fontSize: '1.2rem', color: '#64748b', marginTop: '1rem' }}>
+                    <p className="tiktok-subtitle">
                         Découvrez l'envers du décor et la vie au campus !
                     </p>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+                <div className="tiktok-grid">
                     <iframe 
                         src="https://www.tiktok.com/embed/v2/7628553605062200598" 
-                        style={{ width: '325px', height: '605px', border: 'none', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }} 
+                        className="tiktok-iframe" 
                         allow="fullscreen" 
                         title="TikTok Video 1">
                     </iframe>
                     <iframe 
                         src="https://www.tiktok.com/embed/v2/7652428311473311008" 
-                        style={{ width: '325px', height: '605px', border: 'none', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }} 
+                        className="tiktok-iframe" 
                         allow="fullscreen" 
                         title="TikTok Video 2">
                     </iframe>
                     <iframe 
                         src="https://www.tiktok.com/embed/v2/7630524248733371670" 
-                        style={{ width: '325px', height: '605px', border: 'none', borderRadius: '12px', boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }} 
+                        className="tiktok-iframe" 
                         allow="fullscreen" 
                         title="TikTok Video 3">
                     </iframe>

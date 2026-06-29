@@ -794,3 +794,12 @@
         height: calc(100vh - 106px) !important;
     }
 }
+
+/* Submenu toggle chevron rotation animation */
+.submenu-chevron.rotate-90 {
+    transform: rotate(90deg);
+}
+
+.submenu-chevron.rotate-180 {
+    transform: rotate(180deg);
+}
