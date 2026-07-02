@@ -123,7 +123,7 @@ function App() {
               <Route path="/financements/demandeur-emploi" element={<DemandeurEmploi />} />
               <Route path="/financements/independant" element={<Independant />} />
               <Route path="/financements/fonction-publique" element={<FonctionPublique />} />
-              <Route path="/financements/handicap" element={<Handicap />} />
+              <Route path="/ressources/financements-handicap" element={<Handicap />} />
               <Route path="/cfa/formation/:id" element={<FormationDetail />} />
               <Route path="/cfa/indicateurs" element={<Indicateurs />} />
               <Route path="/mentions-legales" element={<MentionsLegales />} />
@@ -197,7 +197,8 @@ function App() {
               <Route path="/financements/demandeur-demploi" element={<Navigate to="/financements/demandeur-emploi" replace />} />
               <Route path="/financements/independant-dirigeant-travailleur-non-salarie" element={<Navigate to="/financements/independant" replace />} />
               <Route path="/financements/travailleur-de-la-fonction-publique" element={<Navigate to="/financements/fonction-publique" replace />} />
-              <Route path="/financements/travailleur-en-situation-de-handicap" element={<Navigate to="/financements/handicap" replace />} />
+              <Route path="/financements/travailleur-en-situation-de-handicap" element={<Navigate to="/ressources/financements-handicap" replace />} />
+              <Route path="/financements/handicap" element={<Navigate to="/ressources/financements-handicap" replace />} />
               
               {/* Ressources & Mentions */}
               <Route path="/mentions" element={<Navigate to="/mentions-legales" replace />} />

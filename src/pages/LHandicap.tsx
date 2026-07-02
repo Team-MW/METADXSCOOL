@@ -477,7 +477,7 @@ export default function LHandicap() {
                         <Award size={48} color="#ef9a37" style={{ marginBottom: '1rem' }} />
                         <h2>Les solutions de financement si vous êtes en situation de handicap</h2>
                         <p style={{ opacity: 0.8, marginTop: '1rem' }}>Découvrez les aides à la formation pour les travailleurs en situation de handicap (AGEFIPH, FIPHFP, dispositifs cumulables...).</p>
-                        <Link to="/financements/handicap" className="btn-primary">
+                        <Link to="/ressources/financements-handicap" className="btn-primary">
                             VOIR LES SOLUTIONS DE FINANCEMENT
                         </Link>
                     </div>

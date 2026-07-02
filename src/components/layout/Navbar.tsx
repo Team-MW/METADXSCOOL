@@ -175,6 +175,7 @@ const Navbar = () => {
                 { label: 'NEWSLETTERS', path: '/ressources/newsletters' },
                 { label: 'LA MOBILITÉ', path: '/ressources/mobilite' },
                 { label: 'HANDICAP', path: '/ressources/handicap-engagement' },
+                { label: 'FINANCEMENTS HANDICAP', path: '/ressources/financements-handicap' },
                 { label: 'L’ÉGALITÉ ET L’INCLUSION', path: '/ressources/egalite-inclusion' },
             ]
         },
@@ -188,7 +189,6 @@ const Navbar = () => {
                 { label: 'DEMANDEUR D’EMPLOI', path: '/financements/demandeur-emploi' },
                 { label: 'INDÉPENDANT / DIRIGEANT / TRAVAILLEUR NON SALARIÉ', path: '/financements/independant' },
                 { label: 'TRAVAILLEUR DE LA FONCTION PUBLIQUE', path: '/financements/fonction-publique' },
-                { label: 'HANDICAP', path: '/financements/handicap' },
                 { label: 'AIDE AU LOGEMENT', path: '/ressources/logement' },
             ]
         },
