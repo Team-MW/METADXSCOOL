@@ -259,15 +259,15 @@ export default function TP_REM() {
                                 <div className="stat-item">
                                     <GraduationCap className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Certification</span>
+                                        <span className="stat-label">Certificateur</span>
                                         <span className="stat-value">Ministère du Travail</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
                                     <Clock className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Parcoursup</span>
-                                        <span className="stat-value">Admission Hors-Parcoursup</span>
+                                        <span className="stat-label">Admission</span>
+                                        <span className="stat-value">Hors-Parcoursup + Entretien</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
@@ -280,8 +280,8 @@ export default function TP_REM() {
                                 <div className="stat-item">
                                     <Users className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Enregistrement</span>
-                                        <span className="stat-value">Date : 22-02-2024</span>
+                                        <span className="stat-label">Prérequis</span>
+                                        <span className="stat-value">Titre Niveau 5 + 18 ans min</span>
                                     </div>
                                 </div>
                             </div>
@@ -441,9 +441,9 @@ export default function TP_REM() {
                                 </div>
                             </div>
 
-                            <a href="/contact/candidat" className="btn-primary">CONTACTEZ-NOUS</a>
+                            <a href="/contact" className="btn-primary">COMMENT NOUS CONTACTER</a>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-outline">
-                                <FileText size={18} /> DOSSIER DE CANDIDATURE
+                                <FileText size={18} /> CANDIDATER
                             </a>
                         </div>
 

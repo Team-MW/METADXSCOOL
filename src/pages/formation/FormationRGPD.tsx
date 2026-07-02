@@ -316,7 +316,7 @@ export default function FormationRGPD() {
                             <span style={{fontSize: '0.8rem', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase'}}>Tarif Inter</span>
                             <div className="price">900 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Prise en charge OPCO possible.</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-reg">CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-reg">COMMENT NOUS CONTACTER</a>
                         </div>
 
                         <div className="card" style={{marginTop: '2rem'}}>

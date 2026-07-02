@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import logoSupDeVinci from '../../assets/logo-supdevinci.png';
 import { 
     Clock, 
     Users, 
@@ -12,7 +13,8 @@ import {
     ShieldCheck,
     FileText,
     Monitor,
-    AlertCircle
+    AlertCircle,
+    Briefcase
 } from 'lucide-react';
 
 export default function B_RDA() {
@@ -241,7 +243,7 @@ export default function B_RDA() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/38602/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°38602</a> | SUP DE VINCI</span>
+                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/38602/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°38602</a> | SUP DE VINCI | MAJ 27-08-2025</span>
                         <h1>Bachelor Responsable du Développement des Affaires (B-RDA)</h1>
                         <div className="hero-subtitle">NIVEAU 6 – BAC +3 (TITRE RECONNU PAR L'ÉTAT)</div>
                         <p className="hero-desc">
@@ -259,15 +261,17 @@ export default function B_RDA() {
                                 <div className="stat-item">
                                     <GraduationCap className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Certification</span>
-                                        <span className="stat-value">SUP DE VINCI</span>
+                                        <span className="stat-label">Certificateur</span>
+                                        <span className="stat-value" style={{ marginTop: '0.25rem', display: 'block' }}>
+                                            <img src={logoSupDeVinci} alt="SUP DE VINCI" style={{ maxHeight: '40px', width: 'auto' }} />
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
                                     <Clock className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Parcoursup</span>
-                                        <span className="stat-value">Admission Hors-Parcoursup</span>
+                                        <span className="stat-label">Admission</span>
+                                        <span className="stat-value">Hors-Parcoursup + Entretien</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
@@ -280,8 +284,15 @@ export default function B_RDA() {
                                 <div className="stat-item">
                                     <Users className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Mise à jour</span>
-                                        <span className="stat-value">Date : 27-08-2025</span>
+                                        <span className="stat-label">Prérequis</span>
+                                        <span className="stat-value">Titre Niveau 5 + 18 ans min</span>
+                                    </div>
+                                </div>
+                                <div className="stat-item">
+                                    <Briefcase className="stat-icon" />
+                                    <div className="stat-text">
+                                        <span className="stat-label">Initiale & Alternance</span>
+                                        <span className="stat-value">Alternance et initial</span>
                                     </div>
                                 </div>
                             </div>
@@ -300,13 +311,12 @@ export default function B_RDA() {
                             </div>
                         </div>
 
-                        {/* Prérequis */}
+                        {/* Modalités d'accès */}
                         <div className="info-card">
-                            <h2 className="section-title"><AlertCircle /> Prérequis & Conditions d'accès</h2>
-                            <ul className="list-check">
-                                <li><CheckCircle2 size={18}/> Être titulaire ou en cours d’obtention d’un diplôme de niveau 5 (BTS, DUT, L2) ou d’une certification professionnelle équivalente.</li>
-                                <li><CheckCircle2 size={18}/> Être âgé de 18 ans au moins à la date d’entrée en formation et participer à un entretien d'admission.</li>
-                            </ul>
+                            <h2 className="section-title"><Clock /> Modalités d'accès</h2>
+                            <div style={{fontSize:'0.95rem', lineHeight:1.6}}>
+                                <strong>Délai d'accès :</strong> Le délai d'accès moyen à la formation est de <strong>7 jours maximum</strong>. Les étapes comprennent : information individuelle ou collective, identification, test de connaissances et entretien individuel.
+                            </div>
                         </div>
 
                         {/* Objectives & Program */}
@@ -360,20 +370,35 @@ export default function B_RDA() {
                             </div>
                         </div>
 
-                        {/* Modalités */}
+                        {/* Modalités Pédagogiques */}
                         <div className="info-card">
-                            <h2 className="section-title"><Monitor /> Modalités pédagogiques & d'accès</h2>
-                            <div style={{marginBottom:'2rem', fontSize:'0.95rem', lineHeight:1.6}}>
-                                <strong>Délai d'accès :</strong> Le délai d'accès moyen à la formation est de <strong>7 jours maximum</strong>. Les étapes comprennent : information individuelle ou collective, identification, test de connaissances et entretien individuel.
-                            </div>
+                            <h2 className="section-title"><Monitor /> Modalités pédagogiques</h2>
+                            
                             <div className="modalite-box">
                                 <h4 style={{fontWeight:900, color:'#ef9a37', marginBottom:'1rem'}}>SUIVI EN PRÉSENTIEL (ALTERNANCE / INITIAL)</h4>
                                 <p style={{fontSize:'0.9rem', lineHeight:1.6}}>
-                                    • <strong>Durée :</strong> 12 mois (soit 450 heures en centre de formation)<br/>
+                                    • <strong>Durée :</strong> 12 mois (soit 600 heures en centre de formation)<br/>
                                     • <strong>Rythme :</strong> 1 jour par semaine à l'école, le reste en entreprise<br/>
                                     • 15 participants maximum par groupe pour un suivi optimal<br/>
                                     • Formateurs professionnels experts du secteur et mise en application « terrain »<br/>
                                     • Plateau technique dédié pour la mise en pratique de gestes professionnels
+                                </p>
+                            </div>
+
+                            <div style={{marginTop: '1.5rem'}}>
+                                <p style={{fontSize:'0.95rem', marginBottom:'1rem'}}>
+                                    Les moyens pédagogiques mis en œuvre sont variés et adaptés aux besoins des apprenants, afin de garantir une expérience d'apprentissage enrichissante et efficace.
+                                </p>
+                                <h4 style={{fontWeight:900, color:'#1c1e4c', marginBottom:'1rem'}}>Moyens pédagogiques</h4>
+                                <ul style={{margin:0, paddingLeft:'1.2rem', fontSize:'0.9rem', lineHeight:'1.6', marginBottom:'1rem'}}>
+                                    <li><strong>Cours magistraux :</strong> Des sessions de cours magistraux animées par des experts du domaine, couvrant les fondamentaux théoriques et les tendances actuelles du développement des affaires.</li>
+                                    <li><strong>Études de cas :</strong> Analyse approfondie de cas réels et fictifs pour illustrer les concepts théoriques et développer des compétences en résolution de problèmes.</li>
+                                    <li><strong>Ressources en ligne :</strong> Accès à une plateforme d'apprentissage en ligne offrant des ressources pédagogiques complémentaires, des vidéos, des articles et des forums de discussion.</li>
+                                    <li><strong>Tutorat et mentorat :</strong> Suivi personnalisé par des tuteurs et des mentors pour accompagner les apprenants dans leur parcours de formation et les aider à atteindre leurs objectifs professionnels.</li>
+                                    <li><strong>Évaluations continues :</strong> Mise en place d'évaluations régulières pour mesurer les progrès des apprenants et adapter les moyens pédagogiques en conséquence.</li>
+                                </ul>
+                                <p style={{fontSize:'0.95rem'}}>
+                                    Ces moyens pédagogiques sont conçus pour offrir une formation complète et adaptée aux exigences du marché, permettant aux apprenants de développer les compétences nécessaires pour réussir dans le domaine du développement des affaires.
                                 </p>
                             </div>
                         </div>
@@ -381,16 +406,15 @@ export default function B_RDA() {
                         {/* Evaluations */}
                         <div className="info-card">
                             <h2 className="section-title"><FileText /> Modalités d’évaluation</h2>
-                            <p style={{fontSize:'0.95rem', marginBottom:'1.5rem'}}>
-                                Les compétences des candidats sont évaluées par un jury composé de professionnels habilités au vu :
-                            </p>
                             <div className="doc-block">
-                                <ul style={{margin:0, paddingLeft:'1.2rem', fontSize:'0.9rem', lineHeight:'1.6'}}>
-                                    <li><strong>Résultats des évaluations :</strong> réalisées durant le cursus pour évaluer en continu l'acquisition théorique.</li>
-                                    <li><strong>Dossier professionnel :</strong> faisant état des pratiques et réalisations concrètes sur le terrain.</li>
-                                    <li><strong>Mise en situation professionnelle :</strong> ou présentation de projets réalisés en amont, éventuellement complétée par un entretien technique.</li>
-                                    <li><strong>Entretien final :</strong> soutenance devant le jury d'examen.</li>
+                                <ul style={{margin:0, paddingLeft:'1.2rem', fontSize:'0.9rem', lineHeight:'1.6', marginBottom:'1.5rem'}}>
+                                    <li>La certification s'obtient par la validation des 4 blocs de compétences, complétée de l'évaluation complémentaire prévue au règlement de certification pour le titre complet.</li>
+                                    <li>Chaque bloc peut être validé indépendamment ; un bloc validé reste acquis et donne lieu à une attestation.</li>
                                 </ul>
+                                <h4 style={{fontWeight:900, color:'#1c1e4c', marginBottom:'0.5rem', fontSize:'1rem'}}>Composition du jury</h4>
+                                <p style={{fontSize:'0.9rem', lineHeight:1.6, margin:0}}>
+                                    Le jury de certification est composé de 3 membres minimum, dont 2 professionnels externes. Pour la VAE, le jury comprend un membre de l'organisme certificateur et deux professionnels exerçant ou experts des emplois visés, avec une présence systématique d'au moins deux professionnels représentant au moins 25 % des membres. Le jury est souverain dans l'appréciation des prestations.
+                                </p>
                             </div>
                         </div>
 
@@ -419,10 +443,10 @@ export default function B_RDA() {
                     {/* Sidebar Sidebar Sidebar */}
                     <div className="sidebar">
                         <div className="cta-card">
-                            <h3 style={{fontSize:'1.4rem', fontWeight:900, marginBottom:'1rem', color:'#fbbf24'}}>APPRENTISSAGE & ALTERNANCE</h3>
+                            <h3 style={{fontSize:'1.4rem', fontWeight:900, marginBottom:'1rem', color:'#fbbf24'}}>Initiale & Alternance</h3>
                             <div style={{fontSize:'2.2rem', fontWeight:900, margin:'1rem 0'}}>0€ <span style={{fontSize:'1rem', opacity:0.8}}>POUR L'APPRENANT</span></div>
                             <p style={{fontSize:'0.85rem', opacity:0.9, lineHeight:1.4, marginBottom:'1.5rem'}}>
-                                Le coût de la formation est de **7827 € TTC**.
+                                
                             </p>
 
                             <div style={{textAlign:'left', borderTop:'1px solid rgba(255,255,255,0.1)', paddingTop:'1.5rem'}}>
@@ -436,13 +460,13 @@ export default function B_RDA() {
                                 </div>
                                 <div style={{marginBottom:'1rem'}}>
                                     <span style={{display:'block', fontSize:'0.7rem', color:'#fbcfe8', fontWeight:800}}>DURÉE</span>
-                                    <span style={{fontSize:'0.9rem', fontWeight:700}}>12 mois (450 heures en centre)</span>
+                                    <span style={{fontSize:'0.9rem', fontWeight:700}}>12 mois (600 heures en centre)</span>
                                 </div>
                             </div>
 
-                            <a href="/contact/candidat" className="btn-primary">CONTACTEZ-NOUS</a>
+                            <a href="/contact" className="btn-primary">COMMENT NOUS CONTACTER</a>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-outline">
-                                <FileText size={18} /> DOSSIER DE CANDIDATURE
+                                <FileText size={18} /> CANDIDATER
                             </a>
                         </div>
 

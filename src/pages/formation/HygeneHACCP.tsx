@@ -431,7 +431,7 @@ export default function HygeneHACCP() {
                                 <div className="date-item"><span>📅 Octobre 2026</span> <span>26 & 27</span></div>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply">CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-apply">COMMENT NOUS CONTACTER</a>
                         </div>
 
                         {/* Carte INTRA / GROUPE */}
@@ -455,7 +455,7 @@ export default function HygeneHACCP() {
                                 </p>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply" style={{background:'#1c1e4c'}}>CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-apply" style={{background:'#1c1e4c'}}>COMMENT NOUS CONTACTER</a>
                             <p style={{fontSize:'0.8rem', marginTop:'1rem', fontWeight:600}}>Réponse sous 48 heures.</p>
                         </div>
 

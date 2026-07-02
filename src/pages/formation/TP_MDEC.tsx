@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
+import logoIsme from '../../assets/logo-isme.png';
 import { 
     Clock, 
     Users, 
@@ -10,6 +11,9 @@ import {
     Download,
     TrendingUp,
     ShieldCheck,
+    FileText,
+    CheckCircle2,
+    Monitor,
     Zap,
     Target,
     BarChart3,
@@ -237,15 +241,17 @@ export default function TP_MDEC() {
                                 <div className="stat-item">
                                     <Award className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Niveau</span>
-                                        <span className="stat-value">Bac+5 (Niveau 7)</span>
+                                        <span className="stat-label">Prérequis</span>
+                                        <span className="stat-value">Titre Niveau 6 + 18 ans min</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
                                     <Users className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Certification</span>
-                                        <span className="stat-value">ISME</span>
+                                        <span className="stat-label">Certificateur</span>
+                                        <span className="stat-value" style={{ marginTop: '0.25rem', display: 'block' }}>
+                                            <img src={logoIsme} alt="ISME" style={{ height: '28px', objectFit: 'contain' }} />
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
@@ -258,14 +264,22 @@ export default function TP_MDEC() {
                                 <div className="stat-item">
                                     <Clock className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Accès direct</span>
-                                        <span className="stat-value">Hors Parcoursup</span>
+                                        <span className="stat-label">Admission</span>
+                                        <span className="stat-value">Hors-Parcoursup + Entretien</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/financements/handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
+                            </div>
+                        </div>
+
+                        {/* Modalités d'accès */}
+                        <div className="info-card">
+                            <h2 className="section-title"><Clock /> Modalités d'accès</h2>
+                            <div style={{fontSize:'0.95rem', lineHeight:1.6}}>
+                                <strong>Délai d'accès :</strong> Le délai d'accès moyen à la formation est de <strong>7 jours maximum</strong>. Les étapes comprennent : information individuelle ou collective, identification, test de connaissances et entretien individuel.
                             </div>
                         </div>
 
@@ -319,6 +333,39 @@ export default function TP_MDEC() {
                             </div>
                         </div>
 
+                        {/* Modalités pédagogiques */}
+                        <div className="info-card">
+                            <h2 className="section-title"><Monitor /> Modalités pédagogiques</h2>
+                            <p style={{fontSize:'0.95rem', lineHeight:1.6, marginBottom:'1.5rem'}}>
+                                Les moyens pédagogiques mis en œuvre sont variés et adaptés aux besoins des apprenants, afin de garantir une expérience d'apprentissage enrichissante et efficace.
+                            </p>
+                            <ul className="list-check">
+                                <li><CheckCircle2 size={18}/> <strong>Cours magistraux :</strong> Des sessions de cours magistraux animées par des experts du domaine, couvrant les fondamentaux théoriques et les tendances actuelles du développement des affaires.</li>
+                                <li><CheckCircle2 size={18}/> <strong>Études de cas :</strong> Analyse approfondie de cas réels et fictifs pour illustrer les concepts théoriques et développer des compétences en résolution de problèmes.</li>
+                                <li><CheckCircle2 size={18}/> <strong>Ressources en ligne :</strong> Accès à une plateforme d'apprentissage en ligne offrant des ressources pédagogiques complémentaires, des vidéos, des articles et des forums de discussion.</li>
+                                <li><CheckCircle2 size={18}/> <strong>Tutorat et mentorat :</strong> Suivi personnalisé par des tuteurs et des mentors pour accompagner les apprenants dans leur parcours de formation et les aider à atteindre leurs objectifs professionnels.</li>
+                                <li><CheckCircle2 size={18}/> <strong>Évaluations continues :</strong> Mise en place d'évaluations régulières pour mesurer les progrès des apprenants et adapter les moyens pédagogiques en conséquence.</li>
+                            </ul>
+                            <p style={{fontSize:'0.95rem', lineHeight:1.6, marginTop:'1.5rem'}}>
+                                Ces moyens pédagogiques sont conçus pour offrir une formation complète et adaptée aux exigences du marché, permettant aux apprenants de développer les compétences nécessaires pour réussir dans le domaine du développement des affaires.
+                            </p>
+                        </div>
+
+                        {/* Modalités d'évaluation */}
+                        <div className="info-card">
+                            <h2 className="section-title"><FileText /> Modalité d'évaluation</h2>
+                            <ul className="list-check">
+                                <li><CheckCircle2 size={18}/> La certification est conditionnée par l'obtention des 5 blocs de compétences.</li>
+                                <li><CheckCircle2 size={18}/> Chaque bloc peut être validé indépendamment ; un bloc validé donne lieu à une attestation de validation.</li>
+                                <li><CheckCircle2 size={18}/> Voies d'accès : formation initiale, apprentissage, professionnalisation, formation continue et VAE.</li>
+                            </ul>
+                            
+                            <h3 style={{fontSize:'1.1rem', fontWeight:800, color:'#3b82f6', marginTop:'1.5rem', marginBottom:'1rem'}}>Composition du jury</h3>
+                            <p style={{fontSize:'0.95rem', lineHeight:1.6}}>
+                                Le jury de certification est composé de 3 membres minimum, dont 2 professionnels externes. Pour la VAE, le jury réunit au moins deux personnes, dont au moins une personne qualifiée au titre de la certification visée. Le jury est souverain dans l'appréciation des productions et des prestations.
+                            </p>
+                        </div>
+
                         {/* Débouchés */}
                         <div className="info-card">
                             <h2 className="section-title"><TrendingUp /> Débouchés à Hautes Responsabilités</h2>
@@ -353,7 +400,7 @@ export default function TP_MDEC() {
                                 </div>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary">CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-primary">COMMENT NOUS CONTACTER</a>
                         </div>
 
                         <div className="info-card" style={{padding:'1.5rem'}}>

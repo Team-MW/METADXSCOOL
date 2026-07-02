@@ -356,7 +356,7 @@ export default function FormationCommDigitale() {
                             <span style={{fontSize: '0.8rem', fontWeight: 800, opacity: 0.8, textTransform: 'uppercase'}}>Tarif Inter-entreprise</span>
                             <div className="price">600 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Prise en charge OPCO possible (Tarif préférentiel OPCO Mobilités disponible).</p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-reg">CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-reg">COMMENT NOUS CONTACTER</a>
                             <div style={{marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', display:'flex', alignItems:'center', gap:'1rem', textAlign:'left'}}>
                                 <Download size={24} color="#ef9a37" />
                                 <div>

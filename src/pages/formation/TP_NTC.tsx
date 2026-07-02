@@ -224,22 +224,22 @@ export default function TP_NTC() {
                                 <div className="stat-item">
                                     <GraduationCap className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Certification</span>
+                                        <span className="stat-label">Certificateur</span>
                                         <span className="stat-value">Ministère du Travail</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
                                     <Clock className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Parcoursup</span>
-                                        <span className="stat-value">Hors Parcoursup</span>
+                                        <span className="stat-label">Admission</span>
+                                        <span className="stat-value">Hors-Parcoursup + Entretien</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
                                     <Users className="stat-icon" />
                                     <div className="stat-text">
-                                        <span className="stat-label">Admissions</span>
-                                        <span className="stat-value">Dès 18 ans + Entretien</span>
+                                        <span className="stat-label">Prérequis</span>
+                                        <span className="stat-value">Titre Niveau 4 + 18 ans min</span>
                                     </div>
                                 </div>
                                 <div className="stat-item">
@@ -336,7 +336,7 @@ export default function TP_NTC() {
                             <p style={{fontSize: '0.85rem', opacity: 0.8, lineHeight: 1.5, marginBottom: '1.5rem'}}>
                                 Coût de la formation : 8302€ TTC.
                             </p>
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-primary">CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-primary">COMMENT NOUS CONTACTER</a>
                         </div>
 
                         <div className="info-card" style={{padding: '1.5rem'}}>

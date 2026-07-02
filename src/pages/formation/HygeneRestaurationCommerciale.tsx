@@ -411,7 +411,7 @@ export default function HygeneRestaurationCommerciale() {
                                 <div className="date-item"><span>📅 Novembre 2026</span> <span>23 & 24</span></div>
                             </div>
 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="btn-apply">CONTACTEZ-NOUS</a>
+                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-apply">COMMENT NOUS CONTACTER</a>
                         </div>
 
                         {/* OPCO MOBILITES */}
