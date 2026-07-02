@@ -549,3 +549,20 @@ img {
     background-position: 3% 20%, 97% 80%;
   }
 }
+
+/* ==========================================
+   LIST-CHECK GLOBAL FIX 
+   Prevents flex wrapping issues on mixed inline text nodes
+   ========================================== */
+.list-check li {
+  display: block !important;
+  position: relative !important;
+  padding-left: 2rem !important;
+}
+
+.list-check li svg {
+  position: absolute !important;
+  left: 0 !important;
+  top: 4px !important;
+  margin-top: 0 !important;
+}
