@@ -36,8 +36,11 @@ const Footer = () => {
                     <h3>CERTIFICATION</h3>
                     <ul className="footer-links">
                         <li><Link to="/mentions-legales">Mentions légales</Link></li>
-                        <li><a href="/CGV-META-DX-SCHOOL%20V1%20170925.pdf" target="_blank" rel="noopener noreferrer">CGV</a></li>
-                        <li><a href="/RI-META-DX-SCHOOL%20V5%20230626.pdf" target="_blank" rel="noopener noreferrer">Règlement intérieur</a></li>
+                        <li><a href="/CGV_CFA_MDXS_V2%20010826.pdf" target="_blank" rel="noopener noreferrer">CGV CFA</a></li>
+                        <li><a href="/CGV_OF,%20BC%20et%20VAE_MDX%20CF_V2%20010826.pdf" target="_blank" rel="noopener noreferrer">CGV OF, BC et VAE</a></li>
+                        <li><a href="/R%C3%A9glement_Int%C3%A8rieur_CFA_MDXS_V6%20010826.pdf" target="_blank" rel="noopener noreferrer">Règlement intérieur CFA</a></li>
+                        <li><a href="/R%C3%A9glement_Int%C3%A8rieur_OF,%20BC%20et%20VAE_MDX%20CF_V2%20010826.pdf" target="_blank" rel="noopener noreferrer">Règlement intérieur OF, BC et VAE</a></li>
+                        <li><a href="/Meta_DX_School_Resultats_2026.pdf" target="_blank" rel="noopener noreferrer">Nos Résultats</a></li>
                         <li>
                             <a href="#" className="certification-orange" onClick={() => handleNavigation('/certifications')}>
                                 Cliquez ci dessous pour <br />consulter nos différentes <br />certifications

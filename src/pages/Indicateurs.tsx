@@ -54,7 +54,10 @@ export default function Indicateurs() {
 
                 <div style={{ marginTop: '6rem', background: '#f8fafc', padding: '3rem', borderRadius: '20px' }}>
                     <h3 style={{ fontSize: '1.5rem', fontWeight: '800', marginBottom: '1.5rem', color: '#334155' }}>Détails par formation</h3>
-                    <p style={{ color: '#64748b' }}>Les indicateurs détaillés par titre professionnel sont disponibles sur demande ou lors de nos journées portes ouvertes.</p>
+                    <p style={{ color: '#64748b', marginBottom: '1.5rem' }}>Les indicateurs détaillés par titre professionnel sont disponibles en téléchargement ci-dessous, sur demande ou lors de nos journées portes ouvertes.</p>
+                    <a href="/Meta_DX_School_Resultats_2026.pdf" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-block', background: '#10b981', color: 'white', padding: '1rem 2rem', borderRadius: '12px', textDecoration: 'none', fontWeight: 'bold' }}>
+                        Télécharger les résultats 2026
+                    </a>
                 </div>
             </div>
         </div>
