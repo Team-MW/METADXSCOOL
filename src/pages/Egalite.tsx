@@ -280,7 +280,7 @@ export default function Egalite() {
                     <div className="egalite-hero-container">
                         <div className="badge-title">ENGAGEMENT</div>
                         <h1>L'ÉGALITÉ ET L'INCLUSION</h1>
-                        <p>Chez Meta DX School, nous croyons que chacun doit pouvoir accéder à la formation et à l’emploi, quelles que soient ses origines, son genre, sa situation ou son parcours.</p>
+                        <p>Chez Meta DX School, nous croyons que chacun doit pouvoir accéder à la formation et à l’emploi, quelles que soient ses origines, sa situation ou son parcours.</p>
                         
                         <a href="https://www.laregion.fr/Generation-Egalite" target="_blank" rel="noopener noreferrer" className="hero-link">
                             🔗 Génération Égalité – Région Occitanie
@@ -301,11 +301,9 @@ export default function Egalite() {
                                 <h3><Globe size={28}/> La diversité, c'est quoi ?</h3>
                                 <p>La diversité fait référence à l’ensemble des différences visibles ou invisibles qui composent une communauté. Cela comprend notamment :</p>
                                 <ul className="feature-list" style={{ color: '#0f172a' }}>
-                                    <li><strong style={{color:'#e43a9f'}}>·</strong> Le genre et l’identité de genre</li>
                                     <li><strong style={{color:'#e43a9f'}}>·</strong> L’âge</li>
                                     <li><strong style={{color:'#e43a9f'}}>·</strong> Les origines culturelles ou ethniques</li>
                                     <li><strong style={{color:'#e43a9f'}}>·</strong> La situation de handicap</li>
-                                    <li><strong style={{color:'#e43a9f'}}>·</strong> L’orientation sexuelle</li>
                                     <li><strong style={{color:'#e43a9f'}}>·</strong> La religion</li>
                                     <li><strong style={{color:'#e43a9f'}}>·</strong> Le parcours social ou économique</li>
                                     <li><strong style={{color:'#e43a9f'}}>·</strong> Les compétences, expériences et façons d’apprendre</li>
