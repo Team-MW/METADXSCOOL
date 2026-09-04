@@ -21,6 +21,9 @@ import maisonDuMonde from '../assets/maison-du-monde.png';
 import marcheDeMo from '../assets/march_de_mo_logo.jpg';
 import logoInline from '../assets/logo-inline.png';
 
+import afficheVDR from '../assets/NOUVELLEAFFICHEVDRTOULOUSE2026.png';
+import visuelRecruteur from '../assets/VisuelRecruteur1200x1200px.png';
+
 // Define the content for each tab
 const TAB_CONTENT = {
     alternance: {
@@ -161,6 +164,29 @@ function Home() {
 
 
 
+            </section>
+
+            {/* VILLAGE DES RECRUTEURS SECTION */}
+            <section className="village-recruteurs-section">
+                <div className="vdr-container">
+                    <div className="vdr-text-content">
+                        <div className="vdr-badge">Événement</div>
+                        <h2 className="vdr-title">Retrouvez-nous au Village des Recruteurs !</h2>
+                        <p className="vdr-date">🗓️ 16 & 17 Septembre 2026</p>
+                        <p className="vdr-description">
+                            Nous serons présents au Village des Recruteurs de Toulouse. Venez nous rencontrer, découvrir nos formations et échanger sur votre projet professionnel. Nous sommes disponibles pour répondre à toutes vos questions !
+                        </p>
+                        <a href="/GuideutilisationplateformeMSCandidat.pdf" target="_blank" rel="noopener noreferrer" className="vdr-btn">
+                            📄 Guide d'utilisation Candidat
+                        </a>
+                        <div className="vdr-medium-img-container">
+                            <img src={visuelRecruteur} alt="Visuel Recruteur" className="vdr-medium-img" />
+                        </div>
+                    </div>
+                    <div className="vdr-large-img-container">
+                        <img src={afficheVDR} alt="Affiche Village des Recruteurs 2026" className="vdr-large-img" />
+                    </div>
+                </div>
             </section>
 
             {/* TIKTOK SECTION */}

@@ -1630,3 +1630,131 @@
         max-width: 325px;
     }
 }
+
+/* VILLAGE DES RECRUTEURS SECTION */
+.village-recruteurs-section {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 6rem 1rem;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.vdr-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 30px;
+    padding: 3rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.vdr-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.vdr-badge {
+    background: #fbbf24;
+    color: #1e293b;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.vdr-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #fde68a;
+}
+
+.vdr-date {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+}
+
+.vdr-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+}
+
+.vdr-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #4c1d95;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    border: 1px solid #7c3aed;
+    margin-bottom: 2rem;
+}
+
+.vdr-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(124, 58, 237, 0.4);
+}
+
+.vdr-medium-img-container {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.vdr-medium-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vdr-large-img-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.vdr-large-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 992px) {
+    .vdr-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    .vdr-text-content {
+        align-items: center;
+    }
+    .vdr-medium-img-container {
+        margin: 0 auto;
+    }
+}
