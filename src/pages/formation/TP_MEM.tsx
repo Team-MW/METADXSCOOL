@@ -5,7 +5,6 @@ import {
     Users, 
     CheckCircle2, 
     Accessibility, 
-    Download,
     GraduationCap,
     TrendingUp,
     ShieldCheck,
@@ -13,12 +12,12 @@ import {
     Target
 } from 'lucide-react';
 
-export default function TP_NTC() {
+export default function TP_MEM() {
     return (
         <>
             <Helmet>
-                <title>TP NTC - Négociateur Technico-Commercial | Meta DX School</title>
-                <meta name="description" content="Formation Titre Professionnel Négociateur Technico-Commercial Niveau 5 (Bac+2). Devenez expert de la vente technique et de la négociation complexe." />
+                <title>TP MEM - Manager d'Établissement Marchand | Meta DX School</title>
+                <meta name="description" content="Formation Titre Professionnel Manager d'Établissement Marchand Niveau 5 (Bac+2). Développez vos compétences en merchandising, gestion et management d'équipe." />
             </Helmet>
 
             <style>{`
@@ -31,7 +30,7 @@ export default function TP_NTC() {
                 }
 
                 .formation-hero {
-                    background: linear-gradient(135deg, #1c1e4c 0%, #ef9a37 100%);
+                    background: linear-gradient(135deg, #1c1e4c 0%, #3b82f6 100%);
                     color: white;
                     padding: 8rem 2rem 6rem;
                     position: relative;
@@ -134,9 +133,9 @@ export default function TP_NTC() {
                     background: #f8fafc;
                     padding: 1.25rem;
                     border-radius: 12px;
-                    border-left: 4px solid #ef9a37;
+                    border-left: 4px solid #3b82f6;
                 }
-                .stat-icon { color: #ef9a37; flex-shrink: 0; }
+                .stat-icon { color: #3b82f6; flex-shrink: 0; }
                 .stat-text { display: flex; flex-direction: column; }
                 .stat-label { font-size: 0.75rem; color: #64748b; font-weight: 700; text-transform: uppercase; }
                 .stat-value { font-size: 0.95rem; font-weight: 800; color: #1e293b; }
@@ -150,7 +149,7 @@ export default function TP_NTC() {
                     font-size: 1rem;
                     line-height: 1.5;
                 }
-                .list-check li svg { color: #ef9a37; margin-top: 4px; flex-shrink: 0; }
+                .list-check li svg { color: #3b82f6; margin-top: 4px; flex-shrink: 0; }
 
                 .sidebar { position: sticky; top: 2rem; align-self: start; }
                 
@@ -165,7 +164,7 @@ export default function TP_NTC() {
 
                 .btn-primary {
                     display: block;
-                    background: #ef9a37;
+                    background: #3b82f6;
                     color: white;
                     padding: 1.25rem;
                     border-radius: 12px;
@@ -175,7 +174,7 @@ export default function TP_NTC() {
                     margin-top: 1.5rem;
                     transition: all 0.2s;
                 }
-                .btn-primary:hover { background: #f5a646; transform: translateY(-3px); }
+                .btn-primary:hover { background: #2563eb; transform: translateY(-3px); }
 
                 .modalite-box {
                     background: #f8fafc;
@@ -186,15 +185,15 @@ export default function TP_NTC() {
                 }
 
                 .debouche-tag {
-                    background: #fff7ed;
-                    color: #c2410c;
+                    background: #eff6ff;
+                    color: #1d4ed8;
                     padding: 0.75rem 1rem;
                     border-radius: 8px;
                     font-weight: 700;
                     font-size: 0.9rem;
                     display: inline-block;
                     margin: 0.25rem;
-                    border: 1px solid #ffedd5;
+                    border: 1px solid #dbeafe;
                 }
 
                 @media(max-width: 900px) {
@@ -206,11 +205,11 @@ export default function TP_NTC() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/39063/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°39063</a> | V12 – MAJ 18/06/2026</span>
-                        <h1>TITRE PROFESSIONNEL NÉGOCIATEUR TECHNICO-COMMERCIAL</h1>
+                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/41853/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°41853</a> | V12 – MAJ 18/06/2026</span>
+                        <h1>TITRE PROFESSIONNEL MANAGER D'ÉTABLISSEMENT MARCHAND</h1>
                         <div className="hero-subtitle">NIVEAU 5 – BAC+2</div>
                         <p className="hero-desc">
-                            Devenez l'interface stratégique entre les solutions techniques et les besoins clients. Une formation de haut niveau pour maîtriser la vente complexe et le développement d'affaires.
+                            Pilotez la performance de votre rayon ou magasin. Développez vos compétences en merchandising, gestion et management d'équipe pour devenir un vrai leader commercial.
                         </p>
                     </div>
                 </header>
@@ -255,31 +254,36 @@ export default function TP_NTC() {
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
 
-                            <p style={{fontSize: '0.95rem', color: '#64748b', lineHeight: 1.6}}>
-                                Cette formation s’adresse aux professionnels et futurs professionnels dans le domaine du commerce souhaitant acquérir une double compétence technique et commerciale.
+                            <p style={{fontSize: '0.95rem', color: '#64748b', lineHeight: 1.6, marginTop: '1.5rem'}}>
+                                Cette formation s’adresse aux futurs responsables de magasins, chefs de rayons et managers souhaitant maîtriser le développement commercial, la gestion financière et l'animation d'équipe.
                             </p>
                         </div>
 
                         {/* Objectifs & Programme */}
                         <div className="info-card">
                             <h2 className="section-title"><Target /> Objectifs & Programme</h2>
-                            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem'}}>
+                            <div style={{display: 'flex', flexDirection: 'column', gap: '2rem'}}>
                                 <div>
-                                    <h4 style={{fontWeight: 900, color: '#ef9a37', marginBottom: '1.25rem'}}>CCP 1 : STRATÉGIE OMNICANALE</h4>
+                                    <h4 style={{fontWeight: 900, color: '#3b82f6', marginBottom: '1.25rem'}}>CCP 1 : MANAGER L’ÉQUIPE DE SON PÉRIMÈTRE AU SEIN DE L’ÉTABLISSEMENT MARCHAND</h4>
                                     <ul className="list-check">
-                                        <li><CheckCircle2 size={18} /> Veille commerciale & analyse marché</li>
-                                        <li><CheckCircle2 size={18} /> Pilotage du plan d’actions commerciales</li>
-                                        <li><CheckCircle2 size={18} /> Actions de fidélisation stratégiques</li>
-                                        <li><CheckCircle2 size={18} /> Bilan et reporting d'activité</li>
+                                        <li><CheckCircle2 size={18} /> Animer l’équipe de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Planifier et coordonner l'activité de l’équipe de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Accompagner la performance individuelle des collaborateurs de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Contribuer aux processus de recrutement et d’intégration des collaborateurs de son périmètre</li>
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 style={{fontWeight: 900, color: '#1c1e4c', marginBottom: '1.25rem'}}>CCP 2 : NÉGOCIATION COMPLEXE</h4>
+                                    <h4 style={{fontWeight: 900, color: '#1c1e4c', marginBottom: '1.25rem'}}>CCP 2 : CONTRIBUER À LA PERFORMANCE COMMERCIALE ET À LA RENTABILITÉ DE SON PÉRIMÈTRE</h4>
                                     <ul className="list-check">
-                                        <li><CheckCircle2 size={18} /> Valorisation de l’image de marque</li>
-                                        <li><CheckCircle2 size={18} /> Conception de propositions techniques</li>
-                                        <li><CheckCircle2 size={18} /> Négociation de solutions à haute valeur</li>
-                                        <li><CheckCircle2 size={18} /> Optimisation de la relation client CRM</li>
+                                        <li><CheckCircle2 size={18} /> Analyser la performance commerciale de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Analyser la rentabilité de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Proposer des actions correctives à sa hiérarchie et assurer le suivi du plan d’actions de son périmètre</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 style={{fontWeight: 900, color: '#10b981', marginBottom: '1.25rem'}}>CCP 3 : DÉVELOPPER LA DYNAMIQUE COMMERCIALE DE SON PÉRIMÈTRE</h4>
+                                    <ul className="list-check">
+                                        <li><CheckCircle2 size={18} /> Développer la dynamique commerciale de son périmètre au sein de l’établissement marchand</li>
                                     </ul>
                                 </div>
                             </div>
@@ -298,8 +302,8 @@ export default function TP_NTC() {
                                         <li>• Max 15 participants</li>
                                     </ul>
                                 </div>
-                                <div className="modalite-box" style={{borderColor: '#ef9a37'}}>
-                                    <h4 style={{fontWeight: 900, marginBottom: '1rem', color: '#ef9a37'}}>E-LEARNING</h4>
+                                <div className="modalite-box" style={{borderColor: '#3b82f6'}}>
+                                    <h4 style={{fontWeight: 900, marginBottom: '1rem', color: '#3b82f6'}}>E-LEARNING</h4>
                                     <ul style={{fontSize: '0.9rem', padding: 0, listStyle: 'none', color: '#475569'}}>
                                         <li style={{marginBottom: '0.5rem'}}>• 15 mois (470h module)</li>
                                         <li style={{marginBottom: '0.5rem'}}>• Entrée / Sortie permanente</li>
@@ -314,16 +318,16 @@ export default function TP_NTC() {
                         <div className="info-card">
                             <h2 className="section-title"><TrendingUp /> Débouchés & Poursuites</h2>
                             <div style={{marginBottom: '2rem'}}>
-                                <span className="debouche-tag">Chargé d'affaires</span>
-                                <span className="debouche-tag">Ingénieur commercial</span>
-                                <span className="debouche-tag">Chargé de clientèle</span>
-                                <span className="debouche-tag">Technico-commercial itinérant</span>
-                                <span className="debouche-tag">Agent commercial</span>
+                                <span className="debouche-tag">Chef de rayon</span>
+                                <span className="debouche-tag">Directeur de magasin</span>
+                                <span className="debouche-tag">Manager de département</span>
+                                <span className="debouche-tag">Responsable commerce</span>
+                                <span className="debouche-tag">Animateur d'équipe</span>
                             </div>
                             <div style={{background: '#f1f5f9', padding: '1.5rem', borderRadius: '16px'}}>
                                 <h4 style={{fontWeight: 800, color: '#1c1e4c', marginBottom: '0.5rem'}}>POURSUITE D'ÉTUDES</h4>
                                 <p style={{fontSize: '0.9rem', color: '#475569'}}>
-                                    Accédez à une Licence Professionnelle ou un Titre de Niveau 6 (Bac+3) dans les métiers du management commercial et de la stratégie de vente.
+                                    Accédez à un Titre de Niveau 6 (Bac+3) ou à une Licence Professionnelle dans le domaine de la distribution, du marketing ou de la gestion d'entreprise.
                                 </p>
                             </div>
                         </div>
@@ -331,7 +335,7 @@ export default function TP_NTC() {
 
                     <aside className="sidebar">
                         <div className="cta-card">
-                            <h3 style={{fontSize: '1.4rem', fontWeight: 900, marginBottom: '1rem', color: '#ef9a37'}}>ALTERNANCE</h3>
+                            <h3 style={{fontSize: '1.4rem', fontWeight: 900, marginBottom: '1rem', color: '#3b82f6'}}>ALTERNANCE</h3>
                             <div style={{fontSize: '2.5rem', fontWeight: 900, margin: '1rem 0'}}>0€ <span style={{fontSize: '1rem', opacity: 0.8}}>RESTE À CHARGE</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8, lineHeight: 1.5, marginBottom: '1.5rem'}}>
                                 Coût de la formation : 8302€ TTC.
@@ -357,8 +361,6 @@ export default function TP_NTC() {
                                 • Entretien final
                             </p>
                         </div>
-
-
                     </aside>
                 </div>
             </div>

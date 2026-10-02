@@ -535,7 +535,7 @@ function Home() {
                             <div className="campus-details-col">
                                 <h3>Nos équipements :</h3>
                                 <p>
-                                    Au sein de l'école vous trouverez 3 salles de classes et de TP, ainsi qu'une salle de réunion et une salle informatique. Nos apprenants ont également accès au WIFI gratuit, ainsi qu'à des distributeurs de boissons chaudes et de friandises. Pour se restaurer, une cafétéria propose un assortiment de sandwichs et salades fraîches, tandis que des food trucks sont présents chaque midi devant l'entrée de l'école.
+                                    Au sein de l'école vous trouverez 4 salles de classes et de TP, ainsi qu'une salle de réunion et une salle informatique. Nos apprenants ont également accès au WIFI gratuit. Pour se restaurer, une cafétéria propose un assortiment de sandwichs et salades fraîches, tandis que des food trucks sont présents chaque midi devant l'entrée de l'école.
                                 </p>
                             </div>
                             <div className="campus-details-col">

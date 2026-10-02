@@ -26,12 +26,12 @@ export default function Bac2Catalogue() {
         },
         {
             title: "TITRE PROFESSIONNEL MUM",
-            subtitle: "Manager d'Unité Marchande",
+            subtitle: "Manager d'Établissement Marchand",
             description: "Développez l'activité commerciale d'un point de vente ou d'un rayon majeur. Managez les équipes et optimisez l'attractivité marchande.",
             level: "Bac+2 • Niveau 5",
             duration: "12 Mois",
             rhythm: "Alternance ou Initial",
-            path: "/cfa/formation/tp-mum",
+            path: "/cfa/formation/tp-mem",
             image: "https://images.unsplash.com/photo-1534452203293-494d7ddbf7e0?q=80&w=800&auto=format&fit=crop"
         }
     ];

@@ -553,7 +553,7 @@ export default function FormaSecu() {
                             <ul className="fs-campus-list">
                                 <li>
                                     <CheckCircle className="fs-campus-icon" size={20} />
-                                    <span>3 salles de classes et de TP</span>
+                                    <span>4 salles de classes et de TP</span>
                                 </li>
                                 <li>
                                     <CheckCircle className="fs-campus-icon" size={20} />
@@ -561,7 +561,7 @@ export default function FormaSecu() {
                                 </li>
                                 <li>
                                     <Coffee className="fs-campus-icon" size={20} />
-                                    <span>WIFI gratuit, distributeurs, cafétéria (assortiment de sandwichs et salades) & food trucks chaque midi.</span>
+                                    <span>WIFI gratuit, cafétéria (assortiment de sandwichs et salades) & food trucks chaque midi.</span>
                                 </li>
                             </ul>
 

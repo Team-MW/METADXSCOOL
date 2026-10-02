@@ -106,33 +106,33 @@ export default function CFA() {
 
                 <div className="team-grid">
                     <div className="team-card">
-                        <div className="team-role">Directrice du Centre</div>
-                        <h3 className="team-name">Sarah Lacheroy</h3>
-                        <p className="team-desc">Assure la gestion et le développement de Meta DX School pour offrir une formation de qualité.</p>
+                        <div className="team-role">Directrice de CFA</div>
+                        <h3 className="team-name">Sarah LACHEROY</h3>
                     </div>
 
                     <div className="team-card">
-                        <div className="team-role">Chargé de relation entreprises</div>
-                        <h3 className="team-name">Mikalo Ranjalahy</h3>
-                        <p className="team-desc">Le lien entre étudiants et partenaires, créant des opportunités d’alternance et d’emploi.</p>
+                        <div className="team-role">Responsable Pédagogique</div>
+                        <h3 className="team-name">Samina MAHMOUD</h3>
                     </div>
 
                     <div className="team-card">
-                        <div className="team-role">Chargée de relation candidats</div>
-                        <h3 className="team-name">Laura Duchen</h3>
-                        <p className="team-desc">Accompagne chaque candidat pour trouver la formation qui lui correspond le mieux.</p>
+                        <div className="team-role">Assistantes Admin. & Pédagogiques</div>
+                        <h3 className="team-name" style={{fontSize:'1.2rem', lineHeight: '1.5'}}>Louise ESCULIER<br/>Laurine WASTIAUX</h3>
                     </div>
 
                     <div className="team-card">
-                        <div className="team-role">Assistante pédagogique</div>
-                        <h3 className="team-name">Louise Esculier</h3>
-                        <p className="team-desc">Soutient les étudiants dans leur parcours éducatif, assurant ressources et encadrement.</p>
+                        <div className="team-role">Chargé de Développement</div>
+                        <h3 className="team-name">Maxime KHELIFA</h3>
                     </div>
 
                     <div className="team-card">
-                        <div className="team-role">Chargée de communication</div>
-                        <h3 className="team-name">Nina De Barros</h3>
-                        <p className="team-desc">Rayonnement de l'école, partage de l'actualité, des succès et des événements.</p>
+                        <div className="team-role">Chargés de Suivi Entreprise</div>
+                        <h3 className="team-name" style={{fontSize:'1.2rem', lineHeight: '1.5'}}>Mikalo RANJALAHY<br/>Ryad ZEROUR</h3>
+                    </div>
+
+                    <div className="team-card">
+                        <div className="team-role">Chargées de Suivi Candidat</div>
+                        <h3 className="team-name" style={{fontSize:'1.1rem', lineHeight: '1.5'}}>Marine BOHN<br/>Laura DUCHEN<br/>Nesrine BELBRAIK<br/>Melissa BENSOUSSAN</h3>
                     </div>
                 </div>
             </section>
@@ -227,10 +227,10 @@ export default function CFA() {
                     <div className="campus-block">
                         <h3>ÉQUIPEMENTS & SERVICES</h3>
                         <ul className="campus-list">
-                            <li><CheckCircle size={18} color="#16a34a" /> 3 salles de classes et TP équipées</li>
+                            <li><CheckCircle size={18} color="#16a34a" /> 4 salles de classes et TP équipées</li>
                             <li><CheckCircle size={18} color="#16a34a" /> Salle réunion & Salle informatique</li>
                             <li><CheckCircle size={18} color="#16a34a" /> WIFI gratuit très haut débit</li>
-                            <li><CheckCircle size={18} color="#16a34a" /> Espace détente & distributeurs</li>
+                            <li><CheckCircle size={18} color="#16a34a" /> Espace détente & cafétéria</li>
                             <li><CheckCircle size={18} color="#16a34a" /> Cafétéria & Food trucks quotidiens</li>
                         </ul>
                         <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#e0e7ff', borderRadius: '12px', border: '1px solid #c7d2fe' }}>

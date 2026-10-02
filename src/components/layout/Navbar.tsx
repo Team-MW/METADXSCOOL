@@ -95,7 +95,7 @@ const Navbar = () => {
                             subItems: [
                                 { label: 'TP-RPMS', path: '/cfa/formation/tp-rpms' },
                                 { label: 'TP-NTC', path: '/cfa/formation/tp-ntc' },
-                                { label: 'TP-MUM', path: '/cfa/formation/tp-mum' }
+                                { label: 'TP-MEM', path: '/cfa/formation/tp-mem' }
                             ]
                         },
                         {
@@ -252,10 +252,10 @@ const Navbar = () => {
             {/* TOP BAR */}
             <div className="top-bar">
                 <div className="top-bar-content">
-                    <a href="https://metadxs.ymag.cloud/" target="_blank" rel="noopener noreferrer">
+                    <Link to="/mon-espace" onClick={closeMenu}>
                         <User size={16} />
                         MON ESPACE
-                    </a>
+                    </Link>
                     <span className="top-bar-separator"></span>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUevsr0igGJRS0HNFzuPYQQc-VyR32_MPLrM3VjTp_shPSQ/viewform" target="_blank" rel="noopener noreferrer" className="highlight-link">
                         <Send size={16} />

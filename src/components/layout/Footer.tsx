@@ -61,7 +61,7 @@ const Footer = () => {
                         <div className="card-center-info">
                             <h4>CONTACT</h4>
                             <a href="mailto:contact@metadxs.com" className="email-link">contact@metadxs.com</a>
-                            <p className="phone"><a href="tel:+33609818626" style={{ color: 'inherit', textDecoration: 'none' }}>06 09 81 86 26</a></p>
+                            <p className="phone"><a href="tel:+33745804389" style={{ color: 'inherit', textDecoration: 'none' }}>07 45 80 43 89</a></p>
                             <span className="info-text">Cliquez ci-dessous pour <br />retrouver toutes les <br />informations de contact</span>
                             <Link to="/contact" className="contact-bold-link">Contact</Link>
                         </div>

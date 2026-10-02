@@ -422,13 +422,7 @@ export default function TP_RPMS() {
                             </p>
                         </div>
 
-                        <a href="/brochure_rpms.pdf" download className="info-card" style={{display:'flex', alignItems:'center', gap:'1rem', textDecoration:'none', transition:'all 0.2s', border:'2px solid #10b981'}}>
-                            <Download color="#10b981" />
-                            <div>
-                                <h4 style={{fontWeight:800, fontSize:'0.9rem', color:'#1c1e4c'}}>TÉLÉCHARGER LA FICHE PDF</h4>
-                                <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche formation RPMS (PDF)</span>
-                            </div>
-                        </a>
+
                     </div>
                 </div>
             </div>

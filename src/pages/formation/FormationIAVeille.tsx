@@ -379,13 +379,7 @@ export default function FormationIAVeille() {
                             <div className="price">950 € TTC <span style={{fontSize: '1rem', color:'white', opacity:0.6}}>/pers</span></div>
                             <p style={{fontSize: '0.85rem', opacity: 0.8}}>Prise en charge OPCO possible. Conseils en financement offerts.</p>
                             <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-reg">COMMENT NOUS CONTACTER</a>
-                            <div style={{marginTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.5rem', display:'flex', alignItems:'center', gap:'1rem', textAlign:'left'}}>
-                                <Download size={24} color="#ef9a37" />
-                                <div>
-                                    <div style={{fontWeight: 800, fontSize: '0.9rem'}}>BROCHURE PDF</div>
-                                    <div style={{fontSize: '0.7rem', opacity: 0.7}}>Fiche technique complète</div>
-                                </div>
-                            </div>
+
                         </div>
 
                         {/* Dates */}

@@ -88,8 +88,8 @@ export default function Candidat() {
                             <div className="campus-info-block">
                                 <h3 className="info-title"><GraduationCap size={24} /> Nos équipements</h3>
                                 <p className="info-text">
-                                    Au sein de l’école vous trouverez 3 salles de classes et de TP, ainsi qu’une salle de réunion et une salle informatique.
-                                    Nos apprenants ont également accès au WIFI gratuit, ainsi qu’à des distributeurs de boissons chaudes et de friandises.
+                                    Au sein de l’école vous trouverez 4 salles de classes et de TP, ainsi qu’une salle de réunion et une salle informatique.
+                                    Nos apprenants ont également accès au WIFI gratuit et à une cafétéria.
                                     <br /><br />
                                     Pour se restaurer, une cafétéria propose un assortiment de sandwichs et salades fraiches, tandis que des food trucks sont présents chaque midi devant l’entrée de l’école.
                                 </p>
