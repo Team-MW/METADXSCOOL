@@ -200,7 +200,7 @@ export default function MonEspace() {
                     </a>
 
                     {/* Client ou sous-traitant */}
-                    <a href="https://metadxs.ymag.cloud/" target="_blank" rel="noopener noreferrer" className="profile-card">
+                    <a href="#" className="profile-card" onClick={(e) => { e.preventDefault(); window.location.reload(); }}>
                         <div className="profile-icon">
                             <Building2 size={22} strokeWidth={2.5} />
                         </div>
