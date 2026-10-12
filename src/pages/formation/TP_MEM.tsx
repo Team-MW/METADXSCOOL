@@ -79,8 +79,27 @@ export default function TP_MEM() {
                     display: inline-block;
                     padding: 0.5rem 1.5rem;
                     border-radius: 8px;
+                    margin-bottom: 0;
+                }
+                .hero-badges {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    gap: 0.75rem;
                     margin-bottom: 2rem;
                 }
+                .rncp-badge {
+                    display: inline-block;
+                    background: #fbbf24;
+                    color: #1c1e4c;
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    padding: 0.55rem 1.15rem;
+                    border-radius: 8px;
+                    text-decoration: none;
+                    letter-spacing: 0.02em;
+                }
+                .rncp-badge:hover { background: #f59e0b; }
 
                 .hero-desc {
                     font-size: 1.2rem;
@@ -196,18 +215,6 @@ export default function TP_MEM() {
                     border: 1px solid #dbeafe;
                 }
 
-                .title-change {
-                    display: flex;
-                    gap: 0.9rem;
-                    align-items: flex-start;
-                    background: #fff7ed;
-                    border: 1px solid #fed7aa;
-                    color: #9a3412;
-                    border-radius: 14px;
-                    padding: 1rem 1.15rem;
-                    margin-bottom: 1.5rem;
-                    line-height: 1.5;
-                }
                 .metier-block p {
                     font-size: 0.98rem;
                     color: #334155;
@@ -260,9 +267,12 @@ export default function TP_MEM() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/41853/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°41853</a> | Code TP 00136 | Ministère du Travail</span>
+                        <span className="version-tag">Code TP 00136 | Ministère du Travail</span>
                         <h1>TITRE PROFESSIONNEL MANAGER D'ÉTABLISSEMENT MARCHAND</h1>
-                        <div className="hero-subtitle">NIVEAU 5 – BAC+2 · MEM</div>
+                        <div className="hero-badges">
+                            <div className="hero-subtitle">NIVEAU 5 – BAC+2 · MEM</div>
+                            <a className="rncp-badge" href="https://www.francecompetences.fr/recherche/rncp/41853/" target="_blank" rel="noopener noreferrer">RNCP 41853</a>
+                        </div>
                         <p className="hero-desc">
                             Pilotez la performance de votre rayon ou magasin. Développez vos compétences en merchandising, gestion et management d'équipe pour devenir un vrai leader commercial.
                         </p>
@@ -271,13 +281,6 @@ export default function TP_MEM() {
 
                 <div className="main-layout">
                     <div className="content-area">
-                        <div className="title-change">
-                            <span aria-hidden="true">👉</span>
-                            <p>
-                                <strong>Le titre a changé.</strong> L’ancien intitulé Manager d’unité marchande (MUM) est remplacé par Manager d’établissement marchand (MEM). Cette page est la fiche du nouveau titre.
-                            </p>
-                        </div>
-
                         {/* Infos Générales */}
                         <div className="info-card">
                             <h2 className="section-title"><ShieldCheck /> Profil & Prérequis</h2>

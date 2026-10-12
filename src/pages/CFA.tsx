@@ -99,47 +99,9 @@ export default function CFA() {
                 </div>
             </section>
 
-            {/* TEAM */}
-            <section className="section-team">
-                <h2 style={{ fontSize: '2.5rem', fontWeight: '900', marginBottom: '1rem', color: '#fbcfe8' }}>NOTRE ÉQUIPE INTERNE</h2>
-                <p style={{ maxWidth: '800px', margin: '0 auto', color: '#d1d5db', fontSize: '1.2rem' }}>Une équipe dévouée pour votre réussite à chaque étape.</p>
-
-                <div className="team-grid">
-                    <div className="team-card">
-                        <div className="team-role">Directrice de CFA</div>
-                        <h3 className="team-name">Sarah LACHEROY</h3>
-                    </div>
-
-                    <div className="team-card">
-                        <div className="team-role">Responsable Pédagogique</div>
-                        <h3 className="team-name">Samina MAHMOUD</h3>
-                    </div>
-
-                    <div className="team-card">
-                        <div className="team-role">Assistantes Admin. & Pédagogiques</div>
-                        <h3 className="team-name" style={{fontSize:'1.2rem', lineHeight: '1.5'}}>Louise ESCULIER<br/>Laurine WASTIAUX</h3>
-                    </div>
-
-                    <div className="team-card">
-                        <div className="team-role">Chargé de Développement</div>
-                        <h3 className="team-name">Maxime KHELIFA</h3>
-                    </div>
-
-                    <div className="team-card">
-                        <div className="team-role">Chargés de Suivi Entreprise</div>
-                        <h3 className="team-name" style={{fontSize:'1.2rem', lineHeight: '1.5'}}>Mikalo RANJALAHY<br/>Ryad ZEROUR</h3>
-                    </div>
-
-                    <div className="team-card">
-                        <div className="team-role">Chargées de Suivi Candidat</div>
-                        <h3 className="team-name" style={{fontSize:'1.1rem', lineHeight: '1.5'}}>Marine BOHN<br/>Laura DUCHEN<br/>Nesrine BELBRAIK<br/>Melissa BENSOUSSAN</h3>
-                    </div>
-                </div>
-            </section>
-
             <section className="section-org" id="organigramme">
                 <div className="org-wrap">
-                    <h2 style={{ fontSize: '2.2rem', fontWeight: 900, textAlign: 'center', color: '#1c1e4c' }}>Organigramme du CFA</h2>
+                    <h2>Organigramme du CFA</h2>
                     <p className="org-kicker">Centre de Formation d'Apprentis — organisation par pôles</p>
 
                     <div className="org-direction">
@@ -150,19 +112,22 @@ export default function CFA() {
 
                     <div className="org-poles">
                         <div className="org-pole org-pedago">
-                            <div className="org-pole-head">
-                                <strong>Pôle pédagogique</strong>
-                                <span>Responsable pédagogique<br /><em>Samina MAHMOUD</em></span>
+                            <div className="org-pole-head"><strong>Pôle pédagogique</strong></div>
+                            <div className="org-lead">
+                                <small>Responsable</small>
+                                <strong>Responsable pédagogique</strong>
+                                <em>Samina MAHMOUD</em>
                             </div>
-                            <div className="org-body">
+                            <div className="org-body org-body-center">
                                 <div className="org-role">Coordinateurs de filière</div>
                             </div>
                         </div>
 
                         <div className="org-pole org-admin">
-                            <div className="org-pole-head">
-                                <strong>Pôle administratif, financier et qualité</strong>
-                                <span>Responsable administratif et financier</span>
+                            <div className="org-pole-head"><strong>Pôle administratif, financier et qualité</strong></div>
+                            <div className="org-lead">
+                                <small>Responsable</small>
+                                <strong>Responsable administratif et financier</strong>
                             </div>
                             <div className="org-body">
                                 <div className="org-role">Assistant(e) administratif(ve) et pédagogique</div>
@@ -171,9 +136,11 @@ export default function CFA() {
                         </div>
 
                         <div className="org-pole org-dev">
-                            <div className="org-pole-head">
-                                <strong>Pôle développement et relations entreprises</strong>
-                                <span>Chargé(e) de développement<br /><em>Maxime KHELIFA</em></span>
+                            <div className="org-pole-head"><strong>Pôle développement et relations entreprises</strong></div>
+                            <div className="org-lead">
+                                <small>Responsable</small>
+                                <strong>Chargé(e) de développement</strong>
+                                <em>Maxime KHELIFA</em>
                             </div>
                             <div className="org-body">
                                 <div className="org-group">
@@ -189,21 +156,22 @@ export default function CFA() {
                     </div>
 
                     <div className="org-bottom">
-                        <div>
-                            <div className="org-chip">
-                                <strong>Formateurs (indépendants)</strong>
-                            </div>
-                            <div className="org-chip" style={{ marginTop: '0.75rem' }}>
-                                <strong>Référent(e) handicap</strong>
-                                <span>Sarah LACHEROY</span>
-                            </div>
-                            <div className="org-chip" style={{ marginTop: '0.75rem' }}>
-                                <strong>Référent(e) mobilité internationale</strong>
-                                <span>Sarah LACHEROY</span>
-                            </div>
-                        </div>
-                        <div className="org-chip" style={{ alignSelf: 'start' }}>
+                        <div className="org-chip"><strong>Formateurs (Indépendants)</strong></div>
+                        <div className="org-chip">
                             <strong>Référent(e) qualité Qualiopi</strong>
+                            <span>Sarah LACHEROY</span>
+                        </div>
+                        <div className="org-chip org-chip-empty" aria-hidden="true"></div>
+
+                        <div className="org-chip">
+                            <strong>Référent(e) handicap</strong>
+                            <span>Sarah LACHEROY</span>
+                        </div>
+                        <div className="org-chip org-chip-empty" aria-hidden="true"></div>
+                        <div className="org-chip org-chip-empty" aria-hidden="true"></div>
+
+                        <div className="org-chip">
+                            <strong>Référent(e) mobilité internationale</strong>
                             <span>Sarah LACHEROY</span>
                         </div>
                     </div>

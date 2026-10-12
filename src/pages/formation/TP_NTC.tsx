@@ -5,7 +5,6 @@ import {
     Users, 
     CheckCircle2, 
     Accessibility, 
-    Download,
     GraduationCap,
     TrendingUp,
     ShieldCheck,

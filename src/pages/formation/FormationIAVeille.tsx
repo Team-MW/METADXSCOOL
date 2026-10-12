@@ -6,8 +6,7 @@ import {
     Star, 
     Coffee,
     Cpu,
-    Calendar,
-    Download
+    Calendar
 } from 'lucide-react';
 
 export default function FormationIAVeille() {
