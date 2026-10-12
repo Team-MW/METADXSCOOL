@@ -251,6 +251,165 @@
     line-height: 1.5;
 }
 
+/* ORGANIGRAMME */
+.section-org {
+    padding: 5rem 1.5rem 4rem;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+.org-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.org-kicker {
+    text-align: center;
+    color: #64748b;
+    margin: 0.35rem 0 2.5rem;
+}
+
+.org-direction {
+    max-width: 460px;
+    margin: 0 auto 1.75rem;
+    background: #1c1e4c;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+}
+
+.org-direction small {
+    display: block;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    opacity: 0.75;
+    margin-bottom: 0.25rem;
+}
+
+.org-direction strong {
+    display: block;
+    font-size: 1.05rem;
+}
+
+.org-direction em {
+    display: block;
+    margin-top: 0.2rem;
+    font-style: italic;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.org-poles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+}
+
+.org-pole {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.org-pole-head {
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.9rem 0.75rem;
+    min-height: 92px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.org-pole-head strong {
+    display: block;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.org-pole-head span {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    opacity: 0.92;
+}
+
+.org-pole-head em {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.org-pedago .org-pole-head { background: #1d4ed8; }
+.org-admin .org-pole-head { background: #0f766e; }
+.org-dev .org-pole-head { background: #9a3412; }
+
+.org-body {
+    background: white;
+    border-radius: 12px;
+    padding: 1.1rem 1rem 1.25rem;
+    border: 1px solid #e2e8f0;
+    flex: 1;
+}
+
+.org-pedago .org-body { background: #eff6ff; border-color: #dbeafe; }
+.org-admin .org-body { background: #f0fdfa; border-color: #ccfbf1; }
+.org-dev .org-body { background: #fff7ed; border-color: #ffedd5; }
+
+.org-role {
+    font-weight: 800;
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+}
+
+.org-names {
+    color: #475569;
+    font-style: italic;
+    line-height: 1.55;
+}
+
+.org-group + .org-group {
+    margin-top: 1.1rem;
+}
+
+.org-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    max-width: 720px;
+}
+
+.org-chip {
+    background: #eef2ff;
+    border-radius: 10px;
+    padding: 0.85rem 1rem;
+}
+
+.org-chip strong {
+    display: block;
+    font-size: 0.92rem;
+}
+
+.org-chip span {
+    display: block;
+    margin-top: 0.15rem;
+    color: #475569;
+    font-style: italic;
+}
+
+@media (max-width: 800px) {
+    .org-poles,
+    .org-bottom {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* SECTION: VISUAL BREAK */
 .section-visual {
     padding: 4rem 2rem;

@@ -95,6 +95,7 @@ function AppContent() {
           <Route path="/cfa/formation/tp-mdec" element={<TP_MDEC />} />
           <Route path="/cfa/formation/tp-ntc" element={<TP_NTC />} />
           <Route path="/cfa/formation/tp-mem" element={<TP_MEM />} />
+          <Route path="/cfa/formation/tp-mum" element={<Navigate to="/cfa/formation/tp-mem" replace />} />
           <Route path="/conseils-formations/rh-strategie" element={<RHStrategie />} />
           <Route path="/conseils-formations/poei" element={<POEI />} />
           <Route path="/conseils-formations/vae" element={<VAE />} />

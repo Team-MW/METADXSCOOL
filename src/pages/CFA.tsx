@@ -137,6 +137,79 @@ export default function CFA() {
                 </div>
             </section>
 
+            <section className="section-org" id="organigramme">
+                <div className="org-wrap">
+                    <h2 style={{ fontSize: '2.2rem', fontWeight: 900, textAlign: 'center', color: '#1c1e4c' }}>Organigramme du CFA</h2>
+                    <p className="org-kicker">Centre de Formation d'Apprentis — organisation par pôles</p>
+
+                    <div className="org-direction">
+                        <small>DIRECTION</small>
+                        <strong>Directeur / Directrice de CFA</strong>
+                        <em>Sarah LACHEROY</em>
+                    </div>
+
+                    <div className="org-poles">
+                        <div className="org-pole org-pedago">
+                            <div className="org-pole-head">
+                                <strong>Pôle pédagogique</strong>
+                                <span>Responsable pédagogique<br /><em>Samina MAHMOUD</em></span>
+                            </div>
+                            <div className="org-body">
+                                <div className="org-role">Coordinateurs de filière</div>
+                            </div>
+                        </div>
+
+                        <div className="org-pole org-admin">
+                            <div className="org-pole-head">
+                                <strong>Pôle administratif, financier et qualité</strong>
+                                <span>Responsable administratif et financier</span>
+                            </div>
+                            <div className="org-body">
+                                <div className="org-role">Assistant(e) administratif(ve) et pédagogique</div>
+                                <div className="org-names">Louise ESCULIER<br />Laurine WASTIAUX</div>
+                            </div>
+                        </div>
+
+                        <div className="org-pole org-dev">
+                            <div className="org-pole-head">
+                                <strong>Pôle développement et relations entreprises</strong>
+                                <span>Chargé(e) de développement<br /><em>Maxime KHELIFA</em></span>
+                            </div>
+                            <div className="org-body">
+                                <div className="org-group">
+                                    <div className="org-role">Chargé(e) de suivi en entreprise</div>
+                                    <div className="org-names">Mikalo RANJALAHY<br />Ryad ZEROUR</div>
+                                </div>
+                                <div className="org-group">
+                                    <div className="org-role">Chargé(e) de suivi candidat</div>
+                                    <div className="org-names">Marine BOHN<br />Laura DUCHEN<br />Nesrine BELBRAIK<br />Melissa BENSOUSSAN</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="org-bottom">
+                        <div>
+                            <div className="org-chip">
+                                <strong>Formateurs (indépendants)</strong>
+                            </div>
+                            <div className="org-chip" style={{ marginTop: '0.75rem' }}>
+                                <strong>Référent(e) handicap</strong>
+                                <span>Sarah LACHEROY</span>
+                            </div>
+                            <div className="org-chip" style={{ marginTop: '0.75rem' }}>
+                                <strong>Référent(e) mobilité internationale</strong>
+                                <span>Sarah LACHEROY</span>
+                            </div>
+                        </div>
+                        <div className="org-chip" style={{ alignSelf: 'start' }}>
+                            <strong>Référent(e) qualité Qualiopi</strong>
+                            <span>Sarah LACHEROY</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* VISUAL BREAK - PHOTOS */}
             <div className="section-visual">
                 <div className="visual-grid">

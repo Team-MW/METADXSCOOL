@@ -38,16 +38,15 @@ const formationsData: Record<string, FormationData> = {
         opportunities: ["Technico-commercial", "Chargé d'affaires", "Attaché commercial", "Responsable de compte"]
     },
     'tp-mum': {
-        title: "TP - Manager d'Unité Marchande",
+        title: "TP - Manager d'Établissement Marchand",
         level: "BAC +2",
-        description: "Pilotez la performance de votre rayon ou magasin. Développez vos compétences en merchandising, gestion et management d'équipe.",
+        description: "Le titre MUM (Manager d'unité marchande) est devenu MEM (Manager d'établissement marchand). Pilotez la performance de votre rayon ou magasin.",
         objectives: [
-            "Développer la dynamique commerciale de l'unité marchande",
-            "Optimiser la performance économique et la rentabilité",
-            "Manager l'équipe de l'unité marchande",
-            "Gérer les approvisionnements et les stocks"
+            "Manager l'équipe de son périmètre",
+            "Contribuer à la performance commerciale et à la rentabilité",
+            "Développer la dynamique commerciale de son périmètre"
         ],
-        opportunities: ["Chef de rayon", "Directeur de magasin", "Manager de département", "Responsable commerce"]
+        opportunities: ["Manager de rayon", "Responsable de magasin", "Chef de rayon", "Responsable de point de vente"]
     },
     'tp-crcd': {
         title: "TP - Conseiller Relation Client à Distance",

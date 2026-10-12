@@ -196,6 +196,61 @@ export default function TP_MEM() {
                     border: 1px solid #dbeafe;
                 }
 
+                .title-change {
+                    display: flex;
+                    gap: 0.9rem;
+                    align-items: flex-start;
+                    background: #fff7ed;
+                    border: 1px solid #fed7aa;
+                    color: #9a3412;
+                    border-radius: 14px;
+                    padding: 1rem 1.15rem;
+                    margin-bottom: 1.5rem;
+                    line-height: 1.5;
+                }
+                .metier-block p {
+                    font-size: 0.98rem;
+                    color: #334155;
+                    line-height: 1.7;
+                    margin-bottom: 1rem;
+                }
+                .metier-block p:last-child { margin-bottom: 0; }
+                .ref-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+                .ref-item {
+                    background: #f8fafc;
+                    border: 1px solid #e2e8f0;
+                    border-radius: 12px;
+                    padding: 1rem 1.1rem;
+                }
+                .ref-item span {
+                    display: block;
+                    font-size: 0.72rem;
+                    font-weight: 800;
+                    letter-spacing: 0.04em;
+                    text-transform: uppercase;
+                    color: #64748b;
+                    margin-bottom: 0.3rem;
+                }
+                .ref-item strong { color: #1c1e4c; font-size: 0.95rem; }
+                .obtention h4 {
+                    font-weight: 800;
+                    color: #1c1e4c;
+                    margin-bottom: 0.6rem;
+                }
+                .obtention p, .obtention li {
+                    font-size: 0.92rem;
+                    color: #475569;
+                    line-height: 1.6;
+                }
+                .obtention ul { margin: 0.4rem 0 0 1.1rem; }
+                @media(max-width: 700px) {
+                    .ref-grid { grid-template-columns: 1fr; }
+                }
+
                 @media(max-width: 900px) {
                     .main-layout { grid-template-columns: 1fr; }
                     .formation-hero h1 { font-size: 2.2rem; }
@@ -205,9 +260,9 @@ export default function TP_MEM() {
             <div className="formation-page">
                 <header className="formation-hero">
                     <div className="hero-container">
-                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/41853/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°41853</a> | V12 – MAJ 18/06/2026</span>
+                        <span className="version-tag"><a href="https://www.francecompetences.fr/recherche/rncp/41853/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline' }}>RNCP N°41853</a> | Code TP 00136 | Ministère du Travail</span>
                         <h1>TITRE PROFESSIONNEL MANAGER D'ÉTABLISSEMENT MARCHAND</h1>
-                        <div className="hero-subtitle">NIVEAU 5 – BAC+2</div>
+                        <div className="hero-subtitle">NIVEAU 5 – BAC+2 · MEM</div>
                         <p className="hero-desc">
                             Pilotez la performance de votre rayon ou magasin. Développez vos compétences en merchandising, gestion et management d'équipe pour devenir un vrai leader commercial.
                         </p>
@@ -216,6 +271,13 @@ export default function TP_MEM() {
 
                 <div className="main-layout">
                     <div className="content-area">
+                        <div className="title-change">
+                            <span aria-hidden="true">👉</span>
+                            <p>
+                                <strong>Le titre a changé.</strong> L’ancien intitulé Manager d’unité marchande (MUM) est remplacé par Manager d’établissement marchand (MEM). Cette page est la fiche du nouveau titre.
+                            </p>
+                        </div>
+
                         {/* Infos Générales */}
                         <div className="info-card">
                             <h2 className="section-title"><ShieldCheck /> Profil & Prérequis</h2>
@@ -259,6 +321,72 @@ export default function TP_MEM() {
                             </p>
                         </div>
 
+                        <div className="info-card metier-block">
+                            <h2 className="section-title"><Target /> Le métier</h2>
+                            <p>
+                                Le titre professionnel Manager d’établissement marchand, niveau 5 (code NSF 312m), se compose de trois activités types. À chaque activité correspond un certificat de compétences professionnelles (CCP).
+                            </p>
+                            <p>
+                                Dans le respect des consignes de sa hiérarchie et de la démarche RSE de l’entreprise, le manager d’établissement marchand assure le management opérationnel de l’équipe de son périmètre. Il développe la dynamique commerciale et contribue à la performance et à la rentabilité.
+                            </p>
+                            <p>
+                                Il met en œuvre une démarche de maîtrise des risques professionnels, en cohérence avec la politique RH, applique les mesures de prévention et contrôle leur application par les équipes.
+                            </p>
+                            <p>
+                                Il analyse les résultats et les partage lors des briefings, débriefings et réunions. Il élabore les plannings en tenant compte des besoins spécifiques des collaborateurs en situation de handicap, suit la réalisation des tâches et veille au développement des compétences. Il identifie les besoins en ressources humaines, contribue à la sélection des candidatures, s’assure du bon déroulement de la période d’essai et, le cas échéant, à l’étude des adaptations de poste.
+                            </p>
+                            <p>
+                                Il anticipe les besoins d’approvisionnement à partir des stocks, des prévisions de ventes, des tendances du marché et des capacités de stockage. Il réceptionne les produits avec l’équipe, participe au stockage, et fait appliquer les consignes RSE sur la gestion des stocks, la valorisation des déchets et la réduction du gaspillage.
+                            </p>
+                            <p>
+                                Il améliore l’expérience client, sensibilise l’équipe à l’accueil des personnes en situation de handicap, organise l’implantation de l’offre et les opérations commerciales, met en avant les produits et services, et propose des solutions pour améliorer la satisfaction client.
+                            </p>
+                            <p>
+                                Son niveau d’autonomie varie selon la taille de l’établissement. Il exerce sous la responsabilité de sa hiérarchie, à laquelle il rend compte, et peut être force de proposition. En cas d’imprévu, il réagit, adapte ses priorités, alerte et met en œuvre un plan d’actions avec les acteurs concernés.
+                            </p>
+                            <p>
+                                Il communique à l’écrit et à l’oral avec sa hiérarchie, l’équipe et les services internes et externes. Il est en contact direct avec le client, les agents de sécurité et le personnel de maintenance. Selon la zone de chalandise, il peut utiliser l’anglais ou une autre langue étrangère.
+                            </p>
+                            <p>
+                                Ses horaires peuvent être décalés, avec des astreintes possibles, y compris le dimanche et certains jours fériés. L’emploi s’exerce souvent dans un environnement bruyant, avec de nombreux déplacements dans l’espace de vente et des variations de température. Il peut participer aux tâches de manutention, avec port d’équipements de protection.
+                            </p>
+                            <p style={{ fontSize: '0.85rem', color: '#64748b' }}>
+                                Code TP 00136. Titre créé par arrêté du 19 février 2004 (JO modificatif du 7 décembre 2025). Source : référentiel du titre MEM.
+                            </p>
+                        </div>
+
+                        <div className="info-card">
+                            <h2 className="section-title"><ShieldCheck /> Références</h2>
+                            <div className="ref-grid">
+                                <div className="ref-item">
+                                    <span>Certification</span>
+                                    <strong>Titre professionnel du ministère du Travail</strong>
+                                </div>
+                                <div className="ref-item">
+                                    <span>RNCP</span>
+                                    <strong>41853</strong>
+                                </div>
+                                <div className="ref-item">
+                                    <span>Code TP</span>
+                                    <strong>00136</strong>
+                                </div>
+                                <div className="ref-item">
+                                    <span>Niveau</span>
+                                    <strong>5 (Bac+2) · NSF 312m</strong>
+                                </div>
+                            </div>
+                            <div style={{ marginTop: '1.25rem' }}>
+                                <h4 style={{ fontWeight: 800, color: '#1c1e4c', marginBottom: '0.75rem' }}>Emplois ROME</h4>
+                                <ul className="list-check">
+                                    <li><CheckCircle2 size={18} /> D1502 — Chef / Cheffe de rayon alimentaire</li>
+                                    <li><CheckCircle2 size={18} /> D1503 — Chef / Cheffe de rayon de produits non alimentaires</li>
+                                    <li><CheckCircle2 size={18} /> D1508 — Responsable de caisses</li>
+                                    <li><CheckCircle2 size={18} /> D1509 — Responsable de département en grande distribution</li>
+                                    <li><CheckCircle2 size={18} /> D1510 — Chef / Cheffe de secteur magasin</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         {/* Objectifs & Programme */}
                         <div className="info-card">
                             <h2 className="section-title"><Target /> Objectifs & Programme</h2>
@@ -281,9 +409,11 @@ export default function TP_MEM() {
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 style={{fontWeight: 900, color: '#10b981', marginBottom: '1.25rem'}}>CCP 3 : DÉVELOPPER LA DYNAMIQUE COMMERCIALE DE SON PÉRIMÈTRE</h4>
+                                    <h4 style={{fontWeight: 900, color: '#10b981', marginBottom: '1.25rem'}}>CCP 3 : DÉVELOPPER LA DYNAMIQUE COMMERCIALE DE SON PÉRIMÈTRE AU SEIN DE L’ÉTABLISSEMENT MARCHAND</h4>
                                     <ul className="list-check">
-                                        <li><CheckCircle2 size={18} /> Développer la dynamique commerciale de son périmètre au sein de l’établissement marchand</li>
+                                        <li><CheckCircle2 size={18} /> Gérer l'approvisionnement de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Organiser et mettre en œuvre le merchandising de l’offre de produits et de services de son périmètre</li>
+                                        <li><CheckCircle2 size={18} /> Participer à l’amélioration de l’expérience client de son périmètre</li>
                                     </ul>
                                 </div>
                             </div>
@@ -314,15 +444,52 @@ export default function TP_MEM() {
                             </div>
                         </div>
 
+                        <div className="info-card obtention">
+                            <h2 className="section-title"><GraduationCap /> Obtention du titre</h2>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
+                                <div className="modalite-box">
+                                    <h4>Parcours continu de formation</h4>
+                                    <p>À l’issue du parcours, un jury de professionnels évalue :</p>
+                                    <ul>
+                                        <li>une mise en situation professionnelle ou un projet, complétés par un entretien technique et, si prévu, un questionnaire professionnel ;</li>
+                                        <li>les évaluations passées en cours de formation ;</li>
+                                        <li>un dossier professionnel ;</li>
+                                        <li>un entretien final avec le jury.</li>
+                                    </ul>
+                                </div>
+                                <div className="modalite-box">
+                                    <h4>VAE</h4>
+                                    <p>Le candidat justifie d’un an d’expérience en rapport avec le titre et dépose un dossier auprès de la DREETS. Après notification de recevabilité, le jury s’appuie sur la mise en situation ou le projet, le dossier professionnel et l’entretien final.</p>
+                                </div>
+                                <div className="modalite-box">
+                                    <h4>Parcours discontinu ou réussite partielle</h4>
+                                    <p>Le titre peut être obtenu par capitalisation des CCP. En cas de non-obtention du titre complet, le jury peut délivrer un ou plusieurs CCP. Un entretien final a lieu à la fin du dernier CCP, au vu du livret de certification.</p>
+                                </div>
+                            </div>
+                            <p style={{ marginTop: '1rem', fontSize: '0.88rem', color: '#64748b' }}>
+                                Un parchemin est délivré pour le titre complet. Un livret de certification est remis en cas de réussite partielle. Ces documents sont délivrés par le représentant territorial du ministère du Travail.
+                            </p>
+                        </div>
+
                         {/* Débouchés */}
                         <div className="info-card">
-                            <h2 className="section-title"><TrendingUp /> Débouchés & Poursuites</h2>
+                            <h2 className="section-title"><TrendingUp /> Types d'emplois accessibles</h2>
                             <div style={{marginBottom: '2rem'}}>
+                                <span className="debouche-tag">Manager de rayon</span>
+                                <span className="debouche-tag">Manager d’espace commercial</span>
+                                <span className="debouche-tag">Manager de surface de vente</span>
+                                <span className="debouche-tag">Manager d’univers commercial</span>
+                                <span className="debouche-tag">Manager de rayon fabrication alimentaire / frais</span>
+                                <span className="debouche-tag">Manager de rayon non alimentaire ou alimentaire / sec</span>
+                                <span className="debouche-tag">Responsable / animateur</span>
+                                <span className="debouche-tag">Responsable de magasin</span>
+                                <span className="debouche-tag">Gestionnaire de centre de profit</span>
                                 <span className="debouche-tag">Chef de rayon</span>
-                                <span className="debouche-tag">Directeur de magasin</span>
-                                <span className="debouche-tag">Manager de département</span>
-                                <span className="debouche-tag">Responsable commerce</span>
-                                <span className="debouche-tag">Animateur d'équipe</span>
+                                <span className="debouche-tag">Responsable de boutique</span>
+                                <span className="debouche-tag">Gérant de magasin</span>
+                                <span className="debouche-tag">Responsable de succursale</span>
+                                <span className="debouche-tag">Responsable de point de vente</span>
+                                <span className="debouche-tag">Responsable de département</span>
                             </div>
                             <div style={{background: '#f1f5f9', padding: '1.5rem', borderRadius: '16px'}}>
                                 <h4 style={{fontWeight: 800, color: '#1c1e4c', marginBottom: '0.5rem'}}>POURSUITE D'ÉTUDES</h4>
@@ -340,7 +507,7 @@ export default function TP_MEM() {
                             <p style={{fontSize: '0.85rem', opacity: 0.8, lineHeight: 1.5, marginBottom: '1.5rem'}}>
                                 Coût de la formation : 8302€ TTC.
                             </p>
-                            <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn-primary">COMMENT NOUS CONTACTER</a>
+                            <a href="/contact" className="btn-primary">COMMENT NOUS CONTACTER</a>
                         </div>
 
                         <div className="info-card" style={{padding: '1.5rem'}}>

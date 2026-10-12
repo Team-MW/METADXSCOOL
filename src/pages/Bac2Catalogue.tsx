@@ -25,9 +25,9 @@ export default function Bac2Catalogue() {
             image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop"
         },
         {
-            title: "TITRE PROFESSIONNEL MUM",
+            title: "TITRE PROFESSIONNEL MEM",
             subtitle: "Manager d'Établissement Marchand",
-            description: "Développez l'activité commerciale d'un point de vente ou d'un rayon majeur. Managez les équipes et optimisez l'attractivité marchande.",
+            description: "Anciennement MUM. Pilotez un magasin ou un rayon : management d'équipe, performance commerciale et expérience client. RNCP 41853.",
             level: "Bac+2 • Niveau 5",
             duration: "12 Mois",
             rhythm: "Alternance ou Initial",
