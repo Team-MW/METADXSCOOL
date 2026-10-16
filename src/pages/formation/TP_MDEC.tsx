@@ -6,7 +6,6 @@ import {
     Users, 
     BookOpen, 
     Award, 
-    Accessibility, 
     ArrowRight,
     TrendingUp,
     ShieldCheck,
