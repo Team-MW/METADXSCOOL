@@ -5,12 +5,12 @@ import { GraduationCap, ArrowRight, CheckCircle2, Clock, Users, BookOpen } from 
 export default function Bac5Catalogue() {
     const formations = [
         {
-            title: "TITRE PROFESSIONNEL MDEC",
-            subtitle: "Manager du Développement d'Entreprise et Commercial",
-            description: "Devenez un leader stratégique du business development. Structurez la stratégie commerciale globale, pilotez la croissance d'une entreprise et managez les équipes grands comptes.",
+            title: "CERTIFICATION PROFESSIONNELLE MDEC",
+            subtitle: "Manager du Développement d'Entreprise et Commercial (RNCP 39354)",
+            description: "Certification professionnelle enregistrée au RNCP sous le N° 39354 par décision de France Compétences en date du 19/07/2024, délivrée par ISME. Accessible également par la VAE.",
             level: "Bac+5 • Niveau 7",
             duration: "12 à 24 Mois",
-            rhythm: "Alternance ou Initial",
+            rhythm: "Alternance, Initial ou VAE",
             path: "/cfa/formation/tp-mdec",
             image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop"
         }
