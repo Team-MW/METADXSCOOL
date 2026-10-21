@@ -229,7 +229,7 @@ export default function CFA() {
                         <h3>NOUS TROUVER</h3>
                         <ul className="campus-list">
                             <li><MapPin color="#0369a1" /> <a href="https://maps.google.com/?q=244+Route+de+Seysses,+Bâtiment+2,+31100+Toulouse" target="_blank" rel="noopener noreferrer" style={{color:'inherit'}}>244 Route de Seysses, Bâtiment 2, 4e étage, 31100 Toulouse</a></li>
-                            <li><Phone color="#0369a1" /> 05 37 04 02 64</li>
+                            <li><Phone color="#0369a1" /> <a href="tel:+33745804289" style={{color:'inherit'}}>07 45 80 42 89</a></li>
                             <li><Mail color="#0369a1" /> contact@metadxs.com</li>
                         </ul>
                         <div style={{ marginTop: '2rem', padding: '1.5rem', background: '#ffffff', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0, 0, 0, 0.04)' }}>

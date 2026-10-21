@@ -524,7 +524,7 @@ export default function FormaSecu() {
                                 </li>
                                 <li>
                                     <Phone className="fs-campus-icon" size={20} />
-                                    <span>05 37 04 02 64</span>
+                                    <span><a href="tel:+33745804289" style={{color:'inherit'}}>07 45 80 42 89</a></span>
                                 </li>
                                 <li>
                                     <Mail className="fs-campus-icon" size={20} />
