@@ -11,6 +11,7 @@ import {
     Monitor,
     Target
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function TP_NTC() {
     return (
@@ -358,6 +359,8 @@ export default function TP_NTC() {
                         </div>
 
 
+
+                        <BrochureDownload href="/brochures/Brochure_NTC_Meta_DX_School.pdf" label="TP NTC" color="#ef9a37" />
                     </aside>
                 </div>
             </div>

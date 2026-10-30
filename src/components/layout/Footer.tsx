@@ -40,7 +40,7 @@ const Footer = () => {
                         <li><a href="/CGV_OF,%20BC%20et%20VAE_MDX%20CF_V2%20010826.pdf" target="_blank" rel="noopener noreferrer">CGV OF, BC et VAE</a></li>
                         <li><a href="/R%C3%A9glement_Int%C3%A8rieur_CFA_MDXS_V6%20010826.pdf" target="_blank" rel="noopener noreferrer">Règlement intérieur CFA</a></li>
                         <li><a href="/R%C3%A9glement_Int%C3%A8rieur_OF,%20BC%20et%20VAE_MDX%20CF_V2%20010826.pdf" target="_blank" rel="noopener noreferrer">Règlement intérieur OF, BC et VAE</a></li>
-                        <li><a href="/Meta_DX_School_Resultats_2026.pdf" target="_blank" rel="noopener noreferrer">Nos Résultats</a></li>
+                        <li><a href="/Affiche_resultats_examens_METADX_2024-2026.pdf" target="_blank" rel="noopener noreferrer">Nos Résultats</a></li>
                         <li>
                             <a href="#" className="certification-orange" onClick={() => handleNavigation('/certifications')}>
                                 Cliquez ci dessous pour <br />consulter nos différentes <br />certifications

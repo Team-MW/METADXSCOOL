@@ -20,6 +20,7 @@ import {
     GraduationCap,
     ExternalLink
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function TP_MDEC() {
     return (
@@ -769,6 +770,8 @@ export default function TP_MDEC() {
                                 <li>✅ Accès réseau entreprises partenaire</li>
                             </ul>
                         </div>
+
+                        <BrochureDownload href="/brochures/Brochure_MDEC_Option_IA_Meta_DX_School.pdf" label="TP MDEC Option IA" color="#7c3aed" />
                     </div>
                 </div>
             </div>

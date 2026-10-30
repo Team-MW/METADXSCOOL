@@ -14,6 +14,7 @@ import {
     Monitor,
     AlertCircle
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function TP_REM() {
     return (
@@ -464,6 +465,8 @@ export default function TP_REM() {
                                 <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche Officielle N°38666</span>
                             </div>
                         </a>
+
+                        <BrochureDownload href="/brochures/Brochure_REM_Meta_DX_School.pdf" label="TP REM" color="#7c3aed" />
                     </div>
                 </div>
             </div>

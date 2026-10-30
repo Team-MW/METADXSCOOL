@@ -15,6 +15,7 @@ import {
     Monitor,
     Briefcase
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function B_RDA() {
     return (
@@ -486,6 +487,8 @@ export default function B_RDA() {
                                 <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche Officielle N°38602</span>
                             </div>
                         </a>
+
+                        <BrochureDownload href="/brochures/Brochure_RDA_Meta_DX_School.pdf" label="Bachelor RDA" color="#ef9a37" />
                     </div>
                 </div>
             </div>

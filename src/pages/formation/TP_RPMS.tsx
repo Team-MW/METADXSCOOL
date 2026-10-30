@@ -13,6 +13,7 @@ import {
     FileText,
     Monitor
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function TP_RPMS() {
     return (
@@ -422,6 +423,8 @@ export default function TP_RPMS() {
                         </div>
 
 
+
+                        <BrochureDownload href="/brochures/Brochure_RPMS_Meta_DX_School.pdf" label="TP RPMS" color="#10b981" />
                     </div>
                 </div>
             </div>

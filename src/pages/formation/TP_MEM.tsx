@@ -11,6 +11,7 @@ import {
     Monitor,
     Target
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function TP_MEM() {
     return (
@@ -531,6 +532,8 @@ export default function TP_MEM() {
                                 • Entretien final
                             </p>
                         </div>
+
+                        <BrochureDownload href="/brochures/Brochure_MEM_Meta_DX_School.pdf" label="TP MEM" color="#3b82f6" />
                     </aside>
                 </div>
             </div>
