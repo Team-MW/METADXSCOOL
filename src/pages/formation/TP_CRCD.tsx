@@ -15,6 +15,7 @@ import {
     Monitor,
     AlertCircle
 } from 'lucide-react';
+import BrochureDownload from '../../components/utils/BrochureDownload';
 
 export default function TP_CRCD() {
     return (
@@ -417,13 +418,7 @@ export default function TP_CRCD() {
                             </p>
                         </div>
 
-                        <a href="/brochure_crcd.pdf" download className="info-card" style={{display:'flex', alignItems:'center', gap:'1rem', textDecoration:'none', transition:'all 0.2s', border:'2px solid #3b82f6'}}>
-                            <Download color="#3b82f6" />
-                            <div>
-                                <h4 style={{fontWeight:800, fontSize:'0.9rem', color:'#1c1e4c'}}>TÉLÉCHARGER LA BROCHURE</h4>
-                                <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche formation (PDF)</span>
-                            </div>
-                        </a>
+                        <BrochureDownload href="/brochure_crcd.pdf" label="TP CRCD" color="#3b82f6" />
                     </div>
                 </div>
             </div>
