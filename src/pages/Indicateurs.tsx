@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/CFA.css'; // Re-use CFA styles
 
 // Source officielle : Affiche_resultats_examens_METADX_2024-2026.pdf
-// Procès-verbaux d'examen du centre METADXS (17 sessions de septembre 2024 au 22 octobre 2026)
+// Procès-fre d verbaux d'examen du centre METADXS (17 sessions de septembre 2024 au 22 octobre 2026)
 const AFFICHE_PDF = '/Affiche_resultats_examens_METADX_2024-2026.pdf';
 
 const parAnnee = [
