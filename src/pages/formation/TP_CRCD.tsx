@@ -7,7 +7,6 @@ import {
     CheckCircle2, 
     Award, 
     Accessibility, 
-    Download,
     GraduationCap,
     TrendingUp,
     ShieldCheck,
