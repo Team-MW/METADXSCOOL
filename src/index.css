@@ -566,3 +566,23 @@ img {
   top: 4px !important;
   margin-top: 0 !important;
 }
+/* ==========================================
+   HERO MOBILE FIX
+   Les heros à hauteur fixe glissent de 80px sous le header (margin-top: -80px).
+   Sur mobile le titre passe sur plusieurs lignes : on laisse la hauteur suivre le contenu
+   et on compense le recouvrement par le padding, comme Candidat/Conseils/Ressources.
+   ========================================== */
+@media (max-width: 768px) {
+  /* préfixe "main" : index.css est chargé avant les CSS des pages */
+  main .cfa-hero,
+  main .alternant-hero,
+  main .entreprises-hero,
+  main .candidat-hero,
+  main .conseils-hero,
+  main .ressources-hero {
+    height: auto;
+    min-height: 50vh;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+}
