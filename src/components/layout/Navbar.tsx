@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import logoSchool from '../../assets/metadxschool.png';
 import logoConseil from '../../assets/methadxconseil.png';
 import { Link, useLocation } from 'react-router-dom';
@@ -18,6 +18,7 @@ const Navbar = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
+    const headerRef = useRef<HTMLElement>(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -42,15 +43,23 @@ const Navbar = () => {
         }));
     };
 
-    // Lock body scroll when mobile menu is open
+    // Lock page scroll when mobile menu is open.
+    // Le verrou est posé sur <html> : html/body ont overflow-x: clip (index.css), donc un
+    // overflow: hidden sur <body> n'est pas propagé au viewport et transforme <body> en
+    // conteneur de scroll, ce qui casse le position: sticky du header (il "part" en haut de page).
     useEffect(() => {
-        if (isMenuOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
+        if (!isMenuOpen) return;
+        const root = document.documentElement;
+        const updateHeaderBottom = () => {
+            const bottom = headerRef.current?.getBoundingClientRect().bottom ?? 0;
+            root.style.setProperty('--header-bottom', `${Math.max(0, Math.round(bottom))}px`);
+        };
+        updateHeaderBottom();
+        root.style.overflow = 'hidden';
+        window.addEventListener('resize', updateHeaderBottom);
         return () => {
-            document.body.style.overflow = '';
+            root.style.overflow = '';
+            window.removeEventListener('resize', updateHeaderBottom);
         };
     }, [isMenuOpen]);
 
@@ -248,7 +257,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="header">
+        <header className="header" ref={headerRef}>
             {/* TOP BAR */}
             <div className="top-bar">
                 <div className="top-bar-content">

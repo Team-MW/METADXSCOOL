@@ -697,8 +697,10 @@
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 999;
-        height: calc(100vh - 106px) !important; /* Adjust default height */
+        height: calc(100vh - var(--header-bottom, 106px)) !important;
+        height: calc(100dvh - var(--header-bottom, 106px)) !important; /* Hauteur visible réelle (barre d'adresse mobile) */
         overflow-y: auto;
+        overscroll-behavior: contain;
         padding: 1.5rem 0;
     }
 
@@ -790,9 +792,6 @@
         margin-left: 0 !important;
     }
 
-    .nav-wrapper {
-        height: calc(100vh - 106px) !important;
-    }
 }
 
 /* Submenu toggle chevron rotation animation */
