@@ -290,6 +290,8 @@ export default function TP_REM() {
                             <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
+
+                            <BrochureDownload formation="rem" />
                             
                             <div className="points-bonus">
                                 <h4 style={{fontWeight:900, color:'#1c1e4c', marginBottom:'0.5rem'}}>LES + META DX SCHOOL</h4>
@@ -465,19 +467,6 @@ export default function TP_REM() {
                                 <span style={{fontSize:'0.75rem', color:'#64748b', fontWeight:700}}>Fiche Officielle N°38666</span>
                             </div>
                         </a>
-
-                        <BrochureDownload
-                            href="/brochures/Brochure_REM_Meta_DX_School.pdf"
-                            label="TP REM"
-                            color="#7c3aed"
-                            figures={[
-                                { value: 'Niveau 6', label: 'Bac+3' },
-                                { value: '15 mois', label: '470 h en centre' },
-                                { value: '20 max', label: 'Participants par groupe' },
-                                { value: '2 / an', label: "Sessions d'examen" },
-                                { value: 'RNCP 38666', label: 'Certification' },
-                            ]}
-                        />
                     </div>
                 </div>
             </div>

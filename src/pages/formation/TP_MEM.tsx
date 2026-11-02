@@ -320,6 +320,8 @@ export default function TP_MEM() {
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
 
+                            <BrochureDownload formation="mem" />
+
                             <p style={{fontSize: '0.95rem', color: '#64748b', lineHeight: 1.6, marginTop: '1.5rem'}}>
                                 Cette formation s’adresse aux futurs responsables de magasins, chefs de rayons et managers souhaitant maîtriser le développement commercial, la gestion financière et l'animation d'équipe.
                             </p>
@@ -532,19 +534,6 @@ export default function TP_MEM() {
                                 • Entretien final
                             </p>
                         </div>
-
-                        <BrochureDownload
-                            href="/brochures/Brochure_MEM_Meta_DX_School.pdf"
-                            label="TP MEM"
-                            color="#3b82f6"
-                            figures={[
-                                { value: 'Niveau 5', label: 'Bac+2' },
-                                { value: '15 mois', label: '470 h en centre' },
-                                { value: '15 max', label: 'Participants par groupe' },
-                                { value: '2 / an', label: "Sessions d'examen" },
-                                { value: 'RNCP 41853', label: 'Code TP 00136' },
-                            ]}
-                        />
                     </aside>
                 </div>
             </div>

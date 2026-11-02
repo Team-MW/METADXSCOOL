@@ -1,20 +1,18 @@
 import { Download, FileText, Eye } from 'lucide-react';
+import { brochures, type BrochureKey } from '../../data/brochures';
 
 interface BrochureDownloadProps {
-    /** Chemin public du PDF (ex: /brochures/Brochure_MEM_Meta_DX_School.pdf) */
-    href: string;
-    /** Nom court de la formation (ex: "TP MEM") */
-    label: string;
-    /** Couleur d'accent de la page */
-    color?: string;
-    figures?: { value: string; label: string }[];
+    /** Clé de la formation dans src/data/brochures.ts (ex: "mem") */
+    formation: BrochureKey;
 }
 
 /**
- * Carte de téléchargement de brochure PDF, réutilisable dans toutes les pages formation.
+ * Bloc "Chiffres clés et fiche téléchargeable", réutilisable dans toutes les pages formation.
+ * Le PDF, la couleur et les chiffres (dont le tarif) viennent de src/data/brochures.ts.
  * Propose un bouton "Télécharger" (attribut download) et un lien "Consulter" (nouvel onglet).
  */
-export default function BrochureDownload({ href, label, color = '#3b82f6', figures = [] }: BrochureDownloadProps) {
+export default function BrochureDownload({ formation }: BrochureDownloadProps) {
+    const { href, label, color, figures } = brochures[formation];
     const fileName = href.split('/').pop();
 
     return (
@@ -30,7 +28,7 @@ export default function BrochureDownload({ href, label, color = '#3b82f6', figur
                     font-weight: 900; margin: 0 0 1rem;
                 }
                 .brochure-figures {
-                    display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+                    display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
                     gap: 0.6rem; margin-bottom: 1rem;
                 }
                 .brochure-figure {
@@ -120,7 +118,7 @@ export default function BrochureDownload({ href, label, color = '#3b82f6', figur
                     </div>
                     <div>
                         <h3 className="brochure-dl-title">BROCHURE {label.toUpperCase()}</h3>
-                        <span className="brochure-dl-sub">Programme complet · PDF</span>
+                        <span className="brochure-dl-sub">Programme complet · Tarifs · PDF</span>
                     </div>
                 </div>
 

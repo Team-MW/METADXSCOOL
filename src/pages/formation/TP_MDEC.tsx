@@ -421,6 +421,8 @@ export default function TP_MDEC() {
                             <div style={{ marginTop: '1.25rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
+
+                            <BrochureDownload formation="mdec" />
                         </div>
 
                         {/* ENCART VAE */}
@@ -770,18 +772,6 @@ export default function TP_MDEC() {
                                 <li>✅ Accès réseau entreprises partenaire</li>
                             </ul>
                         </div>
-
-                        <BrochureDownload
-                            href="/brochures/Brochure_MDEC_Option_IA_Meta_DX_School.pdf"
-                            label="TP MDEC Option IA"
-                            color="#7c3aed"
-                            figures={[
-                                { value: 'Niveau 7', label: 'Bac+5' },
-                                { value: '24 mois', label: '1 200 h de formation' },
-                                { value: 'RNCP 39354', label: 'Certification' },
-                                { value: '19/07/2027', label: "Échéance d'enregistrement RNCP" },
-                            ]}
-                        />
                     </div>
                 </div>
             </div>

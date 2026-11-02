@@ -255,6 +255,8 @@ export default function TP_NTC() {
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
 
+                            <BrochureDownload formation="ntc" />
+
                             <p style={{fontSize: '0.95rem', color: '#64748b', lineHeight: 1.6}}>
                                 Cette formation s’adresse aux professionnels et futurs professionnels dans le domaine du commerce souhaitant acquérir une double compétence technique et commerciale.
                             </p>
@@ -359,19 +361,6 @@ export default function TP_NTC() {
                         </div>
 
 
-
-                        <BrochureDownload
-                            href="/brochures/Brochure_NTC_Meta_DX_School.pdf"
-                            label="TP NTC"
-                            color="#ef9a37"
-                            figures={[
-                                { value: 'Niveau 5', label: 'Bac+2' },
-                                { value: '15 mois', label: '470 h en centre' },
-                                { value: '15 max', label: 'Participants par groupe' },
-                                { value: '2 / an', label: "Sessions d'examen" },
-                                { value: 'RNCP 39063', label: 'Certification' },
-                            ]}
-                        />
                     </aside>
                 </div>
             </div>

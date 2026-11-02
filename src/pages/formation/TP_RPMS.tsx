@@ -280,6 +280,8 @@ export default function TP_RPMS() {
                             <div style={{ marginTop: '1.5rem', padding: '1rem', background: '#eff6ff', borderRadius: '12px', borderLeft: '4px solid #3b82f6', fontSize: '0.95rem' }}>
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
+
+                            <BrochureDownload formation="rpms" />
                             
                             <div className="points-bonus">
                                 <h4 style={{fontWeight:900, color:'#1c1e4c', marginBottom:'0.5rem'}}>LE + META DX SCHOOL</h4>
@@ -423,19 +425,6 @@ export default function TP_RPMS() {
                         </div>
 
 
-
-                        <BrochureDownload
-                            href="/brochures/Brochure_RPMS_Meta_DX_School.pdf"
-                            label="TP RPMS"
-                            color="#10b981"
-                            figures={[
-                                { value: 'Niveau 5', label: 'Bac+2' },
-                                { value: '15 mois', label: '470 h de formation' },
-                                { value: '15 max', label: 'Participants par classe' },
-                                { value: '2 / an', label: "Sessions d'examen" },
-                                { value: 'RNCP 37682', label: 'Certification' },
-                            ]}
-                        />
                     </div>
                 </div>
             </div>

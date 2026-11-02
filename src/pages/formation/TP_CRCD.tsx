@@ -280,6 +280,8 @@ export default function TP_CRCD() {
                                 <strong>💡 Accessibilité :</strong> Pour les personnes en situation de handicap, un accompagnement spécifique peut être engagé pour faciliter leur parcours. Vous pouvez <Link to="/ressources/financements-handicap" style={{color:'#2563eb', fontWeight:700, textDecoration:'underline'}}>contacter notre référent handicap</Link>.
                             </div>
 
+                            <BrochureDownload formation="crcd" />
+
                             <div className="points-bonus" style={{borderColor:'#3b82f6', background:'#eff6ff'}}>
                                 <h4 style={{fontWeight:900, color:'#1c1e4c', marginBottom:'0.5rem'}}>LE + META DX SCHOOL</h4>
                                 <p style={{fontSize:'0.95rem', margin:0}}>
@@ -416,19 +418,6 @@ export default function TP_CRCD() {
                                 • Entretien final devant jury (Professionnels habilités DREETS)
                             </p>
                         </div>
-
-                        <BrochureDownload
-                            href="/brochure_crcd.pdf"
-                            label="TP CRCD"
-                            color="#3b82f6"
-                            figures={[
-                                { value: 'Niveau 4', label: 'Baccalauréat' },
-                                { value: '15 mois', label: '470 h en centre' },
-                                { value: '15 max', label: 'Participants par groupe' },
-                                { value: '2 / an', label: "Sessions d'examen" },
-                                { value: 'RNCP 35304', label: 'Certification' },
-                            ]}
-                        />
                     </div>
                 </div>
             </div>

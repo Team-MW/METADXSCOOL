@@ -2,26 +2,13 @@ import { Helmet } from 'react-helmet-async';
 import { useParams } from 'react-router-dom';
 import { BookOpen, CheckCircle, TrendingUp, Users } from 'lucide-react';
 import BrochureDownload from '../components/utils/BrochureDownload';
+import type { BrochureKey } from '../data/brochures';
 import '../styles/CFA.css'; // Re-use CFA styles for consistency
 
-// Brochures PDF disponibles par formation (dossier /public/brochures)
-const brochures: Record<string, { href: string; label: string; figures: { value: string; label: string }[] }> = {
-    'tp-amum': {
-        href: '/brochures/Brochure_AMUM_Meta_DX_School.pdf',
-        label: 'TP AMUM',
-        figures: [
-            { value: 'Niveau 4', label: 'Baccalauréat' },
-            { value: '12 mois', label: 'Durée du parcours' },
-        ],
-    },
-    'tp-amum-opt-rr': {
-        href: '/brochures/Brochure_AMUM_Meta_DX_School.pdf',
-        label: 'TP AMUM',
-        figures: [
-            { value: 'Niveau 4', label: 'Baccalauréat' },
-            { value: '12 mois', label: 'Durée du parcours' },
-        ],
-    },
+// Brochures PDF disponibles par formation (voir src/data/brochures.ts)
+const brochureKeys: Record<string, BrochureKey> = {
+    'tp-amum': 'amum',
+    'tp-amum-opt-rr': 'amum',
 };
 
 interface FormationData {
@@ -220,14 +207,9 @@ export default function FormationDetail() {
                 </div>
 
                 {/* BROCHURE */}
-                {id && brochures[id] && (
+                {id && brochureKeys[id] && (
                     <div style={{ maxWidth: '480px', margin: '4rem auto 0' }}>
-                        <BrochureDownload
-                            href={brochures[id].href}
-                            label={brochures[id].label}
-                            color="#2563eb"
-                            figures={brochures[id].figures}
-                        />
+                        <BrochureDownload formation={brochureKeys[id]} />
                     </div>
                 )}
 
