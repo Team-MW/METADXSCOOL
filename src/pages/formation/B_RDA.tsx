@@ -488,7 +488,17 @@ export default function B_RDA() {
                             </div>
                         </a>
 
-                        <BrochureDownload href="/brochures/Brochure_RDA_Meta_DX_School.pdf" label="Bachelor RDA" color="#ef9a37" />
+                        <BrochureDownload
+                            href="/brochures/Brochure_RDA_Meta_DX_School.pdf"
+                            label="Bachelor RDA"
+                            color="#ef9a37"
+                            figures={[
+                                { value: 'Niveau 6', label: 'Bac+3' },
+                                { value: '12 mois', label: '600 h en centre' },
+                                { value: '15 max', label: 'Participants par groupe' },
+                                { value: 'RNCP 38602', label: 'Certification' },
+                            ]}
+                        />
                     </div>
                 </div>
             </div>

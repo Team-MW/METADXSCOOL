@@ -360,7 +360,18 @@ export default function TP_NTC() {
 
 
 
-                        <BrochureDownload href="/brochures/Brochure_NTC_Meta_DX_School.pdf" label="TP NTC" color="#ef9a37" />
+                        <BrochureDownload
+                            href="/brochures/Brochure_NTC_Meta_DX_School.pdf"
+                            label="TP NTC"
+                            color="#ef9a37"
+                            figures={[
+                                { value: 'Niveau 5', label: 'Bac+2' },
+                                { value: '15 mois', label: '470 h en centre' },
+                                { value: '15 max', label: 'Participants par groupe' },
+                                { value: '2 / an', label: "Sessions d'examen" },
+                                { value: 'RNCP 39063', label: 'Certification' },
+                            ]}
+                        />
                     </aside>
                 </div>
             </div>

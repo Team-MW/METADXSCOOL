@@ -424,7 +424,18 @@ export default function TP_RPMS() {
 
 
 
-                        <BrochureDownload href="/brochures/Brochure_RPMS_Meta_DX_School.pdf" label="TP RPMS" color="#10b981" />
+                        <BrochureDownload
+                            href="/brochures/Brochure_RPMS_Meta_DX_School.pdf"
+                            label="TP RPMS"
+                            color="#10b981"
+                            figures={[
+                                { value: 'Niveau 5', label: 'Bac+2' },
+                                { value: '15 mois', label: '470 h de formation' },
+                                { value: '15 max', label: 'Participants par classe' },
+                                { value: '2 / an', label: "Sessions d'examen" },
+                                { value: 'RNCP 37682', label: 'Certification' },
+                            ]}
+                        />
                     </div>
                 </div>
             </div>

@@ -466,7 +466,18 @@ export default function TP_REM() {
                             </div>
                         </a>
 
-                        <BrochureDownload href="/brochures/Brochure_REM_Meta_DX_School.pdf" label="TP REM" color="#7c3aed" />
+                        <BrochureDownload
+                            href="/brochures/Brochure_REM_Meta_DX_School.pdf"
+                            label="TP REM"
+                            color="#7c3aed"
+                            figures={[
+                                { value: 'Niveau 6', label: 'Bac+3' },
+                                { value: '15 mois', label: '470 h en centre' },
+                                { value: '20 max', label: 'Participants par groupe' },
+                                { value: '2 / an', label: "Sessions d'examen" },
+                                { value: 'RNCP 38666', label: 'Certification' },
+                            ]}
+                        />
                     </div>
                 </div>
             </div>

@@ -418,7 +418,18 @@ export default function TP_CRCD() {
                             </p>
                         </div>
 
-                        <BrochureDownload href="/brochure_crcd.pdf" label="TP CRCD" color="#3b82f6" />
+                        <BrochureDownload
+                            href="/brochure_crcd.pdf"
+                            label="TP CRCD"
+                            color="#3b82f6"
+                            figures={[
+                                { value: 'Niveau 4', label: 'Baccalauréat' },
+                                { value: '15 mois', label: '470 h en centre' },
+                                { value: '15 max', label: 'Participants par groupe' },
+                                { value: '2 / an', label: "Sessions d'examen" },
+                                { value: 'RNCP 35304', label: 'Certification' },
+                            ]}
+                        />
                     </div>
                 </div>
             </div>
