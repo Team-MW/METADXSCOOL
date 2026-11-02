@@ -334,7 +334,7 @@ export default function FormationCommDigitale() {
                                 <Star color="#ef4444" />
                                 <h2>Méthodes & Évaluation</h2>
                             </div>
-                            <div style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
+                            <div className="grid-2" style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
                                 <div>
                                     <h4 style={{fontWeight: 800, marginBottom: '1rem', color: '#1c1e4c'}}>Pédagogie Active</h4>
                                     <p style={{fontSize: '0.9rem', color: '#64748b', lineHeight: 1.6}}>

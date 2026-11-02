@@ -271,7 +271,7 @@ export default function FormationPowerPointIA() {
                                 <Star color="#ef9a37" />
                                 <h2>Les avantages Meta DX School</h2>
                             </div>
-                            <div style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
+                            <div className="grid-2" style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
                                 <div style={{background: '#f8fafc', padding:'1.5rem', borderRadius:'16px'}}>
                                     <History color="#ef4444" style={{marginBottom:'0.5rem'}} />
                                     <h4 style={{fontWeight:800, color:'#1c1e4c', marginBottom:'0.5rem'}}>Accompagnement REX</h4>

@@ -358,7 +358,7 @@ export default function FormationIAVeille() {
                                 <Star color="#10b981" />
                                 <h2>Méthodes & Évaluation</h2>
                             </div>
-                            <div style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
+                            <div className="grid-2" style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
                                 <div>
                                     <h4 style={{fontWeight: 800, marginBottom: '1rem', color: '#1c1e4c'}}>Pédagogie</h4>
                                     <p style={{fontSize: '0.9rem', color: '#64748b', lineHeight: 1.6}}>Alternance de théorie et de démonstrations. Études de cas concrets et mise en place de routines automatisées réelles.</p>

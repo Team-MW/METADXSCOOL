@@ -345,7 +345,7 @@ export default function VAE() {
                         {/* Nos Atouts */}
                         <section className="info-card" style={{border: '2px solid #7c3aed'}}>
                             <h2 className="section-title" style={{color: '#7c3aed', borderBottomColor: '#f3e8ff'}}><Star /> L'expertise Meta DX School</h2>
-                            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem'}}>
+                            <div className="grid-2" style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem'}}>
                                 <div>
                                     <h4 style={{fontWeight: 800, marginBottom: '1rem', color: '#1c1e4c'}}>Accompagnement Premium</h4>
                                     <p style={{fontSize: '0.9rem', color: '#64748b'}}>Un coach dédié vous suit de A à Z : de la recevabilité à la réussite finale. Nous ne vous laissons jamais seul face à votre dossier.</p>

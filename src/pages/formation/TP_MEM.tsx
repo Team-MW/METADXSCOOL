@@ -428,7 +428,7 @@ export default function TP_MEM() {
                         {/* Modalités */}
                         <div className="info-card">
                             <h2 className="section-title"><Monitor /> Modalités de Formation</h2>
-                            <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem'}}>
+                            <div className="grid-2" style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem'}}>
                                 <div className="modalite-box">
                                     <h4 style={{fontWeight: 900, marginBottom: '1rem', color: '#1c1e4c'}}>PRÉSENTIEL</h4>
                                     <ul style={{fontSize: '0.9rem', padding: 0, listStyle: 'none', color: '#475569'}}>

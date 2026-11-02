@@ -586,3 +586,67 @@ img {
     padding-bottom: 3rem;
   }
 }
+
+/* ==========================================
+   MOBILE OVERFLOW FIX
+   En une colonne, une piste "1fr" (= minmax(auto, 1fr)) s'élargit à la largeur
+   min-content de son contenu et dépasse l'écran ; overflow-x: clip sur html/body
+   masque alors le texte coupé à droite. On borne les pistes et les enfants à l'écran.
+   ========================================== */
+@media (max-width: 900px) {
+  main .main-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main .main-layout > *,
+  main .content-area,
+  main .content,
+  main .info-card,
+  main .stat-item,
+  main .fin-card,
+  main .contrat-column {
+    min-width: 0;
+  }
+
+  main .mission-container,
+  main .contrats-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  main .quick-stats,
+  main .fin-grid,
+  main .team-grid {
+    min-width: 0;
+  }
+
+  main h1,
+  main h2,
+  main h3 {
+    overflow-wrap: break-word;
+  }
+
+  /* Liens longs (adresses e-mail, URLs) */
+  main a {
+    overflow-wrap: anywhere;
+  }
+
+  main .team-card > * {
+    min-width: 0;
+  }
+
+  /* Bandeau d'indicateurs (pages Forma'Sécu) */
+  main .indicator-bar {
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Grilles multi-colonnes (dont celles en style inline) : une colonne sur téléphone */
+  main .grid-2,
+  main .quick-stats,
+  main .fin-grid,
+  main .team-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+}

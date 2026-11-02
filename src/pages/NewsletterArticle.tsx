@@ -21,7 +21,7 @@ export default function NewsletterArticle() {
     return (
         <>
             <Helmet>
-                <title>{article.title} | Meta DX School</title>
+                <title>{`${article.title} | Meta DX School`}</title>
                 <meta name="description" content={article.title} />
             </Helmet>
 

@@ -5,11 +5,6 @@ import '../../styles/Footer.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    const handleNavigation = (url: string) => {
-        // Implement navigation logic here if needed
-        console.log(`Navigating to: ${url}`);
-    };
-
     return (
         <section className="footer">
             <div className="footer-container">
@@ -42,9 +37,9 @@ const Footer = () => {
                         <li><a href="/R%C3%A9glement_Int%C3%A8rieur_OF,%20BC%20et%20VAE_MDX%20CF_V2%20010826.pdf" target="_blank" rel="noopener noreferrer">Règlement intérieur OF, BC et VAE</a></li>
                         <li><a href="/Affiche_resultats_examens_METADX_2024-2026.pdf" target="_blank" rel="noopener noreferrer">Nos Résultats</a></li>
                         <li>
-                            <a href="#" className="certification-orange" onClick={() => handleNavigation('/certifications')}>
-                                Cliquez ci dessous pour <br />consulter nos différentes <br />certifications
-                            </a>
+                            <span className="certification-orange">
+                                Cliquez ci-dessous pour <br />consulter nos différentes <br />certifications
+                            </span>
                         </li>
                         <li><Link to="/qualiopi">Certificat QUALIOPI</Link></li>
                     </ul>

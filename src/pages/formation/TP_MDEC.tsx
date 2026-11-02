@@ -463,7 +463,7 @@ export default function TP_MDEC() {
                                     <ExternalLink size={16} />
                                 </a>
                                 <Link 
-                                    to="/vae" 
+                                    to="/conseils-formations/vae" 
                                     style={{
                                         fontSize: '0.9rem',
                                         fontWeight: 700,

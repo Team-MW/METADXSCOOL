@@ -138,7 +138,7 @@ export default function FormationDetail() {
     return (
         <div>
             <Helmet>
-                <title>{formation.title} - Meta DX School</title>
+                <title>{`${formation.title} - Meta DX School`}</title>
                 <meta name="description" content={`Découvrez la formation ${formation.title} (${formation.level}) chez Meta DX School.`} />
             </Helmet>
 

@@ -252,7 +252,7 @@ export default function FormationCommInterne() {
                                 <Star color="#ef9a37" />
                                 <h2>Pourquoi choisir cette formation ?</h2>
                             </div>
-                            <div style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
+                            <div className="grid-2" style={{display: 'grid', gridTemplateColumns:'1fr 1fr', gap:'2rem'}}>
                                 <div style={{background: '#f0f9ff', padding:'1.5rem', borderRadius:'16px'}}>
                                     <History color="#3b82f6" style={{marginBottom:'0.5rem'}} />
                                     <h4 style={{fontWeight:800, color:'#1e40af', marginBottom:'0.5rem'}}>Méthode REX</h4>

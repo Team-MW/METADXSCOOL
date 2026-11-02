@@ -401,6 +401,14 @@
         grid-template-columns: 1fr;
     }
 
+    .contrat-column {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .contrat-title {
+        font-size: 1.3rem;
+    }
+
     .cout-text {
         font-size: 1.1rem;
     }
