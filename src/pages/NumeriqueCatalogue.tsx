@@ -231,7 +231,7 @@ export default function NumeriqueCatalogue() {
                     gap: 1rem;
                 }
 
-                .footer-info {
+                .cat-card-meta {
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
@@ -288,8 +288,12 @@ export default function NumeriqueCatalogue() {
                 }
 
                 @media(max-width: 768px) {
-                    .cat-hero h1 { font-size: 2.2rem; }
+                    .cat-hero { padding: 7rem 1.25rem 3.5rem; }
+                    .cat-hero h1 { font-size: 2rem; }
                     .cat-grid { grid-template-columns: 1fr; }
+                    .main-content { padding: 2.5rem 1rem 4rem; }
+                    .info-card { padding: 2rem 1.25rem !important; margin-left: 0; margin-right: 0; }
+                    .info-card a { display: inline-block; max-width: 100%; padding: 1rem 1.5rem !important; box-sizing: border-box; }
                 }
             `}</style>
 
@@ -318,11 +322,11 @@ export default function NumeriqueCatalogue() {
                                 <h2>{f.title}</h2>
                                 <p>{f.desc}</p>
                                 <div className="card-footer">
-                                    <div className="footer-info">
+                                    <div className="cat-card-meta">
                                         <Clock size={14} color="#3b82f6" />
                                         {f.duration}
                                     </div>
-                                    <div className="footer-info">
+                                    <div className="cat-card-meta">
                                         <Monitor size={14} color="#3b82f6" />
                                         {f.modalities.split(' / ')[0]}...
                                     </div>

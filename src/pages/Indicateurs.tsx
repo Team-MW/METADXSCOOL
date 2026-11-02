@@ -28,7 +28,7 @@ const brochuresList = [
     { titre: 'Bachelor RDA', niveau: 'BAC +3', nom: 'Responsable du Développement Commercial', href: '/brochures/Brochure_RDA_Meta_DX_School.pdf', lien: '/cfa/formation/b-rda', color: '#ef9a37' },
     { titre: 'TP REM', niveau: 'BAC +3', nom: "Responsable d'Établissement Marchand", href: '/brochures/Brochure_REM_Meta_DX_School.pdf', lien: '/cfa/formation/tp-rem', color: '#7c3aed' },
     { titre: 'TP RPMS', niveau: 'BAC +2', nom: 'Responsable de Petite et Moyenne Structure', href: '/brochures/Brochure_RPMS_Meta_DX_School.pdf', lien: '/cfa/formation/tp-rpms', color: '#10b981' },
-    { titre: 'TP CRCD', niveau: 'BAC', nom: 'Conseiller Relation Client à Distance', href: '/brochure_crcd.pdf', lien: '/cfa/formation/tp-crcd', color: '#0284c7' },
+    { titre: 'TP CRCD', niveau: 'BAC', nom: 'Conseiller Relation Client à Distance', href: '/brochures/Brochure_CRCD_Meta_DX_School_291026.pdf', lien: '/cfa/formation/tp-crcd', color: '#0284c7' },
 ];
 
 const cardStyle: React.CSSProperties = {

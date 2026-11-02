@@ -29,7 +29,9 @@ export const brochures = {
         ],
     },
     crcd: {
-        href: '/brochure_crcd.pdf',
+        // Nouvelle brochure client (29/10/2026). Déposer le PDF dans public/brochures/
+        // si le fichier n'est pas encore présent : Brochure_CRCD_Meta_DX_School_291026.pdf
+        href: '/brochures/Brochure_CRCD_Meta_DX_School_291026.pdf',
         label: 'TP CRCD',
         color: '#3b82f6',
         figures: [
@@ -38,6 +40,7 @@ export const brochures = {
             { value: '15 max', label: 'Participants par groupe' },
             { value: '2 / an', label: "Sessions d'examen" },
             { value: 'RNCP 35304', label: 'Certification' },
+            { value: '77 %', label: "Taux d'obtention du titre · 2024-2026" },
             { value: '7 650 €', label: 'Tarif moyen · pris en charge OPCO' },
         ],
     },
@@ -76,6 +79,7 @@ export const brochures = {
             { value: '15 max', label: 'Participants par groupe' },
             { value: '2 / an', label: "Sessions d'examen" },
             { value: 'RNCP 39063', label: 'Certification' },
+            { value: '71 %', label: "Taux d'obtention du titre · 2024-2026" },
             { value: '8 302 €', label: 'Tarif moyen · pris en charge OPCO' },
         ],
     },

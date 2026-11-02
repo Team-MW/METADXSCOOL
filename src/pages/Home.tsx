@@ -203,18 +203,21 @@ function Home() {
                     <iframe 
                         src="https://www.tiktok.com/embed/v2/7628553605062200598" 
                         className="tiktok-iframe" 
+                        loading="lazy"
                         allow="fullscreen" 
                         title="TikTok Video 1">
                     </iframe>
                     <iframe 
                         src="https://www.tiktok.com/embed/v2/7652428311473311008" 
                         className="tiktok-iframe" 
+                        loading="lazy"
                         allow="fullscreen" 
                         title="TikTok Video 2">
                     </iframe>
                     <iframe 
                         src="https://www.tiktok.com/embed/v2/7630524248733371670" 
                         className="tiktok-iframe" 
+                        loading="lazy"
                         allow="fullscreen" 
                         title="TikTok Video 3">
                     </iframe>
